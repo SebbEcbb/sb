@@ -1,0 +1,287 @@
+html{
+    margin: 0;
+}
+a{
+    color: darkslateblue;
+}
+h1,h2,h3,h4,h5 {
+    font-family: "Ubuntu", sans-serif;
+}
+h1{
+    font-size: 54px;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+  font-size: 34px;
+}
+h4{
+    font-size: 28px;
+}
+h5{
+    font-size: 24px;
+}
+p{
+    font-family: "poppins", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.page-grid{
+    display: grid;
+    grid-template-columns: 15% 60% 25%;
+    width: 100%;
+}
+
+.col-left {
+    padding-left: 5px;
+    font-size: 30px;
+    text-align: center;
+  }
+.col-right {
+    padding-left: 10%;
+    font-size: 20px;
+    text-align: left;
+  }
+  .col-mid{
+    padding-left: 5%;
+    padding-top: 0;
+  }
+#site-title{
+    margin: 0 35px;
+    height:auto;
+    padding-bottom: 10px;
+}
+#site-title a{
+    text-decoration: none;
+    font-size: 35px;
+    color: rgb(0,0, 0);
+    font-family: "poppins", "ubuntu", sans-serif;
+    font-weight: bolder;
+    transition: all 1s;
+}
+
+#site-title a:hover{
+    font-size: 38px;
+}
+
+#page-hero{    
+    width: auto;
+    position: relative;
+    padding-top: 2px;   
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    margin: 0; 
+}
+#page-title{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    width:100%;    
+    font-family: "Ubuntu", sans-serif;
+    font-size: 45px;
+    font-weight: 100;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 1s;
+}
+#page-title a{
+    color: rgba(249, 234, 192, 0.85);
+    transition-duration: 1s;
+    text-decoration: none;
+    text-shadow:
+    -1px -1px 12px  rgba(0, 0,0, 0.5),
+     0   -1px 12px  rgba(108, 108, 84, 0.5),
+     1px -1px 12px  rgba(108, 108, 84, 0.5),
+     1px  0   12px  rgba(108, 108, 84, 0.5),
+     1px  1px 12px  rgba(108, 108, 84, 0.5),
+     0    1px 12px  rgba(108, 108, 84, 0.5),
+    -1px  1px 12px  rgba(108, 108, 84, 0.5),
+    -1px  0   12px  rgba(108, 108, 84, 0.5);
+}
+#page-title a:hover{
+    font-size: 112%;
+}
+
+#page-menu{
+    padding: 5px;
+    text-align:right;
+    background-color: white;
+    height: 60px;
+}
+#page-menu ul li {
+    list-style-type:none;
+    display: inline;
+    width: 30px;
+}
+.menuitem a {
+    width: auto;
+    height: auto;
+    margin-right: 25px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 28px;
+    color:black;
+    font-weight: bolder;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.menuitem a:hover {
+    padding: 10px;
+    background-color:  rgba(120, 120, 120, 0.5);
+    border: solid 1px black;
+    border-radius: 5px;
+    font-size:30px;      
+}
+#top {
+    float:left;
+    margin-top:10px;
+    margin: left 20px;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    border: solid 1px;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    opacity: 0.6;
+}
+#top a{
+color: black;
+text-decoration: none;
+transition-property: all;
+transition-duration: 1s;
+}
+#top:hover{
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: rgba(120, 120, 120, 0.5);
+    opacity: 0.8;
+}
+#top a:hover {
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;   
+    opacity: 0.5; 
+}
+.sticky ul li a {
+    padding-right: 10px !important;
+    margin-right: 5px !important;
+    font-size: 16px;    
+  }
+.sticky:hover{
+    opacity: 1;
+}
+#page-description{
+    font-family: "Ubuntu","poppins",sans-serif;
+    text-align: left;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    
+}
+#page-description a{
+    margin-block-end: 0px;
+}
+#page-description h1{
+    margin-top: 0;
+}
+.section{
+    padding-top: 70px;
+    width: 100%;
+    min-height: 150px;
+}
+.s50{
+    height: 50px;
+    width: 100%;
+}
+.s100{
+    height: 100px;
+    width: 100%;
+    position: relative; 
+}
+
+
+
+.button2-centered button{
+    display: inline;
+    float: left ;
+    margin: 0;
+    position: absolute;
+    left: 25%;
+
+
+}
+.links{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: rgba(120, 120, 120, 0.3);
+    transition-duration: 1s;
+
+}
+.links:hover{
+    font-size: 28px;
+}
+
+.video{
+    width:100%;
+   
+}
+.video-text{
+    text-align: justify;
+    font-weight: bold;
+    font-size: 18px;
+}
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+  
+.index {
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+.index h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(36, 7, 201);
+  }
+    .index a {    
+    font-size: 28px; 
+    color: rgb(36, 7, 201);
+    padding-left: 2%;
+    text-decoration: none; 
+    transition-property: all;
+    transition-duration: 1s;
+  }
+  .index a:hover {
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:rgb(240, 52, 5);
+  text-shadow: 3px 3px 3px rgb(123, 117, 142);
+  }
+  .grow{
+    transition: all;
+    transition-duration: 1s;
+  }
+  .grow:hover{
+    font-size: 112%;
+    color:black;
+  }
+
+  .button{  
+    height: 45px;
+  }
