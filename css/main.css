@@ -165,7 +165,7 @@ transition-duration: 1s;
     position: fixed;
     top: 0;
     width: 100%;   
-    opacity: 0.5; 
+    opacity: 0.6; 
 }
 .sticky ul li a {
     padding-right: 10px !important;
