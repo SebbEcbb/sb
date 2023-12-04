@@ -285,3 +285,7 @@ transition-duration: 1s;
   .button{  
     height: 45px;
   }
+
+  .hide{
+    display: none;
+  }
