@@ -24,8 +24,7 @@ h5{
 }
 p{
     font-family: "poppins", sans-serif;
-    font-size: 20px;
-    /*text-align: justify;*/
+    font-size: 24px;
 }
 
 * {
@@ -34,7 +33,7 @@ p{
 
 .wrapper {overflow: auto;}
 
-#main {margin-left: 8px;padding-right: 15px;}
+#main {padding-left: 15px;padding-right: 10px;}
 
 #leftsidebar {
   float: none;
@@ -47,9 +46,7 @@ p{
 }
 
 .menu_item {
-  background: #CDF0F6;
-  border: 1px solid #d4d4d4;
-  border-radius: 4px;
+  background: rgb(174, 173, 193);
   list-style-type: none;
   margin: 4px;
   padding: 2px;
@@ -116,81 +113,47 @@ p{
     font-size: 112%;
 }
 
-#page-menu{
+#navbar{
+    margin-top: 0;
     padding: 5px;
-    text-align:right;
-    background-color: white;
-    height: 60px;
+    text-align:left;
+    /*background-color: aquamarine;*/
+    height:45px;
 }
-#page-menu ul li {
+#navbar li{
+    float: right;
     list-style-type:none;
     display: inline;
-    width: 30px;
 }
 .menuitem a {
-    width: auto;
-    height: auto;
-    margin-right: 25px;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 28px;
+    padding-left: 25px;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
     color:black;
-    font-weight: bolder;
     text-decoration: none;
     transition-property: all;
     transition-duration: 1s;
 }
-.menuitem a:hover {
-    padding: 10px;
-    background-color:  rgba(120, 120, 120, 0.5);
-    border: solid 1px black;
-    border-radius: 5px;
-    font-size:30px;      
-}
-#top {
-    float:left;
-    margin-top:10px;
-    margin: left 20px;
-    padding: 5px;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: 700;
-    border: solid 1px;
-    border-radius: 5px;
-    width: auto;
-    height: auto;
-    opacity: 0.6;
-}
-#top a{
-color: black;
-text-decoration: none;
-transition-property: all;
-transition-duration: 1s;
-}
-#top:hover{
-    border: solid 1px black;
-    border-radius: 5px;
-    background-color: rgba(120, 120, 120, 0.5);
-    opacity: 0.8;
-}
-#top a:hover {
-    font-size: 35px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 
-}
+
 .sticky {
+    float: left;
     position: fixed;
     top: 0;
-    width: 100%;   
-    opacity: 0.6; 
+    opacity: 0.5; 
 }
-.sticky ul li a {
-    padding-right: 10px !important;
-    margin-right: 5px !important;
-    font-size: 16px;    
-  }
-.sticky:hover{
+.sticky a {
+    font-size: 16px;
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+.sticky#navbar:hover{
     opacity: 1;
+    background-color: white;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    scale: 1.1;
 }
 #page-description{
     font-family: "Ubuntu","poppins",sans-serif;
@@ -218,8 +181,6 @@ transition-duration: 1s;
     height: 100px;
     width: 100%;
 }
-
-
 
 .button2-centered button{
     display: inline;
@@ -285,13 +246,16 @@ transition-duration: 1s;
   color:rgb(240, 52, 5);
   text-shadow: 3px 3px 3px rgb(123, 117, 142);
   }
-  .grow{
-    transition: all;
+  .grow a{    
+    text-decoration: none; 
+    transition-property: all;
     transition-duration: 1s;
   }
-  .grow:hover{
-    font-size: 112%;
-    color:black;
+
+  .grow a:hover{
+    font-size: 30px;
+    color:rgb(240, 52, 5);
+    text-shadow: 3px 3px 3px rgb(123, 117, 142);
   }
 
   .button{  

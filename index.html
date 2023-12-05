@@ -33,32 +33,32 @@
     <div id="page-hero" ><img src="./Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
         
     </div>
-    <div id="page-menu">
-        <div id="top"><a href="#site-title">top</a></div>
-        <ul>
+    <div class="grow" >
+        <ul id="navbar">
+            <li class="menuitem "> <a href="https://youtube.com/@sebastienbadelpiano" target="_blank">YouTube</a> </li>
             <li class="menuitem"> <a href="#page-description">Content</a> </li>
-            <li class="menuitem"> <a href="https://youtube.com/@sebastienbadelpiano" target="_blank">YouTube</a> </li>
-            <!--<li class="menuitem"> <a href="">Business</a> </li>                   -->
             <li class="menuitem"> <a href="https://facebook.com/@SebastienBadel" target="_blank">Contact</a> </li>                   
+            
+            <!--<li class="menuitem hide"> <a href="">Business</a> </li>-->
+            
         </ul>
     </div>
     <div id="page-title">
         <h1><a href="#page-description"> Expression is Life</a></h1>
-        <h2>Everything starts by expressing a desire for it.</h2>
+        <h2>Everything starts by expressing a desire</h2>
     </div> 
 </header>
-<div class="s100"></div>
+<div class="s50"></div>
 <div id="page-description" >
        
         <div id="toc"></div>
         <div class="index">
-            <h3 >Articles</h3>
+            <h3 >Other Blog Articles</h3>
             <ul style="list-style-type: none;">
-            <li><a href="./Articles/improvisation-and-flow.html">Improvisation & flow<br>(read it later!)</a></li>
+            <li><a href="./Articles/improvisation-and-flow.html">Improvisation & flow</a></li>
             <li class="hide"><a href="./Articles/creation-or-competition.html">Creation or competition?</a></li>                   
             </ul>
         </div>
-
 </div>
 
 <div id="page_wrapper" class="wrapper">
@@ -93,9 +93,10 @@
             On the <b>8th of January, 1971,</b> late at night, after 24 hours of hard labor, 
             a little boy was born in France, near Saint-Etienne.
         </p>    
-        <p> French father, courageous Dutch mother. </p>
+        <p> From a Fench father and a courageous Dutch mother. </p>
         <p>           
-            Unfortunately, they divorced a year later. The boy grew up with mum. In the Netherlands.
+            Unfortunately, they divorced a year later. Too many cultural misunderstandings. 
+            The boy grew up with his mother in the Netherlands.
             Living in various places, he move about 12 times in 25 years.
             The tendency would increase over the next 25.
         </p>
@@ -251,12 +252,13 @@
             children. Not without trouble, but usually they were happy.             
         </p>
         <p>
-            And 10 years passed pretty peacefully.
-            Until serious problems rose for his family. 
-            It exposed some very disappointing facts. 
+            10 years of married life passed, relatively peaceful.
+            Compared to what was ahead. Everything changed again. 
+            Some serious problems rose for his family. 
+            And the years following exposed very disappointing facts.
         </p>            
         <p>
-            And everything changed again.
+            A third life has started ....
         </p>
 
         <div class="s100"></div>
@@ -319,11 +321,9 @@
     
     function myFunction() {
         if (document.documentElement.scrollTop > 600) {
-        document.getElementById("page-menu").className = "sticky";
-        document.getElementById("top").className = "sticky";
+        document.getElementById("navbar").className = "sticky";
         } else {
-        document.getElementById("page-menu").className = "page-menu ";
-        document.getElementById("top").className = "page-menu ";
+        document.getElementById("navbar").className = "";
         }
     }
 </script>    
