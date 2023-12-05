@@ -34,7 +34,7 @@ p{
 
 .wrapper {overflow: auto;}
 
-#main {margin-left: 5px;}
+#main {margin-left: 8px;}
 
 #leftsidebar {
   float: none;
@@ -55,7 +55,7 @@ p{
   padding: 2px;
 }
 
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 480px) {
     #leftsidebar {width: 25%; float: left;}
     #main {margin-left: 26%;}
   }
