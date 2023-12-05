@@ -40,17 +40,7 @@ p{
   width: auto;
 }
 
-#menu_list {
-  margin: 0;
-  padding: 0;
-}
 
-.menu_item {
-  background: rgb(174, 173, 193);
-  list-style-type: none;
-  margin: 4px;
-  padding: 2px;
-}
 
   @media screen and (min-width: 480px) {
     #leftsidebar {width: 25%; float: left;}
@@ -91,13 +81,12 @@ p{
     font-family: "Ubuntu", sans-serif;
     font-size: 45px;
     font-weight: 100;
-    text-decoration: none;
+ /*   text-decoration: none;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 1s;*/
 }
-#page-title a{
+#page-title h1{
     color: rgba(246, 213, 121, 0.85);
-    transition-duration: 1s;
     text-decoration: none;
     text-shadow:
     -1px -1px 12px  rgba(0, 0,0, 0.5),
@@ -109,9 +98,10 @@ p{
     -1px  1px 12px  rgba(108, 108, 84, 0.5),
     -1px  0   12px  rgba(108, 108, 84, 0.5);
 }
+/*
 #page-title a:hover{
     font-size: 112%;
-}
+}*/
 
 #navbar{
     margin-top: 0;
@@ -130,9 +120,9 @@ p{
     font-family: "Poppins", sans-serif;
     font-size: 24px;
     color:black;
-    text-decoration: none;
+    /*text-decoration: none;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 1s;*/
 }
 
 
@@ -144,8 +134,8 @@ p{
 }
 .sticky a {
     font-size: 16px;
-    padding-left: 0;
-    padding-right: 15px;
+    padding-left: 3px;
+    padding-right: 15px;    
 }
 
 .sticky#navbar:hover{
@@ -154,6 +144,7 @@ p{
     padding-right: 25px;
     padding-bottom: 25px;
     scale: 1.1;
+    transition-duration: 1s;
 }
 #page-description{
     font-family: "Ubuntu","poppins",sans-serif;
@@ -229,11 +220,11 @@ p{
 .index h3 {
     font-size: 30px;
     font-weight: bolder;
-    color: rgb(36, 7, 201);
+    color: rgb(39, 39, 39);
   }
     .index a {    
     font-size: 28px; 
-    color: rgb(36, 7, 201);
+    color: rgb(39,39, 39);
     padding-left: 2%;
     text-decoration: none; 
     transition-property: all;
@@ -264,4 +255,7 @@ p{
 
   .hide{
     display: none;
+  }
+  .small_text{
+    font-size: 14px;
   }
