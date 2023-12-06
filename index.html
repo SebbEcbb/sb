@@ -33,29 +33,28 @@
     <div id="page-hero" ><img src="./Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
         
     </div>
-    <div class="grow" >
-        <ul id="navbar">
+    <div >
+        <ul id="navbar" class="grow">
             <li class="menuitem "> <a href="https://youtube.com/@sebastienbadelpiano" target="_blank">YouTube</a> </li>
-            <li class="menuitem"> <a href="#page-description">Content</a> </li>
+            <li class="menuitem"> <a href="./Articles/improvisation-and-flow.html" target="_blank">Blog</a> </li>
             <li class="menuitem"> <a href="https://facebook.com/@SebastienBadel" target="_blank">Contact</a> </li>                   
-            
-            <!--<li class="menuitem hide"> <a href="">Business</a> </li>-->
-            
+            <!--<li class="menuitem hide"> <a href="">Business</a> </li>-->          
         </ul>
     </div>
+    <div class="s50"></div>
     <div id="page-title">
         <h1>Expression is Life</h1>
         <p><strong>Everything starts by expressing a desire</strong></p>
     </div> 
 </header>
 <div class="s50"></div>
-<div id="page-description" >
-       
+<div id="page-description" >       
         <div id="toc"></div>
         <div class="index">
             <h3 >Other Blog Articles</h3>
             <ul style="list-style-type: none;">
             <li><a href="./Articles/improvisation-and-flow.html">Improvisation & flow</a></li>
+            <li><p>More is coming soon.</p></li>
             <li class="hide"><a href="./Articles/creation-or-competition.html">Creation or competition?</a></li>                   
             </ul>
         </div>
@@ -325,9 +324,9 @@
     
     function myFunction() {
         if (document.documentElement.scrollTop > 600) {
-        document.getElementById("navbar").className = "sticky";
+        document.getElementById("navbar").className = "sticky grow";
         } else {
-        document.getElementById("navbar").className = "";
+        document.getElementById("navbar").className = "grow";
         }
     }
 </script>    

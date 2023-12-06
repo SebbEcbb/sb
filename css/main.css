@@ -39,12 +39,16 @@ p{
   float: none;
   width: auto;
 }
+#leftsidebar img{
+    padding: 10px;
+}
 
-
-
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 600px) {
     #leftsidebar {width: 25%; float: left;}
     #main {margin-left: 26%;}
+    /*.sticky {display: inline;}*/
+    #navbar li{display:inline;float:right;width:auto;}
+    #navbar a{padding-left: 25px !important;}
   }
 
 #site-title{
@@ -98,49 +102,43 @@ p{
     -1px  1px 12px  rgba(108, 108, 84, 0.5),
     -1px  0   12px  rgba(108, 108, 84, 0.5);
 }
-/*
-#page-title a:hover{
-    font-size: 112%;
-}*/
 
-#navbar{
+#navbar{padding-inline-start: 3px;}
+#navbar a{
+    padding-left: 3px;
+
+}
+#navbar ul{
     margin-top: 0;
     padding: 5px;
     text-align:left;
-    /*background-color: aquamarine;*/
-    height:45px;
+    height:35px;    
 }
-#navbar li{
-    float: right;
-    list-style-type:none;
-    display: inline;
-}
+#navbar li{list-style-type: none;}
+
 .menuitem a {
-    padding-left: 25px;
+    color:black;
     font-family: "Poppins", sans-serif;
     font-size: 24px;
-    color:black;
-    /*text-decoration: none;
-    transition-property: all;
-    transition-duration: 1s;*/
 }
 
 
-.sticky {
-    float: left;
+.sticky { 
     position: fixed;
     top: 0;
     opacity: 0.5; 
 }
 .sticky a {
     font-size: 16px;
-    padding-left: 3px;
-    padding-right: 15px;    
+    padding-left: 3px !important;
 }
 
-.sticky#navbar:hover{
+.sticky:hover{
     opacity: 1;
-    background-color: white;
+    background-color: rgb(242, 222, 166);
+    border:2px;
+    border-color: black;
+    border-radius: 8px;
     padding-right: 25px;
     padding-bottom: 25px;
     scale: 1.1;
