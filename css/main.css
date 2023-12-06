@@ -1,30 +1,19 @@
 html{
     margin: 0;
 }
-a{
-    color: darkslateblue;
-}
+body{margin:0;}
+a{color: darkslateblue;}
 h1,h2,h3,h4,h5 {
     font-family: "Ubuntu", sans-serif;
 }
-h1{
-    font-size: 54px;
-}
-h2{
-    font-size: 36px;
-}
-h3{
-  font-size: 34px;
-}
-h4{
-    font-size: 28px;
-}
-h5{
-    font-size: 24px;
-}
+h1{font-size: 54px;}
+h2{font-size: 36px;}
+h3{font-size: 34px;}
+h4{font-size: 28px;}
+h5{font-size: 24px;}
 p{
     font-family: "poppins", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 * {
@@ -33,14 +22,15 @@ p{
 
 .wrapper {overflow: auto;}
 
-#main {padding-left: 15px;padding-right: 10px;}
+#main {
+    margin:0;
+    padding: 0px;
+    padding-left: 15px;
+    padding-right: 10px;}
 
 #leftsidebar {
   float: none;
   width: auto;
-}
-#leftsidebar img{
-    padding: 10px;
 }
 
   @media screen and (min-width: 600px) {
@@ -49,6 +39,7 @@ p{
     /*.sticky {display: inline;}*/
     #navbar li{display:inline;float:right;width:auto;}
     #navbar a{padding-left: 25px !important;}
+    p{font-size: 24px;}
   }
 
 #site-title{
@@ -127,21 +118,22 @@ p{
     position: fixed;
     top: 0;
     opacity: 0.5; 
+    border:2px;
+    border-color: black;
+    border-radius: 8px;
 }
 .sticky a {
     font-size: 16px;
     padding-left: 3px !important;
 }
 
+
 .sticky:hover{
     opacity: 1;
     background-color: rgb(242, 222, 166);
-    border:2px;
-    border-color: black;
-    border-radius: 8px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    scale: 1.1;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    scale: 1.05;
     transition-duration: 1s;
 }
 #page-description{
@@ -182,14 +174,14 @@ p{
 }
 .links{
     font-family: "Poppins", sans-serif;
-    font-weight: bold;
+    font-weight:300;
     font-size: 24px;
     color: black;
     text-decoration: none;
     border-radius: 10px;
     border: 2px solid black;
     padding: 5px;
-    background-color: rgba(120, 120, 120, 0.3);
+    background-color: rgba(246, 213, 121, 0.85);
     transition-duration: 1s;
 
 }
@@ -198,11 +190,10 @@ p{
 }
 
 .video{
-    width:100%;
-   
+    width:auto;   
 }
+
 .video-text{
-    text-align: justify;
     font-weight: bold;
     font-size: 18px;
 }
@@ -213,7 +204,7 @@ p{
   
 .index {
     padding-bottom: 50px;
-    padding-left: 50px;
+    margin-left: 25px;
 }
 .index h3 {
     font-size: 30px;
@@ -242,7 +233,7 @@ p{
   }
 
   .grow a:hover{
-    font-size: 30px;
+    font-size: 112%;
     color:rgb(240, 52, 5);
     text-shadow: 3px 3px 3px rgb(123, 117, 142);
   }
