@@ -20,7 +20,7 @@ p{
     box-sizing: border-box;
   }
 
-.wrapper {overflow: auto;}
+.wrapper {overflow: auto;margin-left: 5px;}
 
 #main {
     margin:0;
