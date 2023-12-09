@@ -285,3 +285,8 @@ p{
   .small_text{
     font-size: 14px;
   }
+.bordered-2{
+    border: 2px;
+    border-color: black;
+    border-radius: 8px;
+}
