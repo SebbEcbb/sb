@@ -38,6 +38,7 @@ p{
     #main {margin-left: 26%;}
     #navbar li{display:inline;float:right;width:auto;}
     #navbar a{padding-left: 25px !important;}
+    .sticky#navbar a{padding-left: 8px !important;}
     p{font-size: 24px;}
   }
 
