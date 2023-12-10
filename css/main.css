@@ -6,14 +6,16 @@ a{color: darkslateblue;}
 h1,h2,h3,h4,h5 {
     font-family: "Ubuntu", sans-serif;
 }
-h1{font-size: 54px;}
-h2{font-size: 36px;}
-h3{font-size: 34px;}
-h4{font-size: 28px;}
-h5{font-size: 24px;}
+
+h1{font-size: 40px;}
+h2{font-size: 32px;}
+h3{font-size: 28px;}
+h4{font-size: 24px;}
+h5{font-size: 20px;}
+
 p{
     font-family: "poppins", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 * {
@@ -39,7 +41,12 @@ p{
     #navbar li{display:inline;float:right;width:auto;}
     #navbar a{padding-left: 25px !important;}
     .sticky#navbar a{padding-left: 8px !important;}
-    p{font-size: 24px;}
+    h1{font-size: 54px;}
+    h2{font-size: 36px;}
+    h3{font-size: 34px;}
+    h4{font-size: 28px;}
+    h5{font-size: 24px;}
+    p{font-size: 20px;}
   }
 
   
