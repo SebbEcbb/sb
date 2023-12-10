@@ -247,7 +247,7 @@ p{
 }
   
 .index {
-    padding-bottom: 50px;
+    padding-bottom: 35px;
     margin-left: 25px;
 }
 .index h3 {
@@ -259,6 +259,7 @@ p{
     font-size: 28px; 
     color: rgb(39,39, 39);
     padding-left: 2%;
+    margin-top: 5px;
     text-decoration: none; 
     transition-property: all;
     transition-duration: 1s;
