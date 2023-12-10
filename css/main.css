@@ -91,6 +91,7 @@ p{
     height:auto;
     padding-bottom: 10px;
 }
+
 #site-title a{
     text-decoration: none;
     font-size: 35px;
@@ -112,6 +113,7 @@ p{
     border-bottom: solid 1px;
     margin: 0; 
 }
+
 #page-title{
     padding-top: 30px;
     padding-bottom: 50px;
@@ -124,8 +126,9 @@ p{
     transition-property: all;
     transition-duration: 1s;*/
 }
+
 #page-title h1{
-    color: rgba(246, 213, 121, 0.85);
+    color: rgba(53, 244, 235);
     text-decoration: none;
     text-shadow:
     -1px -1px 12px  rgba(0, 0,0, 0.5),
@@ -174,7 +177,7 @@ p{
 
 .sticky:hover{
     opacity: 1;
-    background-color: rgb(242, 222, 166);
+    background-color: rgb(53, 244, 235);
     padding-right: 8px;
     padding-bottom: 3px;
     scale: 1.05;
@@ -256,18 +259,18 @@ p{
     color: rgb(39, 39, 39);
   }
     .index a {    
+    display: block;
     font-size: 28px; 
     color: rgb(39,39, 39);
     padding-left: 2%;
-    margin-top: 5px;
+    padding-top: 10px;
     text-decoration: none; 
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
   }
   .index a:hover {
-  font-size: 35px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 112%x;  
+  margin-left: 2%;
   color:rgb(240, 52, 5);
   text-shadow: 3px 3px 3px rgb(123, 117, 142);
   }
