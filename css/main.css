@@ -269,7 +269,7 @@ p{
   font-size: 115%x;  
   font-weight: bolder;
   margin-left: 2%;
-  color:blue;
+  color:red;
   text-shadow: 3px 3px 3px rgb(123, 117, 142);
   }
   .grow a{    
@@ -280,7 +280,7 @@ p{
 
   .grow a:hover{
     font-size: 115%;
-    color:blue;
+    color:red;
     font-weight: bolder;
     text-shadow: 3px 3px 3px rgb(123, 117, 142);
   }
