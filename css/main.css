@@ -4,7 +4,7 @@ html{
 body{margin:0;}
 a{color: darkslateblue;}
 h1,h2,h3,h4,h5 {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 h1{font-size: 40px;}
@@ -38,8 +38,9 @@ p{
   @media screen and (min-width: 600px) {
     #leftsidebar {width: 25%; float: left;}
     #main {margin-left: 26%;}
-    #navbar li{display:inline;float:right;width:auto;}
-    #navbar a{padding-left: 25px !important;}
+    #navbar li{display:inline;float:right;width:auto;}    
+    #navbar a{padding-left: 25px !important;padding-right: 5px;}
+    #navbar a:hover{font-size: 24px;}
     .sticky#navbar a{padding-left: 8px !important;}
     h1{font-size: 54px;}
     h2{font-size: 36px;}
@@ -119,7 +120,7 @@ p{
     padding-bottom: 50px;
     text-align: center;
     width:100%;    
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 45px;
     font-weight: 100;
  /*   text-decoration: none;
@@ -128,7 +129,7 @@ p{
 }
 
 #page-title h1{
-    color: rgba(53, 244, 235);
+    color: AntiqueWhite;
     text-decoration: none;
     text-shadow:
     -1px -1px 12px  rgba(0, 0,0, 0.5),
@@ -142,49 +143,46 @@ p{
 }
 
 #navbar{padding-inline-start: 3px;}
-#navbar a{
-    padding-left: 3px;
-
-}
+#navbar a{padding-left: 3px;}
 #navbar ul{
     margin-top: 0;
     padding: 5px;
     text-align:left;
     height:35px;    
 }
+
 #navbar li{list-style-type: none;}
 
 .menuitem a {
     color:black;
     font-family: "Poppins", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 
 .sticky { 
     position: fixed;
     top: 0;
+    display:grid;
     opacity: 0.5; 
     border:2px;
     border-color: black;
-    border-radius: 8px;
 }
 .sticky a {
     font-size: 16px;
     padding-left: 3px !important;
 }
 
-
 .sticky:hover{
     opacity: 1;
-    background-color: rgb(53, 244, 235);
+    background-color:AntiqueWhite;
     padding-right: 8px;
     padding-bottom: 3px;
     scale: 1.05;
     transition-duration: 1s;
 }
 #page-description{
-    font-family: "Ubuntu","poppins",sans-serif;
+    font-family: "poppins", sans-serif!important;
     text-align: left;
     border-top: solid 1px;
     border-bottom: solid 1px;
@@ -228,7 +226,6 @@ p{
     border-radius: 10px;
     border: 2px solid black;
     padding: 5px;
-    background-color: rgba(246, 213, 121, 0.85);
     transition-duration: 1s;
 
 }
@@ -269,9 +266,10 @@ p{
     transition-duration: 0.5s;
   }
   .index a:hover {
-  font-size: 112%x;  
+  font-size: 115%x;  
+  font-weight: bolder;
   margin-left: 2%;
-  color:rgb(240, 52, 5);
+  color:blue;
   text-shadow: 3px 3px 3px rgb(123, 117, 142);
   }
   .grow a{    
@@ -281,8 +279,9 @@ p{
   }
 
   .grow a:hover{
-    font-size: 112%;
-    color:rgb(240, 52, 5);
+    font-size: 115%;
+    color:blue;
+    font-weight: bolder;
     text-shadow: 3px 3px 3px rgb(123, 117, 142);
   }
 
