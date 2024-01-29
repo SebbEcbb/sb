@@ -122,7 +122,7 @@ p{
     text-align: center;
     width:100%;    
     font-family: "Poppins", sans-serif;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 100;
  /*   text-decoration: none;
     transition-property: all;
@@ -269,7 +269,7 @@ p{
   font-size: 115%x;  
   font-weight: bolder;
   margin-left: 2%;
-  color:red;
+  color:maroon;
   text-shadow: 3px 3px 3px rgb(123, 117, 142);
   }
   .grow a{    
