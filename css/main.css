@@ -184,7 +184,6 @@ p{
 }
 #page-description{
     font-family: "poppins", sans-serif!important;
-    margin-left: 150px;
     border-top: solid 1px;
     border-bottom: solid 1px;
     
@@ -249,7 +248,7 @@ p{
   
 .index {
     padding-bottom: 35px;
-    margin-left: 50px;
+    margin-left: 150px !important;
 }
 .index h3 {
     font-size: 30px;
