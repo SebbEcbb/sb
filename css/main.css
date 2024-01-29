@@ -184,6 +184,7 @@ p{
 }
 #page-description{
     font-family: "poppins", sans-serif!important;
+    margin-left: 50px;
     text-align: left;
     border-top: solid 1px;
     border-bottom: solid 1px;
