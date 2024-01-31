@@ -234,7 +234,8 @@ p{
 }
 
 .video{
-    width:auto;   
+    width: auto;
+    position: relative;
 }
 
 .video-text{
@@ -245,7 +246,12 @@ p{
     max-width: 100%;
     height: auto;
 }
-  
+
+.page-video{
+    height: auto;
+    position: relative;
+}
+
 .index {
     padding-bottom: 35px;
     margin-left: 150px !important;
