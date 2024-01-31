@@ -39,7 +39,7 @@ p{
     #leftsidebar {width: 22%; float: left;}
     #main {margin-left: 23%;}
     #navbar li{display:inline;float:right;width:auto;}    
-    #navbar a{padding-left: 25px !important;padding-right: 5px;}
+    #navbar a{padding-right: 25px !important;padding-right: 5px;}
     #navbar a:hover{font-size: 24px;}
     .sticky#navbar a{padding-left: 8px !important;}
     h1{font-size: 54px;}
