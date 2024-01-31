@@ -38,93 +38,84 @@
             <li class="menuitem"> <a href="#site-title" >Top</a> </li>                   
             <li class="menuitem"> <a href="#page-description" >Contenu</a> </li>
             <li class="menuitem "> <a href="https://youtube.com/@sebastienbadelpiano" target="_blank">YouTube</a> </li>
-            <li class="menuitem"> <a href="https://facebook.com/@SebastienBadel" target="_blank">Contact</a> </li>                   
+            <li class="menuitem"> <a href="https://facebook.com/@SebastienBadel" target="_blank">Contact</a> </li>   
         </ul>
-
     </div>
+
     <div class="s50"></div>
 
     <div id="page-title">
-        <h1>Elle...</h1>
+        <h1>Elle ...</h1>
     </div> 
 </header>
 
-<div id="page-description" >       
-        <div class="index"></div>
-</div>
-
 <div id="page_wrapper" class="wrapper">
-    <div id="leftsidebar"> <br>      
- 
-        <div class="s100"></div>
-
-        <form style="text-align: center;" action="https://www.paypal.com/donate" method="post" target="_blank">
-            <input type="hidden" name="hosted_button_id" value="SDTTCGFJ7ZRMN" />
-            <input type="image" src="../Images/Heart_DONATION.jpg" border="0" width="50%" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />
-            <img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1" />
-        </form>
-                  
+    <div class="leftsidebar">
+        <div id="donate">
+            <form style="text-align: left; margin-left: 10px;" action="https://www.paypal.com/donate" method="post" target="_blank" >
+                <input type="hidden" name="hosted_button_id" value="SDTTCGFJ7ZRMN" />
+                <input type="image" src="../Images/Heart_DONATION.jpg" border="0" width="100%" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />
+                <!--<img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1" />-->
+            </form>
+        </div>                  
     </div>
 
-    <div id="main"> 
-        <div id="1" >
-            <div id="video1"class="page-video">
-                <p>Cliquez pour jouer</p>
-                <iframe      
-                class="responsive"
+    <div id="main" > 
+    
+        <div class="">
+            <p>Cliquez pour jouer</p>
+            <iframe      
+                class="video-page-container responsive"
                 width="100%"       
                 src="https://youtube.com/embed/0v9eDyIGJss?autoplay=0">            
-                </iframe>
+            </iframe>
 
-                <p class="video-text">
+            <p class="video-text">
                     Piano improvisation #133<br><br>                
-                </p>            
-            </div>  
-            <h2>Elle...</h2>
-            <p>
+            </p>            
+        </div>  
+        <h2>Elle...</h2>
+        <p>
                 Si douce et agréable, <br>
                 (Par)faite pour lui. <br>
                 Il le pensait vraiment.
-            </p>
-            <p>
+        </p>
+        <p>
                 Son mystère régnait son cœur, <br>
                 Par loyauté et amour, <br>
-                Il aurait donner sa vie pour elle, <br>
-                Comme dans une véritable romance d'amour. <br>
-                C'est ce qu'elle désirait, au plus profond.
-            </p>
+                Il aurait donné sa vie pour elle, <br>
+                Comme dans une véritable romance. <br>
+                C'est ce qu'elle désirait, au plus profond d'elle.
+        </p>
 
-            <p>
-                Mais elle n'a pas compris, <br>
-                Le pouvoir de construire ou détruire.<br>
-                Elle ne comprenait pas comment travail le temps, <br>
+        <p>
+                Mais elle ne l'a pas compris, <br>
+                Le pouvoir pour construire ou détruire.<br>
+                Elle ne comprenait pas comment fonctionne le temps, <br>
                 Ni le prix de son amour.
-            </p>
-            <p>
-                Mais ignorante et impatiente, <br>
+        </p>
+        <p>
+                Ignorante et impatiente, <br>
                 elle décide d'abandonner,<br>
-                Sa parole et l'alliance. <br>
-                Ainsi elle casse le sacré.<br>
-                Ce sur lequel dans la vie tout se tient.<br>
-                Sans comprendre que c'était un choix irréparable ... 
-            </p>
-            <p>
+                Sa parole, son alliance ... <br>
+                Et de casser le sacré,<br>
+                Ce sur lequel dans la vie, tout se tient.<br>
+                Sans savoir que c'était irréversible ... 
+        </p>
+        <p>
                 Beaucoup parlent d'amour,
                 mais ne connaissent Dieu.
                 Beaucoup d'autres parlent de Dieu,
                 mais ne connaissent l'amour.
-            </p>
-            <p>C'est pourtant si simple.</p>
-        </div>
-  
-
-
-
-
+        </p>
+        <p>     C'est pourtant si simple.</p>
+    </div>
+</div>  
 
 
 
 <footer>
+    <div class="s100"></div>
     <p  style="text-align: center;">CopyRights ©2024 by Sébastien Badel</p>        
 </footer>
 
@@ -132,10 +123,12 @@
     window.onscroll = function() {myFunction()};
     
     function myFunction() {
-        if (document.documentElement.scrollTop > 600) {
+        if (document.documentElement.scrollTop > 1200) {
         document.getElementById("navbar").className = "sticky grow";
+        document.getElementById("donate").className = "fix_donate";
         } else {
         document.getElementById("navbar").className = "grow";
+        document.getElementById("donate").className = "hide";
         }
     }
 </script>    
