@@ -131,17 +131,9 @@ p{
 }
 
 #page-title h1{
-    color:wheat;
+    color:maroon;
     text-decoration: none;
-    text-shadow:
-    -1px -1px 12px  rgba(0, 0,0, 0.5),
-     0   -1px 12px  rgba(108, 108, 84, 0.5),
-     1px -1px 12px  rgba(108, 108, 84, 0.5),
-     1px  0   12px  rgba(108, 108, 84, 0.5),
-     1px  1px 12px  rgba(108, 108, 84, 0.5),
-     0    1px 12px  rgba(108, 108, 84, 0.5),
-    -1px  1px 12px  rgba(108, 108, 84, 0.5),
-    -1px  0   12px  rgba(108, 108, 84, 0.5);
+    text-shadow: 5px 5px 5px rgb(52, 51, 53);
 }
 
 #navbar{padding-inline-start: 3px;}
@@ -186,13 +178,13 @@ p{
 
 .fix_video{
     position: fixed;
-    top: 150px;
+    top: 135px;
 }
 
 
 .fix_donate{
     position: fixed;
-    top: 400px;
+    top: 380px;
     width:100px;
     transition-duration: 1s;
 }
