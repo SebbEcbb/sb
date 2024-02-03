@@ -36,7 +36,7 @@ p{
 }
 
   @media screen and (min-width: 600px) {
-    #leftsidebar {width: 22%; float: left;}
+    #leftsidebar {padding-top:22px; width: 22%; float: left;}
     #main {margin-left: 23%;}
     #navbar li{display:inline;float:right;width:auto;}    
     #navbar a{padding-right: 25px !important;padding-right: 5px;}
