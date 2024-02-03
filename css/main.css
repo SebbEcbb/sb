@@ -184,9 +184,15 @@ p{
     transition-duration: 1s;
 }
 
+.fix_video{
+    position: fixed;
+    top: 150px;
+}
+
+
 .fix_donate{
     position: fixed;
-    top: 200px;
+    top: 400px;
     width:80px;
     transition-duration: 1s;
 }
@@ -245,14 +251,14 @@ p{
     font-size: 28px;
 }
 
-.video{
-    width: auto;
-    position: relative;
-}
+#video1{width:22%;padding-bottom: 0;}
+
+.video{position:relative;}
 
 .video-text{
+    height:18px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
 .responsive{
     max-width: 100%;
@@ -318,7 +324,9 @@ p{
   }
   .small_text{
     font-size: 14px;
+    margin-top: 0;
   }
+
 .bordered-2{
     border: 2px;
     border-color: black;

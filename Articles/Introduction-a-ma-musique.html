@@ -45,7 +45,7 @@
     </div>
     <div class="s50"></div>
     <div id="page-title">
-        <h1>Mon Introduction à la Musique</h1>
+        <h1>Introduction à ma Musique</h1>
     </div> 
 </header>
 
@@ -68,25 +68,27 @@
 <div id="page_wrapper" class="wrapper">
     <div id="leftsidebar"> <br>    
 
+        <div id="video1"class="video">
+            <p class="small_text">
+                Click to play it while you read.
+            </p>
+            <iframe      
+            class="responsive"
+            style="margin-top:-8px;"       
+            src="https://youtube.com/embed/z8cvLlTBS0A?autoplay=0">
+            </iframe>
+            <p class="video-text"
+            style="margin-top:4px;" >
+                <b>Piano improvisation #248</b>
+                <br><br>                
+            </p>
+        </div> 
+
         <div id="donate">
             <form style="text-align: left; margin-left: 10px;" action="https://www.paypal.com/donate" method="post" target="_blank" >
                 <input type="hidden" name="hosted_button_id" value="SDTTCGFJ7ZRMN" />
-                <input type="image" src="../Images/Heart_DONATION.jpg" border="0" width="100%" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />
-                <!--<img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1" />-->
+                <input type="image" src="../Images/Heart_DONATION.jpg" border="0" width="100%" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />        
             </form>
-        </div>   
-
-        <div id="video1"class="video">
-            <p class="small_text">Cliquez pour jouer</p>
-
-            <iframe      
-            class="responsive"       
-            src="https://youtube.com/embed/z8cvLlTBS0A?autoplay=0">            
-            </iframe>
-
-            <p class="video-text">
-                Piano improvisation #248<br><br>                
-            </p>            
         </div>                    
     </div>
 
@@ -395,11 +397,13 @@
     window.onscroll = function() {myFunction()};
     
     function myFunction() {
-        if (document.documentElement.scrollTop > 1600) {
+        if (document.documentElement.scrollTop > 1250) {
         document.getElementById("navbar").className = "sticky grow";
+        document.getElementById("video1").className = "fix_video";
         document.getElementById("donate").className = "fix_donate";
         } else {
         document.getElementById("navbar").className = "grow";
+        document.getElementById("video1").className = "hide";
         document.getElementById("donate").className = "hide";
         }
     }
