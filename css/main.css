@@ -41,14 +41,13 @@ p{
     #navbar li{display:inline;float:right;width:auto;}    
     #navbar a{padding-right: 25px !important;padding-right: 5px;}
     #navbar a:hover{font-size: 24px;}
-    .sticky#navbar a{padding-left: 8px !important;}
+    .sticky#menu a{padding-left: 8px !important;}
     h1{font-size: 54px;}
     h2{font-size: 36px;}
     h3{font-size: 34px;}
     h4{font-size: 28px;}
     h5{font-size: 24px;}
     p{font-size: 20px;}
-    .index{margin-left: 25px !important;}
   }
 
   
@@ -156,14 +155,14 @@ p{
 
 .sticky { 
     position: fixed;
-    top: 0;
+    top: 12px;
     display:grid;
-    opacity: 0.5; 
+    opacity: 0.8; 
     border:2px;
     border-color: black;
 }
 .sticky a {
-    font-size: 16px;
+    font-size: 20px;
     padding-left: 3px !important;
 }
 
@@ -171,27 +170,18 @@ p{
     opacity: 1;
     background-color:white;
     padding-right: 8px;
-    padding-bottom: 3px;
-    scale: 1.05;
     transition-duration: 1s;
 }
 
-.fix_video{
-    position: fixed;
-    top: 135px;
+
+
+#donate{
+    padding: 20px;
+    display: inline;
+    text-align: center;  
 }
 
 
-.fix_donate{
-    position: fixed;
-    top: 380px;
-    width:100px;
-    transition-duration: 1s;
-}
-
-.fix_donate:hover{
-    width:120px;
-}
 #page-description{
     font-family: "poppins", sans-serif!important;
     border-top: solid 1px;
@@ -243,9 +233,12 @@ p{
     font-size: 28px;
 }
 
-#video1{width:22%;padding-bottom: 0;}
+#video1{
+    margin-top: 15px;
+    text-align: center;
+    width:100%;
+}
 
-.video{position:relative;}
 
 .video-text{
     height:18px;
@@ -263,9 +256,13 @@ p{
 }
 
 .index {
-    padding-bottom: 35px;
-    margin-left: 220px !important;
+    @media screen and (min-width: 600px)
+    {margin-left: 220px !important;}
+    @media screen and (max-width: 600px)
+    {padding-bottom: 35px;
+    margin-left: 50px !important;}
 }
+
 .index h3 {
     font-size: 30px;
     font-weight: bolder;

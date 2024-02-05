@@ -33,14 +33,14 @@
     <div id="page-hero" ><img src="./Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
         
     </div>
-    <div >
-        <ul id="navbar" class="grow">
-            <li class="menuitem"> <a href="#site-title" >Top</a> </li>                   
+    <div>
+        <ul id="navbar" class="grow">            
             <li class="menuitem"> <a href="#page-description" >Content</a> </li>
             <li class="menuitem "> <a href="https://youtube.com/@sebastienbadelpiano" target="_blank">YouTube</a> </li>
             <li class="menuitem"> <a href="./contact.html" target="_blank">Contact</a> </li>                   
             <!--<li class="menuitem hide"> <a href="">Business</a> </li>-->          
         </ul>
+        <div id="menu" class="menuitem hide"><a href="#site-title">Top</a></div>
     </div>
     <div class="s50"></div>
     <div id="page-title">
@@ -72,10 +72,8 @@
 
         <img style="margin-top:5px;" src="./Images/sb1.jpg" alt="Aman" width="100%">    
 
-        <div id="video1"class="video">
-            <p class="small_text">
-                Click for some music
-            </p>
+        <div id="video1">
+            <p class="small_text">Click for some music</p>
             <iframe      
             class="responsive"
             style="margin-top:-8px;"       
@@ -89,9 +87,9 @@
         </div> 
 
         <div id="donate">
-            <form style="text-align: left; margin-left: 10px;" action="https://www.paypal.com/donate" method="post" target="_blank" >
+            <form style="text-align: center; margin-top: 25px;" action="https://www.paypal.com/donate" method="post" target="_blank" >
                 <input type="hidden" name="hosted_button_id" value="SDTTCGFJ7ZRMN" />
-                <input type="image" src="./Images/Heart_DONATION.jpg" border="0" width="100%" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />        
+                <input type="image" src="./Images/Heart_DONATION.jpg" border="0" width="50%" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />        
             </form>
         </div>      
     </div>
@@ -332,25 +330,39 @@
     
 </div>
 
+<div id="elTop" class="hide"> 
+    <!--Button to find top of an element-->
+    <!--Together with script below. remove the "hide" class-->
+    <p><button onclick="getTop()">Get Top of an Element</button></p>
+    <p id="myTopId"> Top of video:</p> 
+</div>
+<script id="elTopJS">
+    function getTop(){        
+        /*Enter your element id*/
+        var myElement = document.getElementById("leftsidebar");
+        alert("Element id = "+ myElement.id )
+        var myTop = document.getElementById("myTopId");
+        myTop.innerHTML = "The top of " + myElement.id + " is at " + myElement.offsetTop + " px.";
+    }
+</script> 
+
 <footer>
-    <p  style="text-align: center;">Site developed ©2023 by Sébastien Badel</p>        
+    <p  style="text-align: center;">Site developed ©2024 by Sébastien Badel</p>        
 </footer>
 
 <script id="Sticky-js">
     window.onscroll = function() {myFunction()};
     
     function myFunction() {
-        if (document.documentElement.scrollTop > 1700) {
-        document.getElementById("navbar").className = "sticky grow";
-        document.getElementById("video1").className = "fix_video";
-        document.getElementById("donate").className = "fix_donate";
+        if (document.documentElement.scrollTop > 600) {
+        document.getElementById("menu").className = "menuitem sticky grow";
+        
         } else {
-        document.getElementById("navbar").className = "grow";
-        document.getElementById("video1").className = "hide";
-        document.getElementById("donate").className = "hide";
+        document.getElementById("menu").className = "hide";
+        
         }
     }
-</script>   
+</script> 
 </body>
 </html>
 
