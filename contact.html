@@ -34,11 +34,13 @@
     </div>
     
     <div>
-        <ul id="navbar" class="grow">
-            <li class="menuitem"> <a href="#site-title" >Top</a> </li>                   
-            <li class="menuitem"> <a href="#page-title" >Contenu</a> </li>
+        <ul id="navbar" class="grow">            
+            <li class="menuitem"> <a href="#page-description" >Content</a> </li>
             <li class="menuitem "> <a href="https://youtube.com/@sebastienbadelpiano" target="_blank">YouTube</a> </li>
+            <li class="menuitem"> <a href="./contact.html" target="_blank">Contact</a> </li>                   
+            <!--<li class="menuitem hide"> <a href="">Business</a> </li>-->          
         </ul>
+        <div id="menu" class="menuitem hide"><a href="#site-title">Top</a></div>
     </div>
 
     <div class="s50"></div>
@@ -103,16 +105,13 @@
     window.onscroll = function() {myFunction()};
     
     function myFunction() {
-        if (document.documentElement.scrollTop > 700) {
-        document.getElementById("navbar").className = "sticky grow";
-        document.getElementById("video1").className = "fix_video";
-        document.getElementById("donate").className = "fix_donate";
+        if (document.documentElement.scrollTop > 600) {
+        document.getElementById("menu").className = "menuitem sticky grow";
+        
         } else {
-        document.getElementById("navbar").className = "grow";
-        document.getElementById("video1").className = "hide";
-        document.getElementById("donate").className = "hide";
+        document.getElementById("menu").className = "hide";
         }
-    }   
-</script>    
+    }
+</script>   
 </body>
 </html>
