@@ -241,9 +241,10 @@ p{
 
 
 .video-text{
-    height:18px;
+    text-align: left;
+    height:16px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
 }
 .responsive{
     max-width: 100%;
