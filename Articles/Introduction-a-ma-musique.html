@@ -396,16 +396,13 @@
     window.onscroll = function() {myFunction()};
     
     function myFunction() {
-        if (document.documentElement.scrollTop > 700) {
-        document.getElementById("navbar").className = "sticky grow";
-        document.getElementById("video1").className = "fix_video";
-        document.getElementById("donate").className = "fix_donate";
+        if (document.documentElement.scrollTop > 600) {
+        document.getElementById("menu").className = "menuitem sticky grow";
+        
         } else {
-        document.getElementById("navbar").className = "grow";
-        document.getElementById("video1").className = "hide";
-        document.getElementById("donate").className = "hide";
+        document.getElementById("menu").className = "hide";
         }
     }
-</script>  
+</script> 
 </body>
 </html>

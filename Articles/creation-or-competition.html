@@ -259,15 +259,14 @@
     window.onscroll = function() {myFunction()};
     
     function myFunction() {
-        if (document.documentElement.scrollTop > 800) {
-        document.getElementById("page-menu").className = "sticky";
-        document.getElementById("top").className = "sticky";
+        if (document.documentElement.scrollTop > 600) {
+        document.getElementById("menu").className = "menuitem sticky grow";
+        
         } else {
-        document.getElementById("page-menu").className = "page-menu ";
-        document.getElementById("top").className = "page-menu ";
+        document.getElementById("menu").className = "hide";
         }
     }
-</script>    
+</script>     
 </body>
 </html>
 
