@@ -88,12 +88,12 @@ p{
     .col-12 {width: 100%;}
   }
 
+  /*Site-Title styles*/
 #site-title{
     margin: 0 35px;
     height:auto;
     padding-bottom: 10px;
 }
-
 #site-title a{
     text-decoration: none;
     font-size: 35px;
@@ -102,11 +102,12 @@ p{
     font-weight: bolder;
     transition: all 1s;
 }
-
 #site-title a:hover{
     font-size: 38px;
 }
-
+#site-title img {
+    margin-right: 5px;
+}
 #page-hero{    
     width: auto;
     position: relative;
