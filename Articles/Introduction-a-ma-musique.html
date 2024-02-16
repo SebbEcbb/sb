@@ -24,29 +24,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">    
+
+    <script src="../js/global_elements.js"></script>
+    
 </head>
 
-<body>
-
-<header>
-    <h1 id="site-title" ><a href="https://sebastienbadel.com"><img src="../Images/site-icon.JPG" height="30px" alt="Flower">Sébastien Badel</a></h1> 
-    <div id="page-hero" ><img src="../Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
-        
-    </div>
-    <div>
-        <ul id="navbar" class="grow">            
-            <li class="menuitem"> <a href="#page-description" >Content</a> </li>
-            <li class="menuitem "> <a href="https://youtube.com/@sebastienbadelpiano" target="_blank">YouTube</a> </li>
-            <li class="menuitem"> <a href="./contact.html" target="_blank">Contact</a> </li>                   
-            <!--<li class="menuitem hide"> <a href="">Business</a> </li>-->          
-        </ul>
+<body onload="siteTitle(), siteNavbar(), siteFooter()" >
+    <header>
+        <h1 id="site-title" ></h1> 
+        <div id="page-hero" ><img src="../Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
+        <ul id="navbar" class="grow"></ul>
         <div id="menu" class="menuitem hide"><a href="#site-title">Top</a></div>
-    </div>
+
     <div class="s50"></div>
+
     <div id="page-title">
         <h1>Introduction à ma Musique</h1>
     </div> 
-</header>
+    </header>
 
 <div id="page-description" >       
         <div class="index">

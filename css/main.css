@@ -36,11 +36,21 @@ p{
 }
 
   @media screen and (min-width: 600px) {
-    #leftsidebar {padding-top:22px; width: 22%; float: left;}
+    #leftsidebar {
+        padding-top:22px; 
+        width: 22%; 
+        float: left;
+    }
     #main {margin-left: 23%;}
-    #navbar li{display:inline;float:right;width:auto;}    
-    #navbar a{padding-right: 25px !important;padding-right: 5px;}
-    #navbar a:hover{font-size: 24px;}
+    #navbar li{
+        display:inline;
+        float:right;
+        width:auto;}    
+    #navbar a{
+        padding-right: 25px !important;
+        padding-right: 5px;
+    }
+        
     .sticky#menu a{padding-left: 8px !important;}
     h1{font-size: 54px;}
     h2{font-size: 36px;}
@@ -136,16 +146,23 @@ p{
     text-shadow: 5px 5px 5px rgb(52, 51, 53);
 }
 
+/*navbar*/
 #navbar{padding-inline-start: 3px;}
-#navbar a{padding-left: 3px;}
+#navbar a{padding-left: 3px;text-decoration: none;}
 #navbar ul{
     margin-top: 0;
     padding: 5px;
     text-align:left;
     height:35px;    
 }
-
 #navbar li{list-style-type: none;}
+
+.submenu{
+    display: none;
+}
+.submenu:hover{
+    display:grid;
+}
 
 .menuitem a {
     color:black;
@@ -287,24 +304,23 @@ p{
   color:maroon;
   text-shadow: 3px 3px 3px rgb(123, 117, 142);
   }
-  .grow a{    
-    text-decoration: none; 
-    transition-property: all;
-    transition-duration: 1s;
-  }
 
-  .grow a:hover{
-    font-size: 115%;
-    color:maroon;
-    font-weight: bolder;
-    text-shadow: 3px 3px 3px rgb(123, 117, 142);
-  }
-
-  .grow form {transition-duration: 1s;}
-
-  .grow form:hover {
-    width: 120%;
+/*Grow class for PC : links grow on hover*/
+@media screen and (min-width: 768px) {
+   
+    .grow a {    
+        text-decoration: none; 
+        transition-property: all;
+        transition-duration: 1s;
+    }
+    .grow a:hover {
+        font-size: 24px;
+        color:maroon;
+        font-weight: bolder;
+        text-shadow: 3px 3px 3px rgb(123, 117, 142);    
+    }
 }
+
 
   .button{  
     height: 45px;
