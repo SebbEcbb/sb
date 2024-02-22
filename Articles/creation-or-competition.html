@@ -260,14 +260,16 @@
 </div>
 
 <script id="Sticky-js">
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function() {StickyJs()};
     
-    function myFunction() {
-        if (document.documentElement.scrollTop > 600) {
-        document.getElementById("menu").className = "menuitem sticky grow";
+    function StickyJs() {
+        if (document.documentElement.scrollTop > 1200) {
+        document.getElementById("menu").className = "menuitem menu grow";
+        document.getElementById("leftsidebar").className = "sticky";
         
         } else {
         document.getElementById("menu").className = "hide";
+        document.getElementById("leftsidebar").className = "";
         }
     }
 </script>     
