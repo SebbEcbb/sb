@@ -27,8 +27,8 @@ p{
 #main {
     margin:0;
     padding: 0px;
-    padding-left: 40px;
-    padding-right: 25px;
+    padding-left: 25px;
+    padding-right: 40px;
     text-align: justify;
 }
 
@@ -180,11 +180,12 @@ p{
 
 .sticky { 
     position: fixed;
-    top: 12px;
+    right: 5px;
+    bottom: 5px;
     display:grid;
     opacity: 0.8; 
     border:2px;
-    border-color: black;
+    border-color: rgb(96, 2, 2);
 }
 .sticky a {
     font-size: 20px;
