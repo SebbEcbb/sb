@@ -40,7 +40,7 @@
             <li class="menuitem"> <a href="./contact.html" target="_blank">Contact</a> </li>                   
             <!--<li class="menuitem hide"> <a href="">Business</a> </li>-->          
         </ul>
-        <div id="menu" class="menuitem hide"><a href="#site-title">Top</a></div>
+        <div id="back" class="menuitem hide"><a href="#site-title"> ^ </a></div>
     </div>
     <div class="s50"></div>
     <div id="page-title">
@@ -356,11 +356,11 @@
     function StickyJs() {
         if (document.documentElement.scrollTop > 1200) {
         document.getElementById("back").className = "menuitem back-to-top";
-        document.getElementById("leftsidebar").className = "sticky";
+        document.getElementById("menu").className = "sticky";
         
         } else {
         document.getElementById("back").className = "hide";
-        document.getElementById("leftsidebar").className = "";
+        document.getElementById("menu").className = "";
         }
     }
 </script> 
