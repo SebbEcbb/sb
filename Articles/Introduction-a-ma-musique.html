@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 
     <!-- Google tag (gtag.js) -->
@@ -29,12 +29,12 @@
     
 </head>
 
-<body onload="siteTitle(), siteNavbar(), siteFooter()" >
+<body onload="GlobalTitle(), GlobalDonate(), GlobalNavbar(), GlobalFooter()" >
     <header>
         <h1 id="site-title" ></h1> 
         <div id="page-hero" ><img src="../Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
         <ul id="navbar" class="grow"></ul>
-        <div id="menu" class="hide"><a href="#site-title">top</a></div>
+        <div id="back" class="hide"><a href="#site-title">^</a></div>
 
     <div class="s50"></div>
 
@@ -44,15 +44,15 @@
     </header>
 
 <div id="page-description" >       
-        <div class="index">
+        <div class="index link">
             <ul style="list-style-type: none;">
                 <h3>Contenu</h3>
-                <li><a href="#la_course">La course</a></li>
-                <li><a href="#la_souffrance">La souffrance</a></li>
-                <li><a href="#la_sortie">La sortie</a></li>                
-                <li><a href="#le_jugement">Le jugement</a></li>
-                <li><a href="#la_pratique">La pratique</a></li>
-                <li><a href="#les_règles">Les règles</a></li>               
+                <li><a href="#la_course">Course</a></li>
+                <li><a href="#la_souffrance">Souffrance</a></li>
+                <li><a href="#la_sortie">Sortie</a></li>                
+                <li><a href="#le_jugement">Jugement</a></li>
+                <li><a href="#la_pratique">Pratique</a></li>
+                <li><a href="#les_règles">Règlement</a></li>               
             </ul>
         </div>
 </div>
@@ -61,7 +61,7 @@
     <div id="leftsidebar"> <br>    
 
         <div id="video1"class="video">
-            <p class="small_text">
+            <p class="video-text">
                 Clicker pour jouer .
             </p>
 
@@ -78,12 +78,12 @@
             </p>
         </div> 
 
-        <div id="donate">
-            <form style="text-align: left; margin-left: 25px;margin-top:25px" action="https://www.paypal.com/donate" method="post" target="_blank" >
-                <input type="hidden" name="hosted_button_id" value="SDTTCGFJ7ZRMN" />
-                <input type="image" src="../Images/Heart_DONATION.jpg" border="0" width="50%" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />        
-            </form>
-        </div>                    
+        <div id="menu">
+            <p class="link"><a href=""><strong>Blog</strong></a></p>
+            <p class="link"><a href=""><strong>Shop</strong></a></p>            
+            <p><strong>Faire une donation</strong></p>            
+            <div id="donate"></div>        
+        </div>
     </div> <!--End leftsidebar-->
 
 <div id="main"> 
@@ -378,13 +378,13 @@
             J'en serai heureux. <br>
             En tout cas, merci d'avoir lu jusqu'à là .  🌹 😀❤️
         </p>
-
+        <br>
         <h4>Sébastien Badel,</h4> <br>
         <p>
             France, Rhone-Alpes, <br>
             Le 29 janvier 2024.<br><br>
             Ce jour, le post-anniversaire de mon grand-père néerlandais. <br>
-            Marinus Jan Hendrikse. Un homme de valeur, droit et digne, 
+            Marinus Jan Hendrikse (1922-1988). Un homme de valeur, droit et digne, 
             qui a refusé de compromettre sa morale. 
             Il aimait sa famille, son petit fils et le piano classique.
         </p>        
@@ -403,11 +403,11 @@
     
     function StickyJs() {
         if (document.documentElement.scrollTop > 1200) {
-        document.getElementById("menu").className = "menuitem menu grow";
+        document.getElementById("back").className = "menuitem back-to-top";
         document.getElementById("leftsidebar").className = "sticky";
         
         } else {
-        document.getElementById("menu").className = "hide";
+        document.getElementById("back").className = "hide";
         document.getElementById("leftsidebar").className = "";
         }
     }

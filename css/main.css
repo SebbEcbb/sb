@@ -32,41 +32,9 @@ p{
     text-align: justify;
 }
 
-#leftsidebar {
-  float: none;
-  width: auto;
-  transition-duration: 2s;
-}
 
-  @media screen and (min-width: 600px) {
-    #leftsidebar {
-        padding-top:0; 
-        width: 20%; 
-        float: left;
-    }
-    #main {
-        margin-left: 25%;
-        width: 66%;
-        text-align: justify;
-    }
 
-    #navbar li{
-        display:inline;
-        float:right;
-        width:auto;}    
-    #navbar a{
-        padding-right: 25px !important;
-        padding-right: 5px;
-    }
-       
-    
-    h1{font-size: 54px;}
-    h2{font-size: 36px;}
-    h3{font-size: 34px;}
-    h4{font-size: 28px;}
-    h5{font-size: 24px;}
-    p{font-size: 20px;}
-  }
+
 
   
 /* For mobile phones: */
@@ -143,20 +111,18 @@ p{
     font-family: "Poppins", sans-serif;
     font-size: 35px;
     font-weight: 100;
- /*   text-decoration: none;
-    transition-property: all;
-    transition-duration: 1s;*/
+
 }
 
 #page-title h1{
     color:maroon;
     text-decoration: none;
-    text-shadow: 5px 5px 5px rgb(52, 51, 53);
+    text-shadow: 5px 5px 5px rgb(171, 170, 172);
 }
 
 /*navbar*/
 #navbar{padding-inline-start: 3px;}
-#navbar a{padding-left: 3px;text-decoration: none;}
+#navbar a{padding-left: 3%;text-decoration: none;}
 #navbar ul{
     margin-top: 0;
     padding: 5px;
@@ -165,12 +131,6 @@ p{
 }
 #navbar li{list-style-type: none;}
 
-.submenu{
-    display: none;
-}
-.submenu:hover{
-    display:grid;
-}
 
 .menuitem a {
     color:black;
@@ -178,33 +138,66 @@ p{
     font-size: 20px;
 }
 
-.menu{
+.back-to-top{
     position: fixed;
-    right: 10px;
-    top: 12px;
-    display:grid;  
+    right: 12px;
+    bottom: 12px;
+    display:grid; 
+    width: 25px;
+    height: 25px;
+    background-color: rgb(196, 196, 198); 
+    text-align: center;
+    border-radius: 5px;    
+    border: solid 1px black;
+     a {text-decoration: none;}
 }
 
-.sticky { 
-    @media screen and (min-width:600px) {
-        position: fixed;
-        left: 10px;
-        top: 12px;
-        display:grid;       
-    }   
-}
+
+
 
 #donate{    
     text-align: center;
-    width:100%;
-    padding-top: 50px;
-    display: block;
-    @media screen and (max-width:600px) {
-        padding-left: 25%; 
-        padding-bottom: 100px;  
-    }  
+    padding-top: 0px;
+    display: block;      
 }
 
+@media screen and (max-width:599px){
+    ul#navbar{display: flex;flex-direction: column-reverse;}
+    #leftsidebar {display: grid;float: none;width: auto;transition-duration: 2s;}
+    .center {width: 25%;}
+    .video-text {text-align: center;font-size: 18px;}
+    .index {padding-bottom: 35px;margin-left: 50px !important;}
+    .sticky {display:none;}
+    #menu {margin-top: 30px;font-size: 18px;}
+    #menu p{text-align: center;margin-block-start:15px;margin-block-end:15px;}
+    #donate{padding-bottom: 75px;}
+
+}
+
+@media screen and (min-width: 600px) {
+    #leftsidebar {padding-top:0;width: 30%;float: left;}
+    #main {margin-left: 31%;width: 68%;text-align: justify;}
+    #navbar li{display:inline;float:right;width:auto;}    
+    #navbar a{padding-right: 25px !important;padding-right: 5px;}      
+    h1{font-size: 54px;}
+    h2{font-size: 36px;}
+    h3{font-size: 34px;}
+    h4{font-size: 28px;}
+    h5{font-size: 24px;}
+    p{font-size: 20px;}
+    .center {width: 30%;}
+    .video-text{text-align: left;font-size: 14px;}
+    .index{margin-left: 220px !important;margin-bottom: 50px;}
+    .sticky {position: fixed;left: 10px;top: 0px;display:grid;} 
+    #menu {text-align: left;font-size: 14px;margin-top: 10px;}
+    #menu p{margin-block-start:5px !important;margin-block-end:5px !important;}
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+  }
 
 #page-description{
     font-family: "poppins", sans-serif!important;
@@ -258,17 +251,14 @@ p{
 }
 
 #video1{
-    margin-top: 15px;
     text-align: center;
     width:100%;
 }
 
 
 .video-text{
-    text-align: left;
     height:16px;
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: bold;    
 }
 .responsive{
     max-width: 100%;
@@ -280,15 +270,7 @@ p{
     position: relative;
 }
 
-.index {
-    @media screen and (min-width: 600px){
-        margin-left: 220px !important;
-        margin-bottom: 50px;
-    }
-    @media screen and (max-width: 600px)
-    {padding-bottom: 35px;
-    margin-left: 50px !important;}
-}
+.index {width: 75%;}
 
 .index h3 {
     font-size: 30px;
@@ -305,7 +287,7 @@ p{
     transition-property: all;
     transition-duration: 0.5s;
   }
-  .index a:hover {
+  .link a:hover {
   font-size: 115%x;  
   font-weight: bolder;
   margin-left: 2%;
@@ -319,14 +301,16 @@ p{
     .grow a {    
         text-decoration: none; 
         transition-property: all;
-        transition-duration: 1s;
+        transition-duration: 0.7s;
     }
     .grow a:hover {
+        overflow: hidden;
         font-size: 24px;
         color:maroon;
         font-weight: bolder;
         text-shadow: 3px 3px 3px rgb(123, 117, 142);    
     }
+
 }
 
 
@@ -336,10 +320,6 @@ p{
 
   .hide{
     display: none;
-  }
-  .small_text{
-    font-size: 14px;
-    margin-top: 0;
   }
 
 .bordered-2{

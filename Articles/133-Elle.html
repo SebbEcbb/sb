@@ -29,22 +29,12 @@
     
 </head>
 
-<body>
-
-<header>
-    <h1 id="site-title" ><a href="https://sebastienbadel.com"><img src="../Images/site-icon.JPG" height="30px" alt="Flower">Sébastien Badel</a></h1> 
-    <div id="page-hero" ><img src="../Images/Banner1.JPG" alt="Sébastien Badel" class="responsive"   
-    </div>
-    
-    <div >
-        <ul id="navbar" class="grow">            
-            <li class="menuitem"> <a href="#page-description" >Content</a> </li>
-            <li class="menuitem "> <a href="https://youtube.com/@sebastienbadelpiano" target="_blank">YouTube</a> </li>
-            <li class="menuitem"> <a href="./contact.html" target="_blank">Contact</a> </li>                   
-            <!--<li class="menuitem hide"> <a href="">Business</a> </li>-->          
-        </ul>
-        <div id="menu" class="menuitem hide"><a href="#site-title">Top</a></div>
-    </div>
+<body onload="GlobalTitle(), GlobalDonate(), GlobalNavbar(), GlobalFooter()" >
+    <header>
+        <h1 id="site-title" ></h1> 
+        <div id="page-hero" ><img src="../Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
+        <ul id="navbar" class="grow"></ul>
+        <div id="menu" class="hide"><a href="#site-title">^</a></div>
 
     <div class="s50"></div>
 
@@ -54,15 +44,10 @@
 </header>
 
 <div id="page_wrapper" class="wrapper">
-    <div class="leftsidebar">
+    
 
-        <div id="donate">
-            <form style="text-align: center; margin-top: 25px;" action="https://www.paypal.com/donate" method="post" target="_blank" >
-                <input type="hidden" name="hosted_button_id" value="SDTTCGFJ7ZRMN" />
-                <input type="image" src="./Images/Heart_DONATION.jpg" border="0" width="50%" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />        
-            </form>
-        </div>                   
-    </div>
+        <div id="donate"></div>                   
+    
 
     <div id="main" > 
     
@@ -144,7 +129,7 @@
     
     function StickyJs() {
         if (document.documentElement.scrollTop > 1200) {
-        document.getElementById("menu").className = "menuitem menu grow";
+        document.getElementById("menu").className = "menuitem menu";
         document.getElementById("leftsidebar").className = "sticky";
         
         } else {
