@@ -27,8 +27,10 @@ p{
 #main {
     margin:0;
     padding: 0px;
-    padding-left: 15px;
-    padding-right: 50px;}
+    padding-left: 40px;
+    padding-right: 25px;
+    text-align: justify;
+}
 
 #leftsidebar {
   float: none;
@@ -38,10 +40,15 @@ p{
   @media screen and (min-width: 600px) {
     #leftsidebar {
         padding-top:22px; 
-        width: 22%; 
+        width: 20%; 
         float: left;
     }
-    #main {margin-left: 23%;}
+    #main {
+        margin-left: 25%;
+        width: 66%;
+        text-align: justify;
+    }
+
     #navbar li{
         display:inline;
         float:right;
