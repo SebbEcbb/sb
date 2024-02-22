@@ -35,11 +35,12 @@ p{
 #leftsidebar {
   float: none;
   width: auto;
+  transition-duration: 2s;
 }
 
   @media screen and (min-width: 600px) {
     #leftsidebar {
-        padding-top:22px; 
+        padding-top:0; 
         width: 20%; 
         float: left;
     }
@@ -57,8 +58,8 @@ p{
         padding-right: 25px !important;
         padding-right: 5px;
     }
-        
-    .sticky#menu a{padding-left: 8px !important;}
+       
+    
     h1{font-size: 54px;}
     h2{font-size: 36px;}
     h3{font-size: 34px;}
@@ -177,20 +178,31 @@ p{
     font-size: 20px;
 }
 
+.menu{
+    position: fixed;
+    right: 10px;
+    top: 12px;
+    display:grid;  
+}
 
 .sticky { 
-    @media  and(min-width:600px) {
+    @media screen and (min-width:600px) {
         position: fixed;
-        right: 10px;
+        left: 10px;
         top: 12px;
         display:grid;       
     }   
 }
 
-#donate{
-    margin-top: 20px;
-    display: inline;
-    text-align: center;  
+#donate{    
+    text-align: center;
+    width:100%;
+    padding-top: 50px;
+    display: block;
+    @media screen and (max-width:600px) {
+        padding-left: 150px; 
+        padding-bottom: 100px;  
+    }  
 }
 
 
@@ -269,8 +281,10 @@ p{
 }
 
 .index {
-    @media screen and (min-width: 600px)
-    {margin-left: 220px !important;}
+    @media screen and (min-width: 600px){
+        margin-left: 220px !important;
+        margin-bottom: 50px;
+    }
     @media screen and (max-width: 600px)
     {padding-bottom: 35px;
     margin-left: 50px !important;}
