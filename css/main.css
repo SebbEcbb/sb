@@ -189,6 +189,8 @@ p{
     .video-text{text-align: left;font-size: 14px;}
     .index{margin-left: 220px !important;margin-bottom: 50px;}
     .sticky {position: fixed;left: 10px;top: 0px;display:grid;} 
+    .link a {text-decoration: none;transition-property: all;transition-duration: 0.7s;}
+    .link a:hover {overflow: hidden;font-size: 24px;color:maroon;font-weight: bolder;text-shadow: 3px 3px 3px rgb(123, 117, 142);}
     #menu {text-align: left;font-size: 14px;margin-top: 10px;}
     #menu p{margin-block-start:5px !important;margin-block-end:5px !important;}
 }
@@ -240,8 +242,6 @@ p{
     font-size: 24px;
     color: black;
     text-decoration: none;
-    border-radius: 10px;
-    border: 2px solid black;
     padding: 5px;
     transition-duration: 1s;
 
@@ -287,7 +287,7 @@ p{
     transition-property: all;
     transition-duration: 0.5s;
   }
-  .link a:hover {
+  .links a:hover {
   font-size: 115%x;  
   font-weight: bolder;
   margin-left: 2%;
@@ -295,23 +295,7 @@ p{
   text-shadow: 3px 3px 3px rgb(123, 117, 142);
   }
 
-/*Grow class for PC : links grow on hover*/
-@media screen and (min-width: 768px) {
-   
-    .grow a {    
-        text-decoration: none; 
-        transition-property: all;
-        transition-duration: 0.7s;
-    }
-    .grow a:hover {
-        overflow: hidden;
-        font-size: 24px;
-        color:maroon;
-        font-weight: bolder;
-        text-shadow: 3px 3px 3px rgb(123, 117, 142);    
-    }
 
-}
 
 
   .button{  

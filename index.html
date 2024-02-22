@@ -34,7 +34,7 @@
         
     </div>
     <div>
-        <ul id="navbar" class="grow">            
+        <ul id="navbar" class="link">            
             <li class="menuitem"> <a href="#page-description" >Content</a> </li>
             <li class="menuitem "> <a href="https://youtube.com/@sebastienbadelpiano" target="_blank">YouTube</a> </li>
             <li class="menuitem"> <a href="./contact.html" target="_blank">Contact</a> </li>                   
@@ -51,7 +51,7 @@
 
 <div class="s50"></div>
 <div id="page-description">       
-        <div class="index">
+        <div class="index links">
             <h3 >Other articles</h3>
             <ul style="list-style-type: none;">
                 <li><strong>Français</strong></li>
@@ -355,15 +355,15 @@
     
     function StickyJs() {
         if (document.documentElement.scrollTop > 1200) {
-        document.getElementById("menu").className = "menuitem menu grow";
+        document.getElementById("back").className = "menuitem back-to-top";
         document.getElementById("leftsidebar").className = "sticky";
         
         } else {
-        document.getElementById("menu").className = "hide";
+        document.getElementById("back").className = "hide";
         document.getElementById("leftsidebar").className = "";
         }
     }
-</script>
+</script> 
 </body>
 </html>
 
