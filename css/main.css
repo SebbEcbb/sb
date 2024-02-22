@@ -179,27 +179,13 @@ p{
 
 
 .sticky { 
-    position: fixed;
-    right: 5px;
-    bottom: 5px;
-    display:grid;
-    opacity: 0.8; 
-    border:2px;
-    border-color: rgb(96, 2, 2);
+    @media  and(min-width:600px) {
+        position: fixed;
+        right: 10px;
+        top: 12px;
+        display:grid;       
+    }   
 }
-.sticky a {
-    font-size: 20px;
-    padding-left: 3px !important;
-}
-
-.sticky:hover{
-    opacity: 1;
-    background-color:white;
-    padding-right: 8px;
-    transition-duration: 1s;
-}
-
-
 
 #donate{
     margin-top: 20px;
