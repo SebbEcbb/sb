@@ -24,9 +24,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">    
+
+    <script src="./js/global_elements.js"></script>
 </head>
 
-<body>
+<body onload="HomeDonate(), GlobalNavbar()">
 
 <header>
     <h1 id="site-title" ><a href="https://sebastienbadel.com"><img src="./Images/site-icon.JPG" height="30px" alt="Flower">Sébastien Badel</a></h1> 
@@ -35,7 +37,7 @@
     </div>
     <div>
         <ul id="navbar" class="link">            
-            <li class="menuitem"> <a href="#page-description" >Content</a> </li>
+            <!--<li class="menuitem"> <a href="#page-description" >Content</a> </li>
             <li class="menuitem "> <a href="https://youtube.com/@sebastienbadelpiano" target="_blank">YouTube</a> </li>
             <li class="menuitem"> <a href="./contact.html" target="_blank">Contact</a> </li>                   
             <!--<li class="menuitem hide"> <a href="">Business</a> </li>-->          
@@ -86,12 +88,12 @@
             </p>
         </div> 
 
-        <div id="donate">
-            <form style="text-align: center; margin-top: 25px;" action="https://www.paypal.com/donate" method="post" target="_blank" >
-                <input type="hidden" name="hosted_button_id" value="SDTTCGFJ7ZRMN" />
-                <input type="image" src="./Images/Heart_DONATION.jpg" border="0" width="50%" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />        
-            </form>
-        </div>      
+        <div id="menu">
+            <p class="link"><a href=""><strong>Blog</strong></a></p>
+            <p class="link"><a href=""><strong>Shop</strong></a></p>            
+            <p><strong>Faire une donation</strong></p>            
+            <div id="donate"></div>        
+        </div>     
     </div>
 
     <div id="main"> 
@@ -354,7 +356,7 @@
     window.onscroll = function() {StickyJs()};
     
     function StickyJs() {
-        if (document.documentElement.scrollTop > 1200) {
+        if (document.documentElement.scrollTop > 2000) {
         document.getElementById("back").className = "menuitem back-to-top";
         document.getElementById("menu").className = "sticky";
         
