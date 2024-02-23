@@ -175,8 +175,8 @@ p{
 }
 
 @media screen and (min-width: 600px) {
-    #leftsidebar {padding-top:0;width: 30%;float: left;}
-    #main {margin-left: 31%;width: 68%;text-align: justify;}
+    #leftsidebar {padding-top:0;width: 25%;float: left;}
+    #main {margin-left: 26%;width: 70%;text-align: justify;}
     #navbar li{display:inline;float:right;width:auto;}    
     #navbar a{padding-right: 25px !important;padding-right: 5px;}      
     h1{font-size: 54px;}
@@ -313,3 +313,4 @@ p{
 }
 
 #footer a {color: darkblue;}
+#footer {text-align: center;}
