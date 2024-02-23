@@ -29,44 +29,38 @@
     
 </head>
 
-<body>
-
+<body onload="GlobalTitle(), GlobalDonate(), GlobalNavbar(), GlobalFooter()" >
     <header>
-        <h1 id="site-title" ><a href="https://sebastienbadel.com"><img src="../Images/site-icon.JPG" height="30px" alt="Flower">Sébastien Badel</a></h1> 
+        <h1 id="site-title" ></h1> 
         <div id="page-hero" ><img src="../Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
-            
-        </div>
-        <div>
-            <ul id="navbar" class="grow">            
-                <li class="menuitem"> <a href="#page-description" >Content</a> </li>
-                <li class="menuitem "> <a href="https://youtube.com/@sebastienbadelpiano" target="_blank">YouTube</a> </li>
-                <li class="menuitem"> <a href="./contact.html" target="_blank">Contact</a> </li>                   
-                <!--<li class="menuitem hide"> <a href="">Business</a> </li>-->          
-            </ul>
-            <div id="menu" class="menuitem hide"><a href="#site-title">Top</a></div>
-        </div>
+        <ul id="navbar" class="link"></ul>
+        <div id="back" class="hide"><a href="#site-title">^</a></div>
+
+    <div class="s50"></div>
+
         <div id="page-title"><h1>
             <h1>Improvisation & Flow</h1>
         </div> 
     </header>
 
 <div id="page-description">         
-    <div class="index">
+    <div class="index links">
+        <ul style="list-style-type: none;">
         <h3 >Content</h3>
-        <a href="#section-1">Composition</a><br>
-        <a href="#section-2">Improvisation</a><br>
-        <a href="#section-3">My way to play</a><br>
-        <a href="#section-4">Inspiration</a><br>
-        <a href="#section-5">Where to go with inspiration?</a><br>
-        <a href="#section-6">Artistic works in general</a><br>
-        <a href="#section-7">Appreciation</a><br>
-        <a href="#section-8">Flow</a><br>
-        <a href="#section-9">Flow for an artist</a><br>
-        <a href="#section-10">Flow for an audience</a><br>
-        <a href="#section-11">The master is in control</a><br>
-        <a href="#section-12">Preparation vs pre-meditation</a><br>
-        <a href="#section-13">The common and special</a><br>
-        <a href="#section-14">The learning process</a><br>
+        <a href="#section-1">Composition</a>
+        <a href="#section-2">Improvisation</a>
+        <a href="#section-3">My way to play</a>
+        <a href="#section-4">Inspiration</a>
+        <a href="#section-5">Where to go with inspiration?</a>
+        <a href="#section-6">Artistic works in general</a>
+        <a href="#section-7">Appreciation</a>
+        <a href="#section-8">Flow</a>
+        <a href="#section-9">Flow for an artist</a>
+        <a href="#section-10">Flow for an audience</a>
+        <a href="#section-11">The master is in control</a>
+        <a href="#section-12">Preparation vs pre-meditation</a>
+        <a href="#section-13">The common and special</a>
+        <a href="#section-14">The learning process</a>
     </div>
 </div>
 
@@ -80,24 +74,18 @@
             src="https://youtube.com/embed/Up6SShT7MSY?autoplay=0">
             </iframe>
 
-            <p class="video-text">
-                Piano improvisation #143<br><br>
-                The text explains some
-                ideas about how I work. 
-                I realized though 
-                that the words distract from
-                listening to the music.
-                I therefore changed my method.
+            <p class="video-text" >
+                Piano improvisation #143<br>
+                Video with text <br>
             </p>
-        </div>
-        <div class="s100"></div>
-        <div id="donate">
-            <form style="text-align: center; margin-top: 25px;" action="https://www.paypal.com/donate" method="post" target="_blank" >
-                <input type="hidden" name="hosted_button_id" value="SDTTCGFJ7ZRMN" />
-                <input type="image" src="../Images/Heart_DONATION.jpg" border="0" width="50%" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />        
-            </form>
-        </div>     
 
+            <div id="menu" style="padding-top: 15px;">
+                <p class="link"><a href=""><strong>Blog</strong></a></p>
+                <p class="link"><a href=""><strong>Shop</strong></a></p>            
+                <p><strong>Donate :</strong></p>            
+                <div id="donate"></div>        
+            </div>
+        </div>   
     </div>
 
     <div id="main">
@@ -467,22 +455,19 @@
                 <p>It requires focus and training to reach an optimized mental state. Most people haven&rsquo;t learned to enter into that state and thus they miss out on the good part of life. And of music.</p>
             </div>
 
-            <div id="footer">   
-                <div class="s100"></div>
-                
-                <h5>Contact :  </h5>
-                <a href="https://facebook.com/SebastienBadelPiano" class="links"> Facebook </a> &nbsp;&nbsp
-                <a href="https://youtube.com/@SebastienBadelPiano"class="links"> Youtube </a>
-                
-                <p>
-                    I am not often there. <br>
-                    Please be patient.
-                </p>
-            </div>
-            <div class="s100"></div>
         </div>
     </div>
-    <p  style="text-align: center;">Site developed ©2023 by Sébastien Badel</p>
+
+    <footer>
+        <div id="footer">   
+            <div class="s100"></div>
+            <a href="./contact.html" class="links" target="_blank"> <strong>Contact form </strong></a> &nbsp;&nbsp
+            <a href="https://facebook.com/SebastienBadelPiano" class="links" target="_blank"> <strong>Facebook </strong> </a> &nbsp;&nbsp
+            <a href="https://youtube.com/@SebastienBadelPiano"class="links" target="_blank"> <strong>Youtube </strong></a>
+            <div class="s50"></div>
+        </div>
+        <p  style="text-align: center;">Site developed ©2020-2024 by Sébastien Badel</p>        
+    </footer>
 </div>
 
 
@@ -492,12 +477,12 @@
     window.onscroll = function() {StickyJs()};
     
     function StickyJs() {
-        if (document.documentElement.scrollTop > 1200) {
-        document.getElementById("menu").className = "menuitem menu grow";
+        if (document.documentElement.scrollTop > 2200) {
+        document.getElementById("back").className = "menuitem back-to-top";
         document.getElementById("leftsidebar").className = "sticky";
         
         } else {
-        document.getElementById("menu").className = "hide";
+        document.getElementById("back").className = "hide";
         document.getElementById("leftsidebar").className = "";
         }
     }
