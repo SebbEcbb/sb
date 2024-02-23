@@ -29,22 +29,13 @@
     
 </head>
 
-<body>
+<body onload="GlobalTitle(), GlobalDonate(), GlobalNavbar(), GlobalFooter()" >
+    <header>
+        <h1 id="site-title" ></h1> 
+        <div id="page-hero" ><img src="../Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
+        <ul id="navbar" class="link"></ul>
+        <div id="back" class="hide"><a href="#site-title">^</a></div>
 
-<header>
-    <h1 id="site-title" ><a href="https://sebastienbadel.com"><img src="../Images/site-icon.JPG" height="30px" alt="Flower">Sébastien Badel</a></h1> 
-    <div id="page-hero" ><img src="../Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
-        
-    </div>
-    <div>
-        <ul id="navbar" class="grow">            
-            <li class="menuitem"> <a href="#page-description" >Content</a> </li>
-            <li class="menuitem "> <a href="https://youtube.com/@sebastienbadelpiano" target="_blank">YouTube</a> </li>
-            <li class="menuitem"> <a href="./contact.html" target="_blank">Contact</a> </li>                   
-            <!--<li class="menuitem hide"> <a href="">Business</a> </li>-->          
-        </ul>
-        <div id="menu" class="menuitem hide"><a href="#site-title">Top</a></div>
-    </div>
     <div class="s50"></div>
     <div id="page-title">
         <h1>Portfolio</h1>
@@ -52,8 +43,8 @@
 </header>
 
 <div id="page-description" >       
-        <div class="index">
-            <ul style="list-style-type: none;">
+    <div class="index links">
+        <ul style="list-style-type: none;">
                 <h3>Education and work experience</h3>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#financial_manager">Financial manager</a></li>
@@ -69,9 +60,7 @@
     <div id="leftsidebar"> <br>        
 
         <div id="video1"class="video">
-            <p class="small_text">
-                Click for music while you read.
-            </p>
+
             <iframe      
             class="responsive"
             style="margin-top:-8px;"       
@@ -84,12 +73,12 @@
             </p>
         </div> 
 
-        <div id="donate">
-            <form style="text-align: left; margin-left: 15px;" action="https://www.paypal.com/donate" method="post" target="_blank" >
-                <input type="hidden" name="hosted_button_id" value="SDTTCGFJ7ZRMN" />
-                <input type="image" src="../Images/Heart_DONATION.jpg" border="0" width="100%" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />        
-            </form>
-        </div> 
+        <div id="menu">
+            <p class="link"><a href=""><strong>Blog</strong></a></p>
+            <p class="link"><a href=""><strong>Shop</strong></a></p>            
+            <p><strong>Donate</strong></p>            
+            <div id="donate"></div>        
+        </div>
                 
     </div>
 
@@ -278,8 +267,16 @@
 </div>
 <div class="s100"></div>
 
+
 <footer>
-    <p  style="text-align: center;">CopyRights ©2020-2024 by Sébastien Badel</p>        
+    <div id="footer">   
+        <div class="s100"></div>
+        <a href="./contact.html" class="links" target="_blank"> <strong>Contact form </strong></a> &nbsp;&nbsp
+        <a href="https://facebook.com/SebastienBadelPiano" class="links" target="_blank"> <strong>Facebook </strong> </a> &nbsp;&nbsp
+        <a href="https://youtube.com/@SebastienBadelPiano"class="links" target="_blank"> <strong>Youtube </strong></a>
+        <div class="s50"></div>
+    </div>
+    <p  style="text-align: center;">Site developed ©2020-2024 by Sébastien Badel</p>        
 </footer>
 
 <script id="Sticky-js">
@@ -287,15 +284,15 @@
     
     function StickyJs() {
         if (document.documentElement.scrollTop > 1200) {
-        document.getElementById("menu").className = "menuitem menu grow";
+        document.getElementById("back").className = "menuitem back-to-top";
         document.getElementById("leftsidebar").className = "sticky";
         
         } else {
-        document.getElementById("menu").className = "hide";
+        document.getElementById("back").className = "hide";
         document.getElementById("leftsidebar").className = "";
         }
     }
-</script>    
+</script>  
 </body>
 </html>
 
