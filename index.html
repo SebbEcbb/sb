@@ -65,15 +65,14 @@
 </div>
 
 <div id="page_wrapper" class="wrapper">
-    <div id="leftsidebar"> <br>
+    <div id="leftsidebar"> 
+        
+        <img id="profile"style="margin-top:5px;" src="./Images/sb1.jpg" alt="Aman" width="100%">    
         <br>
-        <img style="margin-top:5px;" src="./Images/sb1.jpg" alt="Aman" width="100%">    
-        <br>
-        <div id="video1">
-            <p class="small_text">Click for some music</p>
+        <div id="video1">            
             <iframe      
-            class="responsive"
-            style="margin-top:-8px;"       
+            class="responsive"  
+            style="width: 100%;margin-top: 5px;"          
             src="https://youtube.com/embed/YZqikxpsYcI?autoplay=0">
             </iframe>
             <p class="video-text"
@@ -96,7 +95,7 @@
         <h3 style="margin-block-end: 0;">The story of A man</h3>
         <p>
             <span style="text-align:left; color:red; font-weight:bold; margin-top:30px; margin-bottom:2px;">
-            And a life from the heart, <br></span>
+            Trying to live from the heart, <br></span>
         <strong>A descendant of Reuben,<br>
             the first born of Jacob ... <br> & his cousin</strong></p>
         <p><br>
@@ -107,33 +106,37 @@
         </p>    
         <p> French father, courageous Dutch mother. </p>
         <p>           
-            Unfortunately, they divorced a year after. 
+            They divorced a year after. 
             Cultural miscomprehension. 
             The boy grew up with his mother in the Netherlands.
-            Living in various places, he moved about 12 times in 25 years.
-            That tendency would only increase over the next 25 years.
+            They moved 12 times in 25 years.
+            A tendency that would increase in the next 25 years.
         </p>
         <br><br>
-        <h4>Foundation: The Netherlands</h4>
+        <h4>His foundation: the Netherlands</h4>
         <p>
             A happy boy, somewhat tender and gentle, certainly full of energy.  
             Good at maths, sports and music. 
-            As a child, he never learned to work hard. Football was nicer. And he was good too. 
-            As child he played with Martin Jol. Still proud. 
-            But mummy moved on, so he lost contact.
-            He started piano at 11. Mum wanted him to. 
-            Childhood was pretty tough, as stranger in the grey lowlands.
+            As a child, he never learned to work very hard. 
+            Football was nicer. And he was pretty good too. 
+            8 years old, he played with Martin Jol. Still proud. 
+            But mummy moved on, so he lost any contact.
+            She wanted him to start piano at 11. Mum was determined. 
+        </p>
+        <p>
+            Childhood was pretty tough for a stranger in the grey lowlands.
         </p>
         <p>
             Helped by his girlfriend and her loving parents, 
-            he got his high school degree. A miracle, seen the circumstances.
+            he got a high school degree. 
+            A miracle, seen the circumstances.
             After working in a bank for one year, 
             he managed to enter the High School for Arts in Utrecht. 
-            His mother bought him a piano, with exceptional sound.
+            His mother bought him a piano. Exceptional sound.
         </p>
         <p>
-            He studied classical piano music for four years. 
-            Gifted, but hard for him to focus on anything.
+            He studied classical piano for four years. 
+            Gifted, but it was hard for him to focus on anything.
             He had relational problems and was interested in too many other things.
             He also spent a lot of time trying to make his own music, 
             in need of finding his identity.
@@ -211,11 +214,11 @@
         <p>
             Living with his father, he tried to be accepted at the National Superior 
             Conservatory in Lyon for a composer's study. 
-            Bad idea. He had worked hard for 6 months and produced 6 pieces of music. 
+            Another bad idea. He had worked hard for 6 months and produced 6 pieces of music. 
             He was satisfied with his work.
             <br><br>
             The director had politely invited him to tell him there was no place for him. 
-            The 3 or 4 spots were already taken. He wondered if the man had even looked at his work. 
+            The 3 or 4 spots were already taken before he even applied. He wondered if the man had even looked at his work. 
             <br>
         </p>
         <p>
@@ -353,11 +356,13 @@
     function StickyJs() {
         if (document.documentElement.scrollTop > 2200) {
         document.getElementById("back").className = "menuitem back-to-top";
-        document.getElementById("menu").className = "sticky";
+        document.getElementById("leftsidebar").className = "sticky";
+        document.getElementById("profile").className = "hide";
         
         } else {
         document.getElementById("back").className = "hide";
-        document.getElementById("menu").className = "";
+        document.getElementById("leftsidebar").className = "";
+        document.getElementById("profile").className = "";
         }
     }
 </script> 
