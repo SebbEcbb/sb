@@ -5,7 +5,7 @@ function GlobalTitle() {
 
 function GlobalNavbar() {
     document.getElementById("navbar").innerHTML = 
-    "<li class='menuitem'> <a href='./contact.html' target='_blank'>Contact</a></li><li class='menuitem'> <a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li><li class='menuitem'><a href='#page-description' >Shop</a></li><li class='menuitem'><a href='#page-description' >Blog</a></li><li class='menuitem'><a href='#page-description' >Contenu</a></li><li class='menuitem'><a href='#' >Home</a></li>";
+    "<li class='menuitem'> <a href='./contact.html' target='_blank'>Contact</a></li><li class='menuitem'> <a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li><li class='menuitem'><a href='#page-description' >Shop</a></li><li class='menuitem'><a href='#page-description' >Blog</a></li><li class='menuitem'><a href='#page-description' >Contenu</a></li><li class='menuitem'><a href='https://sebastienbadel.com'>Home</a></li>";
   }
 
   function GlobalFooter() {
