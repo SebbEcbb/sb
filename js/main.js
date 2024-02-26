@@ -1,5 +1,7 @@
 function load_home(){  
   // check all these functions before applying them
+  
+  alert("load_home launched");
   //set_lang();  
   //Home_site_title();
   //Home_site_footer();
@@ -18,7 +20,7 @@ function set_lang(){
 
 function siteTitle() {
   document.getElementById("site-title").innerHTML = 
-  "<a href='https://sebastienbadel.com'><img src='/Images/site-icon.png' height='30px' alt='Flower'>Sébastien Badel</a>";
+  "<a href='https://sebastienbadel.com'><img src='./Images/site-icon.png' height='30px' alt='Flower'>Sébastien Badel</a>";
 }
 
   function Home_site_footer() {

@@ -1,4 +1,5 @@
-function loadGlobalElements_fr(){
+function loadJs_fr() {
+    alert("ok");
     siteTitle();
     navigation_fr();
     siteFooter_fr();
