@@ -120,16 +120,16 @@ p{
     text-shadow: 5px 5px 5px rgb(171, 170, 172);
 }
 
-/*navbar*/
-#navbar{padding-inline-start: 3px;}
-#navbar a{padding-left: 3%;text-decoration: none;}
-#navbar ul{
+/*navigation*/
+#navigation{padding-inline-start: 3px;}
+#navigation a{padding-left: 3%;text-decoration: none;}
+#navigation ul{
     margin-top: 0;
     padding: 5px;
     text-align:left;
     height:35px;    
 }
-#navbar li{list-style-type: none;}
+#navigation li{list-style-type: none;}
 
 
 .menuitem a {
@@ -157,12 +157,12 @@ p{
 
 #donate{    
     text-align: center;
-    padding-top: 0px;
+    padding-top: 5px;
     display: block;      
 }
 
 @media screen and (max-width:599px){
-    ul#navbar{display: flex;flex-direction: column-reverse;}
+    ul#navigation{display: flex;flex-direction: column-reverse;}
     #leftsidebar {display: grid;float: none;width: auto;transition-duration: 2s;}
     .center {width: 25%;}
     .video-text {text-align: center;font-size: 18px;}
@@ -177,8 +177,8 @@ p{
 @media screen and (min-width: 600px) {
     #leftsidebar {padding-top:0;width: 25%;float: left;}
     #main {margin-left: 26%;width: 70%;text-align: justify;}
-    #navbar li{display:inline;float:right;width:auto;}    
-    #navbar a{padding-right: 25px !important;padding-right: 5px;}      
+    #navigation li{display:inline;float:right;width:auto;}    
+    #navigation a{padding-right: 25px !important;padding-right: 5px;}      
     h1{font-size: 54px;}
     h2{font-size: 36px;}
     h3{font-size: 34px;}
@@ -191,7 +191,7 @@ p{
     .sticky {position: fixed;left: 10px;top: 0px;display:grid;} 
     .link a {text-decoration: none;transition-property: all;transition-duration: 0.7s;}
     .link a:hover {overflow: hidden;font-size: 24px;color:maroon;font-weight: bolder;text-shadow: 3px 3px 3px rgb(123, 117, 142);}
-    #menu {text-align: left;font-size: 14px;margin-top: 10px;}
+    #menu {text-align: left;font-size: 14px;margin-top: 10px;margin-left: 10px;}
     #menu p{margin-block-start:5px !important;margin-block-end:5px !important;}
 }
 
@@ -257,7 +257,8 @@ p{
 
 .video-text{
     height:16px;
-    font-weight: bold;    
+    font-weight: bold; 
+    text-align: center;   
 }
 .responsive{
     max-width: 100%;
