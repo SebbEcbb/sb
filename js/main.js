@@ -1,7 +1,7 @@
 function load_home(){  
   // check all these functions before applying them
   
-  alert("load_home launched");
+  //alert("load_home launched");
   //set_lang();  
   //Home_site_title();
   //Home_site_footer();
