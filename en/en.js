@@ -3,7 +3,7 @@ function loadGlobalElements_en(){
     siteTitle();
     siteFooter_en();
     navigation_en();
-    donate_En();
+    donate_en();
 }
 
 function siteTitle() {
@@ -24,13 +24,13 @@ function navigation_en() {
     document.getElementById("navigation").innerHTML = 
     "<li class='menuitem'><a href='./contact.html' target='_blank'>Contact</a></li>"+
     "<li class='menuitem'><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>"+
-    "<li class='menuitem'><a href='./shop.html' >Shop</a></li>"+
-    "<li class='menuitem'><a href='./blog.html' >Blog</a></li>"+
+    "<li class='menuitem'><a href='./shop.html' target='_blank'>Shop</a></li>"+
+    "<li class='menuitem'><a href='./blog.html' target='_blank'>Blog</a></li>"+
     "<li class='menuitem'><a href='#page-description' >Content</a></li>"+
     "<li class='menuitem'><a href='../index.html' >Home</a></li>"   
   }
 
-  function donate_En() {
+  function donate_en() {
     document.getElementById("donate").innerHTML = 
     "<form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> <input type='image' src='../Images/Heart.jpg' border='0' width='30%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' /></form>"
   } 
