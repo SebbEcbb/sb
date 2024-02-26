@@ -1,5 +1,5 @@
 function loadJs_fr() {
-    //alert("ok");
+    alert("ok");
     siteTitle();
     navigation_fr();
     siteFooter_fr();
