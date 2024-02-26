@@ -1,8 +1,8 @@
 function loadGlobalElements_en(){
     //alert("loadGlobalElements_en running");
     siteTitle();
-    siteFooter_en();
     navigation_en();
+    siteFooter_en();
     donate_en();
 }
 
