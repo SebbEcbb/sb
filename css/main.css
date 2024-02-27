@@ -165,11 +165,11 @@ p{
     ul#navigation{display: flex;flex-direction: column-reverse;}
     #leftsidebar {display: grid;float: none;width: auto;transition-duration: 2s;}
     .center {width: 25%;}
-    .video-text {text-align: center;font-size: 18px;}
+    .video-text {font-size: 18px;}
     .index {padding-bottom: 35px;margin-left: 50px !important;}
     .sticky {display:none;}
     #menu {margin-top: 30px;font-size: 18px;}
-    #menu p{text-align: center;margin-block-start:15px;margin-block-end:15px;}
+    #menu p{text-align: left;margin-block-start:15px;margin-block-end:15px;}
     #donate{padding-bottom: 75px;}
 
 }
@@ -186,7 +186,7 @@ p{
     h5{font-size: 24px;}
     p{font-size: 20px;}
     .center {width: 30%;}
-    .video-text{text-align: left;font-size: 14px;}
+    .video-text{text-align: left !important;font-size: 14px;margin-bottom: 50px;}
     .index{margin-left: 220px !important;margin-bottom: 50px;}
     .sticky {position: fixed;left: 10px;top: 0px;display:grid;} 
     .link a {text-decoration: none;transition-property: all;transition-duration: 0.7s;}
@@ -256,9 +256,12 @@ p{
 
 
 .video-text{
+    
+    display:block
     height:16px;
     font-weight: bold; 
-    text-align: center;   
+    text-align: center;
+    margin-bottom: 25px;   
 }
 .responsive{
     max-width: 100%;
