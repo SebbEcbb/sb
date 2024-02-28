@@ -24,6 +24,10 @@ p{
 
 .wrapper {overflow: auto;padding-left: 5px;}
 
+#leftsidebar{
+    padding-left: 5px;
+}
+
 #main {
     margin:0;
     padding: 0px;
@@ -131,7 +135,9 @@ p{
 }
 #navigation li{list-style-type: none;}
 
-
+#menu{
+    text-align: left;  
+}
 .menuitem a {
     color:black;
     font-family: "Poppins", sans-serif;
@@ -155,10 +161,10 @@ p{
 
 
 
-#donate{    
+#donate{
     text-align: center;
     padding-top: 5px;
-    display: block;      
+    display: block;
 }
 
 @media screen and (max-width:599px){
@@ -192,15 +198,15 @@ p{
     .sticky {position: fixed;left: 10px;top: 0px;display:grid;} 
     .link a {text-decoration: none;transition-property: all;transition-duration: 0.7s;}
     .link a:hover {overflow: hidden;font-size: 24px;color:maroon;font-weight: bolder;text-shadow: 3px 3px 3px rgb(123, 117, 142);}
-    #menu {text-align: left;font-size: 14px;margin-top: 10px;margin-left: 10px;}
+    #menu {text-align: left;font-size: 14px;margin-top: 10px;}
     #menu p{margin-block-start:5px !important;margin-block-end:5px !important;}
 }
 
 .center {
     display: block;
     margin-left: auto;
-    margin-right: auto; 
-    width: 60%;  
+    margin-right: auto;
+    width: 60%;
   }
 
 #page-description{
@@ -255,13 +261,12 @@ p{
 
 
 .video-text{
-    
-    display:block
-    height:16px;
-    font-weight: bold; 
+    display:block;
+    font-weight: bold;
     text-align: left;
-    margin-bottom: 25px;   
+    margin-bottom: 25px;
 }
+
 .responsive{
     max-width: 100%;
     height: auto;
