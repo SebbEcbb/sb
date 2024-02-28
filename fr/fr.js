@@ -21,7 +21,7 @@ function navigation_fr() {
     "<li class='menuitem'><a href='./boutique' target='_blank' >Boutique</a></li>"+
     "<li class='menuitem'><a href='./blog.html' target='_blank'>Blog</a></li>"+
     "<li class='menuitem'><a href='#page-description' >Contenu</a></li>"+
-    "<li class='menuitem'><a href='../index.html' >Accueil</a></li>"   
+    "<li class='menuitem'><a href='../fr/accueil.html' >Accueil</a></li>"   
   }
 
   function donation_fr() {
