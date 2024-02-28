@@ -1,4 +1,4 @@
-function loadGlobalElements_en(){
+function loadJs_en(){
     //alert("loadGlobalElements_en running");
     siteTitle();
     navigation_en();
