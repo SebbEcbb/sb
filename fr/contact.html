@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr_FR">
+<html lang="fr">
 <head>
 
     <!-- Google tag (gtag.js) -->
@@ -16,31 +16,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-    <title>Contact Sébastien Badel</title>
+    <title>Sébastien Badel Boutique</title>
     
-    <link rel="icon" href="../Images/site-icon.JPG">
+    <link rel="icon" href="../Images/site-icon.png">
     <link rel="stylesheet" href="../css/main.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">    
+
+    <script src="/js/main.js"></script>
+    <script src="../fr/fr.js"></script>
 </head>
 
-<body>
+<body onload="loadJs_fr()";>
 
 <header>
-    <h1 id="site-title" ><a href="https://sebastienbadel.com">Sébastien Badel</a></h1> 
+    <h1 id="site-title" ></h1> 
     <div id="page-hero" ><img src="../Images/Banner1.JPG" alt="Sébastien Badel" class="responsive"   
     </div>
     
     <div>
-        <ul id="navbar" class="links">            
-            <li class="menuitem"> <a href="#page-description" >Content</a> </li>
-            <li class="menuitem "> <a href="https://youtube.com/@sebastienbadelpiano" target="_blank">YouTube</a> </li>
-            <li class="menuitem"> <a href="./contact.html" target="_blank">Contact</a> </li>                   
-            <!--<li class="menuitem hide"> <a href="">Business</a> </li>-->          
-        </ul>
-        <div id="menu" class="menuitem hide"><a href="#site-title">Top</a></div>
+        <ul id="navigation" class="link"></ul>
+        <div id="back" class="menuitem hide"><a href="#site-title"> ^ </a></div>
     </div>
 
     <div class="s50"></div>
@@ -51,65 +49,50 @@
 </header>
 
 <div id="page_wrapper" class="wrapper">
-    <div class="leftsidebar">
-
+    <div id="leftsidebar">
         <div id="video1"class="video">
-            <p class="small_text">
-                Click for some music while you write.
-            </p>
             <iframe      
             class="responsive"
             style="margin-top:-8px;"       
-            src="https://youtube.com/embed/Tf0ru6COS_g?autoplay=0">
+            src="https://youtube.com/embed/-xZ7epyVOD4?autoplay=0">
             </iframe>
             <p class="video-text"
             style="margin-top:4px;" >
-                <b>Piano improvisation #109</b>
+                <b>Piano improvisation n°315</b>
                 <br><br>                
             </p>
         </div> 
+
+        <div id="menu">
+            <p class="link"><a href="./blog.html"><strong>Blog</strong></a></p>
+            <p class="link"><a href="./boutique.html"><strong>Boutique</strong></a></p>                       
+            <div id="donate"></div>
+        </div>
+
         <div class="s50"></div>
-        <div id="donate">
-            <form style="text-align: center; margin-left: 10px;" action="https://www.paypal.com/donate" method="post" target="_blank" >
-                <input type="hidden" name="hosted_button_id" value="SDTTCGFJ7ZRMN" />
-                <input type="image" src="./Images/Heart_DONATION.jpg" border="0" width="20%" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />
-                <!--<img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1" />-->
-            </form>
-        </div>                  
+                
     </div>
 
-    <div id="main" > 
-        <div class="s50"></div>
+    <div id="main" style="text-align: left; padding-left: 100px;"> 
         <div class="">            
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf64mqwTT8XT0IMu8otj6XiNKgyiTZ7M4FOy7onBBTMf-ZQgg/viewform?embedded=true" 
             width="640" 
             height="1042" 
             frameborder="0" 
             marginheight="0" 
-            marginwidth="0">Loading…</iframe>
+            marginwidth="0">Loading…
+            </iframe>
         </div> 
-        
     </div>
 </div>  
 
-
-
 <footer>
-    <div class="s100"></div>
-    <p  style="text-align: center;">CopyRights ©2024 by Sébastien Badel</p>        
+    <div id="footer"></div>   
 </footer>
 
 <script id="Sticky-js">
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function() {StickyJs()};    
     
-    function myFunction() {
-        if (document.documentElement.scrollTop > 600) {
-        document.getElementById("menu").className = "menuitem sticky grow";
-        
-        } else {
-        document.getElementById("menu").className = "hide";
-        }
-    }
 </script>   
 </body>
 </html>
