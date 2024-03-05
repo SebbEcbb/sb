@@ -258,7 +258,15 @@ p{
     font-size: 28px;
 }
 
+.links a:hover {
+    font-size: 115%x;  
+    font-weight: bolder;
+    margin-left: 2%;
+    color:maroon;
+    text-shadow: 3px 3px 3px rgb(123, 117, 142);
+    }
 
+.small-text{font-size: 16px;font-weight: 400;font-style:italic;}
 
 .video-text{
     display:block;
@@ -294,13 +302,7 @@ p{
     transition-property: all;
     transition-duration: 0.5s;
   }
-  .links a:hover {
-  font-size: 115%x;  
-  font-weight: bolder;
-  margin-left: 2%;
-  color:maroon;
-  text-shadow: 3px 3px 3px rgb(123, 117, 142);
-  }
+
 
 
 
@@ -318,6 +320,5 @@ p{
     border-color: black;
     border-radius: 8px;
 }
-
 #footer a {color: darkblue;}
 #footer {text-align: center;}

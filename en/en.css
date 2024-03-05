@@ -1,8 +1,7 @@
 .product{
     margin-top: 50px;
     width: 80%;  
-    padding: 12px;  
-    background-color: rgb(255, 140, 105, 0.35);
+    padding: 12px;      
     border: solid 3px black;
     border-radius: 10px;
 }
