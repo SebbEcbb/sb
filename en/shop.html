@@ -20,6 +20,7 @@
     
     <link rel="icon" href="../Images/site-icon.png">
     <link rel="stylesheet" href="../css/main.css" >
+    <link rel="stylesheet" href="../en/en.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -29,7 +30,7 @@
     <script src="../en/en.js"></script>
 </head>
 
-<body onload="loadGlobalElements_en()";>
+<body onload="loadJs_en()";>
 
 <header>
     <h1 id="site-title" ></h1> 
@@ -45,12 +46,27 @@
 
     <div id="page-title">
         <h1>Shop</h1>
+        <p class="center" style="text-align: left;">
+            The products on this page I purchased
+            and use on regular basis, mainly for learning. 
+            I acknowledge their quality and benefits and  
+            offer them with confidence to my readers. 
+            <br><br>
+            If you would like to purchase
+            any of them, I will receive a commission.
+            You will not pay any extra for this. The sales companies 
+            simply share part of their profit with publishers.
+            For this to happen, your click towards the product page
+            needs to be tracked. Please allow it to set cookies.  <br>
+            If you desire so, I can also help you to set up and 
+            share my experiences.
+        </p>
     </div> 
 </header>
 
 <div id="page_wrapper" class="wrapper">
     <div id="leftsidebar">
-        <div id="video1"class="video">
+        <div id="video1"class="hide">
             <iframe      
             class="responsive"
             style="margin-top:-8px;"       
@@ -64,6 +80,7 @@
         </div> 
 
         <div id="menu">
+            <div class="s50"></div>
             <p class="link"><a href=""><strong>Blog</strong></a></p>
             <p class="link"><a href=""><strong>Shop</strong></a></p>                       
             <div id="donate"></div>
@@ -74,11 +91,38 @@
     </div>
 
     <div id="main" style="text-align: left; padding-left: 100px;"> 
-         <h1 >Working hard! <br> 
-            Coming soon. <br> 
-        </h1>
-        <p>Have a little music break !</p>
-        </div>         
+        <div id="product1" class="product">
+            <div><a href="../articles/yt.html target="_blank">
+                <h4 style="text-align: center;" >High Class YouTube Course<br> </h4>
+                <p>
+                    How start a successful YouTube Channel <br>
+                    Find your perfect Niche <br>                  
+                    Learn all about research <br>
+                    How become a great content creator<br>
+                    All Video & Audio Techy Stuff <br>
+                    And much more ...
+
+
+                </p>
+            </a></div>  
+        </div>  
+        
+        <div class="s50"></div>
+        <div id="product2" class="product" style="background-color: lightsteelblue;">
+            <div><a href="../articles/fla.html" target="_blank">
+                <h4 style="text-align: center;" >High Quality Finance Course<br> </h4>
+                <p>
+                    Manage finances wisely<br>
+                    Get debt free & create capital<br>                  
+                    Learn all about investing <br>
+                    How keep record in order<br>
+                    Build recurring income streams<br>
+                    And much more ...
+
+
+                </p>
+            </a></div>  
+        </div> 
     </div>
 </div>  
 
