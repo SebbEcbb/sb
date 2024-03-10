@@ -22,6 +22,8 @@ p{
     box-sizing: border-box;
   }
 
+
+
 .wrapper {overflow: auto;padding-left: 5px;}
 
 #leftsidebar{
@@ -126,36 +128,32 @@ p{
 
 /*navigation*/
 #navigation{padding-inline-start: 3px;}
-#navigation a{padding-left: 3%;text-decoration: none;}
+#navigation a{padding-left: 3%;}
 #navigation ul{
     margin-top: 0;
     padding: 5px;
     text-align:left;
-    height:35px;    
+    height:35px;       
 }
 #navigation li{list-style-type: none;}
 
 #menu{
     text-align: left;  
 }
-.menuitem a {
-    color:black;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-}
+
 
 .back-to-top{
     position: fixed;
     right: 12px;
     bottom: 12px;
     display:grid; 
-    width: 25px;
-    height: 25px;
-    background-color: rgb(196, 196, 198); 
+    width: 30px;
+    height: 30px;
+    background-color: rgb(10, 10, 70);     
     text-align: center;
     border-radius: 5px;    
-    border: solid 1px black;
-     a {text-decoration: none;}
+    border: solid 1px rgb(147, 145, 145);
+     a {text-decoration: none;color: antiquewhite;}
 }
 
 
@@ -172,8 +170,9 @@ p{
     #leftsidebar {display: grid;float: none;width: auto;transition-duration: 2s;}
     .center {width: 25%;}
     .video-text {font-size: 16px;}
-    .index {padding-bottom: 35px;margin-left: 50px !important;}
-    .sticky {display:none;}
+    .index {padding-bottom: 35px;/*margin-left: 50px !important;*/}
+    .sticky-left {display:none;}
+    .sticky-right {display:none;}
     #menu {margin-top: 30px;font-size: 18px;}
     #menu p{text-align: left;margin-block-start:15px;margin-block-end:15px;}
     #donate{padding-bottom: 75px;}
@@ -182,20 +181,20 @@ p{
 
 @media screen and (min-width: 600px) {
     #leftsidebar {padding-top:0;width: 25%;float: left;}
-    #main {margin-left: 26%;width: 70%;text-align: justify;}
-    #navigation li{display:inline;float:right;width:auto;}    
+    #main {margin-left: 26%;width: 65%;text-align: justify;}
+    #navigation li{float:right;width:auto;}    
     #navigation a{padding-right: 25px !important;padding-right: 5px;}      
     h1{font-size: 54px;}
     h2{font-size: 36px;}
     h3{font-size: 34px;}
     h4{font-size: 28px;}
     h5{font-size: 24px;}
-    p{font-size: 20px;}
     .center {width: 30%;}
     #video1{width: 100%;}
     .video-text{font-size: 14px;margin-bottom: 50px;}
-    .index{margin-left: 220px !important;margin-bottom: 50px;}
-    .sticky {position: fixed;left: 10px;top: 0px;display:grid;} 
+    .index{padding-left: 30px !important;margin-bottom: 50px;}
+    .sticky-left {position: fixed;left: 10px;top: 0px;display:grid;} 
+    .sticky-right {position: fixed;right: 10px;top: 0px;display:flex;flex-direction: column-reverse;} 
     .link a {text-decoration: none;transition-property: all;transition-duration: 0.7s;}
     .link a:hover {overflow: hidden;font-size: 24px;color:maroon;font-weight: bolder;text-shadow: 3px 3px 3px rgb(123, 117, 142);}
     #menu {text-align: left;font-size: 14px;margin-top: 10px;}
@@ -247,16 +246,15 @@ p{
 .links a{
     font-family: "Poppins", sans-serif;
     font-weight:300;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     text-decoration: none;
     padding: 5px;
     transition-duration: 1s;
-
 }
 
 .links a:hover {
-    font-size: 22px;  
+    font-size: 20px;  
     font-weight: bolder;
     margin-left: 2%;
     color:maroon;
@@ -282,7 +280,10 @@ p{
     position: relative;
 }
 
-.index {width: 75%;}
+.index {
+    width:50%;
+    margin: auto;
+}
 
 .index h3 {
     font-size: 28px;

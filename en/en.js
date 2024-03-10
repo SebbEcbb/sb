@@ -1,5 +1,5 @@
 function loadJs_en(){
-    //alert("loadGlobalElements_en running");
+    //alert("loadJs_en is running");
     siteTitle();
     navigation_en();
     siteFooter_en();
