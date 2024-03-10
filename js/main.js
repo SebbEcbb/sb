@@ -28,7 +28,7 @@ function siteTitle() {
     document.getElementById("footer").innerHTML = 
       "<div class='s100'></div>"+        
       "<a href='./contact.html' class='links' target='_blank'><img style='vertical-align:middle;margin-right: 5px;' src='./Images/message_icon.png'' height='24px' alt='message-icon'><strong>Contact</strong></a>&nbsp &nbsp;"+
-      "<a href='https://facebook.com/SebastienBadelPiano' class='links' target='_blank'> <img style='vertical-align:middle;margin-right: 5px;' src='./Images/fb_icon.png'' height='24px' alt='message-icon'><strong>Facebook </strong> </a>&nbsp &nbsp;"+
+      "<a href='https://facebook.com/SebastienBadel' class='links' target='_blank'> <img style='vertical-align:middle;margin-right: 5px;' src='./Images/fb_icon.png'' height='24px' alt='message-icon'><strong>Facebook </strong> </a>&nbsp &nbsp;"+
       "<a href='https://youtube.com/@SebastienBadelPiano'class='links' target='_blank'>  <img style='vertical-align:middle;margin-right: 5px;' src='./Images/yt_icon.png'' height='24px' alt='message-icon'> <strong>Youtube </strong></a>&nbsp &nbsp; "+                
       "<div class='s50'></div><p  style='text-align: center;'>Site developed ©2020-2024 by Sébastien Badel</p>"
   }  
