@@ -39,3 +39,34 @@ function siteTitle() {
     "<form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> <input type='image' src='./Images/Heart.jpg' border='0' class='center' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Bouton Faites un don avec PayPal' /></form>"
   }  
 
+  function StickyJs() {
+    alert("ok, stickyJS")
+    var n = document.getElementById("main").offsetTop + 80;
+    var m = document.getElementById("footer").offsetTop;
+    if (document.documentElement.scrollTop > n && document.documentElement.scrollTop < m) {
+    document.getElementById("back").className = "menuitem back-to-top";
+    document.getElementById("leftsidebar").className = "sticky";
+    //document.getElementById("profile").className = "hide";
+    
+    } else {
+    document.getElementById("back").className = "hide";
+    document.getElementById("leftsidebar").className = "";
+    //document.getElementById("profile").className = "";
+    }
+}
+
+function StickyHomeJs() {
+  var n = document.getElementById("donate").offsetTop + 80;
+  var m = document.getElementById("footer").offsetTop;
+  if (document.documentElement.scrollTop > n && document.documentElement.scrollTop < m) {
+  document.getElementById("back").className = "menuitem back-to-top";
+  document.getElementById("leftsidebar").className = "sticky";
+  document.getElementById("profile").className = "hide";
+  
+  } else {
+  document.getElementById("back").className = "hide";
+  document.getElementById("leftsidebar").className = "";
+  document.getElementById("profile").className = "";
+  }
+}
+

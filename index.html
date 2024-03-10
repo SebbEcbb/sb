@@ -358,23 +358,9 @@
 </footer>
 
 <script id="Sticky-js">
-    window.onscroll = function() {StickyJs()};
-    
-    function StickyJs() {
-        var n = document.getElementById("donate").offsetTop + 80;
-        var m = document.getElementById("footer").offsetTop;
-        if (document.documentElement.scrollTop > n && document.documentElement.scrollTop < m) {
-        document.getElementById("back").className = "menuitem back-to-top";
-        document.getElementById("leftsidebar").className = "sticky";
-        document.getElementById("profile").className = "hide";
-        
-        } else {
-        document.getElementById("back").className = "hide";
-        document.getElementById("leftsidebar").className = "";
-        document.getElementById("profile").className = "";
-        }
-    }
+    window.onscroll = function() {StickyHomeJs()};    
 </script> 
+
 </body>
 </html>
 
