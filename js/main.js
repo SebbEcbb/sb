@@ -19,6 +19,7 @@ function set_lang(){
 }
 
 function siteTitle() {
+  //alert("ok site-title")
   document.getElementById("site-title").innerHTML = 
   "<a href='https://sebastienbadel.com'><img src='../Images/site-icon.png' height='30px' alt=''>Sébastien Badel</a>";
 }
