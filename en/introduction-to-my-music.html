@@ -388,18 +388,25 @@
 </footer>
 
 <script id="Sticky-js">
-    window.onscroll = function() {StickyJs()};
-    
+    window.onscroll = function() {StickyJs()};    
+
     function StickyJs() {
-        if (document.documentElement.scrollTop > 1250) {
-        document.getElementById("back").className = "menuitem back-to-top";
-        document.getElementById("leftsidebar").className = "sticky";
+        const element = document.documentElement.getBoundingClientRect();
+        const m = -element.y
+        const n = document.getElementById("video1").offsetTop;
         
-        } else {
+        if( n < m){             
+        //console.log("n is smaller than m"); 
+        document.getElementById("back").className = "back-to-top";
+        document.getElementById("leftsidebar").className = "sticky-left";
+        document.getElementById("navigation").className = "links sticky-right";
+        } else { 
+        //console.log("n is geater than m"); 
         document.getElementById("back").className = "hide";
-        document.getElementById("leftsidebar").className = "";
+        document.getElementById("leftsidebar").className = "pop";
+        document.getElementById("navigation").className = "links";
         }
     }
-</script> 
+</script>  
 </body>
 </html>
