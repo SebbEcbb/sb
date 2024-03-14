@@ -49,18 +49,17 @@
         <p class="center" style="text-align: left;">
             The products on this page I have also purchased
             myself. I use them on a daily basis, 
-            mainly for writing, learning and management. 
-            They bring quality and benefit to my business. 
+            mainly for writing, learning and management. <br>
+            They bring quality and benefit to my business. <br>
             I propose them with confidence to you. 
             <br><br>
             If you purchase any of them, throught these links, 
             I may receive a commission.
-            You will by no means be charged anything extra for that. 
+            You will by no means be charged anything extra for that. <br>
             The companies simply share part of their profit with publishers,
             when it leads to sales.
             <br><br>
-            I can also help you with set up and share my experiences.
-            I you wabt that, contact me with the contact form. Thank you.
+            
         </p>
     </div> 
 </header>
@@ -69,14 +68,14 @@
     <div class="index links" >
         <h3 >Products</h3>
         <ul style="list-style-type: none;">            
-            <li><a href="#product1">High Quality YouTube Education</a></li>                                   
-            <li><a href="#product2">High Quality Finance Education</a></li>                                   
-            <li><a href="#product3">Luxury Holidays Villas in France</a></li>                                   
-            <li ><a href="#product4">My Exceptional Allround Admin Tool</a></li>  
-            <li ><a href="#product5">Allround Marketing Education</a></li>  
-                             
+            <li><a href="#product1">1. High Quality YouTube Education</a></li>                                   
+            <li><a href="#product2">2. High Quality Finance Education</a></li>                                   
+            <li><a href="#product3">3. Luxury Holidays Villas in France</a></li>                                   
+            <li ><a href="#product4">4. My Exceptional Allround Admin Tool</a></li>  
+            <li ><a href="#product5">5. Allround Marketing Education</a></li>                               
         </ul>
     </div>
+    <div class="s50"></div>
 </div>
 
 <div class="s50"></div>
@@ -228,8 +227,24 @@
 </footer>
 
 <script id="Sticky-js">
-    
-    window.onscroll = "StickyJs()";
+    window.onscroll = function() {StickyJs()};    
+    function StickyJs() {
+        const element = document.documentElement.getBoundingClientRect();
+        const m = -element.y
+        const n = document.getElementById("main").offsetTop;
+        
+        if( n < m){             
+        //console.log("n is smaller than m"); 
+        document.getElementById("back").className = "back-to-top";
+        document.getElementById("leftsidebar").className = "sticky-left";
+        document.getElementById("navigation").className = "links sticky-right";
+        } else { 
+        //console.log("n is geater than m"); 
+        document.getElementById("back").className = "hide";
+        document.getElementById("leftsidebar").className = "pop";
+        document.getElementById("navigation").className = "links";
+        }
+    }
     
 </script>
 

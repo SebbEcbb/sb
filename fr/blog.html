@@ -40,22 +40,30 @@
         <ul id="navigation" class="link"></ul>
         <div id="back" class="menuitem hide"><a href="#site-title"> ^ </a></div>
     </div>
-
-    <div class="s50"></div>
+   
 
     <div id="page-title">
-        <h1>Blog Français</h1>
+        <h1 style="font-size: 32px;">Blog Français</h1>
     </div> 
 </header>
 
-<div id="page-description" >    
-
+<div id="page-description" ">   
+    <div class="index links">
+        <h3>Derniers articles<br></h3>
+        <ul style="list-style-type: none;">
+            <li><a href="./introduction-a-ma-musique.html" target="_blank" >Introduction à ma musique</a></li>
+            <li>**********************************</li>
+            <li><a href="" target="_blank" >Scrupules : pierre qui t'emmerde dans ta chaussure (bientôt en ligne)</a></li>
+            <li>**********************************</li>
+            <li><a href="" target="_blank" >Eau : au commencement, il n'y avait que de l'eau, ...vivante (bientôt en ligne)</a></li>
+        </ul>
+    </div> 
 </div>
        
 
 <div id="page_wrapper" class="wrapper">
     <div id="leftsidebar">
-        <div id="video1"class="video">
+        <div id="video1"class="video hide">
             <iframe      
             class="responsive"
             style="margin-top:-8px;"       
@@ -79,12 +87,7 @@
 
     <div id="main" style="text-align: left;"> 
         <div>
-            <ul class="links" style="list-style-type: none;">
-                <h2>Derniers articles en Français<br></h2>
-                <li><a href="./introduction-a-ma-musique.html" target="_blank" >Introduction à ma musique</a></li>
-                <li><a href="" target="_blank" >Scrupules : pierre qui t'emmerde dans ta chaussure <br>(bientôt en ligne)</a></li>
-                <li><a href="" target="_blank" >Eau : au commencement, il n'y avait que de l'eau, ...vivante <br>(bientôt en ligne)</a></li>
-            </ul>
+
         </div>
     </div>
 </div>  
@@ -95,7 +98,24 @@
 
 <script id="Sticky-js">
     window.onscroll = function() {StickyJs()};    
+    function StickyJs() {
+        const element = document.documentElement.getBoundingClientRect();
+        const m = -element.y
+        const n = document.getElementById("main").offsetTop;
+        
+        if( n < m){             
+        //console.log("n is smaller than m"); 
+        document.getElementById("back").className = "back-to-top";
+        document.getElementById("leftsidebar").className = "sticky-left";
+        document.getElementById("navigation").className = "links sticky-right";
+        } else { 
+        //console.log("n is geater than m"); 
+        document.getElementById("back").className = "hide";
+        document.getElementById("leftsidebar").className = "pop";
+        document.getElementById("navigation").className = "links";
+        }
+    }
     
-</script>   
+</script>  
 </body>
 </html>
