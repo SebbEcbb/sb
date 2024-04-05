@@ -1,9 +1,9 @@
 .product{
     margin-top: 50px;
     width: 80%;  
-    padding: 12px;      
+    padding: 25px;      
     border: solid 3px black;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .product a {
