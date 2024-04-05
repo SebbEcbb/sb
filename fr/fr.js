@@ -10,7 +10,7 @@ function siteFooter_fr() {
     document.getElementById("footer").innerHTML = 
       "<div class='s100'></div>"+        
       "<a href='../contact.html' class='links' target='_blank'><img style='vertical-align:middle;margin-right: 5px;' src='../Images/message_icon.png'' height='24px' alt='message-icon'><strong>Contact</strong></a>&nbsp &nbsp;"+
-      "<a href='https://facebook.com/SebastienBadelPiano' class='links' target='_blank'> <img style='vertical-align:middle;margin-right: 5px;' src='../Images/fb_icon.png'' height='24px' alt='message-icon'><strong>Facebook </strong> </a>&nbsp &nbsp;"+
+      "<a href='https://www.linkedin.com/in/sebastienbadelpiano/' class='links' target='_blank'> <img style='vertical-align:middle;margin-right: 5px;' src='../Images/li_icon.png'' height='24px' alt='message-icon'><strong>LinkedIn </strong> </a>&nbsp &nbsp;"+
       "<a href='https://youtube.com/@SebastienBadelPiano'class='links' target='_blank'>  <img style='vertical-align:middle;margin-right: 5px;' src='../Images/yt_icon.png'' height='24px' alt='message-icon'> <strong>Youtube </strong></a>&nbsp &nbsp; "+                
       "<div class='s50'></div><p  style='text-align: center;'>Site dévéloppé ©2020-2024 par Sébastien Badel</p>"
   } 
