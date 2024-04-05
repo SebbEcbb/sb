@@ -18,27 +18,28 @@
         
     <title>Improvisation & Flow</title>
     
-    <link rel="icon" href="/Images/PianoKeyboard2.png">
-    <link rel="stylesheet" href="/css/main.css" >
+    <link rel="icon" href="../Images/site-icon.png">
+    <link rel="stylesheet" href="../css/main.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">    
 
-    <script src="/en/en.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../en/en.js"></script>
     
 </head>
 
-<body onload="load_en()" >
+<body onload="loadJs_en()";>
     <header>
         <h1 id="site-title" ></h1> 
         <div id="page-hero" ><img src="../Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
-        <ul id="navbar" class="link"></ul>
+        <ul id="navigation" class="link"></ul>
         <div id="back" class="hide"><a href="#site-title">^</a></div>
 
     <div class="s50"></div>
 
-        <div id="page-title"><h1>
+    <div id="page-title">
             <h1>Improvisation & Flow</h1>
         </div> 
     </header>
@@ -454,38 +455,33 @@
                 
                 <p>It requires focus and training to reach an optimized mental state. Most people haven&rsquo;t learned to enter into that state and thus they miss out on the good part of life. And of music.</p>
             </div>
-
         </div>
     </div>
-
-    <footer>
-        <div id="footer">   
-            <div class="s100"></div>
-            <a href="./contact.html" class="links" target="_blank"> <strong>Contact form </strong></a> &nbsp;&nbsp
-            <a href="https://facebook.com/SebastienBadelPiano" class="links" target="_blank"> <strong>Facebook </strong> </a> &nbsp;&nbsp
-            <a href="https://youtube.com/@SebastienBadelPiano"class="links" target="_blank"> <strong>Youtube </strong></a>
-            <div class="s50"></div>
-        </div>
-        <p  style="text-align: center;">Site developed ©2020-2024 by Sébastien Badel</p>        
-    </footer>
 </div>
-
-
-
+<footer>
+    <div id="footer"></div>    
+</footer>
 
 <script id="Sticky-js">
-    window.onscroll = function() {StickyJs()};
-    
+    window.onscroll = function() {StickyJs()};    
+
     function StickyJs() {
-        if (document.documentElement.scrollTop > 2200) {
-        document.getElementById("back").className = "menuitem back-to-top";
-        document.getElementById("leftsidebar").className = "sticky";
+        const element = document.documentElement.getBoundingClientRect();
+        const m = -element.y
+        const n = document.getElementById("video1").offsetTop;
         
-        } else {
+        if( n < m){             
+        //console.log("n is smaller than m"); 
+        document.getElementById("back").className = "back-to-top";
+        document.getElementById("leftsidebar").className = "sticky-left";
+        document.getElementById("navigation").className = "links sticky-right";
+        } else { 
+        //console.log("n is geater than m"); 
         document.getElementById("back").className = "hide";
-        document.getElementById("leftsidebar").className = "";
+        document.getElementById("leftsidebar").className = "pop";
+        document.getElementById("navigation").className = "links";
         }
     }
-</script>  
+</script> 
 </body>
 </html>
