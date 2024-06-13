@@ -86,6 +86,7 @@ p{
   /*Site-Title styles*/
 #site-title{
     margin-right: 25px;
+    margin-top: 0;
     height:auto;
     /*padding-bottom: 10px;*/
 }
