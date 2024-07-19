@@ -14,11 +14,10 @@ h1{font-size: 32px;}
 h2{font-size: 30px;}
 h3{font-size: 28px;}
 h4{font-size: 24px;}
-h5{font-size: 20px;}
 
 p{
     font-family: "poppins", sans-serif;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 * {
@@ -105,7 +104,7 @@ p{
     margin-right: 5px;
 }
 #page-hero{    
-    width: auto;
+    width: 100%;
     position: relative;
     padding-top: 2px;   
     border-top: solid 1px;
@@ -250,7 +249,7 @@ p{
 .links a{
     font-family: "Poppins", sans-serif;
     font-weight:300;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     padding: 5px;
     transition-duration: 1s;
@@ -274,7 +273,7 @@ p{
 }
 
 .responsive{
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -284,7 +283,7 @@ p{
 }
 
 .index {
-    width:50%;
+    width: 50%;
     margin: auto;
     color: black;
 }
