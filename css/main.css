@@ -168,12 +168,12 @@ p{
     display: block;
 }
 
-@media screen and (max-width:599px){
+@media screen and (max-width:779px){
     ul#navigation{display: flex;flex-direction: column-reverse;}
     #leftsidebar {display: grid;float: none;width: auto;transition-duration: 2s;}
     .center {width: 25%;}
     .video-text {font-size: 16px;}
-    .index {padding-bottom: 35px;/*margin-left: 50px !important;*/}
+    .index {padding-bottom: 35px;width:70%}
     .sticky-left {display:none;}
     .sticky-right {display:none;}
     #menu {margin-top: 30px;font-size: 18px;}
@@ -182,7 +182,7 @@ p{
 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 780px) {
     #leftsidebar {padding-top:0;width: 25%;float: left;}
     #main {margin-left: 26%;width: 65%;text-align: justify;}
     #navigation li{float:right;width:auto;}    
