@@ -1,0 +1,11 @@
+User-agent: *
+
+Disallow: /articles/
+
+Disallow: /css/
+
+Disallow: /js/
+
+Disallow: /pr/
+
+Disallow: /*?*
