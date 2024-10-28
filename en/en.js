@@ -38,7 +38,7 @@ function navigation_en() {
     
     
     function StickyJs() {
-      alert("enJs")
+      /*alert("enJs")*/
         var n = document.getElementById("donate").offsetTop + 80;
         var m = document.getElementById("footer").offsetTop;
 
