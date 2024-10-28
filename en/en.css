@@ -4,11 +4,12 @@
     padding: 25px;      
     border: solid 3px black;
     border-radius: 15px;
+    color:white;
 }
 
 .product a {
     text-decoration-line: none;
-    color: black;
+    color: white;
 }
 
 @media screen and (max-width:599) {

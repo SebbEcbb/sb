@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-    <title>Improvisation n° 399</title>
+    <title>Paix Parfaite dans la faiblesse</title>
     
     <link rel="icon" href="../Images/site-icon.png">
     <link rel="stylesheet" href="../css/main.css" >
@@ -28,7 +28,10 @@
     <script src="../js/main.js"></script>
     <script src="../fr/fr.js"></script>
 
-    <style> p{text-align: left;}</style>
+    <style> 
+    p{text-align: left;}
+    h2{font-size: 24px;}
+    </style>
     
 </head>
 
@@ -42,29 +45,30 @@
     <div class="s50"></div>
 
     <div id="page-title" style="text-align: center !important">
-        <h1 style="color: darkblue;"> Parfaite Paix <br> dans la faiblesse</h1>
+        <h1> Paix Parfaite <br> dans la faiblesse</h1>
     </div> 
 </header>
 
 <div id="page_wrapper" class="wrapper">
     
-
+    <div id="leftsidebar">
         <div id="donate"></div>                   
-    
+    </div>
 
     <div id="main" > 
     
-        <div>
+        <div class="">
             <iframe      
-                class="video-page-container responsive"        
-                src="https://youtube.com/embed/kwDoKqhUYyY?autoplay=0">   
+                class="video-page-container responsive"
+                width="100%"       
+                src="https://youtube.com/embed/kwDoKqhUYyY?autoplay=0">            
             </iframe>
 
-            <p> <b>Improvisation n° 399</b></p>            
+            <p> <b>Improvisation #399</b></p>            
         </div> 
         <div class="s50"></div> 
         
-        <h1 style="font-size: 250%; color: indigo;">Parfaite Paix <br> dans la faiblesse</h1>
+        <h2>Paix Parfaite dans la faiblesse</h2>
 
         <p> 
             7 ann&eacute;es de larmes <br>
@@ -161,15 +165,19 @@
     window.onscroll = function() {StickyJs()};
     
     function StickyJs() {
-        if (document.documentElement.scrollTop > 1200) {
-        document.getElementById("menu").className = "menuitem menu";
-        document.getElementById("leftsidebar").className = "sticky";
+        const element = document.documentElement.getBoundingClientRect();
+        const m = -element.y
+        const n = document.getElementById("main").offsetTop;
+        
+        if( n < m){              
+        document.getElementById("leftsidebar").className = "sticky-left";
+        document.getElementById("navigation").className = "links sticky-right";
         
         } else {
-        document.getElementById("menu").className = "hide";
-        document.getElementById("leftsidebar").className = "";
+        document.getElementById("leftsidebar").className = "pop";
+        document.getElementById("navigation").className = "links";
         }
     }
-</script>    
+</script>   
 </body>
 </html>

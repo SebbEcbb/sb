@@ -32,12 +32,13 @@ function navigation_en() {
 
   function donate_en() {
     document.getElementById("donate").innerHTML = 
-    " <p>Help me ?</p><br><form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> <input type='image' src='../Images/Heart.jpg' border='0' width='30%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' /></form>"
+    " <p><strong>Help me ?</strong></p><br><form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> <input type='image' src='../Images/Heart.jpg' border='0' width='30%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' /></form>"
   } 
   
     
     
     function StickyJs() {
+      alert("enJs")
         var n = document.getElementById("donate").offsetTop + 80;
         var m = document.getElementById("footer").offsetTop;
 
