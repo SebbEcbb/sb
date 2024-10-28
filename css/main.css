@@ -24,7 +24,7 @@ p{
     box-sizing: border-box;
   }
 
-
+.boxed {border: solid black 1px;}
 
 .wrapper {overflow: auto;padding-left: 5px;}
 
@@ -97,6 +97,9 @@ p{
     font-weight: bolder;
     transition: all 1s;
 }
+
+#site-title a img {margin-right: 15px;}
+
 #site-title a:hover{
     font-size: 38px;
 }
@@ -130,14 +133,19 @@ p{
 
 /*navigation*/
 #navigation{padding-inline-start: 3px;}
+
 #navigation a{padding-left: 3%;}
+
 #navigation ul{
     margin-top: 0;
     padding: 5px;
     text-align:left;
     height:35px;       
 }
-#navigation li{list-style-type: none;}
+#navigation li{
+    list-style-type: none; 
+    display:block;
+}
 
 #menu{
     text-align: left;  
@@ -163,14 +171,14 @@ p{
 
 
 #donate{
-    text-align: center;
+    text-align: left;
     padding-top: 5px;
     display: block;
 }
 
 @media screen and (max-width:779px){
     ul#navigation{display: flex;flex-direction: column-reverse;}
-    #leftsidebar {display: grid;float: none;width: auto;transition-duration: 2s;}
+    #leftsidebar {display: grid;float: none;width: auto;transition-duration: 0.5s;}
     .center {width: 25%;}
     .video-text {font-size: 16px;}
     .index {padding-bottom: 35px;width:70%}
@@ -185,7 +193,7 @@ p{
 @media screen and (min-width: 780px) {
     #leftsidebar {padding-top:0;width: 25%;float: left;}
     #main {margin-left: 26%;width: 65%;text-align: justify;}
-    #navigation li{float:right;width:auto;}    
+    #navigation li{float:right;width:180px;text-align: center;}    
     #navigation a{padding-right: 25px !important;padding-right: 5px;}      
     h1{font-size: 54px;}
     h2{font-size: 36px;}
@@ -198,7 +206,8 @@ p{
     .index{padding-left: 30px !important;margin-bottom: 50px;}
     .sticky-left {position: fixed;left: 10px;top: 0px;display:grid;} 
     .sticky-right {position: fixed;right: 10px;top: 0px;display:flex;flex-direction: column-reverse;} 
-    .link a {text-decoration: none;transition-property: all;transition-duration: 0.7s;}
+    .sticky-right li {text-align: right !important;}
+    .link a {text-decoration: none;transition-property: all;transition-duration: 0.5s;}
     .link a:hover {overflow: hidden;font-size: 24px;color:maroon;font-weight: bolder;text-shadow: 3px 3px 3px rgb(123, 117, 142);}
     #menu {text-align: left;font-size: 14px;margin-top: 10px;}
     #menu p{margin-block-start:5px !important;margin-block-end:5px !important;}
@@ -252,7 +261,7 @@ p{
     font-size: 20px;
     text-decoration: none;
     padding: 5px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 .links a:hover {
