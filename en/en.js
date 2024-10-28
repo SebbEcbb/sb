@@ -22,11 +22,11 @@ function siteFooter_en() {
 
 function navigation_en() {
     document.getElementById("navigation").innerHTML = 
-    "<li class='menuitem'><a href='./contact.html' target='_blank'>Contact</a></li>"+
+    "<li class='menuitem'><a href='./contact.html' target='_blank'>Get in touch</a></li>"+
     "<li class='menuitem'><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>"+
-    "<li class='menuitem'><a href='./shop.html' target='_blank'>Shop</a></li>"+
-    "<li class='menuitem'><a href='./blog.html' target='_blank'>Blog</a></li>"+
-    "<li class='menuitem'><a href='#page-description' >Content</a></li>"+
+    "<li class='menuitem'><a href='./shop.html' target='_blank'>Buy my stuff</a></li>"+
+    "<li class='menuitem'><a href='./blog.html' target='_blank'>Articles</a></li>"+
+    "<li class='menuitem'><a href='#page-description' >Page Content</a></li>"+
     "<li class='menuitem'><a href='../index.html' >Home</a></li>"   
   }
 

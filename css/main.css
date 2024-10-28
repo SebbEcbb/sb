@@ -187,6 +187,10 @@ p{
     #menu {margin-top: 30px;font-size: 18px;}
     #menu p{text-align: left;margin-block-start:15px;margin-block-end:15px;}
     #donate{padding-bottom: 75px;}
+    #profile, #video1 {display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;}
 
 }
 
@@ -207,8 +211,8 @@ p{
     .sticky-left {position: fixed;left: 10px;top: 0px;display:grid;} 
     .sticky-right {position: fixed;right: 10px;top: 0px;display:flex;flex-direction: column-reverse;} 
     .sticky-right li {text-align: right !important;}
-    .link a {text-decoration: none;transition-property: all;transition-duration: 0.5s;}
-    .link a:hover {overflow: hidden;font-size: 24px;color:maroon;font-weight: bolder;text-shadow: 3px 3px 3px rgb(123, 117, 142);}
+    /*.links a {text-decoration: none;transition-property: all;transition-duration: 0.5s;}
+    .links a:hover {overflow: hidden;font-size: 22px;color:maroon;font-weight: bolder;text-shadow: 3px 3px 3px rgb(123, 117, 142);}*/
     #menu {text-align: left;font-size: 14px;margin-top: 10px;}
     #menu p{margin-block-start:5px !important;margin-block-end:5px !important;}
 }
@@ -265,7 +269,7 @@ p{
 }
 
 .links a:hover {
-    font-size: 20px;  
+    font-size: 22px;  
     font-weight: bolder;
     margin-left: 2%;
     color:rgb(194, 2, 2);

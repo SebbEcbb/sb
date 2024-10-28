@@ -29,7 +29,7 @@
     <script src="../en/en.js"></script>
 </head>
 
-<body onload="loadGlobalElements_en()";>
+<body onload="navigation_en()";>
 
 <header>
     <h1 id="site-title" ></h1> 
@@ -37,14 +37,14 @@
     </div>
     
     <div>
-        <ul id="navigation" class="link"></ul>
+        <ul id="navigation" class="links"></ul>
         <div id="back" class="menuitem hide"><a href="#site-title"> ^ </a></div>
     </div>
 
     <div class="s50"></div>
 
     <div id="page-title">
-        <h1>Blog</h1>
+        <h1>Articles</h1>
     </div> 
 </header>
 
@@ -63,11 +63,15 @@
             </p>
         </div> 
 
-        <div id="menu">
-            <p class="link"><a href="./blog.html"><strong>Blog</strong></a></p>
-            <p class="link"><a href="./shop.html"><strong>Shop</strong></a></p>                       
-            <div id="donate"></div>
-        </div>
+        <div id="menu">                                   
+            <div id="donate">
+                <p>Help me ?</p>
+                <form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > 
+                    <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> 
+                    <input type='image' src='../Images/Heart.jpg' border='0' width='30%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />
+                </form> 
+            </div>        
+        </div>  
 
         <div class="s50"></div>
                 
