@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-    <title>Sébastien Badel Blog</title>
+    <title>Articles & Poésie</title>
     
     <link rel="icon" href="../Images/site-icon.png">
     <link rel="stylesheet" href="../css/main.css" >
@@ -25,7 +25,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">    
 
-    <script src="../js/main.js"></script>
+    <style>
+        h4{font-size: 20px;}
+    </style>
+    <script src="/js/main.js"></script>
     <script src="../fr/fr.js"></script>
 </head>
 
@@ -37,85 +40,68 @@
     </div>
     
     <div>
-        <ul id="navigation" class="link"></ul>
+        <ul id="navigation" class="links"></ul>
         <div id="back" class="menuitem hide"><a href="#site-title"> ^ </a></div>
     </div>
-   
 
+    <div class="s50"></div>
     <div id="page-title">
-        <h1 style="font-size: 32px;">Blog Français</h1>
-    </div> 
+        <h1>Articles & Poésie</h1>
+    </div>
 </header>
-
-<div id="page-description" ">   
-    <div class="index links">
-        <h3>Derniers articles<br></h3>
-        <ul style="list-style-type: none;">
-            <li><a href="./introduction-a-ma-musique.html" target="_blank" >Introduction à ma musique</a></li>
-            <li>**********************************</li>
-            <li><a href="" target="_blank" >Scrupules : pierre qui t'emmerde dans ta chaussure (bientôt en ligne)</a></li>
-            <li>**********************************</li>
-            <li><a href="" target="_blank" >Eau : au commencement, il n'y avait que de l'eau, ...vivante (bientôt en ligne)</a></li>
-        </ul>
-    </div> 
-</div>
-       
 
 <div id="page_wrapper" class="wrapper">
     <div id="leftsidebar">
-        <div id="video1"class="video hide">
+        <div id="video1">            
             <iframe      
-            class="responsive"
-            style="margin-top:-8px;"       
-            src="https://youtube.com/embed/D6iqNGVQKys?autoplay=0">
+            class="responsive"  
+            style="width: 100%; min-height: 250px; margin-top: 5px;"          
+            src="https://youtube.com/embed/-xZ7epyVOD4?autoplay=0">
             </iframe>
             <p class="video-text"
             style="margin-top:4px;" >
-            <b>Piano improvisation #150,</b>               
+                <b>Improvisation #315</b>
+                <br><br>                
             </p>
         </div> 
 
-        <div id="menu">
-            <p class="link"><a href="./blog.html"><strong>Blog</strong></a></p>
-            <p class="link"><a href="./boutique.html"><strong>Boutique</strong></a></p>                       
-            <div id="donate"></div>
-        </div>
+        <div id="menu">                                   
+            <div id="donate">
+                <form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > 
+                    <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> 
+                    <input type='image' src='../Images/Heart.jpg' border='0' width='30%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />
+                </form> 
+            </div>        
+        </div>  
 
         <div class="s50"></div>
                 
     </div>
 
-    <div id="main" style="text-align: left;"> 
-        <div>
-
+    <div id="main" style="text-align: left; padding-left: 100px;"> 
+        <div class="links">
+            
+            <ul style="list-style-type: none;">
+                
+                <li><h4>Articles</h4></li>               
+                <li><a href="../fr/introduction-a-ma-musique.html"target="_blank">Ma Musique</a></li>            
+                <li class="hide"><a href="./improvisation-and-flow.html"target="_blank">Improvisation & Flow</a></li>
+                
+                <li><h4>Poésie</h4></li>
+                <li><a href="./399.html"target="_blank">Paix Parfaite dans la faiblesse</a></li>
+                <li><a href="./245.html"target="_blank">Sekel, mon amour</a></li>
+            </ul>
         </div>
     </div>
 </div>  
-
+<div class="s50"></div>
 <footer>
     <div id="footer"></div>   
 </footer>
 
 <script id="Sticky-js">
     window.onscroll = function() {StickyJs()};    
-    function StickyJs() {
-        const element = document.documentElement.getBoundingClientRect();
-        const m = -element.y
-        const n = document.getElementById("main").offsetTop;
-        
-        if( n < m){             
-        //console.log("n is smaller than m"); 
-        document.getElementById("back").className = "back-to-top";
-        document.getElementById("leftsidebar").className = "sticky-left";
-        document.getElementById("navigation").className = "links sticky-right";
-        } else { 
-        //console.log("n is geater than m"); 
-        document.getElementById("back").className = "hide";
-        document.getElementById("leftsidebar").className = "pop";
-        document.getElementById("navigation").className = "links";
-        }
-    }
     
-</script>  
+</script>   
 </body>
 </html>

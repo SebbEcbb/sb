@@ -1,9 +1,14 @@
 function loadJs_fr() {
-  /*alert("ok")*/
+  //alert("ok")
     siteTitle();
     navigation_fr();
     siteFooter_fr();
     donation_fr();
+}
+
+function siteTitle() {
+  document.getElementById("site-title").innerHTML = 
+  "<a href='https://sebastienbadel.com'><img src='../Images/site-icon.png' height='30px' alt='Flower'>Sébastien Badel</a>";
 }
 
 function siteFooter_fr() {
