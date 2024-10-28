@@ -157,27 +157,11 @@
 
 
 <footer>
-    <div class="s100"></div>
-    <p  style="text-align: center;">CopyRights ©2024 by Sébastien Badel</p>        
+    <div id="footer"></div>   
 </footer>
 
 <script id="Sticky-js">
     window.onscroll = function() {StickyJs()};
-    
-    function StickyJs() {
-        const element = document.documentElement.getBoundingClientRect();
-        const m = -element.y
-        const n = document.getElementById("main").offsetTop;
-        
-        if( n < m){              
-        document.getElementById("leftsidebar").className = "sticky-left";
-        document.getElementById("navigation").className = "links sticky-right";
-        
-        } else {
-        document.getElementById("leftsidebar").className = "pop";
-        document.getElementById("navigation").className = "links";
-        }
-    }
 </script>   
 </body>
 </html>
