@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-    <title>Sébastien Badel Blog</title>
+    <title>Sébastien Badel Articles</title>
     
     <link rel="icon" href="../Images/site-icon.png">
     <link rel="stylesheet" href="../css/main.css" >
@@ -25,11 +25,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">    
 
+    <style>
+        h4{font-size: 20px;}
+    </style>
     <script src="/js/main.js"></script>
     <script src="../en/en.js"></script>
 </head>
 
-<body onload="navigation_en()";>
+<body onload="loadJs_en()";>
 
 <header>
     <h1 id="site-title" ></h1> 
@@ -43,17 +46,14 @@
 
     <div class="s50"></div>
 
-    <div id="page-title">
-        <h1>Articles</h1>
-    </div> 
 </header>
 
 <div id="page_wrapper" class="wrapper">
     <div id="leftsidebar">
-        <div id="video1"class="video">
+        <div id="video1">            
             <iframe      
-            class="responsive"
-            style="margin-top:-8px;"       
+            class="responsive"  
+            style="width: 100%; min-height: 250px; margin-top: 5px;"          
             src="https://youtube.com/embed/-xZ7epyVOD4?autoplay=0">
             </iframe>
             <p class="video-text"
@@ -65,7 +65,6 @@
 
         <div id="menu">                                   
             <div id="donate">
-                <p>Help me ?</p>
                 <form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > 
                     <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> 
                     <input type='image' src='../Images/Heart.jpg' border='0' width='30%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />
@@ -78,11 +77,16 @@
     </div>
 
     <div id="main" style="text-align: left; padding-left: 100px;"> 
-         <h1 >Working hard! <br> 
-            Coming soon. <br> 
-        </h1>
-        <p>Have a little music break !</p>
-        </div>         
+        <div class="links">
+            <h3 >Articles & Poetry</h3>
+            <ul style="list-style-type: none;">
+                <li><h4>Articles</h4></li>               
+                <li><a href="./en/introduction-to-my-music.html"target="_blank">My Music</a></li>            
+                <li><a href="./improvisation-and-flow.html"target="_blank">Improvisation & Flow</a></li>     
+                <li><h4>Poetry</h4></li>
+                <li><a href="./245.html"target="_blank">Sekel</a></li>
+            </ul>
+        </div>
     </div>
 </div>  
 
