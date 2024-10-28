@@ -1,5 +1,4 @@
 function loadJs_fr() {
-    //alert("ok");
     siteTitle();
     navigation_fr();
     siteFooter_fr();
@@ -20,11 +19,28 @@ function navigation_fr() {
     "<li class='menuitem'><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>"+
     "<li class='menuitem'><a href='./boutique' target='_blank' >Trucs à vendre</a></li>"+
     "<li class='menuitem'><a href='./blog.html' target='_blank'>Articles</a></li>"+
-    "<li class='menuitem'><a href='#page-description' >Contenu de page</a></li>"+
-    "<li class='menuitem'><a href='../fr/accueil.html' >Accueil</a></li>"   
+    "<li class='menuitem'><a href='#page-description' >Contenu de page</a></li>"+  
   }
 
   function donation_fr() {
     document.getElementById("donate").innerHTML = 
     " <p><strong>Voulez-vous m'aider ?</strong></p><br><form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> <input type='image' src='../Images/Heart.jpg' border='0' width='30%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Faire un don avec PayPal' /></form>"
   } 
+
+  function StickyJs() {
+    const element = document.documentElement.getBoundingClientRect();
+    const m = -element.y
+    const n = document.getElementById("main").offsetTop;
+    
+    if( n < m){    
+    document.getElementById("back").className = "menuitem back-to-top";          
+    document.getElementById("leftsidebar").className = "sticky-left";
+    document.getElementById("navigation").className = "links sticky-right";
+    
+    } else {
+    document.getElementById("back").className = "hide";
+    document.getElementById("leftsidebar").className = "pop";
+    document.getElementById("navigation").className = "links";
+    }
+    
+    }

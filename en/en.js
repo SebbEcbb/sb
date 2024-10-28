@@ -26,8 +26,7 @@ function navigation_en() {
     "<li class='menuitem'><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>"+
     "<li class='menuitem'><a href='./shop.html' target='_blank'>Buy my stuff</a></li>"+
     "<li class='menuitem'><a href='./blog.html' target='_blank'>Articles</a></li>"+
-    "<li class='menuitem'><a href='#page-description' >Page Content</a></li>"+
-    "<li class='menuitem'><a href='../index.html' >Home</a></li>"   
+    "<li class='menuitem'><a href='#page-description' >Page Content</a></li>"
   }
 
   function donate_en() {
@@ -38,16 +37,20 @@ function navigation_en() {
     
     
     function StickyJs() {
-      /*alert("enJs")*/
-        var n = document.getElementById("donate").offsetTop + 80;
-        var m = document.getElementById("footer").offsetTop;
-
-        if (document.documentElement.scrollTop > n && document.documentElement.scrollTop < m) {
-        document.getElementById("back").className = "menuitem back-to-top";
-        document.getElementById("leftsidebar").className = "sticky";        
+        const element = document.documentElement.getBoundingClientRect();
+        const m = -element.y
+        const n = document.getElementById("main").offsetTop;
+        
+        if( n < m){    
+        document.getElementById("back").className = "menuitem back-to-top";          
+        document.getElementById("leftsidebar").className = "sticky-left";
+        document.getElementById("navigation").className = "links sticky-right";
+        
         } else {
         document.getElementById("back").className = "hide";
-        document.getElementById("leftsidebar").className = "";        
+        document.getElementById("leftsidebar").className = "pop";
+        document.getElementById("navigation").className = "links";
         }
-    }
+        
+        }
 

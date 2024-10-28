@@ -151,23 +151,8 @@
     <div id="footer"></div>   
 </footer>
 
-<script id="Sticky-js">
+<script>
     window.onscroll = function() {StickyJs()};
-    
-    function StickyJs() {
-        const element = document.documentElement.getBoundingClientRect();
-        const m = -element.y
-        const n = document.getElementById("main").offsetTop;
-        
-        if( n < m){              
-        document.getElementById("leftsidebar").className = "sticky-left";
-        document.getElementById("navigation").className = "links sticky-right";
-        
-        } else {
-        document.getElementById("leftsidebar").className = "pop";
-        document.getElementById("navigation").className = "links";
-        }
-    }
 </script>    
 </body>
 </html>
