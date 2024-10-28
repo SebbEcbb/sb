@@ -7,11 +7,13 @@ function loadJs_fr() {
 }
 
 function siteTitle() {
+  //alert("siteTitle")
   document.getElementById("site-title").innerHTML = 
   "<a href='https://sebastienbadel.com'><img src='../Images/site-icon.png' height='30px' alt='Flower'>Sébastien Badel</a>";
 }
 
 function siteFooter_fr() {
+  //alert("siteFooter_fr")
   document.getElementById("footer").innerHTML = 
     "<div class='s100'></div>"+        
     "<a href='./contact.html' class='links' target='_blank'><img style='vertical-align:middle;margin-right: 5px;' src='../Images/message_icon.png'' height='24px' alt='message-icon'><strong>Contact</strong></a>&nbsp &nbsp;"+
@@ -21,15 +23,17 @@ function siteFooter_fr() {
 } 
 
 function navigation_fr() {
+  //alert("navigation_fr")
     document.getElementById("navigation").innerHTML = 
     "<li class='menuitem'><a href='./contact.html' target='_blank'>Me contacter</a></li>"+
     "<li class='menuitem'><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>"+
     "<li class='menuitem'><a href='./boutique' target='_blank' >Trucs à vendre</a></li>"+
     "<li class='menuitem'><a href='./blog.html' target='_blank'>Articles</a></li>"+
-    "<li class='menuitem'><a href='#page-description' >Contenu de page</a></li>"
+    "<li class='menuitem'><a href='#page-description' >Contenu</a></li>"
   }
 
   function donation_fr() {
+    //alert("donation_fr")
     document.getElementById("donate").innerHTML = 
     " <p><strong>Voulez-vous m'aider ?</strong></p><br><form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> <input type='image' src='../Images/Heart.jpg' border='0' width='30%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' /></form>"
   } 
