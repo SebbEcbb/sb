@@ -4,7 +4,7 @@ html{
 
 body{margin:0;}
 
-a{color:darkslateblue}
+a{color:rgba(105, 90, 205, 0.9);}
 
 h1,h2,h3,h4,h5 {
     font-family: "Poppins", sans-serif;
@@ -108,7 +108,6 @@ p{
     position: relative;
     padding-top: 2px;   
     border-top: solid 1px;
-    border-bottom: solid 1px;
     margin: 0; 
 }
 
@@ -230,6 +229,7 @@ p{
   }
 
 #page-description{
+    margin-top: 50px;
     border-top: solid 1px;
     border-bottom: solid 1px;    
 }
@@ -359,45 +359,49 @@ p{
     margin-top: 150px;
     a {padding-left: 25px;}
 }
-
-.parent{
+.parent {
     display: grid;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: 2fr 2fr;
-    gap: 15px;
-    --padding: 4px;
-    position: relative;
-    padding: var(--padding);
-    border: 1px solid hsl(210deg 10% 40%);
-    border-radius: 8px;
-  }
+    grid-template-rows: 260px;
+    background-color: antiquewhite;
+}
+
   .parent::after {
     content: '';
     position: absolute;
     top: 2px;
     bottom: 2px;
-    left: calc(
-      25% +
-      var(--padding) / 2 -
-      1px
-    );
-    border-left:
-      2px dashed
-      hsl(210deg 8% 50%);
   }
+
   .child {
-    display: grid;
     place-content: center;
     height: 300px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border:
-      2px solid hsl(210deg 8% 50%);
-    border-radius: 3px;
-    background:blanchedalmond;
+      1px solid hsl(284, 94%, 13%);
+    border-radius: 10px;
     color:red;
     font-weight: bold;
   }
+
+
   .child:first-child {
     margin-right: 2px;
   }
   .child:last-child {
     margin-left: 2px;
   }
+
+  .wider{width: 120%;}
+
+  .b1{    background:rgba(105, 90, 205, 0.80);}
+  .b2{    background:rgba(105, 90, 205, 0.60);}
+  .b3{    background:rgba(105, 90, 205, 0.40);}
+  .b4{    background:rgba(105, 90, 205, 0.20);}
