@@ -9,7 +9,7 @@
    id="svg1"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    sodipodi:docname="box1.svg"
-   inkscape:export-filename="Business.svg"
+   inkscape:export-filename="Art-piano.svg"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -28,7 +28,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.9308702"
-     inkscape:cx="127.40369"
+     inkscape:cx="82.34629"
      inkscape:cy="138.02067"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
@@ -84,11 +84,36 @@
        width="203.57143"
        height="68.928571"
        id="rect13" />
+    <rect
+       x="63.571429"
+       y="63.571429"
+       width="203.57143"
+       height="68.928571"
+       id="rect17" />
+    <rect
+       x="63.571429"
+       y="63.571429"
+       width="227.4553"
+       height="92.215957"
+       id="rect18" />
+    <rect
+       x="63.571429"
+       y="63.571429"
+       width="203.57143"
+       height="68.928571"
+       id="rect19" />
+    <rect
+       x="63.571429"
+       y="63.571429"
+       width="203.57143"
+       height="68.928571"
+       id="rect20" />
   </defs>
   <g
-     inkscape:label="Calque 1"
+     inkscape:label="Français"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     style="display:inline">
     <rect
        style="display:inline;fill:url(#linearGradient10);fill-opacity:1;stroke-width:0.2688"
        id="rect8"
@@ -98,59 +123,126 @@
        y="0.041875385" />
     <text
        xml:space="preserve"
-       transform="matrix(0.52540018,0,-0.08577323,0.47073733,-36.097523,-16.598585)"
+       transform="matrix(0.52540018,0,-0.08577323,0.47073733,-35.412383,-15.502361)"
        id="text10"
-       style="text-align:center;white-space:pre;shape-inside:url(#rect10);display:none;fill:#ff0000;fill-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.3054px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect10);display:inline;fill:#ff0000;fill-opacity:1"
+       x="70.300781"
+       y="0"
+       inkscape:label="Story"><tspan
+         x="99.931498"
+         y="98.348767"
+         id="tspan1">Histoire</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.37401219,0,-0.06105866,0.5321741,-18.262884,-22.810783)"
+       id="text11"
+       style="text-align:center;white-space:pre;shape-inside:url(#rect11);display:none;fill:#ff0000;fill-opacity:1"
+       x="70.300781"
+       y="0"
+       inkscape:label="Sebdev"><tspan
+         x="88.19043"
+         y="107.36412"
+         id="tspan3"><tspan
+           style="font-size:48px;font-family:Sans;-inkscape-font-specification:'Sans, Normal'"
+           id="tspan2">Sebdev</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(2.0754329,0,-0.33882093,1.4651758,-92.096762,-88.987844)"
+       id="text12"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.14px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect12);display:none;fill:#ff0000;fill-opacity:1"
+       x="41.774139"
+       y="0"
+       inkscape:label="Art Piano"><tspan
+         x="63.572266"
+         y="74.587651"
+         id="tspan5"><tspan
+           style="font-size:12.0739px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;text-anchor:start"
+           id="tspan4">Art 
+</tspan></tspan><tspan
+         x="63.572266"
+         y="89.680028"
+         id="tspan7"><tspan
+           style="font-size:12.0739px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;text-anchor:start"
+           id="tspan6">Piano</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.39430173,0,-0.064371,0.51971634,-15.650481,-21.982994)"
+       id="text13"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.9649px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect13);display:none;fill:#ff0000;fill-opacity:1"
+       x="70.300781"
+       y="0"
+       inkscape:label="Business"><tspan
+         x="74.632749"
+         y="98.94751"
+         id="tspan8">Entreprise</tspan></text>
+  </g>
+  <g
+     inkscape:label="English"
+     inkscape:groupmode="layer"
+     id="g17"
+     style="display:none">
+    <rect
+       style="display:none;fill:url(#linearGradient10);fill-opacity:1;stroke-width:0.2688"
+       id="rect14"
+       width="85.734863"
+       height="55.044239"
+       x="0.041874841"
+       y="0.041875385" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.52540018,0,-0.08577323,0.47073733,-36.097523,-16.598585)"
+       id="text14"
+       style="text-align:center;white-space:pre;shape-inside:url(#rect17);display:none;fill:#ff0000;fill-opacity:1"
        x="70.300781"
        y="0"
        inkscape:label="Story"><tspan
          x="109.4707"
          y="107.15025"
-         id="tspan2"><tspan
+         id="tspan10"><tspan
            style="font-size:48px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal'"
-           id="tspan1">Story</tspan></tspan></text>
+           id="tspan9">Story</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.37401219,0,-0.06105866,0.5321741,-18.262884,-22.810783)"
-       id="text11"
-       style="text-align:center;white-space:pre;shape-inside:url(#rect11);display:inline;fill:#ff0000;fill-opacity:1"
+       id="text15"
+       style="text-align:center;white-space:pre;shape-inside:url(#rect18);display:none;fill:#ff0000;fill-opacity:1"
        x="70.300781"
        y="0"
        inkscape:label="Webdev"><tspan
          x="88.19043"
          y="107.36412"
-         id="tspan4"><tspan
+         id="tspan12"><tspan
            style="font-size:48px;font-family:Sans;-inkscape-font-specification:'Sans, Normal'"
-           id="tspan3">Sebdev</tspan></tspan></text>
+           id="tspan11">Sebdev</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(2.0754329,0,-0.33882093,1.4651758,-274.48107,-86.795397)"
-       id="text12"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.14px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect12);display:none;fill:#ff0000;fill-opacity:1"
+       id="text16"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.14px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, ';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect19);display:none;fill:#ff0000;fill-opacity:1"
        x="57.279198"
        y="0"
        inkscape:label="Piano Art"><tspan
          x="148.95036"
          y="74.587651"
-         id="tspan6"><tspan
+         id="tspan14"><tspan
            style="font-size:12.0739px;font-family:Sans;-inkscape-font-specification:'Sans, Normal'"
-           id="tspan5">Piano
+           id="tspan13">Piano
 </tspan></tspan><tspan
          x="156.27547"
          y="89.680028"
-         id="tspan8"><tspan
+         id="tspan18"><tspan
            style="font-size:12.0739px;font-family:Sans;-inkscape-font-specification:'Sans, Normal'"
-           id="tspan7">Art</tspan></tspan></text>
+           id="tspan15">Art</tspan></tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.39430173,0,-0.064371,0.51971634,-15.650481,-21.982994)"
-       id="text13"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect13);display:none;fill:#ff0000;fill-opacity:1"
+       id="text17"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:48px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect20);display:none;fill:#ff0000;fill-opacity:1"
        x="70.300781"
        y="0"
        inkscape:label="Business"><tspan
          x="73.998047"
          y="107.15025"
-         id="tspan9">Business</tspan></text>
+         id="tspan19">Business</tspan></text>
   </g>
 </svg>

@@ -8,7 +8,7 @@ function loadJs_en(){
 
 function siteTitle() {
     document.getElementById("site-title").innerHTML = 
-    "<a href='https://sebastienbadel.com'><img src='../Images/site-icon.png' height='30px' alt='Flower'>Sébastien Badel</a>";
+    "<a href='https://sebastienbadel.com'><img src='/Images/site-icon.png' height='30px' alt='Flower'>Sébastien Badel</a>";
   }
 
 function siteFooter_en() {

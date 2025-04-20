@@ -83,7 +83,6 @@ p{
 #site-title{
     margin-right: 25px;
     margin-top: 0;
-    height:auto;
     /*padding-bottom: 10px;*/
 }
 #site-title a{
@@ -103,6 +102,8 @@ p{
 #site-title img {
     margin-right: 5px;
 }
+
+
 #page-hero{    
     width: 100%;
     position: relative;
@@ -128,7 +129,19 @@ p{
 }
 
 /*navigation*/
-#navigation{padding-inline-start: 3px;}
+nav{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: 80px;
+
+}
+nav#site-title{
+    grid-column: 1;
+}
+
+nav#navigation{
+    grid-column: 2;    
+}
 
 #navigation a{padding-left: 3%;}
 
@@ -140,7 +153,6 @@ p{
 }
 #navigation li{
     list-style-type: none; 
-    display:block;
 }
 
 #menu{
@@ -173,8 +185,18 @@ p{
 }
 
 @media screen and (max-width:779px){
+        /*navigation*/
+    nav{
+        display: block;
+        height: 60px;
+
+    }
+    nav#site-title, nav#navigation{
+        display: block;
+    }
+
     ul#navigation{display: flex;flex-direction: column-reverse;}
-    #leftsidebar {display: grid;float: none;width: auto;transition-duration: 0.5s;}
+    #leftsidebar {float: none;width: auto;transition-duration: 0.5s;}
     .center {width: 25%;}
     .video-text {font-size: 16px;}
     .index {padding-bottom: 35px;width:70%}
@@ -196,7 +218,7 @@ p{
 }
 
 @media screen and (min-width: 780px) {
-    #leftsidebar {padding-top:0;width: 25%;float: left;}
+    #leftsidebar {padding-top:50px; width: 25%;float: left;}
     #main {margin-left: 30%;width: 50%;text-align: justify;}
     #navigation li{float:right;}  
     #navigation a{
@@ -212,13 +234,11 @@ p{
     #donate form{width: 50%;}
     .video-text{font-size: 14px;margin-bottom: 50px;}
     .index{padding-left: 30px !important;margin-bottom: 50px;}
-    .sticky-left {position: fixed;left: 10px;top: 0px;display:grid;} 
+    .sticky-left {position: fixed;left: 10px;top: 0px;} 
     .sticky-right {position: fixed;right: 10px;top: 0px;display:flex;flex-direction: column-reverse;} 
     .sticky-right li {text-align: right !important;}
-    .sticky-right a{font-size: 15px !important;}
+    .sticky-right a{font-size: 18px !important;}
     .sticky-right a:hover{font-size: 18px !important;}
-    #menu {text-align: left;font-size: 14px;margin-top: 10px;}
-    #menu p{margin-block-start:5px !important;margin-block-end:5px !important;}
 }
 
 .center {
