@@ -4,7 +4,7 @@ html{
 
 body{margin:0;}
 
-a{color: blue;}
+a{color:darkslateblue}
 
 h1,h2,h3,h4,h5 {
     font-family: "Poppins", sans-serif;
@@ -41,10 +41,6 @@ p{
 }
 
 .links ul li a {margin-left: 15px;}
-
-
-
-
   
 /* For mobile phones: */
 [class*="col-"] {
@@ -198,8 +194,14 @@ p{
 @media screen and (min-width: 780px) {
     #leftsidebar {padding-top:0;width: 25%;float: left;}
     #main {margin-left: 26%;width: 65%;text-align: justify;}
-    #navigation li{float:right;width:180px;text-align: center;}    
-    #navigation a{padding-right: 25px !important;padding-right: 5px;}      
+    #navigation li{float:right;width:180px;text-align: center;}  
+
+    #navigation a{
+        font-weight:600;
+        font-size: 24px;
+        padding-right: 25px !important;
+        padding-right: 5px;} 
+
     h1{font-size: 40px;}
     h2{font-size: 36px;}
     h3{font-size: 34px;}
@@ -262,6 +264,7 @@ p{
 
 
 }
+
 .links a{
     font-family: "Poppins", sans-serif;
     font-weight:300;
