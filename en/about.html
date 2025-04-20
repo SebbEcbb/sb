@@ -16,10 +16,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-    <title>Sébastien Badel</title>
+    <title>About</title>
     
-    <link rel="icon" href="./Images/site-icon.png">
-    <link rel="stylesheet" href="./css/main.css" >
+    <link rel="icon" href="/Images/site-icon.png">
+    <link rel="stylesheet" href="/css/main.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -33,59 +33,39 @@
             h2{font-size: 20px;}
         }
     </style>
-    <!--<script src="./js/main.js"></script>-->
+        <script src="../js/main.js"></script>
+        <script src="../en/en.js"></script>
 
 </head>
 
-<body>
+<body onload="loadJs_en()";>
 
 <header>
-    <h1 id="site-title" ><a href='https://sebastienbadel.com'><img src='./Images/site-icon.png' height='30px' alt='Flower'>Sébastien Badel</a></h1> 
-    <div id="page-hero" ><img src="./Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
-        
-    </div>
-    <div>   
-        <ul id="navigation" class="links">
-            <li > <a href='./en/contact.html' target='_blank'>Contact</a></li>
-            <li> <a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>
-            <li><a href='./en/shop.html' target='_blank'>Shop</a></li>
-            <li><a href='./en/blog.html' target='_blank'>Blog</a></li>
-            <li><a href='#page-description' >Content</a></li>
-            <li><a href='#' >Home</a></li> 
-        </ul>
-        
-        <div id="back" class="menuitem hide"><a href="#site-title"> ^ </a></div>
-    </div>
+    <h1 id="site-title" ><a href='https://sebastienbadel.com'><img src='/Images/site-icon.png' height='30px' alt='Flower'>Sébastien Badel</a></h1> 
+    <div id="page-hero" ><img src="/Images/Banner1.JPG" alt="Sébastien Badel" class="responsive"></div>
+    <ul id="navigation" class="link"></ul>
+    <div id="back" class="hide"><a href="#site-title">^</a></div>        
+    
     <div class="s50"></div>
     
     <div id="page-title">
-        <h1>Expression is Life</h1>
-        <h4><strong>Everything starts with a thought</strong></h4>
+        <h1>About</h1>
+        <h4><strong>Story and portfolio</strong></h4>
     </div> 
 </header>
 
 
 <div id="page-description">         
+
     <div class="index links">
-        <h3 >Featured Articles</h3>
-        <ul style="list-style-type: none;">
-            <li><strong>Français</strong></li>
-            <li><a href="./fr/introduction-a-ma-musique.html" target="_blank">Ma Musique</a></li>                
-            <br>
-            <li><strong>English</strong></li>
-            <li><a href="./en/introduction-to-my-music.html"target="_blank">About My Music</a></li>            
-            <li><a href="./en/improvisation-and-flow.html"target="_blank">Improvisation & Flow</a></li>            
-        </ul>
-    </div>
-    <div class="index links">
-        <h3>Portfolio</h3>
+        <div class="s50"></div>
+        <h3>Content</h3>
         <ul style="list-style-type: none;">                
-            <li><a href="#who_is">Who is ...</a></li>    
-            <li><a href="#education">Education</a></li>
+            <li><a href="#who_is">Who is ...</a></li>                
             <li><a href="#financial_manager">Finances</a></li>
             <li><a href="#entrepreneur">Entrepreneur</a></li>                
-            <li><a href="#web_dev">Web Developer & Content-creation</a></li>
-            <li><a href="#piano">Piano</a></li>                
+            <li><a href="#web_dev">Web Developer</a></li>
+            <li><a href="#piano">Piano Art</a></li>                
         </ul>
     </div>
     <div class="s50"></div>
@@ -95,120 +75,75 @@
 <div id="page_wrapper" class="wrapper">
     <div id="leftsidebar"> 
         
-        <img id="profile"style="margin-top:5px;" src="./Images/sb1.jpg" alt="Aman" width="100%">    
+        <img id="profile"style="margin-top:5px;" src="/Images/sb1.jpg" alt="Little Aman" width="100%">    
         <br>
         <div id="video1">            
             <iframe      
-            class="responsive"  
-            style="width: 100%;margin-top: 5px;"          
-            src="https://youtube.com/embed/YZqikxpsYcI?autoplay=0">
+            style="width: 100%; min-height: 250px; margin-top: 5px;"          
+            src="https://youtube.com/embed/kwDoKqhUYyY?autoplay=0">
             </iframe>
             <p class="video-text"
             style="margin-top:4px;" >
-                <b>Piano improvisation #316</b>
+                <b>Piano improvisation #399</b>
                 <br><br>                
             </p>
         </div> 
 
-        <div id="menu">
-            <p class="link"><a href="./en/blog.html" target="_blank"><strong>Blog</strong></a></p>
-            <p class="link"><a href="./en/shop.html" target="_blank"><strong>Shop</strong></a></p>                       
-            <div id="donate">
-                <form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > 
-                    <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> 
-                    <input type='image' src='./Images/Heart.jpg' border='0' width='30%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />
-                </form>
-            </div>        
-        </div>     
+        
+        <div id="donate"></div>  
+        
     </div>
 
     <div id="main"> 
-        <div id="who_is">
-        <h3 style="margin-block-start: 0;margin-block-end: 0;">The story of A man</h3>
+        <div id="who_is">        
+        <h4 style="margin-block-start:0px;">
+           <span style="text-align:left; color:red; font-weight:bold; margin-bottom:2px;">
+            Man is made <br> to live with passion <br> from the heart <br></span>           
+        </h4>
         <p>
-            <span style="text-align:left; color:red; font-weight:bold; margin-top:30px; margin-bottom:2px;">
-            Striving to live from the heart <br><br></span>
-        <strong>Descendant of Reuben,<br>
-            firstborn of Jacob ... and his cousin.</strong></p>
-        <p><br>
-            A cold winter day in <b>January 1971,</b> <br>
-            late at night, ... <br> 24 hours of labor, ... <br>
-            a boy was born in France, <br>
-            near Saint-Etienne.
-        </p>
-        <p>
-            French father. Dutch mother. <br> They divorced a year later. <br>
-            Cultural miscomprehension.
+            Born in France, near Saint-Etienne, 1971.
+            French dad, Dutch mum. <br>
+            I grew up in Holland, from age 1.
+            Good in math, sports and music. Started piano at 11.
+            Mum was determined.
         </p>        
-        <p>               
-            The boy grew up with mum in Holland. <br>
-            They moved 12 times in 20 years.
-        </p>
+
         <p>
-            The Netherlands as foundation.
-            Street jungle. <br>
-            At least for this little man.
-            A happy boy, most of the time, rather tender and gentle, 
-            certainly full of energy.
-            Pretty good at maths, sports and music. A bit lost.
+            After high school, I entered School for Higher Arts & Music in Utrecht, with piano.
+            4 years of studying music showed me music was for expression, 
+            but not to make a living. I left for France. 
+            With new friends we started a company on a farm, in organic food production. 
+            I learned that musicians need to sweat and work hard, 
+            to not lose their mental heath. So I did.
         </p>
-        <p>
-            Mum wanted him to play piano. 11 years old. <br>
-            Mum was determined. 
-        </p>
+
     </div>
-    <div id="education" >
-            <h2>Education</h2>
-            <p>
-                After finishing high school I needed to make a living.
-                I found work as cashier, in what was back then the ABN bank. 
-                I did well. 
-            </p>
-            <p>
-                My artistic aspirations urged me though.  
-                I would regret not trying to enter
-                School for Higher Arts & Music (Utrecht),
-                with piano. After a year of preparation, I was accepted,
-                and studied 4 years under Alwin Bär.
-            </p>
-            <p>
-                After studies I concluded that music was for expression
-                and not to make a living. I also wanted to discover 
-                my roots and birth country. So I started to travel in France.             
-                <br><br>
-                I made new friends and learned to work hard on a farm.
-                We regularly played music together, but only for pleasure.
-            </p>
-    </div>
-    <div id="financial_manager" >        
-        <div class="s50"></div>
+    <div id="financial_manager" >  
+        <div class="s50"></div>              
         <h2>Entering into Finance</h2>
         <p>
-            In our company bookkeeping needs arose.
-            Drawn to the job, descendant of a government accountant 
-            for the Dutch Ministry of Finance,
+            The company had bookkeeping needs.
+            As descendant of an accountant 
+            of the Dutch Ministry of Finance,
             I probably inherited my grandfather's gift with numbers.  
             <br><br>
-            Co-owner of the business, I volunteered and I ended up financial manager
-            for two interconnected enterprises. 
-            One did construction jobs, the other organic food and healthcare products.            
+            So I volunteered and I ended up co-owner and financial manager
+            for two enterprises.             
         </p>
         <p>
-            The main responsibility was to keep financial order and produce the legal statements.
-            I also operated in other areas, such as marketing, 
-            importation and organization of fairs.<br>
+            <b>The mission:</b><br> "Make order in finances 
+            and produce the statements."
         </p>
         <p>
-            At first directly supervised and trained by professional accountants,
-            I learned the bookkeeping procedures. 
-            After 3 years I started to manage the work without supervision.             
+            Supervised and trained by accountants for a couple of years,
+            I learned the finance & bookkeeping skills.             
         </p>
         <p>
-            I developed personalized applications, 
-            under Excel & VBA, to automate the bookkeeping tasks.                
-            The tools allowed a novice to enter simple transactions and 
-            transformed them into official journals, that
-            were imported in the bookkeeping software.            
+            Then I started to develop applications, 
+            with Excel & VBA, to automate the repetitive tasks.                
+            Users entered their transactions and the application 
+            transformed created importable journals,  
+            "clicked" into the software. 
         </p>
     </div>
 
@@ -216,81 +151,73 @@
         <div class="s50"></div>
         <h2>Entrepreneur</h2>
         <p>
-            After 14 years as co-manager, the company changed policy and direction.            
-            It was time for me to get new experiences. 
-            After some solar jobs, I started a business in commerce,
-            selling the products I knew well from the past.
-        </p>
-        <p>
-            Unfortunately, COVID19 ruined my markets. 
-            It had become impossible to make a living for a family with 4 kids.
-            I switched to take on jobs for people, and my business became a multi-task 
-            construction and maintenance company.
-        </p>
-        <p>
-            <strong><a href="https://ecbbadel.com" target="blank">https://ecbBadel.com (French website) </a></strong>.<br>            
-        </p>
+            After 14 years, company and family needs changed.
+            My career as bookkeeper paused and 
+            I started my business and took on various jobs :
+            <a href="https://ecbbadel.com" target="_blank"><strong>ECB Badel</strong></a>             
+        </p>        
 
     </div>
     
-    <div id="web_dev">
+    <div id="web_dev" >
         <div class="s50"></div>
-        <h2>Web Developer & Content-creator</h2>
+        <h2>Web Developer</h2>
         <p>
-            Over the years, mainly at night, I invested many hours 
-            in learning web development and building websites. 
-            By need for companies, and for pleasure.
-            I discovered an excellent way for creativity and artistic expression.            
+            Over the years, I sacrificed many nights to learn to code. 
+            By need and for pleasure.                        
+            An excellent way for creativity.            
         </p>
         <p>
             Passionate about the technology that makes it possible
-            to create applications, serving tools & content to illimited numbers 
-            of people, all around the world, I consider the possibilities endless.
-            My thirst for learning is only at its beginning and I will surely continue to invest time
-            and effort into the skills of web development.
+            to offer applications, tools & content to unlimited numbers 
+            of people all around the world, it's all clear : <br> possibilities are endless!
         </p>        
 
-        <p>
-            You can get an idea on one of my websites (it still needs work):<br>
-            <strong><a href="https://holidayvillasinfrance.com" target="blank">Holiday Villas in France</a></strong>
-        </p>
     </div>
 
     <div id="piano">
         <div class="s50"></div>
-        <h2>Piano & YouTube</h2>
-        <p>So what happened to the piano ?</p>
+        <h2>Piano Art</h2>
+        <p>What happened to piano ?</p>
         <p> 
-            There is a time for everything. After hard work, it is time to relax.
-            Artistic expression is essential in my life, but it has its time and place.            
+            There is a time for everything. After hard work, 
+            it is time to relax.
+            Artistic expression is essential for life, 
+            but it has its own time and place. 
+            For me it comes in waves and periods.       
         </p>        
         <p>
-            I believe art must mature and ripen, just like fruit.
-            No body picks a ripe apple from a recently planted tree.
-            A tree must grow and the apple must ripen. 
-            Unripe fruit is not enjoyable. Art needs patience to ripen.
-            Artists need to grow into what they have to offer.
-            The process is organic and in my opinion cannot be accelerated.             
+            Art must ripen. No body picks a ripe fruit from a recently planted tree.
+            A tree must grow and fruit must ripen, to be enjoyable. 
+            Any artist needs to grow into what he has to offer. 
+            Patience is part of the art. 
+            So I continue patiently, not knowing where the ship will strand.
         </p>
         <p>
             
             
             <strong><a href="https://sebastienbadel.com/en/improvisation-and-flow.html#section-6" target="_blank">
-                Here are more thoughts on artists and their work.</a></strong>
+            More on artists and their work.</a></strong>
         </p>
         <p>
-            I play for artistic expression and not to make a living.
-            I share it on YouTube for the same reason. Artistic Expression.
-            I do not expect a lot of people to love or follow it. 
-            It doesn't matter to me. 
-            I value all the more those who do appreciate it, since it proves 
-            we have a common sentiment.
+            Art is to express thoughts and feelings. Not to obtain glory.            
+            Pure art is not expecting other people to value it. 
+            Of course creators are happy when people do.
         </p>
         <p>
-            What counts is to advance in our passions and in
-            the creation of artistic works. And let it grow naturally.
-            Not only in music. 
+            What counts is to do what we deeply believe in. 
+            And if we do so, things grow into perfection, little by little. 
+            Any strive for personal success and appreciation from society 
+            defiles beauty and makes art  common and useless. It is like a fine meal, but poisoned.<br><br>
+            It can be a struggle for artists to keep motivations pure and not get affected by thirst for success. 
         </p>       
+        
+        <h4>Sébastien Badel,</h4>
+        <p>
+            alias Aman <br>
+            Belledonne, Rhône-Alpes, France <br>
+            January, 2024.
+        </p> 
     </div>          
 
     <div class="s50"></div>
@@ -303,7 +230,7 @@
 <div id="elTop" class="hide"> 
     <!--Button to find top of an element
     Together with script below. Remove the "hide" class
-    reload the page and click the button on th ebottom of the page-->
+    reload the page and click the button on the bottom of the page-->
 
     <p><button onclick="getTop()">Get Top of an Element</button></p>
     <p id="myTopId"> Top of an element:</p> 
@@ -323,17 +250,15 @@
     <div id="footer">
         <div class="s100"></div>
             
-            <a href="./contact.html" class="links" target="_blank"><img style="vertical-align:middle;margin-right: 5px;" src="./Images/message_icon.png"" height="24px" alt="message-icon"><strong>Contact</strong></a>&nbsp &nbsp;
-            <a href="https://facebook.com/SebastienBadel" class="links" target="_blank"> <img style="vertical-align:middle;margin-right: 5px;" src="./Images/fb_icon.png"" height="24px" alt="message-icon"><strong>Facebook </strong> </a>&nbsp &nbsp;
-            <a href="https://youtube.com/@SebastienBadelPiano"class="links" target="_blank">  <img style="vertical-align:middle;margin-right: 5px;" src="./Images/yt_icon.png"" height="24px" alt="message-icon"> <strong>Youtube </strong></a>&nbsp &nbsp;        
+            <a href="/contact.html" class="links" target="_blank"><img style="vertical-align:middle;margin-right: 5px;" src="/Images/message_icon.png"" height="24px" alt="message-icon"><strong>Contact</strong></a>&nbsp &nbsp;
+            <a href='https://www.linkedin.com/in/sebastienbadelpiano/' class='links' target='_blank'> <img style='vertical-align:middle;margin-right: 5px;' src='/Images/li_icon.png'' height='24px' alt='message-icon'><strong>LinkedIn </strong> </a>&nbsp &nbsp;
+            <a href="https://youtube.com/@SebastienBadelPiano"class="links" target="_blank">  <img style="vertical-align:middle;margin-right: 5px;" src="/Images/yt_icon.png"" height="24px" alt="message-icon"> <strong>Youtube </strong></a>&nbsp &nbsp;        
                     
             <div class="s50"></div>
         
             <p  style="text-align: center;">Site developed ©2020-2024 by Sébastien Badel</p>        
         </div>
 </footer>
-
-
 
 
 <script id="Sticky-js">

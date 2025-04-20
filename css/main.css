@@ -355,4 +355,10 @@ p{
     border-radius: 8px;
 }
 #footer a {color: darkblue;text-decoration-line: none;}
-#footer {text-align: center;}
+#footer {
+    text-align: center;
+    font-size: larger;
+    background-color: antiquewhite;
+    padding: 25px;
+    a {padding-left: 25px;}
+}
