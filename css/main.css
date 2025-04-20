@@ -137,7 +137,7 @@ p{
     margin-top: 0;
     padding: 5px;
     text-align:left;
-    height:35px;       
+    height:35px; 
 }
 #navigation li{
     list-style-type: none; 
@@ -198,15 +198,13 @@ p{
 
 @media screen and (min-width: 780px) {
     #leftsidebar {padding-top:0;width: 25%;float: left;}
-    #main {margin-left: 26%;width: 65%;text-align: justify;}
-    #navigation li{float:right;width:180px;text-align: center;}  
-
+    #main {margin-left: 30%;width: 50%;text-align: justify;}
+    #navigation li{float:right;}  
     #navigation a{
         font-weight:600;
         font-size: 24px;
         padding-right: 25px !important;
         padding-right: 5px;} 
-
     h1{font-size: 40px;}
     h2{font-size: 36px;}
     h3{font-size: 34px;}
@@ -220,8 +218,6 @@ p{
     .sticky-right li {text-align: right !important;}
     .sticky-right a{font-size: 15px !important;}
     .sticky-right a:hover{font-size: 18px !important;}
-    /*.links a {text-decoration: none;transition-property: all;transition-duration: 0.5s;}
-    .links a:hover {overflow: hidden;font-size: 22px;color:maroon;font-weight: bolder;text-shadow: 3px 3px 3px rgb(123, 117, 142);}*/
     #menu {text-align: left;font-size: 14px;margin-top: 10px;}
     #menu p{margin-block-start:5px !important;margin-block-end:5px !important;}
 }
@@ -235,25 +231,29 @@ p{
 
 #page-description{
     border-top: solid 1px;
-    border-bottom: solid 1px;
-    
+    border-bottom: solid 1px;    
 }
+
 #page-description a{
     margin-block-end: 0px;
 }
+
 #page-description h1{
     margin-top: 0;
 }
+
 .section{
     padding-top: 70px;
     width: 100%;
     min-height: 150px;
     border-top:  solid 2px black;
 }
+
 .s50{
     height: 50px;
     width: 100%;
 }
+
 .s100{
     height: 100px;
     width: 100%;
@@ -337,10 +337,6 @@ p{
     text-shadow: 3px 3px 3px rgb(123, 117, 142);
     }
 
-
-
-
-
   .button{  
     height: 45px;
   }
@@ -360,5 +356,48 @@ p{
     font-size: larger;
     background-color: antiquewhite;
     padding: 25px;
+    margin-top: 150px;
     a {padding-left: 25px;}
 }
+
+.parent{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 15px;
+    --padding: 4px;
+    position: relative;
+    padding: var(--padding);
+    border: 1px solid hsl(210deg 10% 40%);
+    border-radius: 8px;
+  }
+  .parent::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: calc(
+      25% +
+      var(--padding) / 2 -
+      1px
+    );
+    border-left:
+      2px dashed
+      hsl(210deg 8% 50%);
+  }
+  .child {
+    display: grid;
+    place-content: center;
+    height: 300px;
+    border:
+      2px solid hsl(210deg 8% 50%);
+    border-radius: 3px;
+    background:blanchedalmond;
+    color:red;
+    font-weight: bold;
+  }
+  .child:first-child {
+    margin-right: 2px;
+  }
+  .child:last-child {
+    margin-left: 2px;
+  }
