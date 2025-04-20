@@ -108,7 +108,6 @@ p{
     position: relative;
     padding-top: 2px;   
     border-top: solid 1px;
-    border-bottom: solid 1px;
     margin: 0; 
 }
 
@@ -230,6 +229,7 @@ p{
   }
 
 #page-description{
+    margin-top: 50px;
     border-top: solid 1px;
     border-bottom: solid 1px;    
 }
@@ -359,43 +359,39 @@ p{
     margin-top: 150px;
     a {padding-left: 25px;}
 }
-
-.parent{
+.parent {
     display: grid;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: 2fr 2fr;
-    gap: 80px;
-    --padding: 40px;
-    position: relative;
-    padding: var(--padding);
-    transition-duration: 1s;
-  }
+    grid-template-rows: 260px;
+    background-color: antiquewhite;
+}
 
   .parent::after {
     content: '';
     position: absolute;
     top: 2px;
     bottom: 2px;
-    left: calc(
-      25% +
-      var(--padding) / 2 -
-      1px
-    );
   }
 
   .child {
-    display: grid;
     place-content: center;
     height: 300px;
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border:
-      2px solid hsl(210deg 8% 50%);
+      1px solid hsl(284, 94%, 13%);
     border-radius: 10px;
-    background:rgba(105, 90, 205, 0.75);
     color:red;
     font-weight: bold;
   }
+
+
   .child:first-child {
     margin-right: 2px;
   }
@@ -404,3 +400,8 @@ p{
   }
 
   .wider{width: 120%;}
+
+  .b1{    background:rgba(105, 90, 205, 0.80);}
+  .b2{    background:rgba(105, 90, 205, 0.60);}
+  .b3{    background:rgba(105, 90, 205, 0.40);}
+  .b4{    background:rgba(105, 90, 205, 0.20);}

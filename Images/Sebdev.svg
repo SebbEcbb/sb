@@ -9,7 +9,7 @@
    id="svg1"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    sodipodi:docname="box1.svg"
-   inkscape:export-filename="Story.svg"
+   inkscape:export-filename="Business.svg"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -38,12 +38,6 @@
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
-    <rect
-       x="63.57143"
-       y="63.57143"
-       width="203.57143"
-       height="68.928574"
-       id="rect10" />
     <linearGradient
        id="linearGradient9"
        inkscape:collect="always">
@@ -66,13 +60,19 @@
        y2="52.255207"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.0179512,0,0,1.0139248,-0.57789376,-0.57544262)" />
+    <rect
+       x="63.57143"
+       y="63.57143"
+       width="227.45531"
+       height="92.215958"
+       id="rect11" />
   </defs>
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:url(#linearGradient10);fill-opacity:1;stroke-width:0.2688"
+       style="display:inline;fill:url(#linearGradient10);fill-opacity:1;stroke-width:0.2688"
        id="rect8"
        width="85.734863"
        height="55.044239"
@@ -80,16 +80,16 @@
        y="0.041875385" />
     <text
        xml:space="preserve"
-       transform="matrix(0.52540018,0,-0.08577323,0.47073733,-36.097523,-16.598585)"
-       id="text10"
-       style="text-align:center;white-space:pre;shape-inside:url(#rect10);display:inline;fill:#ff0000;fill-opacity:1"
+       transform="matrix(0.37401219,0,-0.06105866,0.5321741,-18.262884,-22.810783)"
+       id="text11"
+       style="text-align:center;white-space:pre;shape-inside:url(#rect11);display:inline;fill:#ff0000;fill-opacity:1"
        x="70.300781"
        y="0"
-       inkscape:label="Story"><tspan
-         x="109.4707"
-         y="107.15025"
+       inkscape:label="Webdev"><tspan
+         x="88.19043"
+         y="107.36412"
          id="tspan2"><tspan
-           style="font-size:48px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal'"
-           id="tspan1">Story</tspan></tspan></text>
+           style="font-size:48px;font-family:Sans;-inkscape-font-specification:'Sans, Normal'"
+           id="tspan1">Sebdev</tspan></tspan></text>
   </g>
 </svg>
