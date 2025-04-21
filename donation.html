@@ -32,15 +32,9 @@
         @media screen and (max-width:599px) {
             h2{font-size: 20px;}
         }
-        .centered-div{
-            max-width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
 
-        }
-        .centered-div p{
+        #comment p, h4{
             text-align: left;
-
         }
     </style>
 
@@ -50,7 +44,7 @@
 <body>
 
 <header>
-    <h1 id="site-title" ><a href='https://sebastienbadel.com'><img src='./Images/site-icon.png' height='30px' alt='Flower'>Sébastien Badel <br> <!--<span style="font-size:15px">alias Aman</span>--></a></h1> 
+    <h1 id="site-title" ><a href='https://sebastienbadel.com'><img src='/Images/site-icon.png' height='30px' alt='Flower'>Sébastien Badel <br> <!--<span style="font-size:15px">alias Aman</span>--></a></h1> 
     <div id="page-hero" >
         <img 
             src="./Images/Banner1.JPG" 
@@ -59,29 +53,33 @@
     </div>
     <div>   
         <ul id="navigation" class="links">
-            <li ><a href='./en/contact.html' target='_blank'>Write me</a></li>
+            <li ><a href='/en/contact.html' target='_blank'>Contact</a></li>
+            <li ><a href='/en/aboutt.html' target='_blank'>About</a></li>
             <li ><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>
-            <li ><a href='./en/shop.html' target='_blank'>Shop</a></li>
-            <li ><a href='./en/blog.html' target='_blank'>Articles</a></li>
-            <li ><a href='https://sebastienbadel.com' >Home</a></li>
+            <li ><a href='/en/shop.html' target='_blank'>Shop</a></li>
+            <li ><a href='/en/blog.html' target='_blank'>Blog</a></li>
+            <li ><a href='https://sebastienbadel.com/en/Home.html' >Home</a></li>
         </ul>
     </div>
     
     <div class="s50"></div>
     
-    <div id="page-title">
+    <div id="page-title" class="center">
         <h4>Creation and expression take time and effort</h4>
-        <div class="centered-div">
-            <p> I make that effort as an act of love towards God and mankind, <br>
-                offering my work for free, so anyone can enjoy it. <br>
-                Any financial support is also an act of love. Thank you.
+        <div id="comment" >
+            <p> I gladly make that effort and consider it part of my human obligations, <br>
+                as an act of thankfulness and love towards God and mankind. <br><br>
+                I thus offer my work for free, for anyone to enjoy it. <br>
+                Any financial support is also an act of love and thankfulness from your side, <br>
+                and I thank you in advance for your appreciation and gift.
             </p>
         </div>
         <div class="s50"></div>
         <form style='text-align: center; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > 
             <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> 
-            <input type='image' src='./Images/Heart.jpg' border='0' width='30%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />
+            <input type='image' src='./Images/Heart.jpg' border='0' width='50%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />
         </form>
+        <p>Click the heart to make a donation.</p>
 
     </div> 
 </header>
