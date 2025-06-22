@@ -23,6 +23,8 @@
 
     <link rel="stylesheet" href="./css/main.css" >
     <link rel="stylesheet" href="./css/donation.css" >
+    <script src="/fr/fr.js" defer></script>
+    <script src="/en/en.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,8 +62,8 @@
 <main>
     
     <div id="flags" class="center">
-        <a href="#navigation" onclick="fr()"><img src="/Images/fr.jpeg" alt="French flag"></a>
-        <a href="#navigation" onclick="en()"><img src="/Images/en.jpeg" alt="English flag"></a>
+        <a href="#navigation" onclick="fr()" ><img src="/Images/fr.jpeg" alt="French flag"></a>
+        <a href="#navigation" onclick="en()" ><img src="/Images/en.jpeg" alt="English flag"></a>
     </div>
 
     <div id="page-title" class="center">
@@ -69,8 +71,8 @@
         <div id="en" class="en show">
             <h4>Creation and expression take time and effort.</h4>
             <div id="comment" >
-                <p> I gladly make that effort and consider it part of my human obligations, <br>
-                    as an act of thankfulness and love towards God and mankind. <br><br>
+                <p> I gladly make that effort and consider it part of my human obligations. <br>
+                    It is an act of thankfulness and love towards God and mankind. <br><br> 
                     I thus offer my work for free, for anyone to enjoy it. <br>
                     Any financial support is also an act of love and thankfulness from your side, <br>
                     and I thank you in advance for your appreciation and gift.
@@ -81,11 +83,11 @@
         <div id="fr" class="fr hide">
             <h4>Création et expression prennent du temps  et de l'effort</h4>
             <div id="comment" > 
-                <p> Je suis heureux de faire cet effort et je considère cela parti de mes obligations humaines, <br>
-                    comme acte de reconnaissance et d'amour envers Dieu et l'humanité. <br><br>
+                <p> Je suis heureux de faire cet effort et je considère cela parti de mes obligations humaines. <br>
+                    C'est un acte de reconnaissance et d'amour envers Dieu et l'humanité. <br><br>
                     Ainsi, j'offre mon tr   avail gratuitement, pour chacun de l'apprécier. <br>
                     Toute aide financière est aussi un acte d'amour et de reconnaissance de votre part. <br>
-                    Et je vous en remercie par avance pour votre appréciation et votre don. <br>
+                    Et je vous remercie par avance pour votre appréciation et votre don. <br>
                 </p>
             </div>
         </div>
@@ -112,7 +114,9 @@
 <script>
 
     function fr(){
-        
+
+        navigation_fr();
+
         const frs = document.getElementsByClassName("fr");
         for (let i = 0; i < frs.length; i++) {
             frs[i].classList="fr show";
@@ -126,6 +130,7 @@
         
     function en(){
 
+        navigation_en();
         const frs = document.getElementsByClassName("fr");
         for (let i = 0; i < frs.length; i++) {
             frs[i].classList="fr hide";
