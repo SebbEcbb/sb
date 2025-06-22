@@ -4,6 +4,7 @@
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
+
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -19,24 +20,19 @@
     <title>Sébastien Badel Donate</title>
     
     <link rel="icon" href="./Images/site-icon.png">
+
     <link rel="stylesheet" href="./css/main.css" >
+    <link rel="stylesheet" href="./css/donation.css" >
+    <script src="/fr/fr.js" defer></script>
+    <script src="/en/en.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">    
     
-    <style>
-        @media screen and (min-width:600px) {
-            h2{font-size: 24px !important;}
-        }
-        @media screen and (max-width:599px) {
-            h2{font-size: 20px;}
-        }
 
-        #comment p, h4{
-            text-align: left;
-        }
-    </style>
 
 
 </head>
@@ -61,29 +57,93 @@
             <li ><a href='https://sebastienbadel.com/en/Home.html' >Home</a></li>
         </ul>
     </div>
+</header>
+<div class="s50"></div>
+<main>
     
-    <div class="s50"></div>
-    
+    <div id="flags" class="center">
+        <a href="#navigation" onclick="fr()" ><img src="/Images/fr.jpeg" alt="French flag"></a>
+        <a href="#navigation" onclick="en()" ><img src="/Images/en.jpeg" alt="English flag"></a>
+    </div>
+
     <div id="page-title" class="center">
-        <h4>Creation and expression take time and effort</h4>
-        <div id="comment" >
-            <p> I gladly make that effort and consider it part of my human obligations, <br>
-                as an act of thankfulness and love towards God and mankind. <br><br>
-                I thus offer my work for free, for anyone to enjoy it. <br>
-                Any financial support is also an act of love and thankfulness from your side, <br>
-                and I thank you in advance for your appreciation and gift.
-            </p>
+        
+        <div id="en" class="en show">
+            <h4>Creation and expression take time and effort.</h4>
+            <div id="comment" >
+                <p> I gladly make that effort and consider it part of my human obligations. <br>
+                    It is an act of thankfulness and love towards God and mankind. <br><br> 
+                    I thus offer my work for free, for anyone to enjoy it. <br>
+                    Any financial support is also an act of love and thankfulness from your side, <br>
+                    and I thank you in advance for your appreciation and gift.
+                </p>
+            </div>
         </div>
+
+        <div id="fr" class="fr hide">
+            <h4>Création et expression prennent du temps  et de l'effort</h4>
+            <div id="comment" > 
+                <p> Je suis heureux de faire cet effort et je considère cela parti de mes obligations humaines. <br>
+                    C'est un acte de reconnaissance et d'amour envers Dieu et l'humanité. <br><br>
+                    Ainsi, j'offre mon tr   avail gratuitement, pour chacun de l'apprécier. <br>
+                    Toute aide financière est aussi un acte d'amour et de reconnaissance de votre part. <br>
+                    Et je vous remercie par avance pour votre appréciation et votre don. <br>
+                </p>
+            </div>
+        </div>
+
+    
         <div class="s50"></div>
+
         <form style='text-align: center; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > 
             <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> 
             <input type='image' src='./Images/Heart.jpg' border='0' width='50%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />
         </form>
-        <p>Click the heart to make a donation.</p>
+
+        <p class="en show">Click the heart to make a donation.</p>
+        <p class="fr hide">Cliquez le coeur pour faire une donation.</p>
 
     </div> 
-</header>
+</main> 
 
+<footer>
+
+</footer>
+
+
+<script>
+
+    function fr(){
+
+        navigation_fr();
+
+        const frs = document.getElementsByClassName("fr");
+        for (let i = 0; i < frs.length; i++) {
+            frs[i].classList="fr show";
+        }
+        const ens = document.getElementsByClassName("en");
+        for (let i = 0; i < ens.length; i++) {
+            ens[i].classList="en hide";
+        }
+        
+    }
+        
+    function en(){
+
+        navigation_en();
+        const frs = document.getElementsByClassName("fr");
+        for (let i = 0; i < frs.length; i++) {
+            frs[i].classList="fr hide";
+        }
+        const ens = document.getElementsByClassName("en");
+        for (let i = 0; i < ens.length; i++) {
+            ens[i].classList="en show";
+        }
+    }
+    
+</script>
+
+</body> 
 
 
 

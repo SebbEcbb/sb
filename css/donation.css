@@ -1,0 +1,26 @@
+#flags{
+    display: flex;
+    align-items: center ;
+    
+}
+#flags img{
+    height: 50px;
+    width: 100px;
+    padding-right: 25px;
+    
+}
+
+@media screen and (min-width:600px) {
+    h2{font-size: 24px !important;}
+}
+
+@media screen and (max-width:599px) {
+    h2{font-size: 20px;}
+}
+
+#comment p, h4{
+    text-align: left;
+}
+.red {
+ color: red;
+}
