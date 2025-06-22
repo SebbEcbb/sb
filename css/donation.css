@@ -1,3 +1,11 @@
 #flags{
     display: flex;
+    align-items: center ;
+    
+}
+#flags img{
+    height: 50px;
+    width: 100px;
+    padding-right: 25px;
+    
 }
