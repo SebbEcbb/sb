@@ -34,6 +34,17 @@ function navigation_fr() {
     "<li class='menuitem'><a href='https://sebastienbadel.com' >Acceuil</a></li>"
   }
 
+  function navigation_donation_fr() { 
+  //alert("navigation_fr")
+    document.getElementById("navigation").innerHTML = 
+    "<li class='menuitem'><a href='./fr/contact.html' target='_blank'>Contact</a></li>"+
+    "<li class='menuitem'><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>"+
+    "<li class='menuitem'><a href='./fr/boutique.html' target='_blank' >Boutique</a></li>"+
+    "<li class='menuitem'><a href='./fr/blog.html' target='_blank'>Blog</a></li>"+
+    "<li class='menuitem'><a href='#page-description' >Contenu</a></li>"+
+    "<li class='menuitem'><a href='https://sebastienbadel.com' >Acceuil</a></li>"
+  }
+
   function donation_fr() {
     //alert("donation_fr")
     document.getElementById("donate").innerHTML = 

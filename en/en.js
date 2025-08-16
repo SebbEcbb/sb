@@ -32,6 +32,18 @@ function navigation_en() {
     "<li class='menuitem'><a href='https://sebastienbadel.com/' >Home</a></li>"
   }
 
+  function navigation_donation_en() {
+    document.getElementById("navigation").innerHTML = 
+    "<li class='menuitem'><a href='./en/contact.html' target='_blank'>Contact</a></li>"+
+    "<li class='menuitem'><a href='./en/About.html' target='_blank'>About</a></li>"+
+    "<li class='menuitem'><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>"+
+    "<li class='menuitem'><a href='./en/shop.html' target='_blank'>Shop</a></li>"+
+    "<li class='menuitem'><a href='./en/blog.html' target='_blank'>Blog</a></li>"+
+    "<li class='menuitem'><a href='#page-description' >Content</a></li>"+
+    "<li class='menuitem'><a href='https://sebastienbadel.com/' >Home</a></li>"
+  }
+  
+
   function donate_en() {
     document.getElementById("donate").innerHTML = 
     "<form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> <input type='image' src='../Images/Heart.jpg' border='0' width='60%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' /></form>"
@@ -39,21 +51,21 @@ function navigation_en() {
   
     
     
-    function StickyJs() {
-        const element = document.documentElement.getBoundingClientRect();
-        const m = -element.y
-        const n = document.getElementById("main").offsetTop;
-        
-        if( n < m){    
-        document.getElementById("back").className = "menuitem back-to-top";          
-        document.getElementById("leftsidebar").className = "sticky-left";
-        document.getElementById("navigation").className = "links sticky-right";
-        
-        } else {
-        document.getElementById("back").className = "hide";
-        document.getElementById("leftsidebar").className = "pop";
-        document.getElementById("navigation").className = "links";
-        }
-        
-        }
+function StickyJs() {
+    const element = document.documentElement.getBoundingClientRect();
+    const m = -element.y
+    const n = document.getElementById("main").offsetTop;
+    
+    if( n < m){    
+    document.getElementById("back").className = "menuitem back-to-top";          
+    document.getElementById("leftsidebar").className = "sticky-left";
+    document.getElementById("navigation").className = "links sticky-right";
+    
+    } else {
+    document.getElementById("back").className = "hide";
+    document.getElementById("leftsidebar").className = "pop";
+    document.getElementById("navigation").className = "links";
+    }
+    
+    }
 
