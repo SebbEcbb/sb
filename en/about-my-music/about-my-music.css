@@ -1,0 +1,102 @@
+/* --- Global Reset & Body --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/*lOGO IN HEADER*/
+.site-title {
+    height: 50px;
+    width: auto;
+    color: antiquewhite;
+}
+/* --- 1. Hero Image Styling --- */
+.hero-image {
+    /* Set the hero to cover the full viewport width and height */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Replace with your image path */
+    background-image: url('path/to/your/hero-image.jpg'); 
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-position: center;
+    
+    /* Ensure the hero establishes a stacking context */
+    position: relative; 
+    z-index: 1; /* Keep it layered below the header content if necessary */
+}
+
+
+/* --- 2. Logo Placement (Inside <header>) --- */
+header {
+    position: absolute; /* Allows logo to sit on top of the hero image */
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Ensures the logo is visible */
+}
+header a {
+    /* Style your logo link/image here */
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* --- 3. Navigation Menu Placement --- */
+.main-nav {
+    /* Use absolute positioning relative to the BODY or a wrapper, 
+       or use fixed position if you want it to scroll with the page.
+    */
+    position: absolute; 
+    
+    /* Positioning right under the hero: */
+    top: 100vh; /* Start exactly where the hero ends */
+    right: 0;   /* Align to the right edge */
+    
+    /* Style for the menu container */
+    background-color: #333; 
+    padding: 10px 20px;
+    z-index: 5; /* Ensure it overlaps main content if needed */
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.main-nav li {
+    display: inline; /* Display links horizontally */
+    margin-left: 15px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* --- 4. Page Title and Content Styling --- */
+main {
+    /* Main content should start just after the navigation menu, or where the 
+       flow naturally dictates. Since the nav is absolutely positioned, 
+       main content starts immediately after the hero.
+    */
+    padding-top: 50px; /* Add space below the hero/nav area */
+    text-align: center; /* Center the title group */
+    z-index: 2; /* Ensure content is above any background layers */
+    position: relative; 
+}
+
+.page-title-group h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.1em;
+}
+
+.page-title-group h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #666;
+    margin-top: 0;
+}

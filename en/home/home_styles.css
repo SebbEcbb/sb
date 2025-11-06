@@ -1,0 +1,104 @@
+body {
+    display: flex; /* Use flexbox to center the container */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make body at least viewport height */
+    margin: 0;
+    background-color: #f7e9d7; /* Soft peach background color from the image */
+    font-family: 'Times New Roman', serif; /* Closest common font to image */
+}
+
+.card-container {
+    display: grid;
+    /* Define a 2x2 grid */
+    grid-template-columns: repeat(2, 500px); /* Two columns, 500px wide */
+    grid-template-rows: repeat(2, 300px );    /* Two rows, 300px tall */
+
+    /* This creates the overlap and the "gap" visually */
+    /* The overlap pushes them together, the offset creates the final look */
+    gap: 0px; /* Initial gap can be 0 or small, positioning will do the work */
+
+    /* To achieve the specific overlap, we use relative positioning or margins */
+    position: relative; /* Needed for positioning child cards if using relative/absolute */
+}
+
+.card {
+    width: 500px; /* Explicit width to match grid-template-columns */
+    height: 300px; /* Explicit height to match grid-template-rows */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effects */
+}
+
+/* Link styling */
+.card a {
+    font-size: 2.2em; /* Adjust font size as needed */
+    font-weight: bold;
+    color: maroon; /* Red color for text */
+    text-decoration: none; /* Remove underline */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Slight text shadow for depth */
+    letter-spacing: 1px; /* Add some spacing */
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-5px) scale(1.02); /* Lift and slightly enlarge */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow */
+    z-index: 10; /* Bring hovered card to front */
+}
+
+
+/* Specific Positioning for Overlap and Gap */
+/* Adjust these values to fine-tune the exact overlap and spacing */
+.card-story {
+    grid-area: 1 / 1 / 2 / 2; /* Row 1, Column 1 */
+    position: relative;
+    right: -30px; /* Push right to overlap Piano Art */
+    bottom: -30px; /* Push down to overlap Sebdev */
+    z-index: 3; /* Ensures Story is on top of Sebdev and Piano Art */
+}
+
+.card-piano-art {
+    grid-area: 1 / 2 / 2 / 3; /* Row 1, Column 2 */
+    position: relative;
+    left: -30px; /* Pull left to overlap Story */
+    bottom: -10px; /* Push down to overlap Business */
+    z-index: 2; /* Ensures Piano Art is on top of Business */
+}
+
+.card-sebdev {
+    grid-area: 2 / 1 / 3 / 2; /* Row 2, Column 1 */
+    position: relative;
+    right: -5px; /* Push right to overlap Business */
+    top: 20px; /* Pull up to overlap Story */
+    z-index: 1; /* Sebdev is behind Story */
+}
+
+.card-business {
+    grid-area: 2 / 2 / 3 / 3; /* Row 2, Column 2 */
+    position: relative;
+    left: -5px; /* Pull left to overlap Sebdev */
+    top: -10px; /* Pull up to overlap Piano Art */
+    z-index: 0; /* Business is behind Piano Art and Sebdev */
+}
+
+
+/* Gradient Backgrounds for each card */
+.card-story {
+    background: linear-gradient(135deg, #faf0e1, rgb(235, 199, 153), #7171ba); /* Light blue/purple gradient */
+}
+
+.card-piano-art {
+    background: linear-gradient(135deg, #faf0e1, rgb(250, 198, 129), #5555f8); /* Light pink/red gradient */
+}
+
+.card-sebdev {
+    background: linear-gradient(135deg, #fbf7f1, rgb(248, 218, 179), #afaff7); /* Light green gradient */
+}
+
+.card-business {
+    background: linear-gradient(135deg, #faf0e1, rgb(249, 178, 86), #3f3ff8); /* Light orange/peach gradient */
+}

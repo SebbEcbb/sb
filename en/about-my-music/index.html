@@ -1,42 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Sébastien Badel — About my music</title>
-    <meta name="description" content="Sébastien Badel — composer, producer and sound designer. About my music, discography and contact." />
-    <link rel="canonical" href="/en/" />
-    <style>
-        :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.4;color:#111}
-        body{margin:0;padding:0;background:#fff;color:var(--text);min-height:100vh;display:flex;flex-direction:column}
-        header{background:#0b0b0b;color:#fff;padding:22px 24px;display:flex;align-items:center;justify-content:space-between}
-        header a.logo{color:#fff;text-decoration:none;font-weight:700}
-        nav a{color:#ddd;margin-left:16px;text-decoration:none;font-size:0.95rem}
-        main{max-width:1000px;margin:40px auto;padding:0 20px}
-        .hero{display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:start}
-        .hero h1{margin:0 0 8px;font-size:2rem}
-        .hero p.lead{margin:0 0 18px;color:#333}
-        .card{background:#f7f7f7;padding:18px;border-radius:8px}
-        .tracks{display:flex;flex-direction:column;gap:12px}
-        footer{margin-top:auto;padding:22px 24px;background:#fafafa;border-top:1px solid #eee;text-align:center;font-size:0.9rem;color:#666}
-        @media (max-width:800px){.hero{grid-template-columns:1fr;}.hero > *{order:unset}}
-    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-73W9XL22BJ');
+    </script>
+
+    <meta http-equiv="Content-Type" content="texy/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <title>Sebastien Badel - About my music</title>
+    
+    <link rel="icon" href="/Images/site-icon.png">
+    <link rel="stylesheet" href="/css/main.css" >
+    <link rel="stylesheet" href="/en/en.css">
+    <link rel="stylesheet" href="/en/about-my-music/about-my-music.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">    
+
+    <script src="/js/main.js"></script>
+    <script src="/en/en.js"></script>
+    
 </head>
-<body>
-    <header>
-        <a class="logo" href="/en/">Sébastien Badel</a>
-        <nav>
-            <a href="/en/">Home</a>
-            <a href="/en/about-my-music/">About</a>
-            <a href="/en/music/">Music</a>
-            <a href="/en/contact/">Contact</a>
-        </nav>
-    </header>
+
+<body onload="loadJs_en()";>
+
+<header>
+    <h1 id="site-title" ></h1> 
+</header>
+    <section id="page-hero" ><img src="/Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
+    <ul id="navigation" class="links"></ul>
+    <div id="back" class="hide"><a href="#site-title">^</a></div>
+
+    <div class="s50"></div>
+</nav>
 
     <main>
-        <section class="hero">
-            <div>
-                <h1>About my music</h1>
+        <article>
+            <header>
+                <div id="page-title">
+                    <h1>About my music</h1>
+                    <h2><strong>Understanding intention and purpose</strong></h2>
+                </div> 
+            </header>
+             <div>
                 <p class="lead">I compose and produce music for media and personal projects — blending acoustic instruments, synth textures and field recordings to create emotive soundscapes.</p>
 
                 <article class="card" aria-labelledby="approach">
@@ -73,13 +89,9 @@
                     <a href="/en/music/" style="display:inline-block;text-decoration:none;padding:10px 14px;background:#111;color:#fff;border-radius:6px">Listen & explore</a>
                 </div>
             </aside>
-        </section>
+        </article>
 
-        <section style="margin-top:32px" class="card" aria-labelledby="credits">
-            <h2 id="credits">Credits & Contact</h2>
-            <p>Compositions, production and sound design by Sébastien Badel. For licensing, commissions or collaborations, please reach out via the contact page.</p>
-            <p style="margin-top:8px"><a href="/en/contact/">Contact page</a> • <a href="/en/privacy/">Privacy</a></p>
-        </section>
+
     </main>
 
     <footer>
