@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vision Board</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        .img-container {
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        .img-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Modal Transitions */
+        #lightbox {
+            transition: opacity 0.3s ease;
+            backdrop-filter: blur(8px);
+        }
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] w-full flex items-center justify-center overflow-hidden">
+        <img src="/assets/poster.jpg" alt="Hero Poster" class="absolute inset-0 w-full h-full object-cover brightness-50" onerror="this.src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80'">
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tight drop-shadow-lg">My Vision Board</h1>
+            <p class="mt-4 text-slate-200 text-lg md:text-xl font-light">Visualizing the journey ahead</p>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <main class="max-w-7xl mx-auto px-4 py-16">
+        <div class="gallery-grid" id="gallery">
+            <!-- JS will inject 30 images here -->
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/95 p-4 opacity-0">
+        <!-- Close Button -->
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-4xl font-light hover:text-slate-300 transition">&times;</button>
+        
+        <!-- Navigation -->
+        <button onclick="prevImage()" class="nav-btn absolute left-4 text-white hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+        </button>
+
+        <div class="max-w-5xl w-full flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="Zoomed view" class="max-h-[80vh] max-w-full rounded-lg shadow-2xl object-contain">
+            <div id="image-counter" class="mt-4 text-slate-400 font-mono text-sm"></div>
+        </div>
+
+        <button onclick="nextImage()" class="nav-btn absolute right-4 text-white hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+        </button>
+    </div>
+
+    <script>
+        const gallery = document.getElementById('gallery');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const counterDisplay = document.getElementById('image-counter');
+        let currentIdx = 0;
+        const totalImages = 30;
+
+        // Generate Grid
+        for (let i = 1; i <= totalImages; i++) {
+            const container = document.createElement('div');
+            container.className = 'img-container';
+            container.onclick = () => openLightbox(i);
+
+            const img = document.createElement('img');
+            img.src = `/assets/${i}.jpg`;
+            img.loading = 'lazy';
+            img.alt = `Vision ${i}`;
+            // Fallback for missing images
+            img.onerror = () => { img.src = `https://picsum.photos/seed/${i}/800/800`; };
+
+            container.appendChild(img);
+            gallery.appendChild(container);
+        }
+
+        function openLightbox(index) {
+            currentIdx = index;
+            updateLightbox();
+            lightbox.classList.remove('hidden');
+            setTimeout(() => {
+                lightbox.style.opacity = '1';
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.style.opacity = '0';
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        function nextImage() {
+            currentIdx = currentIdx >= totalImages ? 1 : currentIdx + 1;
+            updateLightbox();
+        }
+
+        function prevImage() {
+            currentIdx = currentIdx <= 1 ? totalImages : currentIdx - 1;
+            updateLightbox();
+        }
+
+        function updateLightbox() {
+            lightboxImg.style.opacity = '0';
+            setTimeout(() => {
+                lightboxImg.src = `/assets/${currentIdx}.jpg`;
+                counterDisplay.innerText = `${currentIdx} / ${totalImages}`;
+                lightboxImg.onload = () => {
+                    lightboxImg.style.opacity = '1';
+                };
+            }, 150);
+        }
+
+        // Keyboard support
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('hidden')) return;
+            if (e.key === 'ArrowRight') nextImage();
+            if (e.key === 'ArrowLeft') prevImage();
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // Close on backdrop click
+        lightbox.onclick = (e) => {
+            if (e.target === lightbox) closeLightbox();
+        };
+    </script>
+</body>
+</html>
