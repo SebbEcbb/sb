@@ -162,7 +162,7 @@
         function updateLightbox() {
             lightboxImg.style.opacity = '0';
             setTimeout(() => {
-                lightboxImg.src = `/assets/${currentIdx}.jpg`;
+                lightboxImg.src = `assets/${currentIdx}.jpg`;
                 counterDisplay.innerText = `${currentIdx} / ${totalImages}`;
                 lightboxImg.onload = () => {
                     lightboxImg.style.opacity = '1';
