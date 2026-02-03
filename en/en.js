@@ -44,7 +44,7 @@ function navigation_en() {
 
   function donate_en() {
     document.getElementById("donate").innerHTML = 
-    "<div class='s50'></div><p  style='text-align: left;'>Buy me a coffee</p>" +
+    "<div class='s50'></div><p  style='text-align: left;'>Buy me a coffee?</p>" +
     "<form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> <input type='image' src='/Images/Heart.jpg' border='0' width='40%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' /></form>"
   } 
   
