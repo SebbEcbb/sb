@@ -4,16 +4,16 @@ html{
 
 body{margin:0;}
 
-a{color:rgba(105, 90, 205, 0.9);}
+a{color:rgba(57, 57, 58, 0.979);}
 
 h1,h2,h3,h4,h5 {
     font-family: "Poppins", sans-serif;
 }
 
 h1{font-size: 32px;}
-h2{font-size: 30px;}
-h3{font-size: 28px;}
-h4{font-size: 24px;}
+h2{font-size: 28px;}
+h3{font-size: 24px;}
+h4{font-size: 20px;}
 
 p{
     font-family: "poppins", sans-serif;

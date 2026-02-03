@@ -20,7 +20,7 @@ function siteFooter_fr() {
     "<a href='https://www.facebook.com/sebastien.badel/' class='links' target='_blank'> <img style='vertical-align:middle;margin-right: 5px;' src='/Images/fb_icon.png'' height='24px' alt='message-icon'><strong>Facebook </strong> </a>&nbsp &nbsp;"+
     "<a href='https://www.linkedin.com/in/sebastienbadelpiano/' class='links' target='_blank'> <img style='vertical-align:middle;margin-right: 5px;' src='/Images/li_icon.png'' height='24px' alt='message-icon'><strong>LinkedIn </strong> </a>&nbsp &nbsp;"+
     "<a href='https://youtube.com/@SebastienBadelPiano'class='links' target='_blank'>  <img style='vertical-align:middle;margin-right: 5px;' src='/Images/yt_icon.png'' height='24px' alt='message-icon'> <strong>Youtube </strong></a>&nbsp &nbsp; "+                
-    "<div class='s50'></div><p  style='text-align: center;'>Site developpé ©2020-2024 par Sébastien Badel</p>"
+    "<div class='s50'></div><p  style='text-align: center;'>Site developpé ©2020-2026 par Sébastien Badel</p>"
 } 
 
 function navigation_fr() {
@@ -29,7 +29,7 @@ function navigation_fr() {
     "<li class='menuitem'><a href='./contact.html' target='_blank'>Contact</a></li>"+
     "<li class='menuitem'><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>"+
     "<li class='menuitem'><a href='./boutique' target='_blank' >Boutique</a></li>"+
-    "<li class='menuitem'><a href='./blog.html' target='_blank'>Blog</a></li>"+
+    "<li class='menuitem'><a href='./blog.html' target='_blank'>Articles</a></li>"+
     "<li class='menuitem'><a href='#page-description' >Contenu</a></li>"+
     "<li class='menuitem'><a href='https://sebastienbadel.com' >Acceuil</a></li>"
   }
