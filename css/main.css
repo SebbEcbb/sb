@@ -129,30 +129,21 @@ p{
 }
 
 /*navigation*/
-nav{
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    height: 80px;
-
-}
-nav#site-title{
-    grid-column: 1;
-}
-
-nav#navigation{
-    grid-column: 2;    
+ul#navigation{
+    display: flex;
+    top:0;
+    margin-left: auto;
+    flex-direction: row-reverse;
+    gap : 1.5rem;
 }
 
 #navigation a{padding-left: 3%;}
 
-#navigation ul{
-    margin-top: 0;
-    padding: 5px;
-    text-align:left;
-    height:35px; 
-}
+
 #navigation li{
     list-style-type: none; 
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 #menu{
@@ -191,8 +182,8 @@ nav#navigation{
         height: 60px;
 
     }
-    nav#site-title, nav#navigation{
-        display: block;
+    nav#site-title{
+        display: flex;
     }
 
     ul#navigation{display: flex;flex-direction: column-reverse;}
@@ -235,7 +226,7 @@ nav#navigation{
     .video-text{font-size: 14px;margin-bottom: 50px;}
     .index{padding-left: 30px !important;margin-bottom: 50px;}
     .sticky-left {position: fixed;left: 10px;top: 0px;} 
-    .sticky-right {position: fixed;right: 10px;top: 0px;display:flex;flex-direction: column-reverse;} 
+    .sticky-right#navigation {position: fixed;right: 10px;top: 0px;display:flex;flex-direction: column-reverse!important;} 
     .sticky-right li {text-align: right !important;}
     .sticky-right a{font-size: 18px !important;}
     .sticky-right a:hover{font-size: 18px !important;}

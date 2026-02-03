@@ -23,10 +23,10 @@ function siteFooter_en() {
 
 function navigation_en() {
     document.getElementById("navigation").innerHTML = 
-    "<li class='menuitem'><a href='/contact.html' target='_blank'>Contact</a></li>"+
-    "<li class='menuitem'><a href='/en/about/' target='_blank'>About</a></li>"+
+    "<li><a href='/contact.html' target='_blank'>Contact</a></li>"+
+    "<li><a href='/en/about/' target='_blank'>About</a></li>"+
     "<li class='menuitem'><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>"+
-    "<li class='menuitem'><a href='/en//blog.html' target='_blank'>Articles</a></li>"+
+    "<li class='menuitem'><a href='/en//blog.html' target='_blank'>Articles & Poetry </a></li>"+
     "<li class='menuitem'><a href='#page-description' >Content</a></li>"+
     "<li class='menuitem'><a href='https://sebastienbadel.com/' >Home</a></li>"
   }
