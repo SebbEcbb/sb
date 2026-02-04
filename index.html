@@ -1,180 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sébastien Badel | Redirecting...</title>
+    
+    <!-- Redirection Script -->
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        (function() {
+            // Get browser language (e.g., "en-US" or "fr-FR")
+            const userLang = navigator.language || navigator.userLanguage; 
+            const langCode = userLang.toLowerCase().split('-')[0];
 
-    gtag('config', 'G-73W9XL22BJ');
+            // Define your paths
+            const paths = {
+                fr: "/fr/index.html",
+                en: "/en/index.html"
+            };
+
+            // Redirect logic
+            if (langCode === 'fr') {
+                window.location.replace(paths.fr);
+            } else {
+                // Default to English for everything else
+                window.location.replace(paths.en);
+            }
+        })();
     </script>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <title>Sébastien Badel</title>
-    
-    <link rel="icon" href="./Images/site-icon.png">
-    <link rel="stylesheet" href="./css/menu.css" >
-    <link rel="canonical" href="https://sebastienbadel.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">       
-</head>
+    <!-- Fallback Meta Refresh (if JS is disabled) -->
+    <noscript>
+        <meta http-equiv="refresh" content="2; url=/en/index.html">
+    </noscript>
 
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(251, 248, 244);
+            color: #01142f;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid darkred;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .links a {
+            color: darkred;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+    </style>
+</head>
 <body>
 
-<nav>
-    <div class="logo">
-        <a href='https://sebastienbadel.com'><img src='./Images/site-icon.png' height='20px' alt='Flower'> Sébastien Badel </a>
-        <p class="sub-title">Believe beyond struggle, love beyond pain</p>
-    </div>
-
-    <!-- The Hamburger Icon -->
-    <div class="menu-toggle" id="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <!-- Navigation Links -->
-    <ul class="nav-links" id="nav-list">
-        <li><a href="#">Home</a></li>
-        <li ><a href='./en/blog.html' target='_blank'>Articles & Poetry</a></li>
-        <li ><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>
-        <li ><a href='/en/about/' target='_blank'>About</a></li>
-        <li><a href="/en/contact.html" style="background:rgb(246, 199, 141); color: rgb(25, 25, 25); padding: 10px 20px; border-radius: 8px;">Contact</a></li>
-    </ul>
-</nav>
-    <!-- Page Width Hero Section -->
-<header class="hero">
-    <img src="/Images/Banner1.JPG" 
-            alt="Hero Image" 
-            class="hero-img"
-            onerror="this.src='https://via.placeholder.com/1600x400?text=Premium+Workspace'">
-    <div class="hero-content">
-        <h1>Life is only an expression of love</h1>
-        <p><strong>Creation starts with a thought<br>
-        The universe is empowered by faith</strong></p>
-    </div>
-</header>
-
-    <!--bacfk to top button-->
-<div id="back" class="hide"><a href="#"> ^ </a></div>
-
-<div class="s50"></div>
-
-<div class="container">
-      
-    <!-- Updated Left Sidebar -->
-    <aside class="sidebar-left">        
-        <!-- 1: YouTube Link -->
-        <iframe      
-            class="responsive"  
-            style="width: 100%; min-height: 250px; margin-top: 5px;"          
-            src="https://youtube.com/embed/kwDoKqhUYyY?autoplay=0">
-        </iframe>
-
-        <!-- 2: Video Description Card -->
-        <div class="info-card">
-            <h4>#399</h4>
-            <p>Authentic Piano Improvisation</p>
-        </div>
-    </aside>
-
-        <!-- Main Content Area -->
-    <main class="content-main">
-            <iframe 
-                src="https://docs.google.com/document/d/e/2PACX-1vT5BPOY61Tdkf_6rskUxsmAMjybZRqMXDD5AGaBTtc6NVxaKk8b-J07S0Wc4kxy0os7qYkb0Rh9lWY2/pub?embedded=true"
-                style="width: 90%; height: 900px; border: none;" 
-                allowfullscreen>
-            </iframe>
-    </main>
-
-        <!-- Right Sidebar -->
-    <aside class="sidebar-right">
-        <h3>Featured</h3>
-        <div class="card links">
-            <p><strong>Latest posts</strong></p>
-            <p><a href="./en/introduction-to-my-music.html"target="_blank">Why I improvise</a></p>
-            <p><a href="./en/improvisation-and-flow.html"target="_blank">Improvisation & Flow</a></p>
-            <p><a href="./en/blog.html" target="_blank">Articles & Poems</a></p>
-        </div>
-        <div class="card links">
-            <p><strong>Watch on YouTube</strong></p>
-            <p><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>Sebb Piano Art</a></p>
-            <p>Popular</p>
-            <p><a href='https://youtu.be/kwDoKqhUYyY' target='_blank'>#399</a></p>
-            <p><a href='https://youtu.be/DKpWLzgiwLA' target='_blank'>#389</a></p>
-            <p><a href='https://youtu.be/iTYXkLMvq2k' target='_blank'>#388</a></p>
-            <p><a href='https://youtu.be/KAUEu4ToNCU' target='_blank'>#385</a></p>
-        </div>
-        <div class="card">
-            <div id="donate">
-                <p><strong>Buy me a coffee?</strong></p>
-                <p>Donate via Paypal</p>
-                <form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > 
-                    <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> 
-                    <input type='image' src='/Images/heart.png' border='0' width='40%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />
-                </form>
-                
-
-            </div>  
-        </div>
-    </aside>
-
-</div>
-
-
-
-<footer>
-    <div id="footer">
-        <div class="s100"></div>
-            
-            <a href="./contact.html" class="links" target="_blank"><img style="vertical-align:middle;margin-right: 5px;" src="./Images/message_icon.png"" height="24px" alt="message-icon"><strong>Contact</strong></a>&nbsp &nbsp;
-            <a href='https://www.linkedin.com/in/sebastienbadelpiano/' class='links' target='_blank'> <img style='vertical-align:middle;margin-right: 5px;' src='./Images/li_icon.png'' height='24px' alt='message-icon'><strong>LinkedIn </strong> </a>&nbsp &nbsp;
-            <a href="https://youtube.com/@SebastienBadelPiano"class="links" target="_blank">  <img style="vertical-align:middle;margin-right: 5px;" src="./Images/yt_icon.png"" height="24px" alt="message-icon"> <strong>Youtube </strong></a>&nbsp &nbsp;        
-                    
-            <div class="s50"></div>
+    <div class="container">
+        <img src="./Images/site-icon.png" height="50" alt="Logo">
+        <h2>Sébastien Badel</h2>
+        <div class="loader"></div>
+        <p>Redirecting to your language...</p>
         
-            <p  style="text-align: center;">Site developed ©2020-2026 by Sébastien Badel</p>        
+        <div class="links">
+            <p>Or choose manually:</p>
+            <a href="/en/index.html">English</a> | 
+            <a href="/fr/index.html">Français</a>
         </div>
-</footer>
-
-
-
-
-<script id="Sticky-js">
-    window.onscroll = function() {StickyJs()};    
-
-    function StickyJs() {
-        const element = document.documentElement.getBoundingClientRect();
-        const m = -element.y
-        const n = document.getElementById("urge_of_artist").offsetTop;
-        
-        if( n < m){             
-        //console.log("n is smaller than m"); 
-        document.getElementById("back").className = "back-to-top";
-        document.getElementById("leftsidebar").className = "sticky-left";
-        document.getElementById("navigation").className = "links sticky-right";
-        document.getElementById("profile").className = "hide";
-        } else { 
-        //console.log("n is geater than m"); 
-        document.getElementById("back").className = "hide";
-        document.getElementById("leftsidebar").className = "pop";
-        document.getElementById("navigation").className = "links";
-        document.getElementById("profile").className = "Show";
-        } 
-    }
-</script> 
+    </div>
 
 </body>
 </html>
-
-
-
