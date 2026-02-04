@@ -143,7 +143,7 @@ p{
 /*navigation*/
 nav{
     display: flex;
-    align-items: center;
+    align-items:center;
     gap : 1.5rem;
 }
 #site-title{
@@ -302,28 +302,6 @@ nav{
 
 }
 
-.links li{
-    margin-bottom: 10px;
-}
-
-.links a{
-    font-family: "Poppins", sans-serif;
-    font-weight:300;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 15px;
-    transition-duration: 0.5s;
-}
-.links :hover {opacity: 1;}
-
-.links a:hover {
-    font-size: 20px;  
-    font-weight: bolder;
-    margin-left: 2%;
-    color:rgb(194, 2, 2);
-    text-shadow: 3px 3px 3px rgb(123, 117, 142);
-    }
-
 .small-text{font-size: 16px;font-weight: 400;font-style:italic;}
 
 .video-text{
@@ -386,15 +364,7 @@ nav{
     border-color: black;
     border-radius: 8px;
 }
-#footer a {color: darkblue;text-decoration-line: none;}
-#footer {
-    text-align: center;
-    font-size: larger;
-    background-color: antiquewhite;
-    padding: 25px;
-    margin-top: 150px;
-    a {padding-left: 25px;}
-}
+
 .parent {
     display: grid;
     width: 80%;

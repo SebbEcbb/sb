@@ -1,22 +1,31 @@
-function load_home(){  
-  // check all these functions before applying them
-  
-  //alert("load_home launched");
-  //set_lang();  
-  //Home_site_title();
-  //Home_site_footer();
-  //navigation_en();
-  //Home_Donate();
+//Mobile Responsive Menu
+        const menuToggle = document.getElementById('mobile-menu');
+        const navList = document.getElementById('nav-list');
 
-}
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navList.classList.toggle('active');
 
-function set_lang(){
-  // Get the array of preferred languages set in the user's browser
-    var preferredLanguages = navigator.languages;
+            // Prevent body scroll when menu is open
+            if (navList.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        });
 
-// Log the preferred languages to the console for demonstration
-  //('Preferred languages:', preferredLanguages);
-}
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navList.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+
+
+
 
 function siteTitle() {
   //alert("ok site-title")

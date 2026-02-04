@@ -19,217 +19,118 @@
     <title>Sébastien Badel</title>
     
     <link rel="icon" href="./Images/site-icon.png">
-    <link rel="stylesheet" href="./css/main.css" >
+    <link rel="stylesheet" href="./css/menu.css" >
     <link rel="canonical" href="https://sebastienbadel.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">    
-    
-    <style>
-        @media screen and (min-width:600px) {
-            h2{font-size: 24px !important;}
-        }
-        @media screen and (max-width:599px) {
-            h2{font-size: 20px;}
-        }
-    </style>
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">       
 </head>
 
 <body>
 
-<header>
-    <nav>   
-        <h1 id="site-title" ><a href='https://sebastienbadel.com'><img src='./Images/site-icon.png' height='30px' alt='Flower'>Sébastien Badel <br> <!--<span style="font-size:15px">alias Aman</span>--></a></h1> 
-
-        <ul id="navigation" class="links">
-            <li ><a href='./en/contact.html' target='_blank'>Contact</a></li>
-            <li ><a href='./en/about/' target='_blank'>About</a></li>
-            <li ><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>
-            <!--<li ><a href='./en/shop.html' target='_blank'>Shop</a></li>-->
-            <li ><a href='./en/blog.html' target='_blank'>Articles & Poetry</a></li>
-            <li ><a href='#page-description' >Content</a></li>
-        </ul>    
-    </nav>
-
-    <div id="page-hero" >
-            <img 
-                src="./Images/Banner1.JPG" 
-                alt="Sébastien Badel" 
-                class="responsive">        
+<nav>
+    <div class="logo">
+        <a href='https://sebastienbadel.com'><img src='./Images/site-icon.png' height='20px' alt='Flower'> Sébastien Badel </a>
+        <p class="sub-title">Believe beyond struggle, love beyond pain</p>
     </div>
-    <!--bacfk to top button-->
-    <div id="back" class="menuitem hide"><a href="#site-title"> ^ </a></div>
-    
-    <div class="s50"></div>
-    <div id="page-title">
-        <h1>Life is expression of love</h1>
-        <h4><strong>Creation starts with a thought <br>
-            And is empowered by faith</strong></h4>
-    </div> 
 
+    <!-- The Hamburger Icon -->
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="nav-list">
+        <li><a href="#">Home</a></li>
+        <li ><a href='./en/blog.html' target='_blank'>Articles & Poetry</a></li>
+        <li ><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>
+        <li ><a href='/en/about/' target='_blank'>About</a></li>
+        <li><a href="/en/contact.html" style="background:rgb(246, 199, 141); color: rgb(25, 25, 25); padding: 10px 20px; border-radius: 8px;">Contact</a></li>
+    </ul>
+</nav>
+    <!-- Page Width Hero Section -->
+<header class="hero">
+    <img src="/Images/Banner1.JPG" 
+            alt="Hero Image" 
+            class="hero-img"
+            onerror="this.src='https://via.placeholder.com/1600x400?text=Premium+Workspace'">
+    <div class="hero-content">
+        <h1>Life is only expression of love</h1>
+        <p><strong>Creation starts with thought<br>
+        The universe is empowered by faith</strong></p>
+    </div>
 </header>
 
-
-<div id="page-description">         
-    <div class="index links">
-
-        <h4 >Featured articles</h4>
-        <ul style="list-style-type: none;">
-            <li><strong>Français</strong></li>
-            <li><a href="./fr/introduction-a-ma-musique.html" target="_blank">Ma musique</a></li>
-            <li><a href="./fr/blog.html" target="_blank">D'autres articles & poésies</a></li>
-            <br><br>
-            <li><strong>English</strong></li>
-            <li><a href="./en/introduction-to-my-music.html"target="_blank">My Music</a></li>            
-            <!--<li><a href="./en/245.html" target="_blank">Improviation : # 245 & 246</a></li>-->
-            <li><a href="./en/improvisation-and-flow.html"target="_blank">Improvisation & Flow</a></li>            
-            <li><a href="./en/blog.html" target="_blank">Other articles & poems</a></li>
-        </ul>
-    </div>
-</div>
+    <!--bacfk to top button-->
+<div id="back" class="hide"><a href="#"> ^ </a></div>
 
 <div class="s50"></div>
 
-<div id="page_wrapper" class="wrapper">
-    <div id="leftsidebar"> 
-        <div id="video1">            
-            <iframe      
+<div class="container">
+      
+    <!-- Updated Left Sidebar -->
+    <aside class="sidebar-left">        
+        <!-- 1: YouTube Link -->
+        <iframe      
             class="responsive"  
             style="width: 100%; min-height: 250px; margin-top: 5px;"          
             src="https://youtube.com/embed/kwDoKqhUYyY?autoplay=0">
-            </iframe>
-            <p class="video-text"
-            style="margin-top:4px;" >
-                <b>Piano improvisation #399</b>
-                <br><br>                
-            </p>
-        </div> 
+        </iframe>
 
-        <div id="menu">                                   
+        <!-- 2: Video Description Card -->
+        <div class="info-card">
+            <h4>#399</h4>
+            <p>Authentic Piano Improvisation</p>
+        </div>
+    </aside>
+
+        <!-- Main Content Area -->
+    <main class="content-main">
+            <iframe 
+                src="https://docs.google.com/document/d/e/2PACX-1vT5BPOY61Tdkf_6rskUxsmAMjybZRqMXDD5AGaBTtc6NVxaKk8b-J07S0Wc4kxy0os7qYkb0Rh9lWY2/pub?embedded=true"
+                style="width: 90%; height: 900px; border: none;" 
+                allowfullscreen>
+            </iframe>
+    </main>
+
+        <!-- Right Sidebar -->
+    <aside class="sidebar-right">
+        <h3>Featured</h3>
+        <div class="card links">
+            <p><strong>Latest posts</strong></p>
+            <p><a href="./en/introduction-to-my-music.html"target="_blank">Why I improvise</a></p>
+            <p><a href="./en/improvisation-and-flow.html"target="_blank">Improvisation & Flow</a></p>
+            <p><a href="./en/blog.html" target="_blank">Articles & Poems</a></p>
+        </div>
+        <div class="card links">
+            <p><strong>Watch on YouTube</strong></p>
+            <p><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>Sebb Piano Art</a></p>
+            <p>Popular</p>
+            <p><a href='https://youtu.be/kwDoKqhUYyY' target='_blank'>#399</a></p>
+            <p><a href='https://youtu.be/DKpWLzgiwLA' target='_blank'>#389</a></p>
+            <p><a href='https://youtu.be/iTYXkLMvq2k' target='_blank'>#388</a></p>
+            <p><a href='https://youtu.be/KAUEu4ToNCU' target='_blank'>#385</a></p>
+        </div>
+        <div class="card">
             <div id="donate">
-                <p>Buy me a coffee?</p>
+                <p><strong>Buy me a coffee?</strong></p>
+                <p>Donate via Paypal</p>
                 <form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > 
                     <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> 
-                    <input type='image' src='./Images/Heart.jpg' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />
+                    <input type='image' src='/Images/heart.webp' border='0' width='40%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />
                 </form>
-            </div>        
-        </div>     
-    </div>
-
-    <div id="main"> 
-        <div id="urge_of_artist" >
-            <h2>The urge of an artist</h2>
-            <h5 style="margin-block-start:0px;">
-            <span style="text-align:left; color:red; font-weight:bold; margin-bottom:2px;">
-                Man is made to live passionately <br> from the inspirations of his heart. <br></span>           
-            </h5>
-            <p>
-                An empty man has no inspiration <br>
-                His life is not interesting <br> 
-                He lives for the flow of time <br>
-                without impact or energy. <br>
-                <br>
-                Living for pleasure quickly leads one to such a state of emptiness. <br>
-                <br>
-                The ancient Romans, in their extravagance and decadence <br> 
-                became empty of meaning to their life, for that very reason.<br>
-                <br>
-                The unavoidable outcome was and always will be <br> 
-                the desperate thirst for new sensations <br>
-                nourished by deepened emptiness. <br>
-                <BR>
-                But a godly man is never empty <br> 
-                As man was intended <br>
-                for as far as one believes there was any intention to his existence <br>
-                as I do <br>
-                it would be to give meaning <br>
-                to existence at all. <br>
-            </p>
-            <p>
-                Man must give meaning to existence<br>
-                For without meaning given, there is no meaning. 
-            <br>
-            </p>
-
-            <p>
-               A man is indeed able to give such a meaning to his existence, if .... <br>
-               There is an 'if' ... <br><br>
-               <b>if his heart gives him one. </b><br>
-               <br>
-               For a human heart to give meaning to life <br>
-               it must be able to feel love<br>
-               Love is the only meaning to any existence.
-            <p>
-                <b>So what is an artist ? </b><br>
-                <br>
-                He is one, urged from within <br>
-                doing what his heart compels him to do <br>
-                No matter what society wants from him. <br>
-                <br>
-                He is not motored by gaining approbation or approval <br>
-                He is rather in contest with society. <br>
-                <br>
-                He sees something society hasn't seen yet <br>
-                He wants to show another view <br>
-                Express another sound <br>
-                Demonstrate another way. <br>
-            </p>
-            <p>
-                Essentially <br>
-                As I believe it to be <br>
-                The invisible Creator is an artist. <br>
-                <br>
-                And as he said <br>
-                he made man in his likeness <br>
-                To be like him. <br>
-                <br>
-                Let's believe it: <br>
-                We are created to be artists <br>
-                And live by the urge of love <br>
-                Flowing from the abundance of our hearts. <br>
-                <br>
-                If only we can feel it <br>
-                Halleluyah! 
-                <br>
                 
 
-        <div class="s50"></div>
-        <h4>Sébastien Badel,</h4>
-        <p>
-            alias Aman <br>
-            Belledonne, Rhône-Alpes, France <br>
-            February, 2026.
-        </p> 
-    </div>          
+            </div>  
+        </div>
+    </aside>
 
-    <div class="s50"></div>
-       
-
-        <div class="s50"></div>        
-    </div>        
 </div>
 
-<div id="elTop" class="hide"> 
-    <!--Button to find top of an element
-    Together with script below. Remove the "hide" class
-    reload the page and click the button on th ebottom of the page-->
 
-    <p><button onclick="getTop()">Get Top of an Element</button></p>
-    <p id="myTopId"> Top of an element:</p> 
-</div>
-<script id="elTopJS">
-    function getTop(){        
-        /*Enter your element id*/
-        var myId = prompt("Enter your element_id:")
-        var myElement = document.getElementById(myId);        
-        var myTop = document.getElementById("myTopId");
-        myTop.innerHTML = "The top of " + myElement.id + " is at " + myElement.offsetTop + " px.";
-        alert("Current top position = "+ document.documentElement.scrollTop)
-    }
-</script> 
 
 <footer>
     <div id="footer">
@@ -254,7 +155,7 @@
     function StickyJs() {
         const element = document.documentElement.getBoundingClientRect();
         const m = -element.y
-        const n = document.getElementById("page-description").offsetTop;
+        const n = document.getElementById("urge_of_artist").offsetTop;
         
         if( n < m){             
         //console.log("n is smaller than m"); 
