@@ -1,405 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-73W9XL22BJ');
     </script>
 
-    <meta http-equiv="Content-Type" content="texy/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-    <title>My music</title>
+    <title>Sébastien Badel</title>
     
-    <link rel="icon" href="../Images/site-icon.png">
-    <link rel="stylesheet" href="../css/main.css" >
+    <link rel="icon" href="/Images/site-icon.png">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">    
-
-    <script src="../js/main.js"></script>
-    <script src="../en/en.js"></script>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;800&family=Ubuntu&display=swap" rel="stylesheet">    
 </head>
 
-<body onload="loadJs_en()";>
-<header>
-        <h1 id="site-title" ></h1> 
-        <div id="page-hero" ><img src="../Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">
-        <ul id="navigation" class="link"></ul>
-        <div id="back" class="hide"><a href="#site-title">^</a></div>
+<body>
 
-    <div class="s50"></div>
+<nav>
+    <div class="logo">
+        <a href='https://sebastienbadel.com'><img src='/Images/site-icon.png' height='20px' alt='Flower'> Sébastien Badel </a>
+        <p class="sub-title">Believe beyond struggle, love beyond pain</p>
+    </div>
 
-    <div id="page-title">
-        <h1>My piano music</h1>
-    </div> 
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-links" id="nav-list">
+        <li><a href='/en/''>Home</a></li>
+        <li><a href='/en/blog.html' target='_blank'>Articles & Poetry</a></li>
+        <li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a></li>
+        <li><a href='/en/about/' target='_blank'>About me</a></li>
+        <li><a href='/en/contact.html' class='contact-btn'>Contact me</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <img src="/Images/Banner1.JPG" alt="Hero Image" class="hero-img" onerror="this.src='https://via.placeholder.com/1600x400?text=Premium+Workspace'">
+    <div class="hero-content">
+        <h1>Life is only an expression of love</h1>
+        <p class="text-glow-white"><strong>Creation starts with a thought<br>The universe is empowered by faith</strong></p>
+    </div>
 </header>
 
-<div id="page-description" >       
-        <div class="index links">
-            <ul style="list-style-type: none;">
-                <h3>Content</h3>
-                <li><a href="#la_course">Race</a></li>
-                <li><a href="#la_souffrance">Suffering</a></li>
-                <li><a href="#la_sortie">Liberty</a></li>                
-                <li><a href="#le_jugement">Judgment</a></li>
-                <li><a href="#la_pratique">Practice</a></li>
-                <li><a href="#les_règles">Rules</a></li>              
-            </ul>
+<div id="back" class="hide"><a href="#">BACK</a></div>
+
+<div class="container">
+    <aside class="sidebar-left" id="leftsidebar">        
+       <div class="card" ><iframe src="https://youtube.com/embed/xz2-OXk2YWM?autoplay=0" width="100%" height="315" frameborder="0" allowfullscreen></iframe></div>
+        <div class="info-card">
+            <a href="https://youtu.be/xz2-OXk2YWM" target="_blank">
+                <h4>Piano improvisation #315</h4>
+                <p> <strong>
+                   Dedicated to Marinus Jan Hendrikse,
+                   (1920-1986) Amsterdam,<br>
+                   my Dutch grandfather,<br>    
+                   man of valor.
+                </strong></p>
+            </a>
+        </div>   
+    </aside>
+
+    <main class="content-main">
+        <div class="iframe-container">
+            <iframe src="https://docs.google.com/document/d/e/2PACX-1vSwBhvnwTZc7dhVm1O-3jjtEh_Ydq_PCuouh-BY5z6WxQT8cglhFnR7ts3Wq_MVxDcscULZ_LmrIPAP/pub?embedded=true"></iframe>
+        </div>  
+    </main>
+
+    <aside class="sidebar-right">
+        <h3>Featured</h3>
+        <div class="card links">
+            <p><strong>Latest posts</strong></p>
+            <p><a href="/en/introduction-to-my-music.html" target="_blank">Why I improvise</a></p>
+            <p><a href="/en/improvisation-and-flow.html" target="_blank">Improvisation & Flow</a></p>
+            <p><a href="/en/blog.html" target="_blank">Articles & Poems</a></p>
         </div>
+        <div class="card links">
+            <p><strong>Watch on YouTube</strong></p>
+            <p><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>Sebb Piano Art</a></p>
+            <p>Popular content</p>
+            <p><a href='https://youtu.be/kwDoKqhUYyY' target='_blank'>#399</a></p>
+            <p><a href='https://youtu.be/DKpWLzgiwLA' target='_blank'>#389</a></p>
+        </div>
+        <div class="card" id="donate">
+            <p><strong>Buy me a coffee ?</strong></p>
+            <p>Donate via Paypal</p>
+            <form action='https://www.paypal.com/donate' method='post' target='_blank'> 
+                <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> 
+                <input type='image' src='/Images/heart.png' border='0' style="width: 80px;" name='submit' alt='PayPal Donation' />
+            </form>
+        </div>
+    </aside>
 </div>
-
-<div id="page_wrapper" class="wrapper">
-    <div id="leftsidebar"  class="center"> <br>    
-
-        <div id="video1"class="video">
-
-            <iframe      
-            style="margin-top:-8px;"       
-            src="https://youtube.com/embed/xz2-OXk2YWM?autoplay=0">
-            </iframe>
-            <p class="video-text"
-            style="margin-top:4px;" >
-                <b>Piano improvisation #315</b><br>                
-                Dedicated to Marinus Jan Hendrikse,<br>
-                my Dutch grandfather. <br>  
-                Amsterdam, 01-29-1920.
-                
-            </p>
-        </div> 
-
-        <div id="donate"></div>        
-    </div>
-
-    <div id="main"> 
-    <div id="la_course" >
-        <h2>The Race</h2>
-        <p>
-            We live in perpetual motion. Time flows by itself, 
-            without effort on our behalf and we must always adapt to new situations. 
-            New needs arise. Elements move, all by themselves, each with their own momentum and energy. 
-            We would love to stay ahead of them. It's not a win, it's a race.
-        </p>
-        <p>
-            Engaged in this race, we constantly face disturbing forces, 
-            opposing themselves to our comfort. One way or another. 
-            No matter what our social status,
-            our wealth, our success, or the lack thereof, 
-            there is always a procedure going on, 
-            calling for attention to defend and maintain our comfort and balance.
-        </p>
-
-        <p>
-            It seems that life itself is in constant strive to throw man 
-            out of his comfort zone.
-            Undoubtfully for his good. And surely with the intention to 
-            offer him a much more sustainable and solid well-being than his 
-            little temporary desires.
-        </p>
-
-        <p>
-            But to this day, most people on earth live in constant fear 
-            that their comfort, so hard-won, will cease to be available. Ouch!
-        </p>
-    </div>
-  
-
-    <div id="la_souffrance" >        
-        <div class="s50"></div>
-        <h2>The Suffering</h2>
-        <p>
-            Also, most people are marked for life by moments of 
-            suffering and difficulties. Each marked his own way, 
-            more or less obvious. I suppose everyone has already gone 
-            through passages that we would never want to go through again. 
-            This is at least the first conclusion. 
-        </p>
-
-        <p>
-            There will certainly be other conclusions, later. 
-            More considered, with deeper understanding on the long-term benefits
-            of our suffering. 
-            I am convinced that the universal healing of life is as real as its 
-            discipline. Although for the present moment, 
-            we do not see much of the long-term value. 
-        </p>
-        <p>
-            It is a fact. Sufferings are present. Memories of them fill us 
-            with fears and anxieties. Maybe we don't want to admit it, 
-            or they're not the actuality, but whether conscious or not, 
-            we are all influenced by our past traumas. 
-            Birth itself being the first of them. 
-            Some people will never forget the suffering of their past. 
-            I am part of those.
-        </p>
-        <p>
-            Man, therefore, seeks for ways to escape from his sorrows. 
-            Even the small ones: work, finances, stress, family. 
-            Each in his own way finds more or less his own escapes.
-        </p>
-    </div>
-
-    <div id="la_sortie">
-        <div class="s50"></div>
-        <h2>Freedom</h2>
-        <p>
-            I play piano. <br>
-            I play to stop the race for a while. Thus  
-            I create a different micro-world than the real one. 
-            My own reality. In my music, I talk about the real world and how I 
-            experience it, <b> but above all, I'm leaving it behind me! </b>
-            I leave my temporairy material realities, to enter into another universe, 
-            where the rules are different.
-        </p>
-        <p>
-            I don't forget the worries and the sorrows. 
-            My music is often influenced by those. 
-            But I manage to express and channel them, to get rid of them in some way, 
-            of my pitiful troubles. In this imaginary world, 
-            I am free and I do not suffer. I dance and sing. 
-            I speak freely, a different language, 
-            little understood by most people.
-        </p>
-        <p>
-            The challenge is to enter a state of freedom. You could call it a frequency.
-            Then we decide the rules. Truths and realities are created that way
-            and no one intervenes. 
-            It's a world of ideas, with no restrictions to submit to, 
-            except the ones we choose. <br>
-            This is what I call "Spiritual freedom". 
-        </p>
-
-        <p>
-            This is important to understand. From that state 
-            everything becomes possible. Every moment is a new opportunity. 
-            Even after the worst musical disaster, the music starts again, 
-            enthusiastic and fresh. As soon as we decide to. 
-            The desire to live and to succeed is inexhaustible. 
-            From one moment to the next, everything is possible and available again, 
-            just as in the beginning. We can always start again after a process 
-            has led to a so called failure. 
-            In music, just as in any other event in life.
-        </p>
-        <p>
-            At the end of any journey, often long time after, 
-            one realizes that the whole journey, 
-            with its enormous catastrophes and difficulties, 
-            was only a challenge, necessary and perfect in itself. 
-            Considering the present situation, the trip could not have been any easier.
-        </p>
-        <p>
-            To find happiness in all of that, 
-            we must accept the flow of life and not complain about it, 
-            nor wanting to change it. Life flows and its flow is perfect. 
-            A river always takes the easiest route. With all the obstacles, 
-            its passages, its waterfalls, its disasters.
-            It keeps flowing and filling all the holes. 
-            Until they overflow. Yes, waterfalls generate fear and anxieties,
-            but only when we don't know that we are immortal! 
-        </p>
-        <p>
-            My music is a sharing of this spiritual freedom. 
-            I don't care about public approval, 
-            nor the opinions of those who don't like it. 
-            Everyone has that right, but I don't play for those who don't like it. 
-    
-
-            
-        </p>
-        <p>
-            It is a sharing for those who want to discover and who can, 
-            more or less, identify with its speech. 
-        </p>
-    </div>
-
-    
-    <div id="le_jugement">
-        <div class="s50"></div>
-        <h2>The Judgment</h2>
-        <p>
-            With improvisation, there is no sense of what is right or wrong. 
-            Everything is pure and authentic, like a child drawing a picture. 
-            We like it or we don't. That's all. And that can change along the way. 
-            We are leaving the realm of judgments. 
-            Those who remain in that realm will suffer the limitations 
-            of their own opinions. 
-            This will prevent them from experiencing a new, 
-            stimulating or enriching adventure. Sad for them.
-        </p>
-        <p>In freedom there is no judgment, only discovery.</p>
-        <p>
-            We must therefore try to be in a state of emptiness, 
-            in order to be able to appreciate a musical moment.
-            There are people who are naturally capable of doing so: 
-            being without judgment or expectation. 
-            For them, things are easy to understand.
- 
-        </p>        
-        <p>
-            For others, like myself, it is more difficult to relax 
-            and build a perceptive state. Or simply be humble.
-            Only in a state, void of opinion, life can speak to us 
-            and take us on a journey. 
-            Without such, we end up being bored or seriously annoyed.
-        </p>
-        <p>
-            With the right disposition, the musical journey is unique and new, each single
-            time. After  a dozen of times, we become comfortable in a piece of music. 
-            I know what I am talking about. 
-            I listen to a piece at least fifteen times before publishing it. 
-            I need that time to get the hang of it. 
-            Then, we begin to anticipate and understand the moves. 
-            This is where we will experience pleasure and discovery 
-            of richness. The music becomes a spiritual dance. 
-        </p>
-        <p>
-            I sincerely believe that very few people experience 
-            what I am talking about. Rather sad about it, I write this explanation,
-            hoping to increase the pleasure of my audience. And thus also mine own.
-        </p>
-    </div>
-
-    <div id="la_pratique">
-        <div class="s50"></div>
-        <h2>The Practice</h2>
-        <p>
-            How to practice this ? <br><br>
-            Forget for a moment where you are. <br>
-            Forget for a moment what you think you are. <br>
-            Forget for a moment, if you can, your past and your future. <br>
-        </p>
-        <p>
-            Be just there! Life is here and now. <br>
-            Let it speak to you, through the music. <br>
-            Be empty of opinions and expectations. 
-            It doesn't matter if we miss a piece. 
-            We can simply start again, anytime. Nothing's easier.
-        </p>
-        <p>
-            When you do it right, life will speak to you. It will take you. 
-            Certainly it will give you a few pinches of its delight. 
-            And it will be worth it.
-        </p>
-
-
-        
-    </div> 
-    
-    <div id="les_règles">
-        <div class="s50"></div>
-        <h2>The Rules of the Game !</h2>
-        <p>
-            “This guy put honey with his pindakaas!”
-            In the 80s, no Dutch person would have thought of doing such a thing.
-            Toast with honey and pindakaas (Dutch peanutbutter), at breakfast. 
-            My dad, yes. No problem. For him, such were order of the day.
-        </p>
-        <p>
-            Stick to your principles and your boring future will be assured. <br><br>
-            Fortunately, there are people crazy enough to go beyond any framework or structure. 
-            They are the ones who make life interesting and innovative. 
-            But yes, it's crazy and a little scary. 
-            It has never been done, we don't know how it will be. 
-            So we rather say 'no'. 
-            We are not very comfortable with changes. We may lose our comfort.  
-        </p>
-        <p>
-            Personally, disturbing established order doesn't bother me. 
-            It has even become pleasant and often my objective. 
-            Not to destroy, but to test.              
-        </p>
-        <p> Who is this arrogant guy, claiming to have the only truth, 
-            with all its absolute rights ? 
-            I don't mind disturbing him a bit !
-        </p>
-        <p>
-            But to do that properly, we need style and dignity. 
-            And respect for truthful matters. 
-            Too often, rebels are rather fools, 
-            with no understanding of the deeper values in life. 
-            Harmony is deep. Opposing selfish and proud people, no problem. 
-            But to opposing life .... ? Really not smart. 
-            It is infinitely stronger and more cunning than us, weirdos. 
-            We strongly risk losing our battle.  
-            Although she will remain loving and merciful with us.
-        </p>
-        <p>
-            Still, weirdos are weirdos. 
-            There are always two sides to a coin. 
-            For now, I identify with those outside the box.
-        </p>
-        <p>
-            My piano ? It is about life. 
-            Life is in charge. Nothing else. Life is what expresses itself, 
-            for the best and the worst. 
-            In French, the word 'life' is a female word. We say 'her'. 
-            To me, life is like a mother and a bride. She is royal queen. <br>
-            It's up to her to do what she wants. 
-            Sometimes she's capricious, sometimes classy, 
-            sometimes she's a bit crazy or distracted. 
-            Sometimes lost, because, yes, life gets lost also. 
-            More often than we think. But she will always remain beautiful !
-        </p>
-        <p>
-            Life does what it wants. It's is sovereign. 
-            I am only one of its temporary expressions. 
-            And I'm happy with that. That's enough for me. With her, life, 
-            I have all I need.
-            <br><br>
-        </p>
-
-        <h4>Sébastien Badel</h4>
-        <p> Alias Aman <br><br>
-            Belledonne Rhone-Alpes France, <br>
-            January 29, 2024.
-        </p>
-        <p>
-           Today is the post-birthday of my Dutch grandfather.
-           A man of valor, who loved me when I was child.
-           To him, I dedicate this text and its music.
-        </p>
-
-
-
-        
-    </div>
-</div>
-<div class="s100"></div>
-
 
 <footer>
-    <div id="footer"></div>    
+    <div id="footer-content">
+        <a href='/contact.html' class='footer-link'><img src='/Images/message_icon.png' height='24px' alt='Contact'><strong>Contact</strong></a>
+        <a href='https://facebook.com/@sebastien.badel' class='footer-link' target='_blank'><img src='/Images/fb_icon.png' height='24px' alt='Facebook'><strong>Facebook</strong></a>
+        <a href='https://www.linkedin.com/in/sebastienbadelpiano/' class='footer-link'><img src='/Images/li_icon.png' height='24px' alt='LinkedIn'><strong>LinkedIn</strong></a>
+        <a href='https://youtube.com/@SebastienBadelPiano'class='footer-link' target='_blank'>  <img src='/Images/yt_icon.png'' height='24px' alt='YouTube'> <strong>Youtube </strong></a>
+        <div class="s50"></div>
+        <p>©2020-2026 by Sébastien Badel</p>
+    </div>
 </footer>
 
-<script id="Sticky-js">
-    window.onscroll = function() {StickyJs()};    
+<script>
+    // Mobile Menu Logic
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
 
+    menuToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
+
+    // Sticky Scroll Logic
+    window.onscroll = function() { StickyJs() };    
     function StickyJs() {
-        const element = document.documentElement.getBoundingClientRect();
-        const m = -element.y
-        const n = document.getElementById("video1").offsetTop;
-        
-        if( n < m){             
-        //console.log("n is smaller than m"); 
-        document.getElementById("back").className = "back-to-top";
-        document.getElementById("leftsidebar").className = "sticky-left";
-        document.getElementById("navigation").className = "links sticky-right";
-        } else { 
-        //console.log("n is geater than m"); 
-        document.getElementById("back").className = "hide";
-        document.getElementById("leftsidebar").className = "pop";
-        document.getElementById("navigation").className = "links";
+        const backBtn = document.getElementById("back");
+        const trigger = document.querySelector(".hero");
+        if (window.scrollY > 300) {
+            backBtn.className = "back-to-top";
+        } else {
+            backBtn.className = "hide";
         }
     }
-</script>  
+</script> 
 </body>
 </html>
