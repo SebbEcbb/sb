@@ -46,6 +46,7 @@ function siteFooter_en() {
     "<p style='margin:15px 0; font-weight:bold'>Popular content</p>"+
     "<p><a href='https://youtu.be/kwDoKqhUYyY' target='_blank'>#399</a></p>"+
     "<p><a href='https://youtu.be/DKpWLzgiwLA' target='_blank'>#389</a></p>"+
+    "<p><a href='https://youtu.be/zRaKcpzvI3k' target='_blank'>#373</a></p>"+
     "</div>"+
     "<div class='card id='donate' >"+
     "<p><strong>Buy me a coffee ?</strong></p>"+

@@ -35,7 +35,7 @@ a {
 }
 
 a:hover { color: red; }
-a:visited { color: darkred; }
+a:visited { color: purple; }
 
 .hide { display: none; }
 
