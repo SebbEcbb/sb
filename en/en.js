@@ -18,8 +18,8 @@ function navigation_en() {
     "<li><a href='/en/'>Home</a></li>"+
     "<li><a href='/en/blog.html' target='_blank'>Articles & Poetry</a></li>"+
     "<li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a></li>"+
-    "<li><a href='/en/about/' target='_blank'>About me</a></li>"+
-    "<li><a href='/en/contact.html' class='contact-btn'>Contact me</a></li>";
+    "<li><a href='/en/about/' target='_blank'>About</a></li>"+
+    "<li><a href='/en/contact.html' class='contact-btn'>Contact</a></li>";
   }
 
 function siteFooter_en() {
@@ -30,8 +30,6 @@ function siteFooter_en() {
       "<a href='https://youtube.com/@SebastienBadelPiano'class='footer-link' target='_blank'>  <img src='/Images/yt_icon.png'' height='24px' alt='YouTube'> <strong>Youtube </strong></a>"+                
       "<div class='s50'></div><p  style='text-align: center;'>©2020-2026 Sébastien Badel</p>"
   } 
-
-
 
   function sidebarRight_en() {
     document.getElementById("rightsidebar").innerHTML = 
@@ -59,7 +57,27 @@ function siteFooter_en() {
     "</div>";
 
   }
-    
+
+      // Mobile Menu Logic
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+
+    menuToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
+
+    // Sticky Scroll Logic
+    window.onscroll = function() { StickyJs() };    
+    function StickyJs() {
+        const backBtn = document.getElementById("back");
+        const trigger = document.querySelector(".hero");
+        if (window.scrollY > 300) {
+            backBtn.className = "back-to-top";
+        } else {
+            backBtn.className = "hide";
+        }
+    }
   
 /*
   function donate_en() {
