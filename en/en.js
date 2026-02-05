@@ -54,7 +54,7 @@ function siteFooter_en() {
     "<p>Donate via Paypal</p>"+
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
-    "<input type='image' src='/Images/Heart.png' border='0' width='40%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
+    "<input type='image' src='/Images/heart.png' border='0' width='40%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
     "</form>"+
     "</div>";
 
