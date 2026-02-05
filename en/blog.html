@@ -8,105 +8,110 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-73W9XL22BJ');
     </script>
 
-    <meta http-equiv="Content-Type" content="texy/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
     <title>Articles & Poetry</title>
     
-    <link rel="icon" href="../Images/site-icon.png">
-    <link rel="stylesheet" href="../css/main.css" >
+    <link rel="icon" href="/Images/site-icon.png">
+    <link rel="stylesheet" href="/css/main.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;800&family=Ubuntu&display=swap" rel="stylesheet">    
 
-    <style>
-        h4{font-size: 20px;}
-    </style>
-    <script src="/js/main.js"></script>
-    <script src="../en/en.js"></script>
+    <script src="/en/en.js" defer></script>
 </head>
 
-<body onload="loadJs_en()";>
+<body onload="loadJs_en();" >
 
-    <header>
-        <nav>
-            <h2 id="site-title"></h2>
-            <ul id="navigation" class="links"></ul>
-        </nav>  
-            <!--<div id="page-hero" ><img src="../Images/Banner1.JPG" alt="Sébastien Badel" class="responsive">-->
-        <div id="back" class="menuitem hide"><a href="#site-title">^</a></div>
-        <div class="s50"></div>
-    </header>
+    
+<nav>
+    <div id="navigation" class="logo"></div>
 
-
-<div id="page_wrapper" class="wrapper">
-    <div id="leftsidebar">
-        <div id="video1">            
-            <iframe      
-            class="responsive"  
-            style="width: 100%; min-height: 250px; margin-top: 5px;"          
-            src="https://youtube.com/embed/-xZ7epyVOD4?autoplay=0">
-            </iframe>
-            <p class="video-text"
-            style="margin-top:4px;" >
-                <b>Piano improvisation #315</b>
-                <br><br>                
-            </p>
-        </div> 
-
-        <div id="menu">                                   
-            <div id="donate">
-                <form style='text-align: left; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > 
-                    <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> 
-                    <input type='image' src='../Images/Heart.jpg' border='0' width='30%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />
-                </form> 
-            </div>        
-        </div>  
-
-        <div class="s50"></div>
-                
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 
-    <div id="main" style="text-align: left; padding-left: 100px;"> 
-        
-        <div id="page-description">
-            <h1 >Articles & Poetry</h1>
-        </div>
+    <ul id="nav-list" class="nav-links"></ul>
+</nav>  
 
-        <div class="s50"></div>
-        
-        
-        <div class="links ">
-            
+<header class=""></header> 
+
+<div id="back" class="hide" ><a href="#">BACK</a></div>
+
+   
+
+
+<div class="container">
+    <aside class="sidebar-left" id="leftsidebar">
+        <div class="card" ><iframe src="https://youtube.com/embed/xz2-OXk2YWM?autoplay=0" width="100%" height="315" frameborder="0" allowfullscreen></iframe></div>
+        <div class="info-card">
+            <a href="https://youtu.be/xz2-OXk2YWM" target="_blank">
+                <h4>Piano improvisation #315</h4>
+                <p> <strong>
+                   Dedicated to Marinus Jan Hendrikse,
+                   (1920-1986) Amsterdam,
+                   my Dutch grandfather,    
+                   man of valor.
+                </strong></p>
+            </a>
+        </div>                
+    </aside>
+
+    <main  class="content-main">
+        <div class="content-container">
+            <h1 >Articles & Poetry</h1>
+                
             <ul style="list-style-type: none;">
                 <li><h4>Articles</h4></li>               
-                <li><a href="/en/introduction-to-my-music.html"target="_blank">My Music</a></li>            
+                <li><a href="/en/introduction-to-my-music.html"target="_blank">Why I improvise</a></li>            
                 <li><a href="/improvisation-and-flow.html"target="_blank">Improvisation & Flow</a></li>     
+                <div class="s50"></div>
                 <li><h4>Poetry</h4></li>
                 <li><a href="/399.html"target="_blank">Perfect Peace in Weakness (399)</a></li>
                 <li><a href="/374.html"target="_blank">When an angel knocks at your door (373 & 374)</a></li>
                 <li><a href="/389.html"target="_blank">A moment (389)</a></li>
-                <li><a href="/245.html"target="_blank">Sekel, my love (245 & 246)</a></li>
-                
-                
+                <li><a href="/245.html"target="_blank">Sekel, my love (245 & 246)</a></li>                    
             </ul>
-        </div>
-    </div>
+            
+        </div>  
+    </main>
+    <aside class="sidebar-right" id="rightsidebar">
+
+    </aside>
 </div>  
-<div class="s50"></div>
+<div class= "s50"></div>
 <footer>
     <div id="footer"></div>   
 </footer>
 
-<script id="Sticky-js">
-    window.onscroll = function() {StickyJs()};    
-    
+<script>
+    // Mobile Menu Logic
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+
+    menuToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
+
+    // Sticky Scroll Logic
+    window.onscroll = function() { StickyJs() };    
+    function StickyJs() {
+        const backBtn = document.getElementById("back");
+        const trigger = document.querySelector(".hero");
+        if (window.scrollY > 300) {
+            backBtn.className = "back-to-top";
+        } else {
+            backBtn.className = "hide";
+        }
+    }
 </script>   
 </body>
 </html>

@@ -1,47 +1,67 @@
+//alert("en is running");
 function loadJs_en(){
     //alert("loadJs_en is running");
-    siteTitle();
     navigation_en();
+    navlist_en(); 
     siteFooter_en();
-    donate_en();
+    sidebarRight_en();
 }
 
-function siteTitle() {
-    document.getElementById("site-title").innerHTML = 
-    "<a href='https://sebastienbadel.com'><img src='/Images/site-icon.png' height='30px' alt='Flower'>Sébastien Badel</a>";
+function navigation_en() {
+    document.getElementById("navigation").innerHTML = 
+    "<a href='https://sebastienbadel.com'><img src='/Images/site-icon.png' height='20px' alt='Flower'> Sébastien Badel </a>"+
+        "<p class='sub-title'>Believe beyond struggle, love beyond pain</p>";
+  }
+
+  function navlist_en() {
+    document.getElementById("nav-list").innerHTML = 
+    "<li><a href='/en/'>Home</a></li>"+
+    "<li><a href='/en/blog.html' target='_blank'>Articles & Poetry</a></li>"+
+    "<li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a></li>"+
+    "<li><a href='/en/about/' target='_blank'>About me</a></li>"+
+    "<li><a href='/en/contact.html' class='contact-btn'>Contact me</a></li>";
   }
 
 function siteFooter_en() {
     document.getElementById("footer").innerHTML = 
-      "<div class='s100'></div>"+        
-      "<a href='/contact.html' class='links' target='_blank'><img style='vertical-align:middle;margin-right: 5px;' src='/Images/message_icon.png'' height='24px' alt='message-icon'><strong>Contact</strong></a>&nbsp &nbsp;"+
-      "<a href='https://www.facebook.com/sebastien.badel/' class='links' target='_blank'> <img style='vertical-align:middle;margin-right: 5px;' src='/Images/fb_icon.png'' height='24px' alt='message-icon'><strong>Facebook </strong> </a>&nbsp &nbsp;"+
-      "<a href='https://www.linkedin.com/in/sebastienbadelpiano/' class='links' target='_blank'> <img style='vertical-align:middle;margin-right: 5px;' src='/Images/li_icon.png'' height='24px' alt='message-icon'><strong>LinkedIn </strong> </a>&nbsp &nbsp;"+
-      "<a href='https://youtube.com/@SebastienBadelPiano'class='links' target='_blank'>  <img style='vertical-align:middle;margin-right: 5px;' src='/Images/yt_icon.png'' height='24px' alt='message-icon'> <strong>Youtube </strong></a>&nbsp &nbsp; "+                
+      "<a href='/contact.html' class='footer-link'><img src='/Images/message_icon.png' height='24px' alt='Contact'><strong>Contact</strong></a>"+
+      "<a href='https://facebook.com/@sebastien.badel' class='footer-link' target='_blank'><img src='/Images/fb_icon.png' height='24px' alt='Facebook'><strong>Facebook</strong></a>"+
+      "<a href='https://www.linkedin.com/in/sebastienbadelpiano/' class='footer-link'><img src='/Images/li_icon.png' height='24px' alt='LinkedIn'><strong>LinkedIn</strong></a>"+
+      "<a href='https://youtube.com/@SebastienBadelPiano'class='footer-link' target='_blank'>  <img src='/Images/yt_icon.png'' height='24px' alt='YouTube'> <strong>Youtube </strong></a>"+                
       "<div class='s50'></div><p  style='text-align: center;'>©2020-2026 Sébastien Badel</p>"
   } 
 
-function navigation_en() {
-    document.getElementById("navigation").innerHTML = 
-    "<li><a href='/contact.html' target='_blank'>Contact</a></li>"+
-    "<li><a href='/en/about/' target='_blank'>About</a></li>"+
-    "<li class='menuitem'><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>"+
-    "<li class='menuitem'><a href='/en//blog.html' target='_blank'>Articles & Poetry </a></li>"+
-    "<li class='menuitem'><a href='#page-description' >Content</a></li>"+
-    "<li class='menuitem'><a href='https://sebastienbadel.com/' >Home</a></li>"
-  }
 
-  function navigation_donation_en() {
-    document.getElementById("navigation").innerHTML = 
-    "<li class='menuitem'><a href='./en/contact.html' target='_blank'>Contact</a></li>"+
-    "<li class='menuitem'><a href='./en/About.html' target='_blank'>About</a></li>"+
-    "<li class='menuitem'><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>"+
-    "<li class='menuitem'><a href='./en/blog.html' target='_blank'>Articles</a></li>"+
-    "<li class='menuitem'><a href='#page-description' >Content</a></li>"+
-    "<li class='menuitem'><a href='https://sebastienbadel.com/' >Home</a></li>"
+
+  function sidebarRight_en() {
+    document.getElementById("rightsidebar").innerHTML = 
+    "<h3>Featured</h3>"+
+    "<div class='card links'>"+
+    "<p><strong>Latest posts</strong></p>"+
+    "<p><a href='/en/introduction-to-my-music.html' target='_blank'>Why I improvise</a></p>"+
+    "<p><a href='/en/improvisation-and-flow.html' target='_blank'>Improvisation & Flow</a></p>"+
+    "<p><a href='/en/blog.html' target='_blank'>Articles & Poems</a></p>"+
+    "</div>"+
+    "<div class='card links'>"+
+    "<p><strong>Watch on YouTube</strong></p>"+
+    "<p><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>Sebb Piano Art</a></p>"+
+    "<p style='margin:15px 0; font-weight:bold'>Popular content</p>"+
+    "<p><a href='https://youtu.be/kwDoKqhUYyY' target='_blank'>#399</a></p>"+
+    "<p><a href='https://youtu.be/DKpWLzgiwLA' target='_blank'>#389</a></p>"+
+    "</div>"+
+    "<div class='card id='donate' >"+
+    "<p><strong>Buy me a coffee ?</strong></p>"+
+    "<p>Donate via Paypal</p>"+
+    "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
+    "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
+    "<input type='image' src='/Images/Heart.png' border='0' width='40%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
+    "</form>"+
+    "</div>";
+
   }
+    
   
-
+/*
   function donate_en() {
     document.getElementById("donate").innerHTML = 
     "<div class='s50'></div><p  style='text-align: left;'>Buy me a coffee?</p>" +
@@ -68,5 +88,4 @@ function StickyJs() {
     document.getElementById("navigation").className = "links";
     }
     
-    }
-
+    }*/
