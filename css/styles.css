@@ -28,14 +28,15 @@ p { margin-bottom: 10px;
 
 a { 
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight:500;
     color: rgb(70, 61, 61); 
     text-decoration: none; 
     transition: color 0.3s ease;
 }
 
-a:hover { color: red; }
-a:visited { color: purple; }
+a:hover { color: red;font-weight: bold; }
+a:visited { color: darkred; }
 
 .hide { display: none; }
 
@@ -136,7 +137,7 @@ aside, main {
     ul { list-style-type: disc; padding-left: 35px; }
     ul li { margin-bottom: 10px; }
     ul li a {
-        background-color: rgba(250, 235, 215, 0.3);
+        background-color: rgba(250, 248, 246, 0.522);
         padding: 3px 30px;
         border-radius: 5px; } 
 }
@@ -164,7 +165,9 @@ aside, main {
     border-radius: 8px;
     margin-top: 10px; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
+
 .card { 
     background: rgb(253, 247, 240); 
     padding: 1rem;
