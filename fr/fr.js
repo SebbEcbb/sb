@@ -36,7 +36,7 @@ function siteFooter_fr() {
     "<h3>Mis en avant</h3>"+
     "<div class='card links'>"+
     "<p><strong>Derniers articles</strong></p>"+
-    "<p><a href='/fr/pourquoi-j-improvise' target='_blank'>Pourquoi j'improvise</a></p>"+
+    "<p><a href='/fr/j-improvise' target='_blank'>J'improvise</a></p>"+
     "<p><a href='/fr/improvisation-et-flow' target='_blank'>Improvisation & Flow</a></p>"+
     "<p><a href='/fr/blog.html' target='_blank'>Articles & Poésies</a></p>"+
     "</div>"+
