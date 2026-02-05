@@ -165,7 +165,17 @@ aside, main {
     margin-top: 10px; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.card { background: rgb(253, 247, 240); padding: 1rem; border-radius: 8px; margin-bottom: 1rem; }
+.card { 
+    background: rgb(253, 247, 240); 
+    padding: 1rem;
+    border-radius: 8px; 
+    margin-bottom: 1rem; 
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}
 
 footer { 
     background: antiquewhite; 

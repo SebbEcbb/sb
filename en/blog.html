@@ -91,27 +91,5 @@
     <div id="footer"></div>   
 </footer>
 
-<script>
-    // Mobile Menu Logic
-    const menuToggle = document.getElementById('mobile-menu');
-    const navList = document.getElementById('nav-list');
-
-    menuToggle.addEventListener('click', () => {
-        navList.classList.toggle('active');
-        menuToggle.classList.toggle('open');
-    });
-
-    // Sticky Scroll Logic
-    window.onscroll = function() { StickyJs() };    
-    function StickyJs() {
-        const backBtn = document.getElementById("back");
-        const trigger = document.querySelector(".hero");
-        if (window.scrollY > 300) {
-            backBtn.className = "back-to-top";
-        } else {
-            backBtn.className = "hide";
-        }
-    }
-</script>   
 </body>
 </html>
