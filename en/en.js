@@ -36,7 +36,7 @@ function siteFooter_en() {
     "<h3>Featured</h3>"+
     "<div class='card links'>"+
     "<p><strong>Latest posts</strong></p>"+
-    "<p><a href='/en/introduction-to-my-music.html' target='_blank'>Why I improvise</a></p>"+
+    "<p><a href='/en/introduction-to-my-music.html' target='_blank'>I improvise</a></p>"+
     "<p><a href='/en/improvisation-and-flow.html' target='_blank'>Improvisation & Flow</a></p>"+
     "<p><a href='/en/blog.html' target='_blank'>Articles & Poems</a></p>"+
     "</div>"+
