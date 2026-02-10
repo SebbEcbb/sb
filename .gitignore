@@ -1,0 +1,22 @@
+Folders and files to ignore in the repository
+articles/
+
+
+
+
+
+FreeFileSync sync database files
+sync.ffs_dbsync.ffs_lock
+
+
+Build outputs
+dist/build/out/*.exe*.dll*.so*.dylib
+
+Operating System files
+.DS_StoreThumbs.dbdesktop.ini
+
+IDE and Editor files
+.vscode/
+
+Logs and databases
+*.log*.sqlite
