@@ -4,31 +4,31 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-73W9XL22BJ');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-73W9XL22BJ');
     </script>
 
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <title>Sébastien Badel</title>
-    
+
     <link rel="icon" href="/Images/site-icon.png">
-    <link rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="/en/en.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;800&family=Ubuntu&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <script src="/en/en.js" defer></script>
+    <title>Page Container</title>
+
 </head>
+<body>
 
-<body onload="loadJs_en();" >
-
-<nav>
-    <div id="navigation" class="logo"></div>
+    <nav>
+    <div id="brand" class="logo"></div>
 
     <div class="menu-toggle" id="mobile-menu">
         <span></span>
@@ -37,71 +37,62 @@
     </div>
 
     <ul id="nav-list" class="nav-links"></ul>
-</nav>  
-<!--
-<nav>
-    <div class="logo">
-        <a href='https://sebastienbadel.com'><img src='/Images/site-icon.png' height='20px' alt='Flower'> Sébastien Badel </a>
-        <p class="sub-title">Believe beyond struggle, love beyond pain</p>
+    </nav>  
+
+    <div id="breadcrumb" class="breadcrumb-container"></div>
+
+    <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
+
+    <div class="container">
+
+        <aside class="sidebar-left">
+                <div id="yt-iframe" class="hide" ></div>
+                <div id="vid-desc" class="hide" ></div>
+                <div id="heroDiv" class="hide" ></div>
+                <div id="heroDesc" class="hide" ></div>
+                <div id="paypal" class="hide" ></div>
+        </aside>
+
+        <main id="mainContent" class="main-content">
+            <div id="article" class="doc-container"></div>
+        </main>
+        
+        <aside class="sidebar-right" id="rightsidebar"></aside>
+
     </div>
 
-    <div class="menu-toggle" id="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+    <footer>
+        <div id="footer" class="hide"></div>   
+    </footer>
 
-    <ul class="nav-links" id="nav-list">
-        <li><a href='/en/''>Home</a></li>
-        <li><a href='/en/blog.html' target='_blank'>Articles & Poetry</a></li>
-        <li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a></li>
-        <li><a href='/en/about/' target='_blank'>About me</a></li>
-        <li><a href='/en/contact.html' class='contact-btn'>Contact me</a></li>
-    </ul>
-</nav>-->
+    <script src="/en/en.js"></script>
 
-<header class="hero">
-    <img src="/Images/Banner1.JPG" alt="Hero Image" class="hero-img" onerror="this.src='https://via.placeholder.com/1600x400?text=Premium+Workspace'">
-    <div class="hero-content">
-        <h1>Life is only an expression of love</h1>
-        <p class="text-glow-white"><strong>Creation starts with a thought<br>And the universe is empowered by faith</strong></p>
-    </div>
-</header>
+    <script>
+        loadJs_en();
 
-<div id="back" class="hide"><a href="#">BACK</a></div>
+        const docUrl = "2PACX-1vT5BPOY61Tdkf_6rskUxsmAMjybZRqMXDD5AGaBTtc6NVxaKk8b-J07S0Wc4kxy0os7qYkb0Rh9lWY2";
+        renderDoc(docUrl);
 
-<div class="container">
-    <aside class="sidebar-left" id="leftsidebar">        
-        <div class="card" ><iframe src="https://youtube.com/embed/kwDoKqhUYyY?autoplay=0" width="100%" height="315" frameborder="0" allowfullscreen></iframe></div>
-        <div class="info-card">
-            <a href="https://youtu.be/kwDoKqhUYyY" target="_blank">
-                <h4>Piano improvisation #399</h4>
-                <p> 
-                    Perfect Peace in Weakness <br>
-                    <br>
-                    7 years of tears <br>
-                    to finish with a good thirty<br>
-                    and the dismantling <br>
-                    of a family too strong <br>
-                    ....
-                </p>
-            </a>
-        </div>
-    </aside>
+        const vidId ="kwDoKqhUYyY"; // example : kwDoKqhUYyY
+        const vidName = "Piano improvisation #399"; 
+        const vidDesc = "<strong>Perfect Peace in Weakness</strong><br>" +
+                        "7 years of tears <br>"+
+                        "To finish with a good thirty<br>"+
+                        "And the dismantling of a family <br> too strong for them ... ";
+                        ;
 
-    <main class="content-main">
-        <div class="iframe-container">
-            <iframe src="https://docs.google.com/document/d/e/2PACX-1vT5BPOY61Tdkf_6rskUxsmAMjybZRqMXDD5AGaBTtc6NVxaKk8b-J07S0Wc4kxy0os7qYkb0Rh9lWY2/pub?embedded=true" ></iframe>
-        </div>  
-    </main>
+        const heroImg=""; //if no ytId, this will be the hero.jpg
+        const heroTitle="";
+        const heroDesc="";
 
-       <aside class="sidebar-right" id="rightsidebar"></aside>
+        if (vidId && vidName &&  vidDesc) {
+            renderVid(vidId, vidName, vidDesc)
+        } else {
+            if (heroImg && heroTitle && heroDesc) {
+                placeHero(heroImg, heroTitle, heroDesc);    
+            }
+        }
 
-</div>  
-<div class= "s50"></div>
-<footer>
-    <div id="footer"></div>   
-</footer>
-
+    </script>
 </body>
 </html>

@@ -1,18 +1,336 @@
-.product{
-    margin-top: 50px;
-    width: 80%;  
-    padding: 25px;      
-    border: solid 3px black;
-    border-radius: 15px;
-    color:white;
+/*Root*/
+:root{
+    --txt-col: #333;
+    --col-1: rgb(75, 3, 110);
+    --col-2: rgb(194, 9, 9);
+    --col-3: red;
+    --col-4: rgba(62, 2, 92, 0.644);
+    --col-5: rgba(146, 81, 199, 0.616);
+
+    --bg-col-1: #faebd0;
+    --bg-col-2: rgb(252, 245, 236);
+    --bg-col-3: rgb(253, 247, 240);
+    
+    --shdw-1:4px 4px 6px rgba(44, 15, 92, 0.3);
+    --shdw-2:5px 6px 8px rgba(66, 1, 1, 0.63);
 }
 
-.product a {
-    text-decoration-line: none;
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Includes padding in width 📏 */
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: var(--bg-col-2);
+    overflow-x: hidden; /* Prevents the "ghost width" 👻 */
+}
+
+a {
+    text-decoration: none;
+    color: var(--col-1);
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+    text-shadow: var(--shdw-1);
+    
+}
+
+a:hover{
+    color: var(--col-3);
+    text-shadow: var(--shdw-2);
+}
+
+/* Navigation Container */
+nav {
+    display: flex;
+    justify-content: space-between; /* Logo left, Toggle right ↔️ */
+    align-items: center;
+    padding: 10px 20px;
+    background: #ffffff;
+    border-bottom: solid 1px var(--col-1);
+    width: 100%;
+    position: sticky;
+    z-index: 1000;
+}
+
+/* The Logo - Flexible but constrained */
+.logo {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto; /* Allow it to take only what it needs */
+    min-width: 0;   /* Allows text to wrap if the screen is tiny 🤏 */
+}
+
+.logo a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--col-1);
+    white-space: nowrap; /* Keeps name on one line if possible */
+}
+
+.sub-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--col-2);
+    text-shadow: var(--shdw-1);
+    transition: all 0.3s ease;
+}
+
+
+/* The Menu Toggle (Hamburger) */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    flex-shrink: 0; /* NEVER let the button disappear 🛡️ */
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #333;
+    border-radius: 3px;
+}
+
+/* The Links - Mobile First (Hidden by default) */
+.nav-links {
+    display: none; /* Logic: JS will swap this */
+    font-weight: 600;
+}
+
+/* Active State (Triggered by your JS) */
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Pulls it out of the logo's way ⚓ */
+    top: 0;
+    right: 0;
+    width: 80vw;    /* Takes 80% of screen width */
+    height: 100vh;  /* Full height */
+    background: whitesmoke;
+    padding: 2rem;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+}
+
+.nav-links li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* --- 💻 DESKTOP (Wider than 1024px) --- */
+@media (min-width: 1024px) {
+    /* 1. Hide the hamburger icon */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* 2. Force the menu to show and lay out horizontally */
+    .nav-links {
+        display: flex !important; /* Overrides 'display: none' */
+        flex-direction: row;
+        position: static;         /* Put it back in the navbar */
+        width: auto;
+        height: auto;
+        padding-top: 15px;
+        background: transparent;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+    .logo a {font-size: 2rem;}
+    .sub-title{font-size: 1.2rem;}
+}
+
+/*Layout*/
+.breadcrumb-container { 
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    padding: 10px 20px; 
+    background-color: var(--bg-col-2);
+    a {font-size: 1rem;}
+    padding: 8px 18px; 
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically 📱 */
+    gap: 15px;
+    padding: 50px 15px;
+    transition: all 0.3s ease;
+}
+.sidebar-left, .main-content, .sidebar-right {
+    padding: 10px;
+    margin-bottom: 150px;
+    border-radius: 8px;
+    box-shadow: var(--shdw-1);
+}
+
+.sidebar-left, .sidebar-right { 
+    background-color:var(--bg-col-1); 
+    min-height: 400px; 
+}
+
+.main-content { 
+    background-color:var(--col-1);
+    background: linear-gradient(135deg, var(--bg-col-1) 0%, var(--col-4) 20%, var(--col-1) 100%);
+    min-height: 400px; 
+}
+
+.sidebar-left iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Keeps the cinematic shape 🎬 */
+    border-radius: 8px;
+}
+
+.sidebar-right a {
+    display: block;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    word-wrap: break-word; /* Prevents long words from leaking out 🌊 */
+    text-decoration: none;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 1024px) {
+    .breadcrumb-container { a {font-size: 1.3rem;} }
+    .container {
+        display: grid;
+        /* Column 1: Fixed 320px (standard for video) */
+        /* Column 2: 1fr (takes all remaining 'fractional' space) */
+        /* Column 3: min-content (shrink to fit) but max 300px */
+        grid-template-columns: 320px 1fr minmax(150px, 250px);
+        gap: 30px;
+        align-items: start; /* Prevents sidebars from stretching to footer height */
+    }
+}
+
+/*cards*/
+
+.info-card { 
+    a {color: rgb(80, 78, 78);}
+    h4 {font-size: 18px; margin-bottom: 15px;}
+    p {font-size: 14px;}
+    padding : 0.5rem;
+    margin-bottom: 15px !important;
+    border-left: 4px solid red; 
+    box-shadow: var(--shdw-2);
+    background-color: rgb(253, 247, 240); 
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.card { 
+    background: rgb(253, 247, 240); 
+    padding-left: 0.5rem;
+    border-radius: 8px; 
+    box-shadow: var(--shdw-2);
+    margin-bottom: 15px !important;
+}
+
+/* Custom styling for the Google Doc content*/
+#new-content div {
+        padding: 2%;
+        border-radius: 8px;
+        margin: 0;
+    }
+
+@media screen and (min-width: 768px) {
+    #new-content div {
+        padding: 10%;
+        max-width: 100%;
+    }
+}
+
+
+/*footer*/   
+#footer { 
+    background: antiquewhite; 
+    max-height: 120px;
+    padding-top: 25px !important;
+    border-top: solid 1px rgb(83, 74, 74);
+    text-align: center; 
+    margin-top: 50px; 
+    transition: all 0.3s ease;
+}
+
+.footer-link { 
+    display: inline-flex; 
+    align-items:center; 
+    gap: 5px; 
+    margin: 0 25px;
+}
+
+/* Back to TOP  */
+#back {
+    position: fixed;
+    bottom: 15px;
+    right: 30px;
+    background: #1e293b;
     color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width:599) {
-    .product{width: 95%;}
-    p{font-size: 16px;}
+#back a {
+    color: white;
+    text-decoration: none;
+}
+#back:hover {
+    background: purple;
+    transform: scale(1.1);
+}   
+#back.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/*Seperators*/
+.s20 { height: 20px; }
+.s50 { height: 50px; }
+.s100 { height: 100px; }
+
+
+
+ /*Buttons*/
+
+.contact-btn { 
+    margin-top: 20px !important;
+    background: var(--bg-col-1); 
+    padding: 8px 18px; 
+    border: #01142f solid 0.1rem;
+    border-radius: 8px; 
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover { 
+    background: rgb(250, 235, 215); 
+}
+
+
+/* Utility to hide things */
+.hide {
+    display: none !important;
 }
