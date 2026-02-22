@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-73W9XL22BJ');
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/public/images/site-icon.png">
+    
+    <link rel="stylesheet" href="/src/styles/en.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+
+    <title>Improvistion and flow</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div id="brand" class="logo"></div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul id="nav-list" class="nav-links"></ul>
+        </nav>  
+        <div id="breadcrumb" class="breadcrumb-container"></div>
+        <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
+    </header>
+
+    
+
+    <div class="container">
+
+        <aside class="sidebar-left">
+                <div id="yt-iframe" class="hide" ></div>
+                <div id="vid-desc" class="hide" ></div>
+                <div id="heroDiv" class="hide" ></div>
+                <div id="heroDesc" class="hide" ></div>
+                <div id="paypal" class="hide" ></div>
+        </aside>
+
+        <main id="mainContent" class="main-content">
+            <div id="article" class="doc-container"></div> 
+        </main>
+        
+        <aside class="sidebar-right" id="rightsidebar"></aside>
+
+    </div>
+
+    <footer>
+        <div id="footer" class="hide"></div>   
+    </footer>
+
+    <script src="/src/scripts/en.js"></script>;
+
+    <script>
+        loadJs_en();    
+
+        const docUrl = "2PACX-1vTbkXLFVehtzxwJIc5R0cgMK-23VLbbHmEuTQi2S76jU9IzcYWt1FaIZ1_mhGWtFa2KXpYD0VFxhHHG";
+
+        if(docUrl) {
+            renderDoc(docUrl);
+        }
+
+        const vidId ="DKpWLzgiwLA"; // example : kwDoKqhUYyY
+        const vidName = "Piano improvisation #389"; 
+        const vidDesc = "<strong> See A Moment </strong><br>" +
+                        "Hear the music <br>"+
+                        "It's like a meditation <br> <br> "+
+                        "Awareness <br>"+
+                        "It's only one moment <br> <br>"+
+                        "Everlasting <br>"+
+                        "Eternal now <br>"+
+                        "Only one ... <br>";
+                        
+
+        const heroImg=""; //if no ytId, this will be the hero.jpg
+        const heroTitle="";
+        const heroDesc="";
+
+        if (vidId && vidName &&  vidDesc) {
+            renderVid(vidId, vidName, vidDesc)
+        } else {
+            if (heroImg && heroTitle && heroDesc) {
+                placeHero(heroImg, heroTitle, heroDesc);    
+            }
+        }
+
+    </script>
+</body>
+</html>
