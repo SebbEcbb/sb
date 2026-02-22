@@ -14,9 +14,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="/Images/site-icon.png">
+    <link rel="icon" href="/public/images/site-icon.png">
     
-    <link rel="stylesheet" href="/en/en.css">
+    <link rel="stylesheet" href="/src/styles/en.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,21 +27,23 @@
 </head>
 <body>
 
-    <nav>
-    <div id="brand" class="logo"></div>
+    <header>
+        <nav>
+            <div id="brand" class="logo"></div>
 
-    <div class="menu-toggle" id="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-    <ul id="nav-list" class="nav-links"></ul>
-    </nav>  
+            <ul id="nav-list" class="nav-links"></ul>
+        </nav>  
+        <div id="breadcrumb" class="breadcrumb-container"></div>
+        <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
+    </header>
 
-    <div id="breadcrumb" class="breadcrumb-container"></div>
-
-    <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
+    
 
     <div class="container">
 
@@ -54,7 +56,7 @@
         </aside>
 
         <main id="mainContent" class="main-content">
-            <div id="article" class="doc-container"></div>
+            <div id="article" class="doc-container"></div> 
         </main>
         
         <aside class="sidebar-right" id="rightsidebar"></aside>
@@ -65,7 +67,7 @@
         <div id="footer" class="hide"></div>   
     </footer>
 
-    <script src="/en/en.js"></script>
+    <script src="/src/scripts/en.js"></script>;
 
     <script>
         loadJs_en();

@@ -9,17 +9,18 @@ function loadJs_en(){
 
 function brand_en() {
     document.getElementById("brand").innerHTML = 
-    "<a href='https://sebastienbadel.com'><img src='/Images/site-icon.png' height='20px' alt='Flower'> Sébastien Badel </a>"+
+    "<a href='https://sebastienbadel.com'><img src='/public/images/site-icon.png' height='20px' alt='Flower'> Sébastien Badel </a>"+
     "<p class='sub-title'>Believe beyond struggle, love beyond pain</p>";
   }
 
 function navlist_en() {
     document.getElementById("nav-list").innerHTML = 
     "<li><a href='/en/'>Home</a></li>"+
-    "<li><a href='/en/blog/' target='_blank'>Articles & Poetry</a></li>"+
+    "<li><a href='/en/articles/' target='_blank'>Articles</a></li>"+
+    "<li><a href='/en/music-poetry/' target='_blank'>Music & Poetry</a></li>"+
     "<li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a></li>"+
-    "<li><a href='/en/about/' target='_blank'>About</a></li>"+
-    "<li><a href='/en/contact.html' class='contact-btn'>Contact</a></li>";
+    "<li><a href='/en/home/about/' target='_blank'>About</a></li>"+
+    "<li><a href='/en/home/contact.html' class='contact-btn'>Contact</a></li>";
 }
 
 function sidebarRight_en() {
@@ -31,9 +32,10 @@ function sidebarRight_en() {
     "<h3>Featured</h3>"+
     "<div class='card links'>"+
     "<p><strong>Latest posts</strong></p>"+
-    "<p><a href='/en/i-improvise' target='_blank'>I improvise</a></p>"+
-    "<p><a href='/en/improvisation-and-flow.html' target='_blank'>Improvisation & Flow</a></p>"+
-    "<p><a href='/en/blog.html' target='_blank'>Articles & Poems</a></p>"+
+    "<p><a href='/en/home/articles/i-improvise' target='_blank'>I improvise</a></p>"+
+    "<p><a href='/en/home/articles/improvisation-and-flow' target='_blank'>Improvisation & Flow</a></p>"+
+    "<p><a href='/en/home/articles' target='_blank'>Articles</a></p>"+
+    "<p><a href='/en/home/music-poetry' target='_blank'>Music & Poetry</a></p>"+
     "</div>"+
     "<div class='card links'>"+
     "<p><strong>Watch on YouTube</strong></p>"+
@@ -56,19 +58,19 @@ function donate_en() {
     "<p>Donate via Paypal</p>"+
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
-    "<input id='donate-img' type='image' src='/Images/heart.png' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
+    "<input id='donate-img' type='image' src='/public/images/heart.png' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
     "</form>";
 }
 
 function footer_en() {
     document.getElementById("footer").innerHTML = 
-    "<a href='/contact.html' class='footer-link'><img src='/Images/message_icon.png' height='24px' alt='Contact'><strong>Contact</strong></a>"+
-    "<a href='https://facebook.com/@sebastien.badel' class='footer-link' target='_blank'><img src='/Images/fb_icon.png' height='24px' alt='Facebook'><strong>Facebook</strong></a>"+
-    "<a href='https://www.linkedin.com/in/sebastienbadelpiano/' class='footer-link'><img src='/Images/li_icon.png' height='24px' alt='LinkedIn'><strong>LinkedIn</strong></a>"+
-    "<a href='https://youtube.com/@SebastienBadelPiano'class='footer-link' target='_blank'>  <img src='/Images/yt_icon.png' height='24px' alt='YouTube'> <strong>Youtube </strong></a>"+                
+    "<a href='/contact.html' class='footer-link'><img src='/public/images/message_icon.png' height='24px' alt='Contact'><strong>Contact</strong></a>"+
+    "<a href='https://facebook.com/@sebastien.badel' class='footer-link' target='_blank'><img src='/public/images/fb_icon.png' height='24px' alt='Facebook'><strong>Facebook</strong></a>"+
+    "<a href='https://www.linkedin.com/in/sebastienbadelpiano/' class='footer-link'><img src='/public/images/li_icon.png' height='24px' alt='LinkedIn'><strong>LinkedIn</strong></a>"+
+    "<a href='https://youtube.com/@SebastienBadelPiano'class='footer-link' target='_blank'>  <img src='/public/images/yt_icon.png' height='24px' alt='YouTube'> <strong>Youtube </strong></a>"+                
     "<div class='s20'></div>" + 
     "<a href='/en/policies' class='footer-link' target='_blank' >Legal Policies</a>" +
-    "<a href='/en/policies/' target='_blank' style='display:inline-flex; text-align: center;'>©2020-2026 Sébastien Badel  ----- All rights reserved</a>" + 
+    "<p style='display:inline-flex; text-align: center;'>©2020-2026 Sébastien Badel (all rights reserved)</p>" + 
     "<div class='s20'></div>";
 } 
 
@@ -121,7 +123,7 @@ function StickyJs() {
 const path = window.location.pathname;
 
 // 2. Split into segments and remove empty strings from the start/end
-const segments = path.split('/').filter(segment => segment !== "" && !segment.endsWith(".html"));
+const segments = path.split('/').filter(segment => segment !== "" && segment !== "en" && !segment.endsWith(".html"));
 
 // 3. Select the HTML element where the breadcrumbs will live
 const breadcrumbContainer = document.getElementById('breadcrumb');
@@ -148,7 +150,7 @@ segments.forEach((segment, index) => {
 
   // If it's not the last item, add a separator symbol
   if (index < segments.length - 1) {
-    breadcrumbContainer.append(' / '); // Using a bold arrow as a separator
+    breadcrumbContainer.append(' \ '); // Using a bold arrow as a separator
   }
 });
 
@@ -263,7 +265,7 @@ function placeHero(heroImg, heroTitle, heroDesc) {
     descDiv.classList.remove("hide");
 
     if (heroImg && heroDiv) {
-        heroDiv.innerHTML = `<img src="/Images/${heroImg}.jpg" alt="${heroTitle}" />`;
+        heroDiv.innerHTML = `<img src="/public/images/${heroImg}.jpg" alt="${heroTitle}" />`;
     }   
 
     if (descDiv && heroDesc) {

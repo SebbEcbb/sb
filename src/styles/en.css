@@ -1,18 +1,22 @@
 /*Root*/
 :root{
     --txt-col: #333;
-    --col-1: rgb(75, 3, 110);
-    --col-2: rgb(194, 9, 9);
+    --col-1: rgb(68, 3, 100);
+    --col-2: rgb(173, 5, 5);
     --col-3: red;
-    --col-4: rgba(62, 2, 92, 0.644);
+    --col-4: rgba(204, 185, 157, 0.644);
     --col-5: rgba(146, 81, 199, 0.616);
+    --col-6: rgb(39, 10, 85);
 
     --bg-col-1: #faebd0;
     --bg-col-2: rgb(252, 245, 236);
-    --bg-col-3: rgb(253, 247, 240);
+    --bg-col-3: rgb(248, 158, 55);
     
     --shdw-1:4px 4px 6px rgba(44, 15, 92, 0.3);
     --shdw-2:5px 6px 8px rgba(66, 1, 1, 0.63);
+
+    --grd-1:linear-gradient(135deg, var(--bg-col-1) 0%, var(--bg-col-2) 20%, var(--bg-col-3) 100%);
+    --grd-2:linear-gradient(135deg, var(--col-1) 0%, var(--col-5) 20%, var(--col-6) 100%);
 }
 
 
@@ -68,7 +72,7 @@ nav {
     font-size: 1.6rem;
     text-decoration: none;
     font-weight: 800;
-    color: var(--col-1);
+    color: var(--col-6);
     white-space: nowrap; /* Keeps name on one line if possible */
 }
 
@@ -167,14 +171,15 @@ nav {
 }
 
 .container {
-    display: flex;
-    flex-direction: column; /* Stacks items vertically 📱 */
+    display: grid;
+    grid-template-columns: 1fr; /* Desktop layout */
     gap: 15px;
-    padding: 50px 15px;
+    padding: 50px 25px;
     transition: all 0.3s ease;
 }
 .sidebar-left, .main-content, .sidebar-right {
-    padding: 10px;
+    min-height: 100vh;
+    padding: 25px 15px;
     margin-bottom: 150px;
     border-radius: 8px;
     box-shadow: var(--shdw-1);
@@ -182,13 +187,11 @@ nav {
 
 .sidebar-left, .sidebar-right { 
     background-color:var(--bg-col-1); 
-    min-height: 400px; 
 }
 
 .main-content { 
     background-color:var(--col-1);
-    background: linear-gradient(135deg, var(--bg-col-1) 0%, var(--col-4) 20%, var(--col-1) 100%);
-    min-height: 400px; 
+    background: var(--grd-1);
 }
 
 .sidebar-left iframe {
@@ -199,8 +202,8 @@ nav {
 
 .sidebar-right a {
     display: block;
-    margin-bottom: 12px;
-    line-height: 1.4;
+    margin: 15px 15px;
+    line-height: 1.8;
     word-wrap: break-word; /* Prevents long words from leaking out 🌊 */
     text-decoration: none;
 }
@@ -214,7 +217,7 @@ nav {
         /* Column 1: Fixed 320px (standard for video) */
         /* Column 2: 1fr (takes all remaining 'fractional' space) */
         /* Column 3: min-content (shrink to fit) but max 300px */
-        grid-template-columns: 320px 1fr minmax(150px, 250px);
+        grid-template-columns: 320px 1fr minmax(250px, 320px);
         gap: 30px;
         align-items: start; /* Prevents sidebars from stretching to footer height */
     }
@@ -237,7 +240,8 @@ nav {
 
 .card { 
     background: rgb(253, 247, 240); 
-    padding-left: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.8rem 0.5rem;
     border-radius: 8px; 
     box-shadow: var(--shdw-2);
     margin-bottom: 15px !important;

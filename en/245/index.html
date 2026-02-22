@@ -23,7 +23,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;800&family=Ubuntu&display=swap" rel="stylesheet">    
 
-    <script src="/en/en.js" defer></script>
 </head>
 
 <body onload="loadJs_en();" >
@@ -67,9 +66,7 @@
     </aside>
 
     <main class="content-main">
-        <div class="iframe-container">
-           <iframe src="https://docs.google.com/document/d/e/2PACX-1vS0ye0DfLiQIcuHysURt8B4kIzEDtVXClLa-SX3pQr5BrTIu1UYD7xPI8pkNf4C-UTDb3ZKTEyITUkz/pub?embedded=true"></iframe>
-        </div>  
+<div id="article" class="doc-container"></div>
     </main>
 
     <aside class="sidebar-right" id="rightsidebar"></aside>
@@ -78,6 +75,11 @@
 <footer>
     <div id="footer"></div>   
 </footer>
-
+<script src="/en/en.js"></script>
+<script src="/js/main.js"></script>
+<script>
+    const googleId = "https://docs.google.com/document/d/e/2PACX-1vS0ye0DfLiQIcuHysURt8B4kIzEDtVXClLa-SX3pQr5BrTIu1UYD7xPI8pkNf4C-UTDb3ZKTEyITUkz/pub";
+    renderDoc(googleId);
+</script>
 </body>
 </html>

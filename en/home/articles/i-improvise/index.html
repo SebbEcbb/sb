@@ -17,13 +17,13 @@
         
     <title>I improvise (#315) </title>
     
-    <link rel="icon" href="/Images/site-icon.png">
-    <link rel="stylesheet" href="/css/styles.css" >
+    <link rel="icon" href="../../Images/site-icon.png"> 
+    <link rel="stylesheet" href="../../css/styles.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;800&family=Ubuntu&display=swap" rel="stylesheet">    
 
-    <script src="/en/en.js" defer></script>
+    <script src="../en.js" defer></script>
 </head>
 
 <body onload="loadJs_en();" >
@@ -50,7 +50,7 @@
 
 <div class="container">
    <aside class="sidebar-left" id="leftsidebar">        
-       <div class="card" ><iframe src="https://youtube.com/embed/xz2-OXk2YWM?autoplay=0" width="100%" height="315" frameborder="0" allowfullscreen></iframe></div>
+       <div class="card" ><iframe src="https://youtube.com/embed/xz2-OXk2YWM?autoplay=0" width="100%" height="auto" frameborder="0" allowfullscreen></iframe></div>
         <div class="info-card">
             <a href="https://youtu.be/xz2-OXk2YWM" target="_blank">
                 <h4>Piano improvisation #315</h4>
@@ -64,18 +64,24 @@
         </div>   
     </aside>
 
-    <main class="content-main">
-        <div class="iframe-container">
-           <iframe src="https://docs.google.com/document/d/e/2PACX-1vSwBhvnwTZc7dhVm1O-3jjtEh_Ydq_PCuouh-BY5z6WxQT8cglhFnR7ts3Wq_MVxDcscULZ_LmrIPAP/pub?embedded=true"></iframe>
-        </div>  
+    <main class="content-main">    
+        <div id="article" class="doc-container"></div>
     </main>
 
     <aside class="sidebar-right" id="rightsidebar"></aside>
 </div>  
 <div class= "s50"></div>
+
 <footer>
     <div id="footer"></div>   
 </footer>
+
+<script src="../../js/main.js"></script>
+<script>
+    const googleId = "https://docs.google.com/document/d/e/2PACX-1vSwBhvnwTZc7dhVm1O-3jjtEh_Ydq_PCuouh-BY5z6WxQT8cglhFnR7ts3Wq_MVxDcscULZ_LmrIPAP/pub";
+    renderDoc(googleId);
+    
+</script>
 
 </body>
 </html>
