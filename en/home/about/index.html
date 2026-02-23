@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
     <script>
@@ -11,78 +10,92 @@
     gtag('config', 'G-73W9XL22BJ');
     </script>
 
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <title>About</title>
+
+    <link rel="icon" href="/public/images/site-icon.png">
     
-    <link rel="icon" href="/Images/site-icon.png">
-    <link rel="stylesheet" href="/css/styles.css" >
+    <link rel="stylesheet" href="/src/styles/en.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;800&family=Ubuntu&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <script src="/en/en.js" defer></script>
+    <title>About</title>
 </head>
+<body>
 
-<body onload="loadJs_en();" >
+    <header>
+        <nav>
+            <div id="brand" class="logo"></div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul id="nav-list" class="nav-links"></ul>
+        </nav>  
+        
+        <div id="hero" class="hide"></div>
+        <div id="breadcrumb" class="breadcrumb-container"></div>
+        <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
+    </header>
 
     
-<nav>
-    <div id="navigation" class="logo"></div>
 
-    <div class="menu-toggle" id="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="container">
+
+        <aside class="sidebar-left">
+            <div id="featured-img" class="hide" ></div>
+            <div id="featured-desc" class="hide" ></div>    
+            <div id="yt-iframe" class="hide" ></div>
+            <div id="vid-desc" class="hide" ></div>   
+            <div id="paypal" class="hide" ></div>
+        </aside>
+
+        <main id="mainContent" class="main-content">
+            <div id="article" class="doc-container"></div> 
+        </main>
+        
+        <aside class="sidebar-right" id="rightsidebar"></aside>
+
     </div>
 
-    <ul id="nav-list" class="nav-links"></ul>
-</nav>  
+    <footer>
+        <div id="footer" class="hide"></div>   
+    </footer>
 
-<header class=""></header> 
+    <script src="/src/scripts/en.js"></script>;
 
-<div id="back" class="hide" ><a href="#">BACK</a></div>
+    <script>
+        loadJs_en();    
 
-   
+        const docUrl = "2PACX-1vSWZo3oJLvT5K30Ctbs54iEsACHc_JI00tOZm5BQn17TJUvG08NxD_ZztXknbxrQTrjWO4NGPBWe1rN";
 
+        if(docUrl) {
+            renderDoc(docUrl);
+        }
 
-<div class="container">
-    <aside class="sidebar-left" id="leftsidebar">
-        <div class="card" ><img src="/Images/sb1.jpg" alt=""></div>
-        <div class="card" ><iframe src="https://youtube.com/embed/zRaKcpzvI3k?autoplay=0" width="100%" height="315" frameborder="0" allowfullscreen></iframe></div>
-        <div class="info-card">
-            <a href="https://youtu.be/zRaKcpzvI3k" target="_blank">
-                <h4>Piano improvisation #373</h4>
-                <p> 
-                    <strong>WHEN AN ANGEL KNOCKED ON HIS DOOR</strong><br>
-                    he zapped it...<br>
-                    <br>    
-                    Hell starts when man is so dull and hardened<br>
-                    That he cannot love or appreciate anything.<br>
-                    <br>
-                    He can see no beauty, feel no magic<br>
-                    Sense no thankfulness or happiness<br>
-                    Not even for being alive.<br>
-                    ... <br>
-                </p>
-            </a>
-        </div>                
-    </aside>
+        const vidId ="Tf0ru6COS_g"; // example : kwDoKqhUYyY
+        const vidName = "Piano improvisation #109"; 
+        const vidDesc = "<strong>Love is worth pain </strong><br>";
+                        
 
-    <main class="content-main">
-        <div class="iframe-container">
-            <iframe src="https://docs.google.com/document/d/e/2PACX-1vSWZo3oJLvT5K30Ctbs54iEsACHc_JI00tOZm5BQn17TJUvG08NxD_ZztXknbxrQTrjWO4NGPBWe1rN/pub?embedded=true"></iframe>
-        </div>  
-    </main>
+        const featuredImg="sb1.jpg"; //if no ytId, this will be the hero.jpg
+        const heroTitle="Sébastien Badel";
+        const heroDesc="";
 
-    <aside class="sidebar-right" id="rightsidebar"></aside>
-</div>  
-<div class= "s50"></div>
-<footer>
-    <div id="footer"></div>   
-</footer>
+        if (vidId && vidName &&  vidDesc) {
+            renderVid(vidId, vidName, vidDesc)
+        } 
 
+        if (featuredImg && heroTitle) {
+            placeHero(featuredImg, heroTitle, heroDesc);    
+        }
+
+    </script>
 </body>
 </html>

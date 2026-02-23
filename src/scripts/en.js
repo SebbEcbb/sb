@@ -18,7 +18,7 @@ function navlist_en() {
     "<li><a href='/en/'>Home</a></li>"+
     "<li><a href='/en/articles/' target='_blank'>Articles</a></li>"+
     "<li><a href='/en/music-poetry/' target='_blank'>Music & Poetry</a></li>"+
-    "<li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a></li>"+
+    "<li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>Sebb Piano Art</a></li>"+
     "<li><a href='/en/home/about/' target='_blank'>About</a></li>"+
     "<li><a href='/en/home/contact.html' class='contact-btn'>Contact</a></li>";
 }
@@ -33,9 +33,7 @@ function sidebarRight_en() {
     "<div class='card links'>"+
     "<p><strong>Latest posts</strong></p>"+
     "<p><a href='/en/home/articles/i-improvise' target='_blank'>I improvise</a></p>"+
-    "<p><a href='/en/home/articles/improvisation-and-flow' target='_blank'>Improvisation & Flow</a></p>"+
-    "<p><a href='/en/home/articles' target='_blank'>Articles</a></p>"+
-    "<p><a href='/en/home/music-poetry' target='_blank'>Music & Poetry</a></p>"+
+    "<p><a href='/en/home/articles/improvisation_flow' target='_blank'>Improvisation & Flow</a></p>"+
     "</div>"+
     "<div class='card links'>"+
     "<p><strong>Watch on YouTube</strong></p>"+
@@ -123,7 +121,7 @@ function StickyJs() {
 const path = window.location.pathname;
 
 // 2. Split into segments and remove empty strings from the start/end
-const segments = path.split('/').filter(segment => segment !== "" && segment !== "en" && !segment.endsWith(".html"));
+const segments = path.split('/').filter(segment => segment !== "" && !segment.endsWith(".html"));
 
 // 3. Select the HTML element where the breadcrumbs will live
 const breadcrumbContainer = document.getElementById('breadcrumb');
@@ -144,13 +142,15 @@ segments.forEach((segment, index) => {
   
   // Set the text (Capitalizing the first letter for better UI)
   link.textContent = segment.charAt(0).toUpperCase() + segment.slice(1);
+  link.textContent = link.textContent.replaceAll('-', ' '); // Replace dashes with spaces for better readability');
+  link.textContent = link.textContent.replaceAll('_', ' & '); // Replace underscores with " & " for better readability');
 
   // Append the link to our container
   breadcrumbContainer.appendChild(link);
 
   // If it's not the last item, add a separator symbol
   if (index < segments.length - 1) {
-    breadcrumbContainer.append(' \ '); // Using a bold arrow as a separator
+    breadcrumbContainer.append(' / '); // Using a bold arrow as a separator
   }
 });
 
@@ -251,28 +251,22 @@ function renderVid(vidId, vidName, vidDesc) {
     }
 }
 
- 
 
 
+function placeHero(featedImg, imgTitle, imgDescription) {
+    const imgDiv = document.getElementById("featured-img");
+    const descDiv = document.getElementById("featured-desc");
 
-
-function placeHero(heroImg, heroTitle, heroDesc) {
-
-    const heroDiv = document.getElementById("hero-img");
-    const descDiv = document.getElementById("hero-desc");
-
-    heroDiv.classList.remove("hide");
+    imgDiv.classList.remove("hide");
     descDiv.classList.remove("hide");
 
-    if (heroImg && heroDiv) {
-        heroDiv.innerHTML = `<img src="/public/images/${heroImg}.jpg" alt="${heroTitle}" />`;
-    }   
-
-    if (descDiv && heroDesc) {
+    if (featedImg && imgTitle) {
+        const imgSrc = `/public/images/${featedImg}`;
+        imgDiv.innerHTML = `<img src="${imgSrc}" alt="${imgTitle}" />`;
         descDiv.innerHTML = 
-        `<h3>${heroTitle}</h3>` + 
-        `<p>${heroDesc}</p>`;
-    }   
+        `<h3>${imgTitle}</h3>` + 
+        `<p>${imgDescription}</p>`;
+    }          
 }
 
   

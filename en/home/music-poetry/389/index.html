@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <title>English Post </title>
+    <title>#389 - See a moment</title>
 </head>
 <body>
 
@@ -89,15 +89,15 @@
                         "Only one ... <br>";
                         
 
-        const heroImg=""; //if no ytId, this will be the hero.jpg
+        const featuredImg=""; //if no ytId, this will be the hero.jpg
         const heroTitle="";
         const heroDesc="";
 
         if (vidId && vidName &&  vidDesc) {
             renderVid(vidId, vidName, vidDesc)
         } else {
-            if (heroImg && heroTitle && heroDesc) {
-                placeHero(heroImg, heroTitle, heroDesc);    
+            if (featuredImg && heroTitle && heroDesc) {
+                placeHero(featuredImg, heroTitle, heroDesc);    
             }
         }
 

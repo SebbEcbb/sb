@@ -87,15 +87,15 @@
                         "man of valor.";
                         
 
-        const heroImg=""; //if no ytId, this will be the hero.jpg
+        const featuredImg=""; //if no ytId, this will be the hero.jpg
         const heroTitle="";
         const heroDesc="";
 
         if (vidId && vidName &&  vidDesc) {
             renderVid(vidId, vidName, vidDesc)
         } else {
-            if (heroImg && heroTitle && heroDesc) {
-                placeHero(heroImg, heroTitle, heroDesc);    
+            if (featuredImg && heroTitle && heroDesc) {
+                placeHero(featuredImg, heroTitle, heroDesc);    
             }
         }
 
