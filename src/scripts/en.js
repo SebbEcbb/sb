@@ -16,8 +16,8 @@ function brand_en() {
 function navlist_en() {
     document.getElementById("nav-list").innerHTML = 
     "<li><a href='/en/'>Home</a></li>"+
-    "<li><a href='/en/articles/' target='_blank'>Articles</a></li>"+
-    "<li><a href='/en/music-poetry/' target='_blank'>Music & Poetry</a></li>"+
+    "<li><a href='/en/home/articles/' target='_blank'>Articles</a></li>"+
+    "<li><a href='/en/home/music-poetry/' target='_blank'>Music & Poetry</a></li>"+
     "<li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>Sebb Piano Art</a></li>"+
     "<li><a href='/en/home/about/' target='_blank'>About</a></li>"+
     "<li><a href='/en/home/contact.html' class='contact-btn'>Contact</a></li>";
