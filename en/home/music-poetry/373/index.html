@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <title>Page Container</title>
+    <title>#373 - When an angel knocked at his door ...</title>
 
 </head>
 <body>
@@ -48,11 +48,11 @@
     <div class="container">
 
         <aside class="sidebar-left">
-                <div id="yt-iframe" class="hide" ></div>
-                <div id="vid-desc" class="hide" ></div>
-                <div id="heroDiv" class="hide" ></div>
-                <div id="heroDesc" class="hide" ></div>
-                <div id="paypal" class="hide" ></div>
+            <div id="featured-img" class="hide" ></div>
+            <div id="featured-desc" class="hide" ></div>
+            <div id="yt-iframe" class="hide" ></div>
+            <div id="vid-desc" class="hide" ></div>
+            <div id="paypal" class="hide" ></div>
         </aside>
 
         <main id="mainContent" class="main-content">
@@ -91,16 +91,17 @@
                         
 
         const featuredImg=""; //if no ytId, this will be the hero.jpg
-        const heroTitle="";
+        const imgTitle="";
         const heroDesc="";
 
         if (vidId && vidName &&  vidDesc) {
             renderVid(vidId, vidName, vidDesc)
-        } else {
-            if (featuredImg && heroTitle && heroDesc) {
-                placeHero(featuredImg, heroTitle, heroDesc);    
-            }
         }
+        
+        if (featuredImg && imgTitle && heroDesc) {
+            placeHero(featuredImg, imgTitle, heroDesc);    
+        }
+        
 
     </script>
 </body>

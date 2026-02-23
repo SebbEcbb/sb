@@ -48,11 +48,11 @@
     <div class="container">
 
         <aside class="sidebar-left">
-                <div id="yt-iframe" class="hide" ></div>
-                <div id="vid-desc" class="hide" ></div>
-                <div id="heroDiv" class="hide" ></div>
-                <div id="heroDesc" class="hide" ></div>
-                <div id="paypal" class="hide" ></div>
+            <div id="featured-img" class="hide" ></div>
+            <div id="featured-desc" class="hide" ></div>
+            <div id="yt-iframe" class="hide" ></div>
+            <div id="vid-desc" class="hide" ></div>
+            <div id="paypal" class="hide" ></div>
         </aside>
 
         <main id="mainContent" class="main-content">
@@ -84,15 +84,15 @@
                         ;
 
         const featuredImg=""; //if no ytId, this will be the hero.jpg
-        const heroTitle="";
-        const heroDesc="";
+        const imgTitle="";
+        const imgDesc="";
 
         if (vidId && vidName &&  vidDesc) {
             renderVid(vidId, vidName, vidDesc)
-        } else {
-            if (featuredImg && heroTitle && heroDesc) {
-                placeHero(featuredImg, heroTitle, heroDesc);    
-            }
+        } 
+
+        if (featuredImg && imgTitle) {
+            placeHero(featuredImg, imgTitle, imgDesc);    
         }
 
     </script>
