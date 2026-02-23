@@ -82,16 +82,16 @@
                         "And the dismantling of a family <br> too strong for them ... ";
                         ;
 
-        const heroImg=""; //if no ytId, this will be the hero.jpg
-        const heroTitle="";
+        const featuredImg=""; //if no ytId, this will be the hero.jpg
+        const imgTitle="";
         const heroDesc="";
 
         if (vidId && vidName &&  vidDesc) {
             renderVid(vidId, vidName, vidDesc)
-        } else {
-            if (heroImg && heroTitle && heroDesc) {
-                placeHero(heroImg, heroTitle, heroDesc);    
-            }
+        } 
+
+        if (featuredImg && imgTitle) {
+            placeHero(featuredImg, imgTitle, heroDesc);    
         }
 
     </script>
