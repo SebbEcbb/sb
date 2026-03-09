@@ -67,7 +67,7 @@ function footer_en() {
     "<a href='https://www.linkedin.com/in/sebastienbadelpiano/' class='footer-link'><img src='/public/images/li_icon.png' height='24px' alt='LinkedIn'><strong>LinkedIn</strong></a>"+
     "<a href='https://youtube.com/@SebastienBadelPiano'class='footer-link' target='_blank'>  <img src='/public/images/yt_icon.png' height='24px' alt='YouTube'> <strong>Youtube </strong></a>"+                
     "<div class='s20'></div>" + 
-    "<a href='/en/policies' class='footer-link' target='_blank' >Legal Policies</a>" +
+    "<a href='/en/home/policies' class='footer-link' target='_blank' >Legal Policies</a>" +
     "<p style='display:inline-flex; text-align: center;'>©2020-2026 Sébastien Badel (all rights reserved)</p>" + 
     "<div class='s20'></div>";
 } 
