@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-73W9XL22BJ');
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/public/images/site-icon.png">
+    
+    <link rel="stylesheet" href="/src/styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+
+    <title>#380-MUNDUS MUTATIONIS</title>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div id="brand" class="logo"></div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul id="nav-list" class="nav-links"></ul>
+        </nav>  
+        <div id="breadcrumb" class="breadcrumb-container"></div>
+        <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
+    </header>
+
+    
+
+    <div class="container">
+
+        <aside class="sidebar-left">
+            <div id="featured-img" class="hide" ></div>
+            <div id="featured-desc" class="hide" ></div>
+            <div id="yt-iframe" class="hide" ></div>
+            <div id="vid-desc" class="hide" ></div>
+            <div id="paypal" class="hide" ></div>
+        </aside>
+
+        <main id="mainContent" class="main-content">
+            <div id="article" class="doc-container"></div> 
+        </main>
+        
+        <aside class="sidebar-right" id="rightsidebar"></aside>
+
+    </div>
+
+    <footer>
+        <div id="footer" class="hide"></div>   
+    </footer>
+
+    <script src="/src/scripts/en.js"></script>;
+
+    <script>
+        loadJs_en();
+
+        const docUrl = "2PACX-1vRQ79BRBAImm7LiDUAGERc6Wfg5QdCguqFuRAb-iwR0WZRd9r2jbUdSYlbvT9xnM4X-issuYXlKKOCv";
+        renderDoc(docUrl);
+
+        const vidId ="XfOD-FFaHJc"; // example : kwDoKqhUYyY
+        const vidName = "Piano improvisation #380"; 
+        const vidDesc = "<strong>MUNDUS MUTATIONIS</strong><br>" +
+                        "A world of change <br>"+
+                        "Moving all the time <br>"+
+                        "Never ceases <br>"+
+                        "So do we, humans <br>"+
+                        "Relentlessly rush  <br>"+
+                        "To a new state of ourselves  <br>";
+                        
+
+        const featuredImg=""; //if no ytId, this will be the hero.jpg
+        const imgTitle="";
+        const imgDesc="";
+
+        if (vidId && vidName &&  vidDesc) {
+            renderVid(vidId, vidName, vidDesc)
+        } 
+
+        if (featuredImg && imgTitle) {
+            placeHero(featuredImg, imgTitle, imgDesc);    
+        }
+
+    </script>
+</body>
+</html>
