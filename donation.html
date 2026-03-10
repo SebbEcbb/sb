@@ -19,53 +19,48 @@
         
     <title>Sébastien Badel Donate</title>
     
-    <link rel="icon" href="./Images/site-icon.png">
+    <link rel="icon" href="public/images/site-icon.png">
 
-    <link rel="stylesheet" href="./css/main.css" >
-    <link rel="stylesheet" href="./css/donation.css" >
-    <script src="/fr/fr.js" defer></script>
-    <script src="/en/en.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css" >
+    <link rel="stylesheet" href="css/main.css" >
+    <script src="src/scripts/fr.js" defer></script>
+    <script src="src/scripts/en.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">    
     
-
-
+<style>
+    main{background-color:white;}
+</style>
 
 </head>
 
 <body>
 
-<header>
-    <h1 id="site-title" ><a href='https://sebastienbadel.com'><img src='/Images/site-icon.png' height='30px' alt='Flower'>Sébastien Badel <br> <!--<span style="font-size:15px">alias Aman</span>--></a></h1> 
-    <div id="page-hero" >
-        <img 
-            src="./Images/Banner1.JPG" 
-            alt="Sébastien Badel" 
-            class="responsive">        
-    </div>
-    <div>   
-        <ul id="navigation" class="links">
-            <li ><a href='/en/contact.html' target='_blank'>Contact</a></li>
-            <li ><a href='/en/aboutt.html' target='_blank'>About</a></li>
-            <li ><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>YouTube</a> </li>
-            <li ><a href='/en/shop.html' target='_blank'>Shop</a></li>
-            <li ><a href='/en/blog.html' target='_blank'>Blog</a></li>
-            <li ><a href='https://sebastienbadel.com/en/Home.html' >Home</a></li>
-        </ul>
-    </div>
-</header>
+<nav>
+    <div id="navigation" class="logo"></div>
 
-<div class="s50"></div>
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
+    <ul id="nav-list" class="nav-links"></ul>
+</nav>  
+
+<header class=""></header> 
+
+<div id="back" class="hide" ><a href="#">BACK</a></div>
+
+<aside> </aside>
 <main>
     
     <div id="flags" class="center">
-        <a href="#navigation" onclick="fr()" ><img src="/Images/fr.jpeg" alt="French flag"></a>
-        <a href="#navigation" onclick="en()" ><img src="/Images/en.jpeg" alt="English flag"></a>
+        <a href="#navigation" onclick="fr()" ><img src="public/images/fr.jpeg" alt="French flag"></a>
+        <a href="#navigation" onclick="en()" ><img src="public/images/en.jpeg" alt="English flag"></a>
     </div>
 
     <div id="page-title" class="center">
@@ -99,7 +94,7 @@
 
         <form style='text-align: center; margin-top:5px' action='https://www.paypal.com/donate' method='post' target='_blank' > 
             <input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> 
-            <input type='image' src='./Images/Heart.jpg' border='0' width='50%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />
+            <input type='image' src='./public/images/Heart.jpg' border='0' width='50%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />
         </form>
 
         <p class="en show">Click the heart to make a donation.</p>
@@ -108,8 +103,10 @@
     </div> 
 </main> 
 
-<footer>
+<aside></aside>
 
+<footer>
+    <div id="footer"></div>   
 </footer>
 
 
@@ -117,7 +114,7 @@
 
     function fr(){
 
-        navigation_donation_fr();
+        loadJs_fr();
 
         const frs = document.getElementsByClassName("fr");
         for (let i = 0; i < frs.length; i++) {
@@ -131,8 +128,7 @@
     }
         
     function en(){
-
-        navigation_donation_en();
+        LoadJs_en();
 
         const frs = document.getElementsByClassName("fr");
         for (let i = 0; i < frs.length; i++) {
@@ -147,6 +143,7 @@
 </script>
 
 </body> 
+
 
 
 

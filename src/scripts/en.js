@@ -1,5 +1,6 @@
 //Loading functions
 function loadJs_en(){
+    alert("Loading English version...");
     brand_en();
     navlist_en(); 
     sidebarRight_en(); 

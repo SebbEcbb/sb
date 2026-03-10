@@ -9,7 +9,7 @@ function loadJs_fr(){
 
 function navigation_fr() {
     document.getElementById("navigation").innerHTML = 
-    "<a href='https://sebastienbadel.com'><img src='/Images/site-icon.png' height='20px' alt='Flower'> Sébastien Badel </a>"+
+    "<a href='https://sebastienbadel.com'><img src='./public/images/site-icon.png' height='20px' alt='Flower'> Sébastien Badel </a>"+
         "<p class='sub-title'>Croire au delà des troubles, aimer au delà des douleurs</p>";
   }
 
@@ -24,10 +24,10 @@ function navigation_fr() {
 
 function siteFooter_fr() {
     document.getElementById("footer").innerHTML = 
-      "<a href='/contact.html' class='footer-link'><img src='/Images/message_icon.png' height='24px' alt='Contact'><strong>Contact</strong></a>"+
-      "<a href='https://facebook.com/@sebastien.badel' class='footer-link' target='_blank'><img src='/Images/fb_icon.png' height='24px' alt='Facebook'><strong>Facebook</strong></a>"+
-      "<a href='https://www.linkedin.com/in/sebastienbadelpiano/' class='footer-link'><img src='/Images/li_icon.png' height='24px' alt='LinkedIn'><strong>LinkedIn</strong></a>"+
-      "<a href='https://youtube.com/@SebastienBadelPiano'class='footer-link' target='_blank'>  <img src='/Images/yt_icon.png'' height='24px' alt='YouTube'> <strong>Youtube </strong></a>"+                
+      "<a href='/contact.html' class='footer-link'><img src='./public/images/message_icon.png' height='24px' alt='Contact'><strong>Contact</strong></a>"+
+      "<a href='https://facebook.com/@sebastien.badel' class='footer-link' target='_blank'><img src='./public/images/fb_icon.png' height='24px' alt='Facebook'><strong>Facebook</strong></a>"+
+      "<a href='https://www.linkedin.com/in/sebastienbadelpiano/' class='footer-link'><img src='./public/images/li_icon.png' height='24px' alt='LinkedIn'><strong>LinkedIn</strong></a>"+
+      "<a href='https://youtube.com/@SebastienBadelPiano'class='footer-link' target='_blank'>  <img src='./public/images/yt_icon.png'' height='24px' alt='YouTube'> <strong>Youtube </strong></a>"+                
       "<div class='s50'></div><p  style='text-align: center;'>©2020-2026 Sébastien Badel</p>"
   } 
 

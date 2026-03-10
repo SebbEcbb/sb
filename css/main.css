@@ -418,3 +418,5 @@ nav{
     font-weight: 600;
     color: rgb(248, 216, 175);
   }
+
+  #comment{text-shadow:none;}
