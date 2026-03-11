@@ -93,6 +93,7 @@ nav {
   background-image: url('/public/images/Banner1.JPG'); /* Ensure path is correct */
   background-size: cover;
   background-position: center;
+  box-shadow: #333333a8 0px 5px 10px; /* Adds a subtle shadow for depth */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,7 +287,7 @@ nav {
 /*footer*/   
 #footer { 
     background: antiquewhite; 
-    max-height: 120px;
+    max-height: 100px;
     padding-top: 25px !important;
     border-top: solid 1px rgb(83, 74, 74);
     text-align: center; 
