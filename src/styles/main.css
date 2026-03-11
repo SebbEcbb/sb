@@ -86,6 +86,18 @@ nav {
     transition: all 0.3s ease;
 }
 
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 450px; /* Adjust height as needed */
+  background-image: url('/public/images/Banner1.JPG'); /* Ensure path is correct */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* The Menu Toggle (Hamburger) */
 .menu-toggle {
