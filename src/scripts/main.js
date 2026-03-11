@@ -20,7 +20,7 @@ function navlist_en() {
     "<li><a href='/en/home/music-poetry/' target='_blank'>Music & Poetry</a></li>"+
     "<li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>Sebb Piano Art</a></li>"+
     "<li><a href='/en/home/about/' target='_blank'>About</a></li>"+
-    "<li><a href='/en/home/contact.html' class='contact-btn'>Contact</a></li>";
+    "<li><a href='/en/home/contact' class='contact-btn'>Contact</a></li>";
 }
 
 function sidebarRight_en() {
@@ -52,8 +52,13 @@ function donate_en() {
     donateDiv.classList.add("card");
     donateDiv.style.borderLeft = "4px solid var(--col-2)";
     donateDiv.innerHTML ="";
-    donateDiv.innerHTML="<p><strong>Buy me a coffee ?</strong></p>"+
-    "<p>Donate via Paypal</p>"+
+    donateDiv.innerHTML="<p><strong>Buy me a coffee ?</strong><br></p>"+
+    "<p>Creation takes time and effort. <br>" + 
+    "I gladly offer it for free. <br>" + 
+    "Hopefully it will encourage you. </p><br>" +
+    "<p>You may consider a financial support "+
+    "via Paypal.<br>" +
+    "If so, please click the heart.</p>" +
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
     "<input id='donate-img' type='image' src='/public/images/heart.png' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
