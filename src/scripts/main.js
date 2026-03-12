@@ -34,6 +34,7 @@ function sidebarRight_en() {
     "<p><strong>Latest posts</strong></p>"+
     "<p><a href='/en/home/articles/i-improvise' target='_blank'>I improvise</a></p>"+
     "<p><a href='/en/home/articles/improvisation_flow' target='_blank'>Improvisation & Flow</a></p>"+
+    "<p><a href='/en/home/music-poetry/377' target='_blank'>#377 pace carentia ...</a></p>" +
     "</div>"+
     "<div class='card links'>"+
     "<p><strong>Watch on YouTube</strong></p>"+
@@ -58,7 +59,7 @@ function donate_en() {
     "Hopefully it will encourage you. </p><br>" +
     "<p>You may consider a financial support "+
     "via Paypal.<br>" +
-    "If so, please click the heart.</p>" +
+    "If so, please click the heart.<br><br></p>" +
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
     "<input id='donate-img' type='image' src='/public/images/heart.png' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
@@ -135,7 +136,7 @@ function donate_fr() {
     "J'espère que cela vous encouragera.</p><br>" +
     "<p>Vous pouvez envisager un soutien financier "+
     "via Paypal.<br>" +
-    "Si c'est le cas, cliquez sur le cœur.</p>" +
+    "Si c'est le cas, cliquez sur le cœur.<br><br></p>" +
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
     "<input id='donate-img' type='image' src='/public/images/heart.png' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
