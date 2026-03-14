@@ -214,12 +214,28 @@ nav {
 .main-content { 
     background-color:var(--col-1);
     background: var(--grd-1);
+    order:1;
 }
 
+.sidebar-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order:3;
+    gap: 20px;
+}
 .sidebar-left iframe {
     width: 100%;
     aspect-ratio: 16 / 9; /* Keeps the cinematic shape 🎬 */
     border-radius: 8px;
+}
+
+.sidebar-right {
+    order:2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
 }
 
 .sidebar-right a {
@@ -239,15 +255,19 @@ nav {
         /* Column 1: Fixed 320px (standard for video) */
         /* Column 2: 1fr (takes all remaining 'fractional' space) */
         /* Column 3: min-content (shrink to fit) but max 300px */
-        grid-template-columns: 320px 1fr minmax(250px, 320px);
+        grid-template-columns: 20% 1fr 20%;
         gap: 30px;
         align-items: start; /* Prevents sidebars from stretching to footer height */
     }
+    .sidebar-left{order: 1;}
+    .main-content{order: 2;}
+    .sidebar-right{order: 3;}
 }
 
 /*cards*/
 
 .info-card { 
+    width: 100% !important;
     a {color: rgb(80, 78, 78);}
     h4 {font-size: 18px; margin-bottom: 15px;}
     p {font-size: 14px;}
@@ -258,6 +278,7 @@ nav {
     background-color: rgb(253, 247, 240); 
     border-radius: 8px;
     transition: all 0.3s ease;
+
 }
 
 .card { 
@@ -267,6 +288,7 @@ nav {
     border-radius: 8px; 
     box-shadow: var(--shdw-2);
     margin-bottom: 15px !important;
+    width: 100% !important;
 }
 
 /* Custom styling for the Google Doc content*/
