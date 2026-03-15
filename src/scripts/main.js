@@ -32,6 +32,7 @@ function sidebarRight_en() {
     "<div class='card links'>"+
     "<p><strong>Latest posts</strong></p>"+
     "<p><a href='/en/home/articles/i-improvise' target='_blank'>I improvise</a></p>"+
+    "<p><a href='/en/home/' target='_blank'>#143 A man and his cause </a></p>"+
     "<p><a href='/en/home/articles/improvisation_flow' target='_blank'>Improvisation & Flow</a></p>"+
     "<p><a href='/en/home/music-poetry/377' target='_blank'>#377 pace carentia ...</a></p>" +
     "</div>"+
@@ -108,8 +109,9 @@ function navlist_fr() {
     "<h3>Mis en avant</h3>"+
     "<div class='card links'>"+
     "<p><strong>Derniers articles</strong></p>"+
-    "<p><a href='/fr/j-improvise' target='_blank'>J'improvise</a></p>"+
-    "<p><a href='/fr/improvisation-et-flow' target='_blank'>Improvisation & Flow</a></p>"+
+    "<p><a href='/fr/accueil/articles/j-improvise' target='_blank'>J'improvise</a></p>"+
+    "<p><a href='/fr/accueil/' target='_blank'>n° 143 Un homme et sa cause </a></p>"+
+    "<p><a href='/fr/accueil/musique-poesie/380' target='_blank'>n° 380 Mundus Mutationis</a></p>"+
     "</div>"+
     "<div class='card links'>"+
     "<p><strong>Regarder sur YouTube</strong></p>"+
