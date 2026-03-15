@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <title>#380-MUNDUS MUTATIONIS</title>
+    <title>Mundus Mutationis (#380) </title>
 
 </head>
 <body>
@@ -39,6 +39,7 @@
 
             <ul id="nav-list" class="nav-links"></ul>
         </nav>  
+        <div id="hero" class="hide card hero-video"></div>          
         <div id="breadcrumb" class="breadcrumb-container"></div>
         <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
     </header>
@@ -76,28 +77,19 @@
         renderDoc(docUrl);
 
         const vidId ="XfOD-FFaHJc"; // example : kwDoKqhUYyY
-        const vidName = "Piano improvisation #380"; 
-        const vidDesc = "<strong>MUNDUS MUTATIONIS</strong><br>" +
-                        "A world of change <br>"+
-                        "Moving all the time <br>"+
-                        "Never ceases <br>"+
-                        "So do we, humans <br>"+
-                        "Relentlessly rush  <br>"+
-                        "To a new state of ourselves  <br>";
-                        
+        const vidName = ""; 
+        const vidDesc = "";
+        const category="hero"
+        
+        renderVid(vidId, vidName, vidDesc, category)
 
         const featuredImg=""; //if no ytId, this will be the hero.jpg
         const imgTitle="";
         const imgDesc="";
 
-        if (vidId && vidName &&  vidDesc) {
-            renderVid(vidId, vidName, vidDesc)
-        } 
-
         if (featuredImg && imgTitle) {
             placeHero(featuredImg, imgTitle, imgDesc);    
         }
-
     </script>
 </body>
 </html>

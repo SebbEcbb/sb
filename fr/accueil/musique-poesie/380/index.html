@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <title>#380-MUNDUS MUTATIONIS</title>
+    <title>Mundus Mutationis (n° 380)</title>
 
 </head>
 
@@ -39,9 +39,10 @@
             </div>
 
             <ul id="nav-list" class="nav-links"></ul>
-        </nav>  
+        </nav>
+        <div id="hero" class="hide card hero-video"></div>    
         <div id="breadcrumb" class="breadcrumb-container"></div>
-        <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
+        <div id="back" class="hide" ><a href="#">RETOUR</a></div> <!-- Back Button -->
     </header>
 
     
@@ -77,23 +78,15 @@
         renderDoc(docUrl);
 
         const vidId ="XfOD-FFaHJc"; // example : kwDoKqhUYyY
-        const vidName = "Piano improvisation #380"; 
-        const vidDesc = "<strong>MUNDUS MUTATIONIS</strong><br>" +
-                        "Un monde changeant <br>"+
-                        "Toujours en route <br>"+
-                        "Jamais ne s’arrête <br>"+
-                        "Nous aussi, humains <br>"+
-                        "Précipitations sans cesse <br>"+
-                        "Vers un nouvel état de nous-mêmes. <br>";
-                        
+        const vidName = ""; 
+        const vidDesc = "";
+        const category="hero"
+        
+        renderVid(vidId, vidName, vidDesc, category)
 
         const featuredImg=""; //if no ytId, this will be the hero.jpg
         const imgTitle="";
         const imgDesc="";
-
-        if (vidId && vidName &&  vidDesc) {
-            renderVid(vidId, vidName, vidDesc)
-        } 
 
         if (featuredImg && imgTitle) {
             placeHero(featuredImg, imgTitle, imgDesc);    
