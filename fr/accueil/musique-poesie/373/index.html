@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
@@ -22,9 +22,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <title>Pace carentia (#377) </title>
+    <title>Quand un ange frappa à sa porte (n° 373)</title>
 
 </head>
+
 <body>
 
     <header>
@@ -39,9 +40,11 @@
 
             <ul id="nav-list" class="nav-links"></ul>
         </nav>  
-        <div id="hero" class="hide card hero-video"></div>  
+
+        <div id="hero" class="hide card hero-video"></div>
+
         <div id="breadcrumb" class="breadcrumb-container"></div>
-        <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
+        <div id="back" class="hide" ><a href="#">RETOUR</a></div> <!-- Back Button -->
     </header>
 
     
@@ -49,11 +52,11 @@
     <div class="container">
 
         <aside class="sidebar-left">
-                <div id="featured-img" class="hide" ></div>
-                <div id="featured-desc" class="hide" ></div>
-                <div id="yt-iframe" class="hide" ></div>
-                <div id="vid-desc" class="hide" ></div>
-                <div id="paypal" class="hide" ></div>
+            <div id="featured-img" class="hide" ></div>
+            <div id="featured-desc" class="hide" ></div>
+            <div id="yt-iframe" class="hide" ></div>
+            <div id="vid-desc" class="hide" ></div>
+            <div id="paypal" class="hide" ></div>
         </aside>
 
         <main id="mainContent" class="main-content">
@@ -71,20 +74,17 @@
     <script src="/src/scripts/main.js"></script>;
 
     <script>
-        loadJs_en();    
+        loadJs_fr();
 
-        const docUrl = "2PACX-1vTUOFLnZSO6u4Q_zEK4i7YEyYl_CQoi-sFb9TjIMBcHI6RAGtbdCYeq7NUvGQlY_IP4NrsGqwVyM6Xq";
+        const docUrl = "2PACX-1vRdgpE5CoiVBQGzJC2FWQUmmEsAntlPH0aYRbde2Tl9uctroBbuIE5wrKIqzCEIsRFPHI9pLwZr-u-c";
+        renderDoc(docUrl);
 
-        if(docUrl) {
-            renderDoc(docUrl);
-        }
-
-        const vidId ="y4e-vL17LQE"; // example : kwDoKqhUYyY
+        const vidId ="zRaKcpzvI3k"; // example : kwDoKqhUYyY
         const vidName = ""; 
         const vidDesc = "";
         const category="hero"
         
-        renderVid(vidId, vidName, vidDesc, category)                    
+        renderVid(vidId, vidName, vidDesc, category)
 
         const featuredImg=""; //if no ytId, this will be the hero.jpg
         const imgTitle="";

@@ -22,9 +22,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <title>#373 - When an angel knocked at his door ...</title>
+    <title>When angel knocked on his door (n° 373)</title>
 
 </head>
+
 <body>
 
     <header>
@@ -38,9 +39,10 @@
             </div>
 
             <ul id="nav-list" class="nav-links"></ul>
-        </nav>  
+        </nav>
+        <div id="hero" class="hide card hero-video"></div>  
         <div id="breadcrumb" class="breadcrumb-container"></div>
-        <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
+        <div id="back" class="hide" ><a href="#">TOP</a></div> <!-- Back Button -->
     </header>
 
     
@@ -70,38 +72,25 @@
     <script src="/src/scripts/main.js"></script>;
 
     <script>
-        loadJs_en();    
+        loadJs_en();
 
         const docUrl = "2PACX-1vTU72C9ot5Xt-Rb1HRUFvafAPgH2Ors9ss-DH2T9ht9NgOtI70SV_Qay-21wxFA9oOAPTZnpvgvaq92";
-
-        if(docUrl) {
-            renderDoc(docUrl);
-        }
+        renderDoc(docUrl);
 
         const vidId ="zRaKcpzvI3k"; // example : kwDoKqhUYyY
-        const vidName = "Piano improvisation #373"; 
-        const vidDesc = "<strong>When an angel knocked at his door ... </strong><br>" +
-                        "He zapped it ...<br><br>"+
-                        "Hell starts when man is so dull and hardened<br>"+
-                        "That he cannot love or appreciate anything.<br>"+
-                        "He sees no beauty, feels no magic<br>"+
-                        "No thankfulness or happiness,<br>"+
-                        "Not even for being alive.<br>"+
-                        "... <br>";
-                        
+        const vidName = ""; 
+        const vidDesc = "";
+        const category="hero"
+        
+        renderVid(vidId, vidName, vidDesc, category)
 
         const featuredImg=""; //if no ytId, this will be the hero.jpg
         const imgTitle="";
-        const heroDesc="";
+        const imgDesc="";
 
-        if (vidId && vidName &&  vidDesc) {
-            renderVid(vidId, vidName, vidDesc)
+        if (featuredImg && imgTitle) {
+            placeHero(featuredImg, imgTitle, imgDesc);    
         }
-        
-        if (featuredImg && imgTitle && heroDesc) {
-            placeHero(featuredImg, imgTitle, heroDesc);    
-        }
-        
 
     </script>
 </body>
