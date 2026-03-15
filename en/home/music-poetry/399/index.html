@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <title>#399 - Perfect Peace in Weakness</title>
+    <title>Perfect Peace in Weakness ( #399 )</title>
 
 </head>
 <body>
@@ -39,6 +39,7 @@
 
             <ul id="nav-list" class="nav-links"></ul>
         </nav>  
+        <div id="hero" class="hide card hero-video"></div>  
         <div id="breadcrumb" class="breadcrumb-container"></div>
         <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
     </header>
@@ -70,26 +71,21 @@
     <script src="/src/scripts/main.js"></script>;
 
     <script>
-        loadJs_fr();
+        loadJs_en();
 
         const docUrl = "2PACX-1vQM0472gFX0a5fdKgZfrijQOgXd2wut-C0w8KuUMgYXjEQa-zSNH-jwC9RqmLliTVAI4sE4zPonFpHF";
         renderDoc(docUrl);
 
         const vidId ="kwDoKqhUYyY"; // example : kwDoKqhUYyY
-        const vidName = "Piano improvisation #399"; 
-        const vidDesc = "<strong>Perfect Peace in Weakness</strong><br>" +
-                        "7 years of tears <br>"+
-                        "To finish with a good thirty<br>"+
-                        "And the dismantling of a family <br> too strong for them ... ";
-                        ;
+        const vidName = ""; 
+        const vidDesc = "";
+        const category="hero"
+        
+        renderVid(vidId, vidName, vidDesc, category)
 
         const featuredImg=""; //if no ytId, this will be the hero.jpg
         const imgTitle="";
         const imgDesc="";
-
-        if (vidId && vidName &&  vidDesc) {
-            renderVid(vidId, vidName, vidDesc)
-        } 
 
         if (featuredImg && imgTitle) {
             placeHero(featuredImg, imgTitle, imgDesc);    
