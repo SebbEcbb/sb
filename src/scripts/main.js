@@ -1,4 +1,4 @@
-//Loading functions
+
 function loadJs_en(){
     brand_en();
     navlist_en();  
@@ -26,7 +26,6 @@ function navlist_en() {
 function sidebarRight_en() {
 
     const elmnt = document.getElementById("rightsidebar")
-    //console.log("rightsidebar : " + typeof(elmnt), elmnt);
 
     elmnt.innerHTML = 
     "<h3>Featured</h3>"+
@@ -173,7 +172,6 @@ menuToggle.addEventListener('click', () => {
     }
 });
 
-// Close menu when a link is clicked
 document.querySelectorAll('.nav-links, .nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         menuToggle.classList.remove('hide');
@@ -202,78 +200,58 @@ function StickyJs() {
 
 //Breadcrumb Logic
 
-// 1. Get the current path (e.g., "/products/electronics/phones")
 const path = window.location.pathname;
-
-// 2. Split into segments and remove empty strings from the start/end
 const segments = path.split('/').filter(segment => segment !== "" && !segment.endsWith(".html"));
-
-// 3. Select the HTML element where the breadcrumbs will live
 const breadcrumbContainer = document.getElementById('breadcrumb');
 
-// 4. This is our "accumulator" to build the URL step-by-step
 let accumulatedPath = '';
 
-// 5. Loop through each segment to create the links
 segments.forEach((segment, index) => {
-  // Update the accumulator: add a slash and the current folder name
+  
   accumulatedPath += `/${segment}`;
 
-  // Create an anchor element <a>
   const link = document.createElement('a');
-  
-  // Set the link destination to our accumulated path
+    
   link.href = accumulatedPath;
   
-  // Set the text (Capitalizing the first letter for better UI)
   link.textContent = segment.charAt(0).toUpperCase() + segment.slice(1);
-  link.textContent = link.textContent.replaceAll('-', ' '); // Replace dashes with spaces for better readability');
-  link.textContent = link.textContent.replaceAll('_', ' & '); // Replace underscores with " & " for better readability');
+  link.textContent = link.textContent.replaceAll('-', ' '); 
+  link.textContent = link.textContent.replaceAll('_', ' & '); 
 
-  // Append the link to our container
   breadcrumbContainer.appendChild(link);
 
-  // If it's not the last item, add a separator symbol
   if (index < segments.length - 1) {
-    breadcrumbContainer.append(' / '); // Using a bold arrow as a separator
+    breadcrumbContainer.append(' / '); 
   }
 });
 
 //Embed functions
 async function renderDoc(Url) {
 
-    // 1. Validate ID (Logic: prevent 'undefined' errors)
     if (!Url) {
         console.error("No Document URL provided!");
         return;
     }
 
     const docUrl = `https://docs.google.com/document/d/e/${Url}/pub`;
-    console.log("Fetching from Google Docs URL:", docUrl);
     const container = document.getElementById("article");
    
 
     try {
-        // Change UI state to loading
         container.innerHTML = '<p class="text-center py-10">Fetching  data...</p>';
 
         const response = await fetch(docUrl);
 
-        // Logic: Check if the network request actually worked
         if (!response.ok) {
             throw new Error(`Proxy Error: ${response.status} - The proxy might be down.`);
         }
 
-        // Logic: Convert the response stream into a text string
         const docHtml = await response.text();
         container.innerHTML = docHtml;
         
-        
-        // 4. Clean up Google's specific code (Optional Logic)
         const banners = document.getElementById("banners");
-        banners?.remove(); // 3. The element is deleted from the DOM
+        banners?.remove(); 
     
-        //remove standard google style and adjust with own style
         const myElement = document.getElementById("contents");
 
        if (myElement) {
@@ -282,21 +260,13 @@ async function renderDoc(Url) {
 
 
     } catch (error) {
-        // Fallback Logic: If the proxy fails, we tell the user why.
         console.error("Fetch Process Failed:", error);
         console.log(error.message);
     }
 }
 
 function renderVid(vidId, vidName, vidDesc) {
-    /*
-    console.log(
-        "YouTube Video with \n" +
-        "ID:" + vidId + "\n" +
-        "Name:" + vidName + "\n" +
-        "Description:" + vidDesc);*/
 
-    // 1. Validate ID (Logic: prevent 'undefined' errors)
     if (!vidId) {
         console.error("No YouTube Video ID provided!");
         return;
@@ -304,7 +274,6 @@ function renderVid(vidId, vidName, vidDesc) {
     } else {
         
         const ytIframeUrl = `https://youtube.com/embed/${vidId}/?autoplay=0`;  
-        //console.log("Constructed YouTube Iframe URL:", ytIframeUrl);
         
         const ytIframe = document.getElementById("yt-iframe");
         const vidDescDiv = document.getElementById("vid-desc");
@@ -312,7 +281,7 @@ function renderVid(vidId, vidName, vidDesc) {
         if(ytIframe) {
             ytIframe.classList.remove("hide");
             ytIframe.classList.add("card");
-            ytIframe.innerHTML = ''; // Clear any existing content before adding the new iframe 
+            ytIframe.innerHTML = ''; 
             ytIframe.innerHTML = `<iframe ` +
             `src="${ytIframeUrl}" `+
             `title="YouTube video player" `+
@@ -330,7 +299,7 @@ function renderVid(vidId, vidName, vidDesc) {
             vidDescDiv.innerHTML = '';
             vidDescDiv.innerHTML = `<a ` +
                 `href='https://youtu.be/${vidId}' target='_blank'>` +
-                `<h3>${vidName}</h3>` +
+                `<h4>${vidName}</h4>` +
                 `<p> ${vidDesc.trim()} </p></a>`;
         }  
     }

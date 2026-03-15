@@ -1,4 +1,5 @@
-import { sitemapData } from '';
+import { sitemapData } from '/admin/data/sitemap-data';
+console.log('Sitemap data:', sitemapData);
 
 const list = document.getElementById('sitemap-list') as HTMLUListElement;
 
