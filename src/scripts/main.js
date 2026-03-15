@@ -111,7 +111,7 @@ function navlist_fr() {
     "<div class='card links'>"+
     "<p><strong>Derniers articles</strong></p>"+
     "<p><a href='/fr/accueil/articles/j-improvise' target='_blank'>J'improvise (n°315)</a></p>"+
-    "<p><a href='/fr/accueil/' target='_blank'>Un homme et sa cause (n°143°</a></p>"+
+    "<p><a href='/fr/accueil/' target='_blank'>Un homme et sa cause (n°143)</a></p>"+
     "<p><a href='/fr/accueil/musique-poesie/380' target='_blank'>Mundus Mutationis (n°380)</a></p>"+
     "</div>"+
     "<div class='card links'>"+
@@ -133,12 +133,13 @@ function donate_fr() {
     donateDiv.style.borderLeft = "4px solid var(--col-2)";
     donateDiv.innerHTML ="";
     donateDiv.innerHTML="<p><strong>Offrez-moi un café ?</strong><br><br></p>"+
-    "<p>La création prend du temps et de l'effort."+
-    "Je l'offre gratuitement avec plaisir."+
-    "J'espère que cela vous encouragera.</p><br>" +
-    "<p>Vous pouvez envisager un soutien financier "+
-    "via Paypal.<br>" +
-    "Si c'est le cas, cliquez sur le cœur.<br><br></p>" +
+    "<p>La création prend du temps et de l'effort.<br>"+
+    "Je l'offre gratuitement et avec plaisir.<br>"+
+    "J'espère ainsi vous encourager.</p><br><br>" +
+    "<p>Si vous en recevez de la valuer, <br>" + 
+    "Vous pouvez envisager un soutien financier "+
+    "via Paypal,<br>" +
+    "En cliquant sur le cœur.<br><br></p>" +
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
     "<input id='donate-img' type='image' src='/public/images/heart.png' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
@@ -268,45 +269,43 @@ async function renderDoc(Url) {
     }
 }
 
-function renderVid(vidId, vidName, vidDesc) {
+function renderVid(vidId, vidName, vidDesc, element) {
 
     if (!vidId) {
         console.error("No YouTube Video ID provided!");
         return;
 
-    } else {
-        
-        const ytIframeUrl = `https://youtube.com/embed/${vidId}/?autoplay=0`;  
-        
-        const ytIframe = document.getElementById("yt-iframe");
+    } 
+
+    if (element===""){element="yt-iframe"};
+
+    const ytIframeUrl = `https://youtube.com/embed/${vidId}/?autoplay=0`;
+
+    
+    const ytIframe = document.getElementById(element);
+
+    ytIframe.classList.remove('hide')
+    ytIframe.classList.add('card')      
+    ytIframe.innerHTML = ''; 
+    ytIframe.innerHTML = `<iframe ` +
+        `src="${ytIframeUrl}" `+
+        `title="YouTube video player" `+
+        `frameborder="0" `+
+        `allowfullscreen>`+
+        `</iframe>`;
+
+    if (vidName && vidDesc) {
         const vidDescDiv = document.getElementById("vid-desc");
-
-        if(ytIframe) {
-            ytIframe.classList.remove("hide");
-            ytIframe.classList.add("card");
-            ytIframe.innerHTML = ''; 
-            ytIframe.innerHTML = `<iframe ` +
-            `src="${ytIframeUrl}" `+
-            `title="YouTube video player" `+
-            `frameborder="0" `+
-            `allowfullscreen>`+
-            `</iframe>`;
-
-        } else {
-
-            console.error("YouTube Iframe element not found in the DOM!");
-        }
-        if (vidDescDiv && vidDesc) {
-            vidDescDiv.classList.remove("hide");
-            vidDescDiv.classList.add("info-card");
-            vidDescDiv.innerHTML = '';
-            vidDescDiv.innerHTML = `<a ` +
-                `href='https://youtu.be/${vidId}' target='_blank'>` +
-                `<h4>${vidName}</h4>` +
-                `<p> ${vidDesc.trim()} </p></a>`;
+        vidDescDiv.classList.remove("hide");
+        vidDescDiv.classList.add("info-card");
+        vidDescDiv.innerHTML = '';
+        vidDescDiv.innerHTML = `<a ` +
+            `href='https://youtu.be/${vidId}' target='_blank'>` +
+            `<h4>${vidName}</h4>` +
+            `<p> ${vidDesc.trim()} </p></a>`;
         }  
     }
-}
+
 
 
 

@@ -99,6 +99,17 @@ nav {
   justify-content: center;
 }
 
+.hero-video {
+  position: relative;
+  display:block;
+  width: 100%;
+  height: 600px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+  box-shadow: #333333a8 0px 5px 10px; /* Adds a subtle shadow for depth */
+}
+
+.hero{aspect-ratio: 16 / 9;}
 
 /* The Menu Toggle (Hamburger) */
 .menu-toggle {
