@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+
     gtag('config', 'G-73W9XL22BJ');
     </script>
 
-
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="icon" href="/public/images/site-icon.png">
-    
     <link rel="stylesheet" href="/src/styles/main.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <title>Wisdom, my love (n° 245)</title>
+    <title>Articles</title>
 
 </head>
 
 <body>
 
     <header>
+
         <nav>
             <div id="brand" class="logo"></div>
 
@@ -39,15 +38,14 @@
             </div>
 
             <ul id="nav-list" class="nav-links"></ul>
-        </nav>
-        <div id="hero" class="hide card hero-video"></div>  
+        </nav>  
         <div id="breadcrumb" class="breadcrumb-container"></div>
-        <div id="back" class="hide" ><a href="#">TOP</a></div> <!-- Back Button -->
+        <div id="back" class="hide" ><a href="#">RETOUR</a></div> <!-- Back Button -->
     </header>
 
     
 
-    <div class="container">
+    <div class="container"> 
 
         <aside class="sidebar-left">
             <div id="featured-img" class="hide" ></div>
@@ -58,40 +56,23 @@
         </aside>
 
         <main id="mainContent" class="main-content">
-            <div id="article" class="doc-container"></div> 
-        </main>
-        
-        <aside class="sidebar-right" id="rightsidebar"></aside>
+            <h2>Articles</h2>
 
+            <div class="card"><a href="/fr/accueil/articles/j-improvise/"><strong> J'improvise </strong></a></div>
+            <div  class="card"><a href="/en/home/articles/improvise_flow/"><strong> Improvisation & Flux (version anglaise) </strong></a></div>
+        </main>
+    
+        <aside class="sidebar-right" id="rightsidebar"></aside>
+    
     </div>
 
     <footer>
         <div id="footer" class="hide"></div>   
     </footer>
 
-    <script src="/src/scripts/main.js"></script>;
+    <script src="/src/scripts/main.js"></script>
+    <script>loadJs_fr()</script>
 
-    <script>
-        loadJs_en();
+</body>        
 
-        const docUrl = "2PACX-1vS0ye0DfLiQIcuHysURt8B4kIzEDtVXClLa-SX3pQr5BrTIu1UYD7xPI8pkNf4C-UTDb3ZKTEyITUkz";
-        renderDoc(docUrl);
-
-        const vidId ="_5TyJ2Gbs1g"; // example : kwDoKqhUYyY
-        const vidName = ""; 
-        const vidDesc = "";
-        const category="hero"
-        
-        renderVid(vidId, vidName, vidDesc, category)
-
-        const featuredImg=""; //if no ytId, this will be the hero.jpg
-        const imgTitle="";
-        const imgDesc="";
-
-        if (featuredImg && imgTitle) {
-            placeHero(featuredImg, imgTitle, imgDesc);    
-        }
-
-    </script>
-</body>
 </html>

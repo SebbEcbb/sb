@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <title>Home</title>
+    <title>Home (#143)</title>
 
 </head>
 <body>
@@ -39,7 +39,7 @@
     <ul id="nav-list" class="nav-links"></ul>
     </nav>  
 
-    <div id="hero" class="hero-section"></div>
+    <div id="hero" class="hide card hero-video"></div>  
 
     <div id="breadcrumb" class="breadcrumb-container"></div>
 
@@ -77,22 +77,15 @@
         renderDoc(docUrl);
 
         const vidId ="Up6SShT7MSY"; // example : kwDoKqhUYyY
-        const vidName = "Piano Improvisation #143"; 
-        const vidDesc = "<strong>Dessert by Night</strong><br><br>" +
-                        "This music is not meant <br>"+
-                        "To be praiseworthy, <br>"+
-                        "Or to qualify as such. <br><br> "+
-                        "It is simply a human voice, <br>" +
-                        "Expressing itself...<br>" +
-                        "For whomever wants to hear it."                        ;
+        const vidName = ""; 
+        const vidDesc = "";
+        const category="hero"
+        
+        renderVid(vidId, vidName, vidDesc, category)
 
         const featuredImg=""; //if no ytId, this will be the hero.jpg
         const imgTitle="";
         const imgDesc="";
-
-        if (vidId && vidName &&  vidDesc) {
-            renderVid(vidId, vidName, vidDesc)
-        } 
 
         if (featuredImg && imgTitle) {
             placeHero(featuredImg, imgTitle, imgDesc);    

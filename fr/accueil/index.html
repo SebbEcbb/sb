@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-73W9XL22BJ');
     </script>
 
-    <meta name="robots" content="noindex">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="icon" href="/public/images/site-icon.png">
+    
     <link rel="stylesheet" href="/src/styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <title>Articles</title>
+    <title>Accueil (n°143)</title>
 
 </head>
-
 <body>
 
-    <header>
+    <nav>
+    <div id="brand" class="logo"></div>
 
-        <nav>
-            <div id="brand" class="logo"></div>
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <ul id="nav-list" class="nav-links"></ul>
+    </nav>  
 
-            <ul id="nav-list" class="nav-links"></ul>
-        </nav>  
-        <div id="breadcrumb" class="breadcrumb-container"></div>
-        <div id="back" class="hide" ><a href="#">RETOUR</a></div> <!-- Back Button -->
-    </header>
+    <div id="hero" class="hide card hero-video"></div>  
 
-    
+    <div id="breadcrumb" class="breadcrumb-container"></div>
 
-    <div class="container"> 
+    <div id="back" class="hide" ><a href="#">RETOUR</a></div> <!-- Back Button -->
+
+    <div class="container">
 
         <aside class="sidebar-left">
             <div id="featured-img" class="hide" ></div>
@@ -56,14 +56,11 @@
         </aside>
 
         <main id="mainContent" class="main-content">
-            <h2>Articles</h2>
-
-            <div class="card"><a href="/fr/accueil/articles/j-improvise/"><strong> J'improvise </strong></a></div>
-            <div  class="card"><a href="/en/home/articles/improvise_flow/"><strong> Improvisation & Flux (version anglaise) </strong></a></div>
+            <div id="article" class="doc-container"></div>
         </main>
-    
+        
         <aside class="sidebar-right" id="rightsidebar"></aside>
-    
+
     </div>
 
     <footer>
@@ -71,8 +68,29 @@
     </footer>
 
     <script src="/src/scripts/main.js"></script>
-    <script>loadJs_fr()</script>
 
-</body>        
+    <script>
+        loadJs_fr();
 
+        const docUrl = "2PACX-1vSYehaGvsTD04IQDXiyv-L9Z6HiYAqT3onKcdCgN-Tzp4X77szuk_EoNuffBsS5mqjnulniewYzflne";
+        
+        renderDoc(docUrl);
+
+        const vidId ="Up6SShT7MSY"; // example : kwDoKqhUYyY
+        const vidName = ""; 
+        const vidDesc = "";
+        const category="hero"
+        
+        renderVid(vidId, vidName, vidDesc, category)
+
+        const featuredImg=""; //if no ytId, this will be the hero.jpg
+        const imgTitle="";
+        const imgDesc="";
+
+        if (featuredImg && imgTitle) {
+            placeHero(featuredImg, imgTitle, imgDesc);    
+        }
+
+    </script>
+</body>
 </html>
