@@ -55,12 +55,7 @@ function donate_en() {
     donateDiv.style.borderLeft = "4px solid var(--col-2)";
     donateDiv.innerHTML ="";
     donateDiv.innerHTML="<p><strong>Buy me a coffee ?</strong><br><br></p>"+
-    "<p>Creation takes time and effort. <br>" + 
-    "I gladly offer it for free. <br>" + 
-    "Hopefully it will encourage you. </p><br>" +
-    "<p>You may consider a financial support "+
     "via Paypal.<br>" +
-    "If so, please click the heart.<br><br></p>" +
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
     "<input id='donate-img' type='image' src='/public/images/heart.png' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
