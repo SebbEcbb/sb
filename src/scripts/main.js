@@ -55,7 +55,8 @@ function donate_en() {
     donateDiv.style.borderLeft = "4px solid var(--col-2)";
     donateDiv.innerHTML ="";
     donateDiv.innerHTML="<p><strong>Buy me a coffee ?</strong><br><br></p>"+
-    "via Paypal.<br>" +
+    "Strong, please... <br>" +
+    "With Paypal ? <br><br>" +
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
     "<input id='donate-img' type='image' src='/public/images/heart.png' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
@@ -128,7 +129,8 @@ function donate_fr() {
     donateDiv.style.borderLeft = "4px solid var(--col-2)";
     donateDiv.innerHTML ="";
     donateDiv.innerHTML="<p><strong>Offrez-moi un café ?</strong><br><br></p>"+
-    "via Paypal,<br>" +
+    "Fort, s'il vous plait...<br>" +
+    "Avec Paypal ? <br><br>" +
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
     "<input id='donate-img' type='image' src='/public/images/heart.png' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+

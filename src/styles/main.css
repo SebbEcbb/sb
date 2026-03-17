@@ -303,6 +303,7 @@ nav {
 
 .info-card { 
     width: 100% !important;
+    text-align: left;
     a {color: rgb(80, 78, 78);}
     h4 {font-size: 18px; margin-bottom: 15px;}
     p {font-size: 14px;}
