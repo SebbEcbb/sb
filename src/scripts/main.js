@@ -133,13 +133,7 @@ function donate_fr() {
     donateDiv.style.borderLeft = "4px solid var(--col-2)";
     donateDiv.innerHTML ="";
     donateDiv.innerHTML="<p><strong>Offrez-moi un café ?</strong><br><br></p>"+
-    "<p>La création prend du temps et de l'effort.<br>"+
-    "Je l'offre gratuitement et avec plaisir.<br>"+
-    "J'espère ainsi vous encourager.</p><br><br>" +
-    "<p>Si vous en recevez de la valuer, <br>" + 
-    "Vous pouvez envisager un soutien financier "+
     "via Paypal,<br>" +
-    "En cliquant sur le cœur.<br><br></p>" +
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
     "<input id='donate-img' type='image' src='/public/images/heart.png' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
