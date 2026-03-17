@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
     <script>
@@ -11,25 +10,25 @@
     gtag('config', 'G-73W9XL22BJ');
     </script>
 
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <title>J'improvise (#315)</title>
+
+    <link rel="icon" href="/public/images/site-icon.png">
     
-    <link rel="icon" href="/Images/site-icon.png">
-    <link rel="stylesheet" href="/css/styles.css" >
+    <link rel="stylesheet" href="/src/styles/main.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;800&family=Ubuntu&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
 
-    <script src="/fr/fr.js" defer></script>
+    <title>Accueil (n°143)</title>
+
 </head>
+<body>
 
-<body onload="loadJs_fr();" >
-
-<nav>
-    <div id="navigation" class="logo"></div>
+    <nav>
+    <div id="brand" class="logo"></div>
 
     <div class="menu-toggle" id="mobile-menu">
         <span></span>
@@ -38,46 +37,62 @@
     </div>
 
     <ul id="nav-list" class="nav-links"></ul>
-</nav>  
+    </nav>  
 
-<header class=""></header> 
+    <div id="hero" class="hide card hero-video"></div>  
 
-<div id="back" class="hide" ><a href="#">BACK</a></div>
+    <div id="breadcrumb" class="breadcrumb-container"></div>
 
-   
+    <div id="back" class="hide" ><a href="#">RETOUR</a></div> <!-- Back Button -->
 
+    <div class="container">
 
-<div class="container">
-    <aside class="sidebar-left" id="leftsidebar">
-        <div class="card" ><iframe src="https://youtube.com/embed/xz2-OXk2YWM?autoplay=0" width="100%" height="315" frameborder="0" allowfullscreen></iframe></div>
-        <div class="info-card">
-            <a href="https://youtu.be/xz2-OXk2YWM" target="_blank">
-                <h4><b>Improvisation au piano #315</b></h4>
-                <p> 
-                    <strong>J'improvise</strong><br>
-                    <br>
-                    Dédiée à Marinus Jan Hendrikse, <br>
-                    Amsterdam, (1920-1986),<br> 
-                    mon grand-père néerlandais, <br>
-                    homme de valeur. 
-                    ... <br>
-                </p>
-            </a>
-        </div>                
-    </aside>
+        <aside class="sidebar-left">
+            <div id="featured-img" class="hide" ></div>
+            <div id="featured-desc" class="hide" ></div>
+            <div id="yt-iframe" class="hide" ></div>
+            <div id="vid-desc" class="hide" ></div>
+            <div id="paypal" class="hide" ></div>
+        </aside>
 
-    <main class="content-main">
-        <div class="iframe-container">
-             <iframe src="https://docs.google.com/document/d/e/2PACX-1vR1moyPOnw3HghC0hZgJauuNSGtgR2HUlzb_jZFdy0hns_w4xu_uR0mUp3Uys_NaGgq7ZC9Hi_1S3DM/pub?embedded=true"></iframe>
-        </div>  
-    </main>
+        <main id="mainContent" class="main-content">
+            <div id="article" class="doc-container"></div>
+        </main>
+        
+        <aside class="sidebar-right" id="rightsidebar"></aside>
 
-    <aside class="sidebar-right" id="rightsidebar"></aside>
-</div>  
-<div class= "s50"></div>
-<footer>
-    <div id="footer"></div>   
-</footer>
+    </div>
 
+    <footer>
+        <div id="footer" class="hide"></div>   
+    </footer>
+
+    <script src="/src/scripts/main.js"></script>
+
+    <script>
+        loadJs_fr();
+
+        const docUrl = "2PACX-1vR1moyPOnw3HghC0hZgJauuNSGtgR2HUlzb_jZFdy0hns_w4xu_uR0mUp3Uys_NaGgq7ZC9Hi_1S3DM";
+        
+        renderDoc(docUrl);
+
+        const vidId ="xz2-OXk2YWM"; // example : kwDoKqhUYyY
+        const vidName = "Improvisation au piano #315"; 
+        const vidDesc = "<p><strong>J'improvise</strong><br><br>"+
+            "Dédiée à Marinus Jan Hendrikse, <br>Amsterdam (1920-1986),<br>"+
+            "mon grand-père néerlandais, <br>homme de valeur.... <br></p>";
+        const element="hero"
+        
+        renderVid(vidId, vidName, vidDesc, element)
+
+        const featuredImg=""; //if no ytId, this will be the hero.jpg
+        const imgTitle="";
+        const imgDesc="";
+
+        if (featuredImg && imgTitle) {
+            placeImg(featuredImg, imgTitle, imgDesc);    
+        }
+
+    </script>
 </body>
 </html>

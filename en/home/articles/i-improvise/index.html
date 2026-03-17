@@ -38,7 +38,8 @@
             </div>
 
             <ul id="nav-list" class="nav-links"></ul>
-        </nav>  
+        </nav>
+        <div id="hero" class="hide card hero-video"></div>    
         <div id="breadcrumb" class="breadcrumb-container"></div>
         <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
     </header>
@@ -80,18 +81,18 @@
 
         const vidId ="xz2-OXk2YWM"; // example : kwDoKqhUYyY
         const vidName = "Piano improvisation #315"; 
-        const vidDesc = "<strong>I improvise</strong><br>" +
+        const vidDesc = "<strong>I improvise</strong><br><br>" +
                         "Dedicated to Marinus Jan Hendrikse,<br>"+
                         "Amsterdam (1920-1986), <br>"+
-                        "my Dutch grandfather,<br> ... <br>"+
-                        "man of valor.";
+                        "my Dutch grandfather,<br>"+
+                        "man of valors.";
                         
         const featuredImg=""; //if no ytId, this will be the hero.jpg
         const imgTitle="";
         const imgDesc="";
 
         if (vidId && vidName &&  vidDesc) {
-            renderVid(vidId, vidName, vidDesc)
+            renderVid(vidId, vidName, vidDesc,"hero")
         } 
 
         if (featuredImg && imgTitle) {

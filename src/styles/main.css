@@ -16,7 +16,7 @@
     --shdw-2:5px 6px 8px rgba(66, 1, 1, 0.63);
 
     --grd-1:linear-gradient(135deg, var(--bg-col-1) 0%, var(--bg-col-2) 20%, var(--bg-col-3) 100%);
-    --grd-2:linear-gradient(135deg, var(--col-1) 0%, var(--col-5) 20%, var(--col-6) 100%);
+    --grd-2:linear-gradient(135deg, var(--col-1) 0%, var(--col-6) 20%, var(--col-2) 100%);
 }
 
 
@@ -52,7 +52,7 @@ nav {
     display: flex;
     justify-content: space-between; /* Logo left, Toggle right ↔️ */
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 5px;
     background: white;
     border-bottom: solid 2px var(--col-6);
     width: 100%;
@@ -69,7 +69,7 @@ nav {
 }
 
 .logo a {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     text-decoration: none;
     font-weight: 800;
     color: var(--col-6);
@@ -77,7 +77,8 @@ nav {
 }
 
 .sub-title {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    min-width: 300px;
     font-weight: 600;
     margin-top: -8px;
     padding-left: 25px;
@@ -133,7 +134,7 @@ nav {
 /* The Links - Mobile First (Hidden by default) */
 .nav-links {
     display: none; /* Logic: JS will swap this */
-    font-weight: 600;
+    font-weight: 400;
 }
 
 /* Active State (Triggered by your JS) */
@@ -159,29 +160,7 @@ nav {
 
 /* --- 💻 DESKTOP (Wider than 1024px) --- */
 @media (min-width: 1024px) {
-    /* 1. Hide the hamburger icon */
-    .menu-toggle {
-        display: none;
-    }
-
-    /* 2. Force the menu to show and lay out horizontally */
-    .nav-links {
-        display: flex !important; /* Overrides 'display: none' */
-        flex-direction: row;
-        gap: 20px;
-        position: static;         /* Put it back in the navbar */
-        width: auto;
-        height: auto;
-        padding-top: 15px;
-        background: transparent;
-    }
-
-    .nav-links li {
-        margin-left: 20px;
-    }
-
-    .logo a {font-size: 2rem;}
-    .sub-title{font-size: 1.2rem;}
+ 
 }
 
 /*Layout*/
@@ -210,6 +189,7 @@ nav {
     padding: 50px 25px;
     transition: all 0.3s ease;
 }
+
 .sidebar-left, .main-content, .sidebar-right {
     min-height: 100vh;
     padding: 25px 15px;
@@ -229,16 +209,43 @@ nav {
 }
 
 .sidebar-left{
-    display: flex;
+    display:contents
+    /*display: flex;
     flex-direction: column;
     align-items: center;
     order:3;
-    gap: 20px;
+    gap: 20px;*/
 }
-.sidebar-left iframe {
+#featured-img, 
+#featured-desc, 
+#yt-iframe, 
+#vid-desc {
+  order: -1; /* Negative order pulls them to the very top of the grid */
+}
+#paypal{order: 0;}
+#featured-img{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#featured-desc{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+#yt-iframe {
     width: 100%;
     aspect-ratio: 16 / 9; /* Keeps the cinematic shape 🎬 */
     border-radius: 8px;
+}
+
+.sidebar-left img {
+  width: 100%;            /* Force image to take up full container width */
+  height: 100%;           /* Force image to take up full container height */
+  object-fit: cover;      /* Magic rule: maintains ratio by cropping edges */
+  object-position: center; /* Ensures the middle of the image stays visible */
+  display: block;         /* Removes the tiny default gap at the bottom of images */
+
 }
 
 .sidebar-right {
@@ -258,18 +265,35 @@ nav {
 }
 
 
-/* RESPONSIVE DESIGN */
-@media (min-width: 1024px) {
-    .breadcrumb-container { a {font-size: 1.3rem;} }
+/* RESPONSIVE DESIGN - desktop only*/
+@media (min-width: 1125px) {
+    .sidebar-left{display: block;}
     .container {
         display: grid;
-        /* Column 1: Fixed 320px (standard for video) */
-        /* Column 2: 1fr (takes all remaining 'fractional' space) */
-        /* Column 3: min-content (shrink to fit) but max 300px */
-        grid-template-columns: 20% 1fr 20%;
+        grid-template-columns: 25% 1fr 20%;
         gap: 30px;
         align-items: start; /* Prevents sidebars from stretching to footer height */
     }
+    #featured-img{width: 100%;}
+
+    /* Hide the hamburger icon */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* 2. Force the menu to show and lay out horizontally */
+    .nav-links {
+        display: flex !important; /* Overrides 'display: none' */
+        flex-direction: row;
+        position: static;         /* Put it back in the navbar */
+        height: auto;
+        padding-top: 15px;
+        background: transparent;
+    }
+    .nav-links li {margin-left: 20px;}
+    .logo a {font-size: 2rem;}
+    .sub-title{font-size: 1.2rem;}
+    .breadcrumb-container { a {font-size: 1.3rem;} }
     .sidebar-left{order: 1;}
     .main-content{order: 2;}
     .sidebar-right{order: 3;}

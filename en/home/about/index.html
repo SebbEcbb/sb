@@ -50,15 +50,17 @@
     <div class="container">
 
         <aside class="sidebar-left">
-            <div id="featured-img" class="hide" ></div>
-            <div id="featured-desc" class="hide" ></div>    
+            
+            <div id="featured-img" class="hide" ></div>    
+            <div id="featured-desc" class="hide" ></div>
+        
             <div id="yt-iframe" class="hide" ></div>
             <div id="vid-desc" class="hide" ></div>   
-            <div id="paypal" class="hide" ></div>
         </aside>
 
         <main id="mainContent" class="main-content">
             <div id="article" class="doc-container"></div> 
+            <div id="paypal" class="hide" ></div>
         </main>
         
         <aside class="sidebar-right" id="rightsidebar"></aside>
@@ -82,19 +84,21 @@
 
         const vidId ="Tf0ru6COS_g"; // example : kwDoKqhUYyY
         const vidName = "Piano improvisation #109"; 
-        const vidDesc = "<strong>Love is worth pain </strong><br>";
+        const vidDesc = "<p>Believe beyond struggle<br>"+
+                        "Love beyond pain</p>";
+        const Element=""
                         
 
         const featuredImg="sb1.jpg"; //if no ytId, this will be the hero.jpg
-        const heroTitle="Sébastien Badel";
-        const heroDesc="";
+        const imgTitle="Sébastien Badel";
+        const imgDesc="";
 
         if (vidId && vidName &&  vidDesc) {
-            renderVid(vidId, vidName, vidDesc)
+            renderVid(vidId, vidName, vidDesc, Element)
         } 
 
-        if (featuredImg && heroTitle) {
-            placeHero(featuredImg, heroTitle, heroDesc);    
+        if (featuredImg && imgTitle) {
+            placeImg(featuredImg, imgTitle, imgDesc);    
         }
 
     </script>

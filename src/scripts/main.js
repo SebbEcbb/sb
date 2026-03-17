@@ -91,7 +91,7 @@ function loadJs_fr(){
 function brand_fr() {
     document.getElementById("brand").innerHTML = 
     "<a href='https://sebastienbadel.com'><img src='/public/images/site-icon.png' height='20px' alt='Flower'> Sébastien Badel </a>"+
-    "<p class='sub-title'>Croire au delà des troubles, aimer au delà des douleurs</p>";
+    "<p class='sub-title'>Croire au delà des troubles<br> aimer au delà des douleurs</p>";
   }
 
 
@@ -159,6 +159,17 @@ function footer_fr() {
     "<div class='s20'></div>";
 } 
 
+function StickyFooter() {
+    const backBtn = document.getElementById("back");
+    const ft =document.getElementById("footer");
+    if (window.scrollY > 1200) {
+        backBtn.classList.remove("hide");
+        ft.classList.remove("hide");
+    } else {
+        backBtn.classList.add("hide");
+        ft.classList.add("hide");
+    }
+}   
 
 //Mobile Responsive Menu
 const menuToggle = document.getElementById('mobile-menu');
@@ -188,19 +199,9 @@ document.querySelectorAll('.nav-links, .nav-links a').forEach(link => {
 
 
 // Sticky Scroll Logic
-window.onscroll = function() { StickyJs() };    
+window.onscroll = function() { StickyFooter() };    
 
-function StickyJs() {
-    const backBtn = document.getElementById("back");
-    const ft =document.getElementById("footer");
-    if (window.scrollY > 300) {
-        backBtn.classList.remove("hide");
-        ft.classList.remove("hide");
-    } else {
-        backBtn.classList.add("hide");
-        ft.classList.add("hide");
-    }
-}
+
 
 //Breadcrumb Logic
 
@@ -277,13 +278,12 @@ function renderVid(vidId, vidName, vidDesc, element) {
 
     } 
 
-    if (element===""){element="yt-iframe"};
+    if (element==="" || element==="null"){element="yt-iframe"};
 
     const ytIframeUrl = `https://youtube.com/embed/${vidId}/?autoplay=0`;
 
     
     const ytIframe = document.getElementById(element);
-
     ytIframe.classList.remove('hide')
     ytIframe.classList.add('card')      
     ytIframe.innerHTML = ''; 
@@ -309,7 +309,7 @@ function renderVid(vidId, vidName, vidDesc, element) {
 
 
 
-function placeHero(featedImg, imgTitle, imgDescription) {
+function placeImg(featedImg, imgTitle, imgDescription) {
     const imgDiv = document.getElementById("featured-img");
     const descDiv = document.getElementById("featured-desc");
 
@@ -320,7 +320,7 @@ function placeHero(featedImg, imgTitle, imgDescription) {
         const imgSrc = `/public/images/${featedImg}`;
         imgDiv.innerHTML = `<img src="${imgSrc}" alt="${imgTitle}" />`;
         descDiv.innerHTML = 
-        `<h3>${imgTitle}</h3>` + 
+        `<h4>${imgTitle}</h4>` + 
         `<p>${imgDescription}</p>`;
     }          
 }
