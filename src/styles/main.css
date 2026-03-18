@@ -270,7 +270,10 @@ nav {
     .sidebar-left{display: block;}
     .container {
         display: grid;
-        grid-template-columns: 25% 1fr 20%;
+        grid-template-columns: 20% 1fr 20%;
+        max-width : 1700px;
+        margin-left: auto;
+        margin-right: auto;
         gap: 30px;
         align-items: start; /* Prevents sidebars from stretching to footer height */
     }
