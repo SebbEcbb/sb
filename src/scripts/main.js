@@ -87,7 +87,7 @@ function loadJs_fr(){
 function brand_fr() {
     document.getElementById("brand").innerHTML = 
     "<a href='https://sebastienbadel.com'><img src='/public/images/site-icon.png' height='20px' alt='Flower'> Sébastien Badel </a>"+
-    "<p class='sub-title'>Croire au delà des troubles<br> aimer au delà des peines</p>";
+    "<p class='sub-title'>Croire au delà des troubles<br> Aimer au delà des peines</p>";
   }
 
 

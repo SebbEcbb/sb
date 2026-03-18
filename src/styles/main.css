@@ -11,6 +11,7 @@
     --bg-col-1: #faebd0;
     --bg-col-2: rgb(252, 245, 236);
     --bg-col-3: rgb(248, 158, 55);
+
     
     --shdw-1:4px 4px 6px rgba(44, 15, 92, 0.3);
     --shdw-2:5px 6px 8px rgba(66, 1, 1, 0.63);
@@ -338,6 +339,21 @@ nav {
     margin-bottom: 15px !important;
     width: 100% !important;
 }
+
+.content-link { 
+    width: 100% !important;
+    text-align: left;
+    a {color: #333; font-size: 16px; margin-left: 25px; margin-bottom: 25px;}
+    padding : 0.5rem;
+    margin-top:15px !important;
+    margin-bottom:25px !important;
+    border-left: 4px solid red; 
+    box-shadow: var(--shdw-1);
+    background-color: var(--bg-col-1); 
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.content-link a:hover {color: var(--col-3); text-shadow: var(--shdw-2);}
 
 /* Custom styling for the Google Doc content*/
 #new-content div {
