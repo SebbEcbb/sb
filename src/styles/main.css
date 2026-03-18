@@ -232,7 +232,15 @@ nav {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
+
+#featured-desc h4{
+    text-align:center;
+    font-size:16px;
+}
+
 #yt-iframe {
     width: 100%;
     aspect-ratio: 16 / 9; /* Keeps the cinematic shape 🎬 */
@@ -278,6 +286,7 @@ nav {
         align-items: start; /* Prevents sidebars from stretching to footer height */
     }
     #featured-img{width: 100%;}
+    #featured-desc h4{font-size:20px;}
 
     /* Hide the hamburger icon */
     .menu-toggle {

@@ -54,8 +54,8 @@ function donate_en() {
     donateDiv.classList.add("card");
     donateDiv.style.borderLeft = "4px solid var(--col-2)";
     donateDiv.innerHTML ="";
-    donateDiv.innerHTML="<p><strong>Buy me a coffee ?</strong><br><br></p>"+
-    "Strong, please... <br>" +
+    donateDiv.innerHTML="<p><strong>Buy me a coffee ?</strong><br></p>"+
+    "Very strong, please... <br><br>" +
     "With Paypal ? <br><br>" +
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
@@ -87,7 +87,7 @@ function loadJs_fr(){
 function brand_fr() {
     document.getElementById("brand").innerHTML = 
     "<a href='https://sebastienbadel.com'><img src='/public/images/site-icon.png' height='20px' alt='Flower'> Sébastien Badel </a>"+
-    "<p class='sub-title'>Croire au delà des troubles<br> aimer au delà des douleurs</p>";
+    "<p class='sub-title'>Croire au delà des troubles<br> aimer au delà des peines</p>";
   }
 
 
@@ -128,8 +128,8 @@ function donate_fr() {
     donateDiv.classList.add("card");
     donateDiv.style.borderLeft = "4px solid var(--col-2)";
     donateDiv.innerHTML ="";
-    donateDiv.innerHTML="<p><strong>Offrez-moi un café ?</strong><br><br></p>"+
-    "Fort, s'il vous plait...<br>" +
+    donateDiv.innerHTML="<p><strong>Offrez-moi un café ?</strong><br></p>"+
+    "Bien fort, s'il vous plait...<br><br>" +
     "Avec Paypal ? <br><br>" +
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
