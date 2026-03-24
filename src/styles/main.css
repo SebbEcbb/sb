@@ -11,7 +11,7 @@
     --bg-col-1: #faebd0;
     --bg-col-2: rgb(252, 245, 236);
     --bg-col-3: rgb(248, 158, 55);
-    --bg-col-4: rgba(235, 220, 202, 0.671);
+    --bg-col-4: rgba(247, 245, 242, 0.671);
 
     
     --shdw-1:4px 4px 6px rgba(44, 15, 92, 0.3);
@@ -302,8 +302,9 @@ nav {
         position: static;         /* Put it back in the navbar */
         height: auto;
         padding-top: 15px;
-        background: transparent;
+        background: transparent;    
     }
+
     .nav-links li {margin-left: 20px;}
     .logo a {font-size: 2rem;}
     .sub-title{font-size: 1.2rem;}
