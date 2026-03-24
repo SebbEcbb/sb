@@ -20,6 +20,7 @@ function navlist_en() {
     "<li><a href='/en/home/music-poetry/' target='_blank'>Music & Poetry</a></li>"+
     "<li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>Sebb Piano Art</a></li>"+
     "<li><a href='/en/home/about/' target='_blank'>About</a></li>"+
+    "<li><a href='/en/' target='_blank'>Language</a></li>"+
     "<li><a href='/en/home/contact' class='contact-btn'>Contact</a></li>";
 }
 
@@ -98,6 +99,7 @@ function navlist_fr() {
     "<li><a href='/fr/accueil/musique-poesie/' target='_blank'>Musique & Poésie</a></li>"+
     "<li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>Sebb Piano Art</a></li>"+
     "<li><a href='/fr/accueil/a-propos/' target='_blank'>À propos</a></li>"+
+    "<li><a href='/fr/' target='_blank'>Language</a></li>"+
     "<li><a href='/fr/accueil/contact/' class='contact-btn'>Contact</a></li>";
 }
 
