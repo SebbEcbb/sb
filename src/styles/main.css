@@ -11,6 +11,7 @@
     --bg-col-1: #faebd0;
     --bg-col-2: rgb(252, 245, 236);
     --bg-col-3: rgb(248, 158, 55);
+    --bg-col-4: rgba(235, 220, 202, 0.671);
 
     
     --shdw-1:4px 4px 6px rgba(44, 15, 92, 0.3);
@@ -349,7 +350,7 @@ nav {
     margin-bottom:25px !important;
     border-left: 4px solid red; 
     box-shadow: var(--shdw-1);
-    background-color: var(--bg-col-1); 
+    background-color: var(--bg-col-4); 
     border-radius: 8px;
     transition: all 0.3s ease;
 }
