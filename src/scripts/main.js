@@ -1,4 +1,3 @@
-
 function loadJs_en(){
     brand_en();
     navlist_en();  
@@ -17,7 +16,7 @@ function navlist_en() {
     document.getElementById("nav-list").innerHTML = 
     "<li><a href='/en/'>Home</a></li>"+
     "<li><a href='/en/home/articles/' target='_blank'>Articles</a></li>"+
-    "<li><a href='/en/home/music-poetry/' target='_blank'>Music & Poetry</a></li>"+
+    "<li><a href='/en/home/music-poetry/' target='_blank'>Poetry</a></li>"+
     "<li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>Piano Art</a></li>"+
     "<li><a href='/en/home/about/' target='_blank'>About</a></li>"+
     "<li><a href='/en/' target='_blank'>Language</a></li>"+
@@ -31,7 +30,7 @@ function sidebarRight_en() {
     elmnt.innerHTML = 
     "<h3>Featured</h3>"+
     "<div class='card links'>"+
-    "<p><strong>Latest posts</strong></p>"+
+    "<p><strong>Latest articles</strong></p>"+
     "<p><a href='/en/home/articles/i-improvise' target='_blank'>I improvise (#315)</a></p>"+
     "<p><a href='/en/home/' target='_blank'>A man and his cause (#143)</a></p>"+
     "<p><a href='/en/home/music-poetry/380/' target='_blank'>Mundus Mutationis (#380)</a></p>"+
@@ -46,7 +45,6 @@ function sidebarRight_en() {
     "<p><a href='https://youtu.be/DKpWLzgiwLA' target='_blank'>#389</a></p>"+
     "<p><a href='https://youtu.be/zRaKcpzvI3k' target='_blank'>#373</a></p>"+
     "</div>";
-
 }
 
 function donate_en() {
@@ -56,8 +54,8 @@ function donate_en() {
     donateDiv.style.borderLeft = "4px solid var(--col-2)";
     donateDiv.innerHTML ="";
     donateDiv.innerHTML="<p><strong>Buy me a coffee ?</strong><br></p>"+
-    "Very strong, please... <br><br>" +
-    "With Paypal ? <br><br>" +
+    "Strong, please... <br><br>" +
+    "Paypal ? <br><br>" +
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
     "<input id='donate-img' type='image' src='/public/images/heart.png' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
@@ -89,7 +87,7 @@ function brand_fr() {
     document.getElementById("brand").innerHTML = 
     "<a href='https://sebastienbadel.com'><img src='/public/images/site-icon.png' height='20px' alt='Flower'> Sébastien Badel </a>"+
     "<p class='sub-title'>Croire au delà des troubles<br> Aimer au delà des peines</p>";
-  }
+}
 
 
 function navlist_fr() {
@@ -121,8 +119,7 @@ function navlist_fr() {
     "<p><a href='https://youtu.be/zRaKcpzvI3k' target='_blank'>#373</a></p>"+
     "</div>";
 
-  }
-
+}
 
 function donate_fr() {
     const donateDiv = document.getElementById("paypal");
@@ -138,7 +135,6 @@ function donate_fr() {
     "<input id='donate-img' type='image' src='/public/images/heart.png' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+
     "</form>";
 }
-
 
 function footer_fr() {
     document.getElementById("footer").innerHTML = 
