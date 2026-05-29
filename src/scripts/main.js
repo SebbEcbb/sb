@@ -379,7 +379,6 @@ function nextTrack() {
     } else {
         console.log("Fin de la playlist automatique !");
         document.getElementById("playlist-status").style.display = "none";
-        alert("La playlist " + playListNumber   + " est terminée.");
     }
 }
 
