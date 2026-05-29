@@ -259,6 +259,7 @@ async function renderDoc(Url) {
     }
 }
 
+//Videos in sidebar
 function renderVid(vidId, vidName, vidDesc, element) {
 
     if (!vidId) {
@@ -297,7 +298,7 @@ function renderVid(vidId, vidName, vidDesc, element) {
 
 
 
-
+//image in sidebar
 function placeImg(featedImg, imgTitle, imgDescription) {
     const imgDiv = document.getElementById("featured-img");
     const descDiv = document.getElementById("featured-desc");
@@ -313,6 +314,85 @@ function placeImg(featedImg, imgTitle, imgDescription) {
         `<p>${imgDescription}</p>`;
     }          
 }
+
+//PlayVideos & playlist logic
+
+// Variables globales
+let currentPlaylist = [];
+let currentTrackIndex = 0;
+let playlistTimer = null; 
+let playListNumber = null;
+
+// 1. LA FONCTION PLAYLIST
+function playList(listNum) {
+
+    clearTimeout(playlistTimer);
+    playListNumber = listNum
+    currentPlaylist = Videos.filter(vid => vid.lists == listNum);
+    console.log(currentPlaylist)
+
+    if (currentPlaylist.length > 0) {
+        currentTrackIndex = 0;
+        const badge = document.getElementById("playlist-status")
+        badge.innerHTML="Playlist Active : " + playListNumber
+        badge.style.display = "inline-block";
+        
+        // On lance le premier morceau
+        playVid(currentPlaylist[currentTrackIndex]);
+        console.log("video " + currentPlaylist[currentTrackIndex].title + " lancé.")
+    } else {
+        alert("Aucune vidéo trouvée pour cette playlist.");
+    }
+}
+
+// 2. LA FONCTION DE LECTURE (Avec l'intelligence du minuteur)
+function playVid(vidObject) {
+    clearTimeout(playlistTimer);
+
+    const vFrame = document.getElementById("video-frame");
+    const vTitle = document.getElementById("current-video-title");
+    
+    vTitle.innerHTML = "Sébastien Badel : Authentic Unmodified Piano Improvisations <br>" + vidObject.title;
+    vFrame.src = vidObject.url + "preview?autoplay=1";
+
+    const dureeEnSecondes = parseInt(vidObject.duration);
+
+    if (!isNaN(dureeEnSecondes) && dureeEnSecondes > 0) {
+        console.log(`Minuteur activé pour ${vidObject.title}. Changement automatique dans ${dureeEnSecondes} secondes.`);
+        
+        playlistTimer = setTimeout(() => {
+            console.log(`Temps écoulé pour ${vidObject.title}. Passage au morceau suivant...`);
+            nextTrack();
+        }, dureeEnSecondes * 1000);
+
+    } else {
+
+        console.warn(`Attention : Pas de durée valide pour ${vidObject.title}. Le passage automatique ne fonctionnera pas.`);
+    }
+}
+
+// 3. LA FONCTION POUR PASSER AU MORCEAU SUIVANT
+function nextTrack() {
+    if (currentPlaylist.length > 0 && currentTrackIndex < currentPlaylist.length - 1) {
+        currentTrackIndex++;
+        playVid(currentPlaylist[currentTrackIndex]); // playVid va relancer un nouveau minuteur tout seul !
+    } else {
+        console.log("Fin de la playlist automatique !");
+        document.getElementById("playlist-status").style.display = "none";
+        alert("La playlist " + playListNumber   + " est terminée.");
+    }
+}
+
+// Pour les clics sur un morceau solo dans la barre latérale
+window.playVideo = function(vidNum) {
+    clearTimeout(playlistTimer); // On stoppe le minuteur automatique
+    const targetVid = Videos.find(vid => vid.title.includes(vidNum));
+    if (targetVid) {
+        currentPlaylist = [];
+        document.getElementById("playlist-status").style.display = "none";
+        playVid(targetVid);
+    }
+};
 
   
 
