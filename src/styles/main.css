@@ -1,7 +1,7 @@
 /*Root*/
 :root{
     --txt-col: #333;
-    --col-1: rgb(68, 3, 100);
+    --col-1: rgb(49, 2, 72);
     --col-2: rgba(173, 5, 5, 0.80);
     --col-3: red;
     --col-4: rgba(158, 145, 128, 0.973);
@@ -447,4 +447,71 @@ nav {
 /* Utility to hide things */
 .hide {
     display: none !important;
+}
+
+/* conteneur video player*/
+.player-wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+/* Le bouclier invisible */
+.anti-popout-shield {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;   
+    height: 55px;   
+    background: transparent; 
+    z-index: 10;     
+    cursor: default; 
+}
+
+
+/* --- ZONE DU LECTEUR VIDÉO --- */
+.playlist a{
+  font-weight: bold;
+}
+
+.video-card {
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+video.frame {
+width: 100vh;
+}
+
+#current-video-title {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.status-badge {
+  display: inline-block;
+  background-color: #eccfb7;
+  color: black;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.playlist{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+}
+
+.list-header, .list-item {
+  list-style: none;
+}
+
+.list-item{
+  padding-left: 25px;
 }

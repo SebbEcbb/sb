@@ -15,11 +15,11 @@ function brand_en() {
 function navlist_en() {
     document.getElementById("nav-list").innerHTML = 
     "<li><a href='/en/'>Home</a></li>"+
-    "<li><a href='/en/home/articles/' target='_blank'>Articles</a></li>"+
-    "<li><a href='/en/home/music-poetry/' target='_blank'>Poetry</a></li>"+
-    "<li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>Piano Art</a></li>"+
-    "<li><a href='/en/home/about/' target='_blank'>About</a></li>"+
-    "<li><a href='/en/' target='_blank'>Language</a></li>"+
+    "<li><a href='/en/home/piano-art/'>Piano Art</a></li>"+
+    "<li><a href='/en/home/articles/'>Articles</a></li>"+
+    "<li><a href='/en/home/music-poetry/'>Poetry</a></li>"+
+    "<li><a href='/en/home/about/'>About</a></li>"+
+    "<li><a href='/en/'>Language</a></li>"+
     "<li><a href='/en/home/contact' class='contact-btn'>Contact</a></li>";
 }
 
@@ -53,7 +53,7 @@ function donate_en() {
     donateDiv.classList.add("card");
     donateDiv.style.borderLeft = "4px solid var(--col-2)";
     donateDiv.innerHTML ="";
-    donateDiv.innerHTML="<p><strong>Buy me a coffee ?</strong><br></p>"+
+    donateDiv.innerHTML="<p><strong>Want to offer me a coffee ?</strong><br></p>"+
     "Strong, please... <br><br>" +
     "Paypal ? <br><br>" +
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
@@ -93,11 +93,11 @@ function brand_fr() {
 function navlist_fr() {
     document.getElementById("nav-list").innerHTML = 
     "<li><a href='/fr/'>Accueil</a></li>"+
-    "<li><a href='/fr/accueil/articles/' target='_blank'>Articles</a></li>"+
-    "<li><a href='/fr/accueil/musique-poesie/' target='_blank'>Musique & Poésie</a></li>"+
-    "<li><a href='https://youtube.com/@sebastienbadelpiano' target='_blank'>Art Piano</a></li>"+
-    "<li><a href='/fr/accueil/a-propos/' target='_blank'>À propos</a></li>"+
-    "<li><a href='/fr/' target='_blank'>Language</a></li>"+
+    "<li><a href='/en/home/piano-art/'>Art Piano</a></li>"+
+    "<li><a href='/fr/accueil/articles/'>Articles</a></li>"+
+    "<li><a href='/fr/accueil/musique-poesie/'>Poésie</a></li>"+
+    "<li><a href='/fr/accueil/a-propos/'>À propos</a></li>"+
+    "<li><a href='/fr/'>Language</a></li>"+
     "<li><a href='/fr/accueil/contact/' class='contact-btn'>Contact</a></li>";
 }
 
@@ -127,9 +127,9 @@ function donate_fr() {
     donateDiv.classList.add("card");
     donateDiv.style.borderLeft = "4px solid var(--col-2)";
     donateDiv.innerHTML ="";
-    donateDiv.innerHTML="<p><strong>Offrez-moi un café ?</strong><br></p>"+
-    "Bien fort, s'il vous plait...<br><br>" +
-    "Avec Paypal ? <br><br>" +
+    donateDiv.innerHTML="<p><strong>Offrez-vous un café ?</strong><br></p>"+
+    "Fort, s'il vous plait...<br><br>" +
+    "Paypal ? <br><br>" +
     "<form action='https://www.paypal.com/donate' method='post' target='_blank'> "+
     "<input type='hidden' name='hosted_button_id' value='SDTTCGFJ7ZRMN' /> "+
     "<input id='donate-img' type='image' src='/public/images/heart.png' border='0' width='20%' name='submit' title='PayPal - The safer, easier way to pay online!' alt='Button make a donation with PayPal' />"+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-73W9XL22BJ');
+    </script>
+
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/public/images/site-icon.png">
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+
+    <title>2022 : videos #116 - #129 </title>
+    
+
+
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div id="brand" class="logo"></div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-list" class="nav-links"></ul>
+        </nav>  
+
+    <div id="breadcrumb" class="breadcrumb-container"></div>
+    <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
+
+</header>
+
+<div class="container"> 
+    <aside class="sidebar-left">
+
+        <div id="page_index" class="video-index info-card" >
+            <h2>Piano Art Videos</h2>
+            <div class="main-list playlist " >
+                <ul id="list1" >
+                    <li class="list-header"><a onclick="playList('116')" >Playlist 116</a></li>
+                    <li class="list-item"><a  onclick="playVideo('116')">Impro #116</a></li>
+                    <li class="list-item"><a onclick="playVideo('117')" >Impro #117</a></li>
+                    <li class="list-item"><a onclick="playVideo('118')" >Impro #118</a></li>
+                </ul>
+            </div>    
+            <div class="playlist" >
+                <ul id="list2">
+                    <li class="list-header"><a onclick="playList('119')" >Playlist 119</a></li>
+                    <li class="list-item"><a onclick="playVideo('119')">Impro #119</a></li>
+                    <li class="list-item"><a onclick="playVideo('120')" >Impro #120</a></li>
+                    <li class="list-item"><a onclick="playVideo('121')" >Impro #121</a></li>
+                    <li class="list-item"><a onclick="playVideo('122')" >Impro #122</a></li>
+                </ul>
+            </div> 
+            <div class="playlist" >
+                <ul id="list3">
+                    <li class="list-header"><a onclick="playList('124')" >Playlist 124</a></li>
+                    <li class="list-item"><a onclick="playVideo('124')" >Impro #124</a></li>
+                    <li class="list-item"><a onclick="playVideo('125')" >Impro #125</a></li>
+                    <li class="list-item"><a onclick="playVideo('126')" >Impro #126</a></li>
+                </ul>
+            </div> 
+            <div class="playlist">
+                <ul id="list4">
+                    <li class="list-header"><a onclick="playList('128')" >Playlist 128</a></li>
+                    <li class="list-item"><a onclick="playVideo('128')" >Impro #128</a></li>
+                    <li class="list-item"><a onclick="playVideo('129')" >Impro #129</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="paypal" class="hide" ></div>
+    </aside>
+
+    <main id="mainContent" class="main-content">
+        <div class="video-card">
+            <h3 id="current-video-title">Please select a video or playlist</h3>
+            <p id="playlist-status" class="status-badge" style="display: none;"></p>
+            <div class="player-wrapper">
+                <div class="anti-popout-shield"></div>
+                <iframe id="video-frame" src="https://drive.google.com/file/d/1OFIKTadLqviezt-8q3SbNxdzZ6H4FDtv/preview" width="100%" height="600" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+            </div>  
+        </div>
+    </main>
+
+    <aside class="sidebar-right" id="rightsidebar"></aside>
+</div>    
+
+<footer>
+    <div id="footer" class="hide"></div>   
+</footer>
+
+<script src="/src/scripts/main.js"></script>
+<!--<script src="/src/scripts/playVideos.js"></script>-->
+<script>loadJs_en()</script>
+<script>
+
+//list of videos on this page
+const Videos =[
+{title:"#/n° 116", url:"https://drive.google.com/file/d/1OFIKTadLqviezt-8q3SbNxdzZ6H4FDtv/", duration:"290", lists:"116"},
+{title:"#/n° 117", url:"https://drive.google.com/file/d/1oNYjDuUJJzTb38RKOzyBco-5ve8SDfqI/", duration:"670", lists:"116"},
+{title:"#/n° 118", url:"https://drive.google.com/file/d/1xSBz4eT_wdDNt9z9m9Z3nRPLux5gpHsI/", duration:"730", lists:"116"},
+{title:"#/n° 119", url:"https://drive.google.com/file/d/1SKgcIzo3WdpGRyG4yUQTsAtban_HAC3z/", duration:"585", lists:"119"},
+{title:"#/n° 120", url:"https://drive.google.com/file/d/1EjwBk-XSYS1JAk9En_H4BhGC21JwfON-/", duration:"720", lists:"119"},
+{title:"#/n° 121", url:"https://drive.google.com/file/d/1yyxHbfm2RjixAiEvt0jYfS37OcR3qEaY/", duration:"635", lists:"119"},
+{title:"#/n° 122", url:"https://drive.google.com/file/d/1P57rsfJVUtH2iEicWQa5KsiT0jB7s_cT/", duration:"690", lists:"119"},
+{title:"#/n° 124", url:"https://drive.google.com/file/d/1hg5mI7RhhiXP0_q8uqTMvvMd0PY02tAs/", duration:"1490", lists:"124"},
+{title:"#/n° 125", url:"https://drive.google.com/file/d/1ONEmFJeuI_aRHtxKXnH1AlpSIbpX4ELW/", duration:"870", lists:"124"},
+{title:"#/n° 126", url:"https://drive.google.com/file/d/10ShZVp6w8EM-vs9cu60ZlXTHaWJ7mxND/", duration:"815", lists:"124"},
+{title:"#/n° 128", url:"https://drive.google.com/file/d/1zdvGwVJHJDE-CLZ2tskAaBK_lDYDfN47/", duration:"560", lists:"128"},
+{title:"#/n° 129", url:"https://drive.google.com/file/d/17D9w9Bypve6Tf4zwmHSxWH2kyDBdZqt6/", duration:"1135", lists:"128"},
+];
+
+window.playList = playList;
+window.playVid = playVid;
+window.nextTrack = nextTrack;
+
+
+</script>
+</body>
+</html>
