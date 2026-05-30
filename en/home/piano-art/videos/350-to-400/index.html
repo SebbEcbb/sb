@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-73W9XL22BJ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-73W9XL22BJ');
+    </script>
+
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/public/images/site-icon.png">
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+
+    <title>2024 : videos #350 - #400 </title>
+    
+
+
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div id="brand" class="logo"></div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-list" class="nav-links"></ul>
+        </nav>  
+
+    <div id="breadcrumb" class="breadcrumb-container"></div>
+    <div id="back" class="hide" ><a href="#">BACK</a></div> <!-- Back Button -->
+
+</header>
+
+<div class="container"> 
+    <aside class="sidebar-left">
+
+        <div id="page_index" class="video-index info-card" >
+            <h2>Piano Art Videos</h2>
+            <div class="main-list playlist " >
+                <ul id="list1">
+                    <li class="list-header"><a onclick="playList('322')" >Playlist 322</a></li>
+                    <li class="list-item"><a onclick="playVideo('322')">Impro #322</a></li>
+                    <li class="list-item"><a onclick="playVideo('360')" >Impro #360</a></li>
+                    <li class="list-item"><a onclick="playVideo('377')" >Impro #377</a></li>
+                </ul>
+            </div> 
+            <div class="playlist" >
+                <ul id="list2">
+                    <li class="list-header"><a onclick="playList('385')" >Playlist 385</a></li>
+                    <li class="list-item"><a onclick="playVideo('385')" >Impro #385</a></li>
+                    <li class="list-item"><a onclick="playVideo('386')" >Impro #386</a></li>
+                </ul>
+            </div> 
+            <div class="playlist">
+                <ul id="list3">
+                    <li class="list-header"><a onclick="playList('388')" >Playlist 388</a></li>
+                    <li class="list-item"><a onclick="playVideo('388')" >Impro #388</a></li>
+                    <li class="list-item"><a onclick="playVideo('389')" >Impro #389</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="paypal" class="hide" ></div>
+    </aside>
+
+    <main id="mainContent" class="main-content">
+        <div class="video-card">
+            <h3 id="current-video-title">Please select a video or playlist</h3>
+            <p id="playlist-status" class="status-badge" style="display: none;"></p>
+            <div class="player-wrapper">
+                <div class="anti-popout-shield"></div>
+                <iframe id="video-frame" src="https://drive.google.com/file/d/11zGOUwyKF9GDp2I9l619lNgBccX39ZYG/preview" width="100%" height="600" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+            </div>  
+        </div>
+    </main>
+
+    <aside class="sidebar-right" id="rightsidebar"></aside>
+</div>    
+
+<footer>
+    <div id="footer" class="hide"></div>   
+</footer>
+
+<script src="/src/scripts/main.js"></script>
+<!--<script src="/src/scripts/playVideos.js"></script>-->
+<script>loadJs_en()</script>
+<script>
+
+//list of videos on this page
+const Videos =[
+    {title:"#/n° 322", url:"https://drive.google.com/file/d/1poCMQDgnHc_LJST_PFo_yU-DnGVjjjVY/", duration:"950", lists:"322"},
+    {title:"#/n° 360", url:"https://drive.google.com/file/d/1J0fyBTcMGt_vi8-O9HS0QP_A9ha16_uE/", duration:"1830", lists:"359"},
+    {title:"#/n° 377", url:"https://drive.google.com/file/d/1NGhnXSd6H7YgXwcSvjV0xWZ4Ip3f0IaY/", duration:"3230", lists:"377"},
+    {title:"#/n° 380", url:"https://drive.google.com/file/d/1H-TbsqMx4SsWipveFL8Z_MqTzOdmfalA/", duration:"1830", lists:"380"},
+    {title:"#/n° 385", url:"https://drive.google.com/file/d/16pswlZczN83X_hIMENGBCUDHNVlK8MB8/", duration:"2570", lists:"380"},
+    {title:"#/n° 386", url:"https://drive.google.com/file/d/1YxnDvTh6oychFNDx_BvhklLCHzU3oSL4/", duration:"2520", lists:"380"},
+    {title:"#/n° 388", url:"https://drive.google.com/file/d/1ARJ3Cf6zNt78-0VVMFqHn4skzkHbn86U/", duration:"1810", lists:"388"},
+    {title:"#/n° 389", url:"https://drive.google.com/file/d/11zGOUwyKF9GDp2I9l619lNgBccX39ZYG/", duration:"1450", lists:"388"},
+];
+
+window.playList = playList;
+window.playVid = playVid;
+window.nextTrack = nextTrack;
+
+
+</script>
+</body>
+</html>

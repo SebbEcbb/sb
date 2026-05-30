@@ -322,6 +322,8 @@ let currentPlaylist = [];
 let currentTrackIndex = 0;
 let playlistTimer = null; 
 let playListNumber = null;
+let videoStartTime = null;
+let currentVideoTitle = "";
 
 // 1. LA FONCTION PLAYLIST
 function playList(listNum) {
@@ -347,7 +349,20 @@ function playList(listNum) {
 
 // 2. LA FONCTION DE LECTURE (Avec l'intelligence du minuteur)
 function playVid(vidObject) {
+    
+    if (typeof gtag === 'function') {
+    gtag('event', 'video_start', {
+        'video_title': vidObject.title,
+        'video_list': vidObject.lists
+    });
+    console.log("Événement 'video_start' envoyé à Google Analytics.");
+    }
+    
     clearTimeout(playlistTimer);
+
+    // On enregistre le moment où la vidéo COMMENCE et son titre
+    videoStartTime = Date.now(); 
+    currentVideoTitle = vidObject.title;
 
     const vFrame = document.getElementById("video-frame");
     const vTitle = document.getElementById("current-video-title");
@@ -362,6 +377,13 @@ function playVid(vidObject) {
         
         playlistTimer = setTimeout(() => {
             console.log(`Temps écoulé pour ${vidObject.title}. Passage au morceau suivant...`);
+            if (typeof gtag === 'function') {
+               gtag('event', 'video_complete', {
+            'video_title': vidObject.title,
+            'duration_watched_seconds': vidObject.duration
+            });
+            console.log("Événement 'video_complete' envoyé à Google Analytics.");
+}
             nextTrack();
         }, dureeEnSecondes * 1000);
 
@@ -384,6 +406,7 @@ function nextTrack() {
 
 // Pour les clics sur un morceau solo dans la barre latérale
 window.playVideo = function(vidNum) {
+    
     clearTimeout(playlistTimer); // On stoppe le minuteur automatique
     const targetVid = Videos.find(vid => vid.title.includes(vidNum));
     if (targetVid) {
@@ -394,4 +417,29 @@ window.playVideo = function(vidNum) {
 };
 
   
+//LE CAPTEUR DE FERMETURE / ABANDON DE LA PAGE
+document.addEventListener('visibilitychange', function() {
+    // Si l'utilisateur ferme l'onglet ou change d'application
+    if (document.visibilityState === 'hidden' && videoStartTime !== null) {
+        
+        // Calcul du temps regardé : (Maintenant - Heure de début) / 1000 pour l'avoir en secondes
+        const timeWatchedSeconds = Math.round((Date.now() - videoStartTime) / 1000);
+        
+        // On prépare les données pour Google Analytics (Format spécial pour sendBeacon)
+        // Remplace 'UA-XXXXX-Y' ou ton ID de mesure GA4 (G-73W9XL22BJ)
+        const measurementId = 'G-73W9XL22BJ'; 
+        const url = `https://www.google-analytics.com/g/collect?v=2&tid=${measurementId}`;
+        
+        // Données de l'événement personnalisé
+        const payload = new URLSearchParams({
+            en: 'video_abandon', // Nom de l'événement
+            'ep.video_title': currentVideoTitle,
+            'ep.time_watched_seconds': timeWatchedSeconds
+        });
 
+        // Envoi asynchrone ultra-rapide qui survit à la fermeture de la page
+        navigator.sendBeacon(url, payload.toString());
+        
+        console.log(`Données d'abandon envoyées : ${timeWatchedSeconds} secondes pour ${currentVideoTitle}`);
+    }
+});
