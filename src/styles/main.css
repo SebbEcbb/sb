@@ -23,7 +23,7 @@
 
 
 /* Global Reset */
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Includes padding in width 📏 */
@@ -32,7 +32,7 @@
 body {
     font-family: 'Poppins', sans-serif !important;
     background-color: var(--bg-col-2);
-    overflow-x: hidden; /* Prevents the "ghost width" 👻 */
+    overflow-x: hidden; 
 }
 
 a {
@@ -40,8 +40,7 @@ a {
     color: var(--col-1);
     font-size: 1.2rem;
     transition: all 0.3s ease;
-    text-shadow: var(--shdw-1);
-    
+    text-shadow: var(--shdw-1);    
 }
 
 a:hover{
@@ -52,7 +51,7 @@ a:hover{
 /* Navigation Container */
 nav {
     display: flex;
-    justify-content: space-between; /* Logo left, Toggle right ↔️ */
+    justify-content: space-between; 
     align-items: center;
     padding: 10px 5px;
     background: white;
@@ -139,7 +138,7 @@ nav {
     font-weight: 400;
 }
 
-/* Active State (Triggered by your JS) */
+/* Active State (Triggered by JS) */
 .nav-links.active {
     display: flex;
     flex-direction: column;
